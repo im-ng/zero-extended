@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>zero-soak report — gate</title>
+<style>
+:root { color-scheme: light dark; }
+:root {
+  --bg:#0f1115; --fg:#e6e6e6; --muted:#9aa; --border:#222; --link:#7ab8ff;
+  --pass-bg:#16351f; --pass-fg:#5fdc8a;
+  --fail-bg:#3a1717; --fail-fg:#ff8a8a;
+  --miss-bg:#3a2f12; --miss-fg:#ffd28a;
+  --skip-bg:#2a2a2a; --skip-fg:#bbb;
+  --ok:#5fdc8a; --leak:#ff8a8a;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg:#ffffff; --fg:#1a1a1a; --muted:#666; --border:#ddd; --link:#1a66cc;
+    --pass-bg:#e3f5e8; --pass-fg:#137333;
+    --fail-bg:#fde8e8; --fail-fg:#c5221f;
+    --miss-bg:#fef3e0; --miss-fg:#b06000;
+    --skip-bg:#eeeeee; --skip-fg:#555;
+    --ok:#137333; --leak:#c5221f;
+  }
+}
+body { font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  margin:0; background:var(--bg); color:var(--fg); }
+.summary { padding:24px; max-width:1100px; margin:0 auto; }
+h1 { font-size:22px; margin:0 0 4px; }
+.sub { color:var(--muted); font-size:13px; margin-bottom:16px; }
+.banner { font-size:16px; font-weight:700; padding:12px 16px; border-radius:10px;
+  margin-bottom:18px; display:inline-block; }
+.banner.pass { background:var(--pass-bg); color:var(--pass-fg); }
+.banner.fail { background:var(--fail-bg); color:var(--fail-fg); }
+.banner.miss { background:var(--miss-bg); color:var(--miss-fg); }
+.badge { padding:2px 9px; border-radius:999px; font-size:12px; font-weight:700; }
+.pass { background:var(--pass-bg); color:var(--pass-fg); }
+.fail { background:var(--fail-bg); color:var(--fail-fg); }
+.skip { background:var(--skip-bg); color:var(--skip-fg); }
+.miss { background:var(--miss-bg); color:var(--miss-fg); }
+table { border-collapse:collapse; width:100%; font-size:14px; }
+th, td { text-align:left; padding:8px 10px; border-bottom:1px solid var(--border); vertical-align:top; }
+th { color:var(--muted); font-weight:600; font-size:12px; text-transform:uppercase; letter-spacing:.03em; }
+.spark { display:block; }
+.leak { color:var(--leak); font-weight:600; }
+.ok { color:var(--ok); }
+.detail { color:var(--muted); font-size:12px; }
+a { color:var(--link); text-decoration:none; } a:hover { text-decoration:underline; }
+details { border:1px solid var(--border); border-radius:8px; margin:8px 0; padding:8px 12px; }
+summary { cursor:pointer; font-weight:600; }
+.checks { margin:6px 0 0; border-collapse:collapse; width:100%; font-size:13px; }
+.checks th, .checks td { text-align:left; padding:4px 8px; border-bottom:1px solid var(--border); }
+.checks th { color:var(--muted); font-weight:600; font-size:11px; text-transform:uppercase; letter-spacing:.03em; }
+.kv { border-collapse:collapse; margin:6px 0; font-size:13px; }
+.kv td { padding:3px 8px; border-bottom:1px solid var(--border); }
+.kv td.k { color:var(--muted); width:130px; }
+.spark-wrap { margin:4px 0 8px; }
+.meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+</style>
+</head>
+<body>
+<div class="summary">
+<h1>zero-soak report</h1>
+<div class="sub">mode: gate · generated: 2026-09-24 03:10:45 UTC · commit: 56bea80922c7c111123301e44fb3262fef7d6ef7 · build: 4 · repo: ng/zero-soak</div>
+<div class="banner miss">1 services · 0 pass · 0 fail · 1 missing → MISSING</div>
+<table>
+<thead><tr><th>Service</th><th>Status</th><th>Port</th><th>Backends</th><th>Chaos</th><th>Checks</th><th>RSS</th><th>Links</th></tr></thead>
+<tbody>
+<tr><td>zero-auth</td><td><span class="badge miss">MISSING</span></td><td>8082</td><td>—</td><td>no</td><td>—</td><td>—</td><td>—</td></tr>
+</tbody>
+</table>
+<h2 style="margin-top:24px; font-size:16px;">Per-service detail</h2>
+<details><summary><span class="badge miss">MISSING</span> zero-auth</summary><div class="meta">port 8082 · backends — · chaos no</div><div class="detail">no RSS samples</div><table class="checks"><thead><tr><th>Status</th><th>Check</th><th>Detail</th></tr></thead><tbody><tr><td colspan="3" class="detail">no checks recorded</td></tr></tbody></table></details>
+</div>
+</body>
+</html>
