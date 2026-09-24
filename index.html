@@ -62,16 +62,16 @@ summary { cursor:pointer; font-weight:600; }
 <body>
 <div class="summary">
 <h1>zero-soak report</h1>
-<div class="sub">mode: gate · generated: 2026-09-24 03:24:34 UTC · commit: 56bea80922c7c111123301e44fb3262fef7d6ef7 · build: 5 · repo: ng/zero-soak</div>
-<div class="banner miss">1 services · 0 pass · 0 fail · 1 missing → MISSING</div>
+<div class="sub">mode: gate · generated: 2026-09-24 04:06:30 UTC · commit: 84e91cb643e2ee627c414e2b492dde16aa7fcecf · build: 8 · repo: ng/zero-soak</div>
+<div class="banner pass">1 services · 1 pass · 0 fail · 0 missing → PASS</div>
 <table>
 <thead><tr><th>Service</th><th>Status</th><th>Port</th><th>Backends</th><th>Chaos</th><th>Checks</th><th>RSS</th><th>Links</th></tr></thead>
 <tbody>
-<tr><td>zero-auth</td><td><span class="badge miss">MISSING</span></td><td>8082</td><td>—</td><td>no</td><td>—</td><td>—</td><td>—</td></tr>
+<tr><td>zero-auth</td><td><span class="badge pass">PASS</span></td><td>8082</td><td>—</td><td>no</td><td>4/0</td><td><svg width="260" height="44" class="spark" role="img" aria-label="RSS 246904-251204 KiB"><polyline fill="none" stroke="#5fdc8a" stroke-width="1.5" points="4.0,40.0 26.9,4.1 49.8,4.1 72.7,4.1 95.6,4.1 118.5,4.1 141.5,4.1 164.4,4.0 187.3,4.0 210.2,4.0 233.1,4.0 256.0,4.0"/></svg><br><span class="ok">12 KiB</span></td><td><a href="logs/zero-auth.log">log</a> · <a href="logs/zero-auth.vmrss.txt">rss</a></td></tr>
 </tbody>
 </table>
 <h2 style="margin-top:24px; font-size:16px;">Per-service detail</h2>
-<details><summary><span class="badge miss">MISSING</span> zero-auth</summary><div class="meta">port 8082 · backends — · chaos no</div><div class="detail">no RSS samples</div><table class="checks"><thead><tr><th>Status</th><th>Check</th><th>Detail</th></tr></thead><tbody><tr><td colspan="3" class="detail">no checks recorded</td></tr></tbody></table></details>
+<details><summary><span class="badge pass">PASS</span> zero-auth</summary><div class="meta">port 8082 · backends — · chaos no</div><table class="kv"><tbody><tr><td class="k">Baseline</td><td>61344 KiB</td></tr><tr><td class="k">Overall RSS</td><td>61356 KiB</td></tr><tr><td class="k">dRss (growth)</td><td>12 KiB</td></tr></tbody></table><div class="spark-wrap"><svg width="260" height="44" class="spark" role="img" aria-label="RSS 246904-251204 KiB"><polyline fill="none" stroke="#5fdc8a" stroke-width="1.5" points="4.0,40.0 26.9,4.1 49.8,4.1 72.7,4.1 95.6,4.1 118.5,4.1 141.5,4.1 164.4,4.0 187.3,4.0 210.2,4.0 233.1,4.0 256.0,4.0"/></svg></div><table class="checks"><thead><tr><th>Status</th><th>Check</th><th>Detail</th></tr></thead><tbody><tr><td><span class="badge pass">PASS</span></td><td>health up</td><td class="detail"></td></tr><tr><td><span class="badge pass">PASS</span></td><td>RSS plateau (no leak)</td><td class="detail"></td></tr><tr><td><span class="badge pass">PASS</span></td><td>debug health up</td><td class="detail"></td></tr><tr><td><span class="badge pass">PASS</span></td><td>no debug leaks</td><td class="detail"></td></tr></tbody></table></details>
 </div>
 </body>
 </html>
