@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>zero-soak report — gate</title>
+<style>
+:root { color-scheme: light dark; }
+:root {
+  --bg:#0f1115; --fg:#e6e6e6; --muted:#9aa; --border:#222; --link:#7ab8ff;
+  --pass-bg:#16351f; --pass-fg:#5fdc8a;
+  --fail-bg:#3a1717; --fail-fg:#ff8a8a;
+  --miss-bg:#3a2f12; --miss-fg:#ffd28a;
+  --skip-bg:#2a2a2a; --skip-fg:#bbb;
+  --ok:#5fdc8a; --leak:#ff8a8a;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg:#ffffff; --fg:#1a1a1a; --muted:#666; --border:#ddd; --link:#1a66cc;
+    --pass-bg:#e3f5e8; --pass-fg:#137333;
+    --fail-bg:#fde8e8; --fail-fg:#c5221f;
+    --miss-bg:#fef3e0; --miss-fg:#b06000;
+    --skip-bg:#eeeeee; --skip-fg:#555;
+    --ok:#137333; --leak:#c5221f;
+  }
+}
+body { font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  margin:0; background:var(--bg); color:var(--fg); }
+.summary { padding:24px; max-width:1100px; margin:0 auto; }
+h1 { font-size:22px; margin:0 0 4px; }
+.sub { color:var(--muted); font-size:13px; margin-bottom:16px; }
+.banner { font-size:16px; font-weight:700; padding:12px 16px; border-radius:10px;
+  margin-bottom:18px; display:inline-block; }
+.banner.pass { background:var(--pass-bg); color:var(--pass-fg); }
+.banner.fail { background:var(--fail-bg); color:var(--fail-fg); }
+.banner.miss { background:var(--miss-bg); color:var(--miss-fg); }
+.badge { padding:2px 9px; border-radius:999px; font-size:12px; font-weight:700; }
+.pass { background:var(--pass-bg); color:var(--pass-fg); }
+.fail { background:var(--fail-bg); color:var(--fail-fg); }
+.skip { background:var(--skip-bg); color:var(--skip-fg); }
+.miss { background:var(--miss-bg); color:var(--miss-fg); }
+table { border-collapse:collapse; width:100%; font-size:14px; }
+th, td { text-align:left; padding:8px 10px; border-bottom:1px solid var(--border); vertical-align:top; }
+th { color:var(--muted); font-weight:600; font-size:12px; text-transform:uppercase; letter-spacing:.03em; }
+.spark { display:block; }
+.leak { color:var(--leak); font-weight:600; }
+.ok { color:var(--ok); }
+.detail { color:var(--muted); font-size:12px; }
+a { color:var(--link); text-decoration:none; } a:hover { text-decoration:underline; }
+details { border:1px solid var(--border); border-radius:8px; margin:8px 0; padding:8px 12px; }
+summary { cursor:pointer; font-weight:600; }
+.checks { margin:6px 0 0; border-collapse:collapse; width:100%; font-size:13px; }
+.checks th, .checks td { text-align:left; padding:4px 8px; border-bottom:1px solid var(--border); }
+.checks th { color:var(--muted); font-weight:600; font-size:11px; text-transform:uppercase; letter-spacing:.03em; }
+.kv { border-collapse:collapse; margin:6px 0; font-size:13px; }
+.kv td { padding:3px 8px; border-bottom:1px solid var(--border); }
+.kv td.k { color:var(--muted); width:130px; }
+.spark-wrap { margin:4px 0 8px; }
+.meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+</style>
+</head>
+<body>
+<div class="summary">
+<h1>zero-soak report</h1>
+<div class="sub">mode: gate · generated: 2026-10-01 05:03:31 UTC · commit: 081aca6e79aacdb9658093f4e46b7594eda37e6c · build: 12 · repo: ng/zero-soak</div>
+<div class="banner pass">5 services · 5 pass · 0 fail · 0 missing → PASS</div>
+<table>
+<thead><tr><th>Service</th><th>Status</th><th>Port</th><th>Backends</th><th>Chaos</th><th>Checks</th><th>RSS</th><th>Links</th></tr></thead>
+<tbody>
+<tr><td>zero-auth</td><td><span class="badge pass">PASS</span></td><td>8080</td><td>—</td><td>no</td><td>2/0</td><td><svg width="260" height="44" class="spark" role="img" aria-label="RSS 247524-254000 KiB"><polyline fill="none" stroke="#5fdc8a" stroke-width="1.5" points="4.0,40.0 26.9,4.0 49.8,4.0 72.7,4.0 95.6,4.0 118.5,4.0 141.5,4.0 164.4,4.0 187.3,4.0 210.2,4.0 233.1,4.0 256.0,4.0"/></svg><br><span class="ok">0 KiB</span></td><td><a href="logs/zero-auth.log">log</a> · <a href="logs/zero-auth.vmrss.txt">rss</a></td></tr><tr><td>zero-basic</td><td><span class="badge pass">PASS</span></td><td>8080</td><td>postgres</td><td>yes</td><td>3/0</td><td><svg width="260" height="44" class="spark" role="img" aria-label="RSS 227896-230288 KiB"><polyline fill="none" stroke="#5fdc8a" stroke-width="1.5" points="4.0,40.0 26.9,4.0 49.8,4.1 72.7,4.1 95.6,4.0 118.5,4.3 141.5,4.1 164.4,4.1 187.3,4.1 210.2,4.1 233.1,4.0 256.0,4.1"/></svg><br><span class="ok">0 KiB</span></td><td><a href="logs/zero-basic.log">log</a> · <a href="logs/zero-basic.vmrss.txt">rss</a></td></tr><tr><td>zero-duckdb</td><td><span class="badge pass">PASS</span></td><td>8083</td><td>—</td><td>no</td><td>2/0</td><td><svg width="260" height="44" class="spark" role="img" aria-label="RSS 0-248172 KiB"><polyline fill="none" stroke="#5fdc8a" stroke-width="1.5" points="4.0,4.0 26.9,40.0 49.8,40.0 72.7,40.0 95.6,40.0 118.5,40.0 141.5,40.0 164.4,40.0 187.3,40.0 210.2,40.0 233.1,40.0 256.0,40.0"/></svg><br><span class="ok">0 KiB</span></td><td><a href="logs/zero-duckdb.log">log</a> · <a href="logs/zero-duckdb.vmrss.txt">rss</a></td></tr><tr><td>zero-graphql</td><td><span class="badge pass">PASS</span></td><td>8080</td><td>postgres</td><td>yes</td><td>4/0</td><td><svg width="260" height="44" class="spark" role="img" aria-label="RSS 252356-256912 KiB"><polyline fill="none" stroke="#5fdc8a" stroke-width="1.5" points="4.0,40.0 26.9,5.9 49.8,5.6 72.7,5.4 95.6,5.2 118.5,4.9 141.5,4.7 164.4,4.5 187.3,4.3 210.2,4.3 233.1,4.1 256.0,4.0"/></svg><br><span class="ok">244 KiB</span></td><td><a href="logs/zero-graphql.log">log</a> · <a href="logs/zero-graphql.vmrss.txt">rss</a></td></tr><tr><td>zero-s3</td><td><span class="badge pass">PASS</span></td><td>8080</td><td>rustfs</td><td>yes</td><td>4/0</td><td><svg width="260" height="44" class="spark" role="img" aria-label="RSS 247964-255068 KiB"><polyline fill="none" stroke="#5fdc8a" stroke-width="1.5" points="4.0,40.0 26.9,8.7 49.8,8.7 72.7,8.7 95.6,8.7 118.5,8.7 141.5,8.7 164.4,8.7 187.3,4.0 210.2,4.0 233.1,4.0 256.0,4.0"/></svg><br><span class="ok">920 KiB</span></td><td><a href="logs/zero-s3.log">log</a> · <a href="logs/zero-s3.vmrss.txt">rss</a></td></tr>
+</tbody>
+</table>
+<h2 style="margin-top:24px; font-size:16px;">Per-service detail</h2>
+<details><summary><span class="badge pass">PASS</span> zero-auth</summary><div class="meta">port 8080 · backends — · chaos no</div><table class="kv"><tbody><tr><td class="k">Baseline</td><td>254000 KiB</td></tr><tr><td class="k">Overall RSS</td><td>254000 KiB</td></tr><tr><td class="k">dRss (growth)</td><td>0 KiB</td></tr></tbody></table><div class="spark-wrap"><svg width="260" height="44" class="spark" role="img" aria-label="RSS 247524-254000 KiB"><polyline fill="none" stroke="#5fdc8a" stroke-width="1.5" points="4.0,40.0 26.9,4.0 49.8,4.0 72.7,4.0 95.6,4.0 118.5,4.0 141.5,4.0 164.4,4.0 187.3,4.0 210.2,4.0 233.1,4.0 256.0,4.0"/></svg></div><table class="checks"><thead><tr><th>Status</th><th>Check</th><th>Detail</th></tr></thead><tbody><tr><td><span class="badge pass">PASS</span></td><td>health up</td><td class="detail"></td></tr><tr><td><span class="badge pass">PASS</span></td><td>RSS plateau (no leak)</td><td class="detail"></td></tr></tbody></table></details><details><summary><span class="badge pass">PASS</span> zero-basic</summary><div class="meta">port 8080 · backends postgres · chaos yes</div><table class="kv"><tbody><tr><td class="k">Baseline</td><td>230280 KiB</td></tr><tr><td class="k">Overall RSS</td><td>230280 KiB</td></tr><tr><td class="k">dRss (growth)</td><td>0 KiB</td></tr></tbody></table><div class="spark-wrap"><svg width="260" height="44" class="spark" role="img" aria-label="RSS 227896-230288 KiB"><polyline fill="none" stroke="#5fdc8a" stroke-width="1.5" points="4.0,40.0 26.9,4.0 49.8,4.1 72.7,4.1 95.6,4.0 118.5,4.3 141.5,4.1 164.4,4.1 187.3,4.1 210.2,4.1 233.1,4.0 256.0,4.1"/></svg></div><table class="checks"><thead><tr><th>Status</th><th>Check</th><th>Detail</th></tr></thead><tbody><tr><td><span class="badge pass">PASS</span></td><td>health up</td><td class="detail"></td></tr><tr><td><span class="badge pass">PASS</span></td><td>RSS plateau (no leak)</td><td class="detail"></td></tr><tr><td><span class="badge pass">PASS</span></td><td>chaos survived + recovered</td><td class="detail"></td></tr></tbody></table></details><details><summary><span class="badge pass">PASS</span> zero-duckdb</summary><div class="meta">port 8083 · backends — · chaos no</div><table class="kv"><tbody><tr><td class="k">Baseline</td><td>0 KiB</td></tr><tr><td class="k">Overall RSS</td><td>0 KiB</td></tr><tr><td class="k">dRss (growth)</td><td>0 KiB</td></tr></tbody></table><div class="spark-wrap"><svg width="260" height="44" class="spark" role="img" aria-label="RSS 0-248172 KiB"><polyline fill="none" stroke="#5fdc8a" stroke-width="1.5" points="4.0,4.0 26.9,40.0 49.8,40.0 72.7,40.0 95.6,40.0 118.5,40.0 141.5,40.0 164.4,40.0 187.3,40.0 210.2,40.0 233.1,40.0 256.0,40.0"/></svg></div><table class="checks"><thead><tr><th>Status</th><th>Check</th><th>Detail</th></tr></thead><tbody><tr><td><span class="badge pass">PASS</span></td><td>health up</td><td class="detail"></td></tr><tr><td><span class="badge pass">PASS</span></td><td>RSS plateau (no leak)</td><td class="detail"></td></tr></tbody></table></details><details><summary><span class="badge pass">PASS</span> zero-graphql</summary><div class="meta">port 8080 · backends postgres · chaos yes</div><table class="kv"><tbody><tr><td class="k">Baseline</td><td>256668 KiB</td></tr><tr><td class="k">Overall RSS</td><td>256912 KiB</td></tr><tr><td class="k">dRss (growth)</td><td>244 KiB</td></tr></tbody></table><div class="spark-wrap"><svg width="260" height="44" class="spark" role="img" aria-label="RSS 252356-256912 KiB"><polyline fill="none" stroke="#5fdc8a" stroke-width="1.5" points="4.0,40.0 26.9,5.9 49.8,5.6 72.7,5.4 95.6,5.2 118.5,4.9 141.5,4.7 164.4,4.5 187.3,4.3 210.2,4.3 233.1,4.1 256.0,4.0"/></svg></div><table class="checks"><thead><tr><th>Status</th><th>Check</th><th>Detail</th></tr></thead><tbody><tr><td><span class="badge pass">PASS</span></td><td>health up</td><td class="detail"></td></tr><tr><td><span class="badge pass">PASS</span></td><td>RSS plateau (no leak)</td><td class="detail"></td></tr><tr><td><span class="badge pass">PASS</span></td><td>graphql query OK (200, data.users present)</td><td class="detail"></td></tr><tr><td><span class="badge pass">PASS</span></td><td>chaos survived + recovered</td><td class="detail"></td></tr></tbody></table></details><details><summary><span class="badge pass">PASS</span> zero-s3</summary><div class="meta">port 8080 · backends rustfs · chaos yes</div><table class="kv"><tbody><tr><td class="k">Baseline</td><td>254148 KiB</td></tr><tr><td class="k">Overall RSS</td><td>255068 KiB</td></tr><tr><td class="k">dRss (growth)</td><td>920 KiB</td></tr></tbody></table><div class="spark-wrap"><svg width="260" height="44" class="spark" role="img" aria-label="RSS 247964-255068 KiB"><polyline fill="none" stroke="#5fdc8a" stroke-width="1.5" points="4.0,40.0 26.9,8.7 49.8,8.7 72.7,8.7 95.6,8.7 118.5,8.7 141.5,8.7 164.4,8.7 187.3,4.0 210.2,4.0 233.1,4.0 256.0,4.0"/></svg></div><table class="checks"><thead><tr><th>Status</th><th>Check</th><th>Detail</th></tr></thead><tbody><tr><td><span class="badge pass">PASS</span></td><td>health up</td><td class="detail"></td></tr><tr><td><span class="badge pass">PASS</span></td><td>RSS plateau (no leak)</td><td class="detail"></td></tr><tr><td><span class="badge pass">PASS</span></td><td>filestore round-trip (upload+download) OK</td><td class="detail"></td></tr><tr><td><span class="badge pass">PASS</span></td><td>chaos survived + recovered</td><td class="detail"></td></tr></tbody></table></details>
+</div>
+</body>
+</html>

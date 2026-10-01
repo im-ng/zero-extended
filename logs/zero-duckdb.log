@@ -1,0 +1,102 @@
+[38;5;6m INFO[0m [04:53:45] Loaded config from file: ./configs/.env
+[38;5;8mDEBUG[0m [04:53:45] redis is disabled, as redis host is not provided.
+[38;5;8mDEBUG[0m [04:53:45] file store is disabled, as FILE_STORE_ROOT is not provided.
+[38;5;8mDEBUG[0m [04:53:45] sqlite is disabled, as sqlite path is not provided.
+[38;5;8mDEBUG[0m [04:53:45] clickhouse is disabled, as CLICKHOUSE_URL is not provided.
+[38;5;8mDEBUG[0m [04:53:45] time-series is disabled, as INFLUXDB_URL is not provided.
+[38;5;8mDEBUG[0m [04:53:45] search is disabled, as SOLR_URL is not provided.
+[38;5;8mDEBUG[0m [04:53:45] nosql is disabled, as CONTACT_POINTS are not provided.
+[38;5;8mDEBUG[0m [04:53:45] pubsub is disabled, as pubsub mode is not provided.
+[38;5;6m INFO[0m [04:53:45] container is created
+[38;5;6m INFO[0m [04:53:45] zero-duckdb app pid 687
+[38;5;6m INFO[0m [04:53:45] no authentication mode found and disabled.
+[38;5;160mERROR[0m [04:53:45] relational migration skipped: no relational datasource configured
+[38;5;6m INFO[0m [04:53:45] registered static files from directory ./static
+[38;5;8mDEBUG[0m [04:53:45] metrics server is initialized
+[38;5;8mDEBUG[0m [04:53:45] metrics server started
+[38;5;6m INFO[0m [04:53:45] Starting server on port: 8083
+[38;5;6m INFO[0m [04:53:46] 32dc1434563d4c8982336484a183ee27	 200 0ms GET /.well-known/health
+Segmentation fault at address 0x20
+/drone/src/zero/examples/zero-duckdb/zig-pkg/sqlite-3.48.0-F2R_a0iSDgCgU0ZDXF9fgYM8tauaFdYyt5L9lDYWxjPC/sqlite.zig:1586:19: 0x1b01204 in prepareWithTail (sqlite.zig)
+                db.db,
+                  ^
+/drone/src/zero/examples/zero-duckdb/zig-pkg/sqlite-3.48.0-F2R_a0iSDgCgU0ZDXF9fgYM8tauaFdYyt5L9lDYWxjPC/sqlite.zig:1577:31: 0x1b00570 in prepare (sqlite.zig)
+        return prepareWithTail(db, query, options, flags, null);
+                              ^
+/drone/src/zero/examples/zero-duckdb/zig-pkg/sqlite-3.48.0-F2R_a0iSDgCgU0ZDXF9fgYM8tauaFdYyt5L9lDYWxjPC/sqlite.zig:560:44: 0x1b00136 in prepareDynamicWithDiags (sqlite.zig)
+        return try DynamicStatement.prepare(self, query, options, 0);
+                                           ^
+/drone/src/zero/examples/zero-duckdb/zig-pkg/sqlite-3.48.0-F2R_a0iSDgCgU0ZDXF9fgYM8tauaFdYyt5L9lDYWxjPC/sqlite.zig:592:48: 0x1affd66 in prepareDynamic (sqlite.zig)
+        return try self.prepareDynamicWithDiags(query, .{});
+                                               ^
+/drone/src/zero/src/datasource/sql/sqlite.zig:68:42: 0x1b46f5e in queryRowsContext__anon_455839 (zero.zig)
+    var stmt = try self.db.prepareDynamic(query);
+                                         ^
+/drone/src/zero/src/datasource/sql/sqlite.zig:64:33: 0x1b471ad in queryRows__anon_455733 (zero.zig)
+    return self.queryRowsContext(ctx, Type, query, args);
+                                ^
+/drone/src/zero/src/datasource/sql/interface.zig:216:78: 0x1b497ca in queryRows__anon_455720 (zero.zig)
+            .sqlite => @as(*SQLite, @ptrCast(@alignCast(self.ptr))).queryRows(
+                                                                             ^
+/drone/src/zero/examples/zero-duckdb/src/main.zig:88:40: 0x1b4a147 in listUsers (main.zig)
+    const users = try ctx.SQL.queryRows(ctx, User, "SELECT id, name, email FROM users ORDER BY id", .{});
+                                       ^
+/drone/src/zero/src/handler.zig:106:15: 0x1c50da7 in dispatch (zero.zig)
+        action(&ctx) catch |err| {
+              ^
+/drone/src/zero/examples/zero-duckdb/zig-pkg/httpz-0.0.0-PNVzrPYUCQCsmlsCu1UW6CWzwLann2nDqlwM-olFXom2/src/httpz.zig:504:40: 0x1c517f1 in defaultDispatcherWithHandler (httpz.zig)
+                return handler.dispatch(action, req, res);
+                                       ^
+/drone/src/zero/examples/zero-duckdb/zig-pkg/httpz-0.0.0-PNVzrPYUCQCsmlsCu1UW6CWzwLann2nDqlwM-olFXom2/src/httpz.zig:657:41: 0x1451738 in next (httpz.zig)
+... [44 lines of load/request noise omitted] ...
+...
+/drone/src/zero/examples/zero-duckdb/zig-pkg/httpz-0.0.0-PNVzrPYUCQCsmlsCu1UW6CWzwLann2nDqlwM-olFXom2/src/httpz.zig:219:34: 0x1499a0f in execute (httpz.zig)
+            return self.executeFn(self.ptr, req, res, executor);
+                                 ^
+/drone/src/zero/examples/zero-duckdb/zig-pkg/httpz-0.0.0-PNVzrPYUCQCsmlsCu1UW6CWzwLann2nDqlwM-olFXom2/src/httpz.zig:630:54: 0x1451493 in next (httpz.zig)
+                    return middlewares[index].execute(self.req, self.res, self);
+                                                     ^
+/drone/src/zero/src/mw/tracz.zig:96:33: 0x1c3d541 in execute__anon_469513 (zero.zig)
+    const result = executor.next();
+                                ^
+/drone/src/zero/examples/zero-duckdb/zig-pkg/httpz-0.0.0-PNVzrPYUCQCsmlsCu1UW6CWzwLann2nDqlwM-olFXom2/src/httpz.zig:203:58: 0x1c36f37 in execute (httpz.zig)
+                    return ptr_info.pointer.child.execute(self, req, res, executor);
+                                                         ^
+/drone/src/zero/examples/zero-duckdb/zig-pkg/httpz-0.0.0-PNVzrPYUCQCsmlsCu1UW6CWzwLann2nDqlwM-olFXom2/src/httpz.zig:219:34: 0x1499a0f in execute (httpz.zig)
+            return self.executeFn(self.ptr, req, res, executor);
+                                 ^
+/drone/src/zero/examples/zero-duckdb/zig-pkg/httpz-0.0.0-PNVzrPYUCQCsmlsCu1UW6CWzwLann2nDqlwM-olFXom2/src/httpz.zig:630:54: 0x1451493 in next (httpz.zig)
+                    return middlewares[index].execute(self.req, self.res, self);
+                                                     ^
+/drone/src/zero/src/mw/rateLimiter.zig:88:25: 0x1c03aef in execute__anon_467371 (zero.zig)
+    return executor.next();
+                        ^
+/drone/src/zero/examples/zero-duckdb/zig-pkg/httpz-0.0.0-PNVzrPYUCQCsmlsCu1UW6CWzwLann2nDqlwM-olFXom2/src/httpz.zig:203:58: 0x1c03277 in execute (httpz.zig)
+                    return ptr_info.pointer.child.execute(self, req, res, executor);
+                                                         ^
+/drone/src/zero/examples/zero-duckdb/zig-pkg/httpz-0.0.0-PNVzrPYUCQCsmlsCu1UW6CWzwLann2nDqlwM-olFXom2/src/httpz.zig:219:34: 0x1499a0f in execute (httpz.zig)
+            return self.executeFn(self.ptr, req, res, executor);
+                                 ^
+/drone/src/zero/examples/zero-duckdb/zig-pkg/httpz-0.0.0-PNVzrPYUCQCsmlsCu1UW6CWzwLann2nDqlwM-olFXom2/src/httpz.zig:630:54: 0x1451493 in next (httpz.zig)
+                    return middlewares[index].execute(self.req, self.res, self);
+                                                     ^
+/drone/src/zero/examples/zero-duckdb/zig-pkg/httpz-0.0.0-PNVzrPYUCQCsmlsCu1UW6CWzwLann2nDqlwM-olFXom2/src/httpz.zig:564:30: 0x145b509 in handleRequest (httpz.zig)
+                executor.next() catch |err| {
+                             ^
+/drone/src/zero/examples/zero-duckdb/zig-pkg/httpz-0.0.0-PNVzrPYUCQCsmlsCu1UW6CWzwLann2nDqlwM-olFXom2/src/worker.zig:851:38: 0x1447f09 in processHTTPData (httpz.zig)
+            self.server.handleRequest(http_conn, thread_buf);
+                                     ^
+/drone/src/zero/examples/zero-duckdb/zig-pkg/httpz-0.0.0-PNVzrPYUCQCsmlsCu1UW6CWzwLann2nDqlwM-olFXom2/src/worker.zig:843:58: 0x1447192 in processData (httpz.zig)
+                .http => |http_conn| self.processHTTPData(now, conn, thread_buf, http_conn),
+                                                         ^
+/drone/src/zero/examples/zero-duckdb/zig-pkg/httpz-0.0.0-PNVzrPYUCQCsmlsCu1UW6CWzwLann2nDqlwM-olFXom2/src/thread_pool.zig:251:17: 0x1446f01 in run (httpz.zig)
+                @call(.auto, F, full_args);
+                ^
+/opt/zig-x86_64-linux-0.16.0/lib/std/Thread.zig:422:13: 0x1446bc5 in callFn__anon_56301 (std.zig)
+            @call(.auto, f, args);
+            ^
+/opt/zig-x86_64-linux-0.16.0/lib/std/Thread.zig:752:30: 0x1446875 in entryFn (std.zig)
+                return callFn(f, args_ptr.*);
+                             ^
+???:?:?: 0x7f050d6c6f6c in ??? (/lib/ld-musl-x86_64.so.1)
+Unwind error at address `/lib/ld-musl-x86_64.so.1:0x7f050d6c6f6c` (unwind info unavailable), remaining frames may be incorrect
