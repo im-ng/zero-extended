@@ -1,16 +1,16 @@
 # zero-soak report (gate)
 
-generated: 2026-10-01 05:03:31 UTC · commit: 081aca6e79aacdb9658093f4e46b7594eda37e6c · build: 12
+generated: 2026-10-04 11:15:26 UTC · commit: 081aca6e79aacdb9658093f4e46b7594eda37e6c · build: 15
 
 **PASS** — 5 services, 5 pass, 0 fail, 0 missing.
 
 | Service | Status | Port | Backends | Chaos | Checks | RSS growth | Links |
 |---|---|---|---|---|---|---|---|
-| zero-auth | PASS | 8080 | — | no | 2/0 | 0 KiB | <a href="logs/zero-auth.log">log</a> · <a href="logs/zero-auth.vmrss.txt">rss</a> |
+| zero-auth | PASS | 8080 | — | no | 2/0 | 4 KiB | <a href="logs/zero-auth.log">log</a> · <a href="logs/zero-auth.vmrss.txt">rss</a> |
 | zero-basic | PASS | 8080 | postgres | yes | 3/0 | 0 KiB | <a href="logs/zero-basic.log">log</a> · <a href="logs/zero-basic.vmrss.txt">rss</a> |
 | zero-duckdb | PASS | 8083 | — | no | 2/0 | 0 KiB | <a href="logs/zero-duckdb.log">log</a> · <a href="logs/zero-duckdb.vmrss.txt">rss</a> |
 | zero-graphql | PASS | 8080 | postgres | yes | 4/0 | 244 KiB | <a href="logs/zero-graphql.log">log</a> · <a href="logs/zero-graphql.vmrss.txt">rss</a> |
-| zero-s3 | PASS | 8080 | rustfs | yes | 4/0 | 920 KiB | <a href="logs/zero-s3.log">log</a> · <a href="logs/zero-s3.vmrss.txt">rss</a> |
+| zero-s3 | PASS | 8080 | rustfs | yes | 4/0 | 832 KiB | <a href="logs/zero-s3.log">log</a> · <a href="logs/zero-s3.vmrss.txt">rss</a> |
 
 ## Details
 
@@ -20,9 +20,9 @@ generated: 2026-10-01 05:03:31 UTC · commit: 081aca6e79aacdb9658093f4e46b7594ed
 
 | Metric | Value |
 |---|---|
-| Baseline | 254000 KiB |
-| Overall RSS | 254000 KiB |
-| dRss (growth) | 0 KiB |
+| Baseline | 254212 KiB |
+| Overall RSS | 254216 KiB |
+| dRss (growth) | 4 KiB |
 
 | Status | Check | Detail |
 |---|---|---|
@@ -35,8 +35,8 @@ generated: 2026-10-01 05:03:31 UTC · commit: 081aca6e79aacdb9658093f4e46b7594ed
 
 | Metric | Value |
 |---|---|
-| Baseline | 230280 KiB |
-| Overall RSS | 230280 KiB |
+| Baseline | 229784 KiB |
+| Overall RSS | 229784 KiB |
 | dRss (growth) | 0 KiB |
 
 | Status | Check | Detail |
@@ -66,8 +66,8 @@ generated: 2026-10-01 05:03:31 UTC · commit: 081aca6e79aacdb9658093f4e46b7594ed
 
 | Metric | Value |
 |---|---|
-| Baseline | 256668 KiB |
-| Overall RSS | 256912 KiB |
+| Baseline | 253908 KiB |
+| Overall RSS | 254152 KiB |
 | dRss (growth) | 244 KiB |
 
 | Status | Check | Detail |
@@ -83,9 +83,9 @@ generated: 2026-10-01 05:03:31 UTC · commit: 081aca6e79aacdb9658093f4e46b7594ed
 
 | Metric | Value |
 |---|---|
-| Baseline | 254148 KiB |
-| Overall RSS | 255068 KiB |
-| dRss (growth) | 920 KiB |
+| Baseline | 255936 KiB |
+| Overall RSS | 256768 KiB |
+| dRss (growth) | 832 KiB |
 
 | Status | Check | Detail |
 |---|---|---|
