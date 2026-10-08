@@ -1,18 +1,27 @@
 # zero-soak report (gate)
 
-generated: 2026-10-04 11:15:26 UTC · commit: 081aca6e79aacdb9658093f4e46b7594eda37e6c · build: 15
+generated: 2026-10-08 05:17:07 UTC · commit: cb6ef0d3df593ba084a75148233ba7747ba12ae6 · build: 20
 
-**PASS** — 5 services, 5 pass, 0 fail, 0 missing.
+**FAIL** — 6 services, 5 pass, 1 fail, 0 missing.
 
 | Service | Status | Port | Backends | Chaos | Checks | RSS growth | Links |
 |---|---|---|---|---|---|---|---|
-| zero-auth | PASS | 8080 | — | no | 2/0 | 4 KiB | <a href="logs/zero-auth.log">log</a> · <a href="logs/zero-auth.vmrss.txt">rss</a> |
-| zero-basic | PASS | 8080 | postgres | yes | 3/0 | 0 KiB | <a href="logs/zero-basic.log">log</a> · <a href="logs/zero-basic.vmrss.txt">rss</a> |
-| zero-duckdb | PASS | 8083 | — | no | 2/0 | 0 KiB | <a href="logs/zero-duckdb.log">log</a> · <a href="logs/zero-duckdb.vmrss.txt">rss</a> |
-| zero-graphql | PASS | 8080 | postgres | yes | 4/0 | 244 KiB | <a href="logs/zero-graphql.log">log</a> · <a href="logs/zero-graphql.vmrss.txt">rss</a> |
-| zero-s3 | PASS | 8080 | rustfs | yes | 4/0 | 832 KiB | <a href="logs/zero-s3.log">log</a> · <a href="logs/zero-s3.vmrss.txt">rss</a> |
+| zero-duckdb | FAIL | 8083 | — | no | 0/1 | — | <a href="logs/zero-duckdb.log">log</a> · <a href="logs/zero-duckdb.vmrss.txt">rss</a> |
+| zero-auth | PASS | 8080 | — | no | 2/0 | 5640 KiB | <a href="logs/zero-auth.log">log</a> · <a href="logs/zero-auth.vmrss.txt">rss</a> |
+| zero-basic | PASS | 8080 | postgres | yes | 3/0 | 2928 KiB | <a href="logs/zero-basic.log">log</a> · <a href="logs/zero-basic.vmrss.txt">rss</a> |
+| zero-redis | PASS | 8080 | redis | yes | 3/0 | 4812 KiB | <a href="logs/zero-redis.log">log</a> · <a href="logs/zero-redis.vmrss.txt">rss</a> |
+| zero-s3 | PASS | 8080 | rustfs | yes | 4/0 | 5688 KiB | <a href="logs/zero-s3.log">log</a> · <a href="logs/zero-s3.vmrss.txt">rss</a> |
+| zero-sqlite | PASS | 8081 | — | no | 2/0 | 4652 KiB | <a href="logs/zero-sqlite.log">log</a> · <a href="logs/zero-sqlite.vmrss.txt">rss</a> |
 
 ## Details
+
+### zero-duckdb (FAIL)
+
+| Status | Check | Detail |
+|---|---|---|
+| FAIL | health never came up |  |
+
+**Load applied:** loader=unknown, concurrency=unknown, duration_min=1, mode=gate
 
 ### zero-auth (PASS)
 
@@ -20,14 +29,16 @@ generated: 2026-10-04 11:15:26 UTC · commit: 081aca6e79aacdb9658093f4e46b7594ed
 
 | Metric | Value |
 |---|---|
-| Baseline | 254212 KiB |
-| Overall RSS | 254216 KiB |
-| dRss (growth) | 4 KiB |
+| Baseline | 225576 KiB |
+| Overall RSS | 231216 KiB |
+| dRss (growth) | 5640 KiB |
 
 | Status | Check | Detail |
 |---|---|---|
 | PASS | health up |  |
 | PASS | RSS plateau (no leak) |  |
+
+**Load applied:** loader=go-wrk, concurrency=5 (per route), duration_min=1, mode=gate
 
 ### zero-basic (PASS)
 
@@ -35,9 +46,9 @@ generated: 2026-10-04 11:15:26 UTC · commit: 081aca6e79aacdb9658093f4e46b7594ed
 
 | Metric | Value |
 |---|---|
-| Baseline | 229784 KiB |
-| Overall RSS | 229784 KiB |
-| dRss (growth) | 0 KiB |
+| Baseline | 214792 KiB |
+| Overall RSS | 217720 KiB |
+| dRss (growth) | 2928 KiB |
 
 | Status | Check | Detail |
 |---|---|---|
@@ -45,37 +56,25 @@ generated: 2026-10-04 11:15:26 UTC · commit: 081aca6e79aacdb9658093f4e46b7594ed
 | PASS | RSS plateau (no leak) |  |
 | PASS | chaos survived + recovered |  |
 
-### zero-duckdb (PASS)
+**Load applied:** loader=go-wrk, concurrency=5 (per route), duration_min=1, mode=gate, chaos kill-window=2s
+
+### zero-redis (PASS)
 
 **RSS**
 
 | Metric | Value |
 |---|---|
-| Baseline | 0 KiB |
-| Overall RSS | 0 KiB |
-| dRss (growth) | 0 KiB |
+| Baseline | 225704 KiB |
+| Overall RSS | 230516 KiB |
+| dRss (growth) | 4812 KiB |
 
 | Status | Check | Detail |
 |---|---|---|
 | PASS | health up |  |
 | PASS | RSS plateau (no leak) |  |
-
-### zero-graphql (PASS)
-
-**RSS**
-
-| Metric | Value |
-|---|---|
-| Baseline | 253908 KiB |
-| Overall RSS | 254152 KiB |
-| dRss (growth) | 244 KiB |
-
-| Status | Check | Detail |
-|---|---|---|
-| PASS | health up |  |
-| PASS | RSS plateau (no leak) |  |
-| PASS | graphql query OK (200, data.users present) |  |
 | PASS | chaos survived + recovered |  |
+
+**Load applied:** loader=go-wrk, concurrency=5 (per route), duration_min=1, mode=gate, chaos kill-window=2s
 
 ### zero-s3 (PASS)
 
@@ -83,9 +82,9 @@ generated: 2026-10-04 11:15:26 UTC · commit: 081aca6e79aacdb9658093f4e46b7594ed
 
 | Metric | Value |
 |---|---|
-| Baseline | 255936 KiB |
-| Overall RSS | 256768 KiB |
-| dRss (growth) | 832 KiB |
+| Baseline | 225672 KiB |
+| Overall RSS | 231360 KiB |
+| dRss (growth) | 5688 KiB |
 
 | Status | Check | Detail |
 |---|---|---|
@@ -93,3 +92,22 @@ generated: 2026-10-04 11:15:26 UTC · commit: 081aca6e79aacdb9658093f4e46b7594ed
 | PASS | RSS plateau (no leak) |  |
 | PASS | filestore round-trip (upload+download) OK |  |
 | PASS | chaos survived + recovered |  |
+
+**Load applied:** loader=filestore (upload→download→delete), concurrency=8, duration_min=1, mode=gate, chaos kill-window=2s
+
+### zero-sqlite (PASS)
+
+**RSS**
+
+| Metric | Value |
+|---|---|
+| Baseline | 229300 KiB |
+| Overall RSS | 233952 KiB |
+| dRss (growth) | 4652 KiB |
+
+| Status | Check | Detail |
+|---|---|---|
+| PASS | health up |  |
+| PASS | RSS plateau (no leak) |  |
+
+**Load applied:** loader=go-wrk, concurrency=5 (per route), duration_min=1, mode=gate

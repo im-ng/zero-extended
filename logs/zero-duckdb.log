@@ -1,19 +1,83 @@
-[38;5;6m INFO[0m [11:06:03] Loaded config from file: ./configs/.env
-[38;5;8mDEBUG[0m [11:06:03] redis is disabled, as redis host is not provided.
-[38;5;8mDEBUG[0m [11:06:03] file store is disabled, as FILE_STORE_ROOT is not provided.
-[38;5;8mDEBUG[0m [11:06:03] sqlite is disabled, as sqlite path is not provided.
-[38;5;8mDEBUG[0m [11:06:03] clickhouse is disabled, as CLICKHOUSE_URL is not provided.
-[38;5;8mDEBUG[0m [11:06:03] time-series is disabled, as INFLUXDB_URL is not provided.
-[38;5;8mDEBUG[0m [11:06:03] search is disabled, as SOLR_URL is not provided.
-[38;5;8mDEBUG[0m [11:06:03] nosql is disabled, as CONTACT_POINTS are not provided.
-[38;5;8mDEBUG[0m [11:06:03] pubsub is disabled, as pubsub mode is not provided.
-[38;5;6m INFO[0m [11:06:03] container is created
-[38;5;6m INFO[0m [11:06:03] zero-duckdb app pid 687
-[38;5;6m INFO[0m [11:06:03] no authentication mode found and disabled.
-[38;5;160mERROR[0m [11:06:03] relational migration skipped: no relational datasource configured
-[38;5;6m INFO[0m [11:06:03] registered static files from directory ./static
-[38;5;8mDEBUG[0m [11:06:03] metrics server is initialized
-[38;5;8mDEBUG[0m [11:06:03] metrics server started
-[38;5;6m INFO[0m [11:06:03] Starting server on port: 8083
-[38;5;6m INFO[0m [11:06:04] 7429f30a359642df9d4bded9216bd3c8	 200 0ms GET /.well-known/health
-Segmentation fault at address 0x20
+[38;5;6m INFO[0m [05:13:07] Loaded config from file: ./configs/.env
+[38;5;8mDEBUG[0m [05:13:07] redis is disabled, as redis host is not provided.
+[38;5;8mDEBUG[0m [05:13:07] file store is disabled, as FILE_STORE_ROOT is not provided.
+[38;5;8mDEBUG[0m [05:13:07] sqlite is disabled, as sqlite path is not provided.
+[38;5;6m INFO[0m [05:13:07] connected to duckdb at '/drone/src/zero/examples/zero-duckdb/data/app.db'
+[38;5;8mDEBUG[0m [05:13:07] clickhouse is disabled, as CLICKHOUSE_URL is not provided.
+[38;5;8mDEBUG[0m [05:13:07] time-series is disabled, as INFLUXDB_URL is not provided.
+[38;5;8mDEBUG[0m [05:13:07] opentsdb is disabled, as OPENTSDB_URL is not provided.
+[38;5;8mDEBUG[0m [05:13:07] search is disabled, as SOLR_URL is not provided.
+[38;5;8mDEBUG[0m [05:13:07] nosql is disabled, as CONTACT_POINTS are not provided.
+[38;5;8mDEBUG[0m [05:13:07] arangodb is disabled, as ARANGO_HOST is not provided.
+[38;5;8mDEBUG[0m [05:13:07] graph is disabled, as DGRAPH_URL is not provided.
+[38;5;8mDEBUG[0m [05:13:07] pubsub is disabled, as pubsub mode is not provided.
+[38;5;6m INFO[0m [05:13:07] container is created
+[38;5;6m INFO[0m [05:13:07] zero-duckdb app pid 1941
+[38;5;6m INFO[0m [05:13:07] no authentication mode found and disabled.
+[38;5;6m INFO[0m [05:13:07] migration table created
+[38;5;6m INFO[0m [05:13:07] 1790401496: migration completed  
+[38;5;6m INFO[0m [05:13:07] registered static files from directory ./static
+[38;5;8mDEBUG[0m [05:13:07] metrics server is initialized
+[38;5;8mDEBUG[0m [05:13:07] metrics server started
+[38;5;6m INFO[0m [05:13:07] Starting server on port: 8083
+[38;5;6m INFO[0m [05:13:08] cb67401085b04bd2a9a59e2da59d1ba2	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:13:09] b3882a9785434a698f8d7da490b3fbae	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:13:10] 70eff53e4bfe4b85bf34ea0f62dcf725	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:13:11] ca8d715b85ce44eaa66e0051e5c618c1	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:13:12] 5552e9e08469403da508216febbf5b45	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:13:13] 3bd5425607194da785e327ad47da7575	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:13:14] 322382bb30524805983e523babd9848e	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:13:15] cdd8298ec74c4097b8b5553c5b452c04	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:13:16] 9c2206e4437f42cdafc75488db231bde	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:13:17] 096ce7b8dfc346ec943dc3fe14d4d743	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:13:18] b02669c94a32416d91c540e8234e86f5	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:13:19] d6b5ff96b1184a4ebc7bf63fba2b6723	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:13:20] 7a0525d30c2c4498a8ee05d5fbf4d39b	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:13:21] 16a3952ce71b4580a4b8badf8288d9f4	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:13:22] 23fbd33acbba40b78834a88696954528	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:13:23] 4c14d255652d41409afa725cf327a3ac	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:13:24] e629470538b24fe1998418d16900fe70	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:13:25] bf88388f3910497ebb917ed683b57896	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:13:26] 115ec4ac28d649739c4041e335875dc2	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:13:27] 948722ca3afb4d96b05df1fcb1abe6af	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:13:28] 47681d13556e4986928a15c6e6bda7b0	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:13:29] 82624b6b56a94a6392b21a9228ee6817	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:13:30] a94cb8b6fcec435d82e6f0e24b7965eb	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:13:31] d52ae1b6ed2d4239befc00a6d89de9aa	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:13:32] 544f647986ea4d5baf4787fbec487d8f	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:13:33] 0202b515b0b4438ab8da36cd2f1be4f3	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:13:34] 40e87d58518b4ed5af8f7e247cba7e43	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:13:35] 94776da7c89e499583d7540060fb409d	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:13:36] ff5e966101354be09348cb27d81a5796	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:13:37] 3a76b386100f431e88636bc6d9c927c1	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:13:38] e46c435d0618432490e9af2a108ecc76	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:13:39] 8d6cd32ef8804b93a5a07d6f340e2010	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:13:40] 5ab7c1bf89054135bab62445186e9d12	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:13:41] 6af6029f3ab14615a31cdff3d4ca320c	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:13:42] 5672914869f24ef286af51444670eb01	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:13:43] 8e7950e9a146421cb954fe94555d0fc1	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:13:44] 1388f96ae2f846f0b37ce887def6e527	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:13:45] a1efd7f75a2944d89d921269eb0c0016	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:13:46] d7a18b5659f24aeeb72653cca7b71b66	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:13:47] 1423a2eefc1243c8a8d966488e3f8686	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:13:48] cb48ed6afc9b477f95699e5432bd5761	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:13:49] 93093e2a8ea94d50af91a4197993fb27	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:13:50] b63937df4c0f423b80ac1e7c9da22315	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:13:51] 8605160111d54f789195543f15e7e7e3	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:13:52] cadf2117611c4dc1967a8446e65e106b	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:13:53] ef9f7628ba7a4bafa31e74d77f80ddeb	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:13:54] f40bee7f7c7a4fad8813a6a7794b10f6	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:13:55] 0d10d65b351440edad804112750ad80b	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:13:56] f70d834cb2b443fda27be43f1cba78b3	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:13:57] d93be2aa60ca4c02843e7edb0c99c507	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:13:58] 448f884d12194469b36eeaefa06c9b86	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:13:59] 6911981cc89c420e953678446a51dca1	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:14:00] e3a00565173c4229a90fb0330d89c7bd	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:14:02] 8077a6a8108a419b8c18c8310e34b25a	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:14:03] 0187ec2dbcae457190c510772dec0f94	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:14:04] 80c54902601a4d1d99be78bf20bffdce	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:14:05] 02770adfac784e36a98860666799b447	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:14:06] e6eb8cb5951b4b759f4d2df555ba242d	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:14:07] 000f0732d77c4cf3949ed4a9ca91feed	 503 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:14:08] server shutting down
+received shutdown signalreceived shutdown signalreceived shutdown signal
