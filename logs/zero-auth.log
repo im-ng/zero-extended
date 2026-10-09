@@ -1,102 +1,102 @@
-[38;5;6m INFO[0m [05:09:43] Loaded config from file: ./configs/.env
-[38;5;6m INFO[0m [05:09:43] config overriden ./configs/.dev.env file not found.
-[38;5;8mDEBUG[0m [05:09:43] database is disabled, as dialect is not provided.
-[38;5;8mDEBUG[0m [05:09:43] redis is disabled, as redis host is not provided.
-[38;5;8mDEBUG[0m [05:09:43] file store is disabled, as FILE_STORE_ROOT is not provided.
-[38;5;8mDEBUG[0m [05:09:43] sqlite is disabled, as sqlite path is not provided.
-[38;5;8mDEBUG[0m [05:09:43] clickhouse is disabled, as CLICKHOUSE_URL is not provided.
-[38;5;8mDEBUG[0m [05:09:43] time-series is disabled, as INFLUXDB_URL is not provided.
-[38;5;8mDEBUG[0m [05:09:43] opentsdb is disabled, as OPENTSDB_URL is not provided.
-[38;5;8mDEBUG[0m [05:09:43] search is disabled, as SOLR_URL is not provided.
-[38;5;8mDEBUG[0m [05:09:43] nosql is disabled, as CONTACT_POINTS are not provided.
-[38;5;8mDEBUG[0m [05:09:43] arangodb is disabled, as ARANGO_HOST is not provided.
-[38;5;8mDEBUG[0m [05:09:43] graph is disabled, as DGRAPH_URL is not provided.
-[38;5;8mDEBUG[0m [05:09:43] pubsub is disabled, as pubsub mode is not provided.
-[38;5;6m INFO[0m [05:09:43] container is created
-[38;5;6m INFO[0m [05:09:43] start app pid 1170
-[38;5;6m INFO[0m [05:09:43] auth APIKey initialized
-[38;5;6m INFO[0m [05:09:43] registered static files from directory ./static
-[38;5;8mDEBUG[0m [05:09:43] metrics server is initialized
-[38;5;8mDEBUG[0m [05:09:43] metrics server started
-[38;5;6m INFO[0m [05:09:43] Starting server on port: 8080
-[38;5;6m INFO[0m [05:09:44] 543b144bb16e47579cb0930f6331775e	 200 0ms GET /.well-known/health
-[38;5;6m INFO[0m [05:09:44] auth api key called
-[38;5;6m INFO[0m [05:09:44] b5e29a10d70d4eb6bfdfebbd94ba3755	 200 0ms GET /json
-[38;5;6m INFO[0m [05:09:44] auth api key called
-[38;5;6m INFO[0m [05:09:44] auth api key called
-[38;5;6m INFO[0m [05:09:44] d3b16c160a884770bc7d36d17a4ca99b	 200 0ms GET /json
-[38;5;6m INFO[0m [05:09:44] 7226ac3cb715418fa596899912acb8e8	 200 0ms GET /json
-[38;5;6m INFO[0m [05:09:44] auth api key called
-[38;5;6m INFO[0m [05:09:44] auth api key called
-[38;5;6m INFO[0m [05:09:44] 3f8f16c85f8447b0ad5c7fa9febd2bbe	 200 0ms GET /json
-[38;5;6m INFO[0m [05:09:44] 9a3821124a7040ac9c779fe8e4605506	 200 0ms GET /json
-[38;5;6m INFO[0m [05:09:44] auth api key called
-[38;5;6m INFO[0m [05:09:44] a9c38e407d4a4d0c9bde7610877bbd8d	 200 0ms GET /json
-[38;5;6m INFO[0m [05:09:44] auth api key called
-[38;5;6m INFO[0m [05:09:44] cf90b7eddc554e00b0bf97353831efb5	 200 0ms GET /json
-[38;5;6m INFO[0m [05:09:44] auth api key called
-[38;5;6m INFO[0m [05:09:44] 5dbe2a79c714407a8a596dc2bebfb17b	 200 0ms GET /json
-[38;5;6m INFO[0m [05:09:44] auth api key called
-[38;5;6m INFO[0m [05:09:44] c4d603b58a1f4061b8d6d47e2a9b54d2	 200 0ms GET /json
-[38;5;6m INFO[0m [05:09:44] auth api key called
-[38;5;6m INFO[0m [05:09:44] auth api key called
-[38;5;6m INFO[0m [05:09:44] 18d2e1afc6644d2aa0635e04659b49ff	 200 0ms GET /json
-[38;5;6m INFO[0m [05:09:44] 7e2558f3757a4fb79773fd9683bcaa8a	 200 0ms GET /json
-[38;5;6m INFO[0m [05:09:44] auth api key called
-[38;5;6m INFO[0m [05:09:44] e5c3f84eea0b4df3a1683f5b75306500	 200 0ms GET /json
-[38;5;6m INFO[0m [05:09:44] auth api key called
-[38;5;6m INFO[0m [05:09:44] auth api key called
-[38;5;6m INFO[0m [05:09:44] 6b3fb595dd0f4873bab32e3dd541945a	 200 0ms GET /json
-[38;5;6m INFO[0m [05:09:44] 07f936d4c9a04d12aa63db8d039b1420	 200 0ms GET /json
-... [1732348 lines of load/request noise omitted] ...
+[38;5;6m INFO[0m [03:36:32] Loaded config from file: ./configs/.env
+[38;5;6m INFO[0m [03:36:32] config overriden ./configs/.dev.env file not found.
+[38;5;8mDEBUG[0m [03:36:32] database is disabled, as dialect is not provided.
+[38;5;8mDEBUG[0m [03:36:32] redis is disabled, as redis host is not provided.
+[38;5;8mDEBUG[0m [03:36:32] file store is disabled, as FILE_STORE_ROOT is not provided.
+[38;5;8mDEBUG[0m [03:36:32] sqlite is disabled, as sqlite path is not provided.
+[38;5;8mDEBUG[0m [03:36:32] clickhouse is disabled, as CLICKHOUSE_URL is not provided.
+[38;5;8mDEBUG[0m [03:36:32] time-series is disabled, as INFLUXDB_URL is not provided.
+[38;5;8mDEBUG[0m [03:36:32] opentsdb is disabled, as OPENTSDB_URL is not provided.
+[38;5;8mDEBUG[0m [03:36:32] search is disabled, as SOLR_URL is not provided.
+[38;5;8mDEBUG[0m [03:36:32] nosql is disabled, as CONTACT_POINTS are not provided.
+[38;5;8mDEBUG[0m [03:36:32] arangodb is disabled, as ARANGO_HOST is not provided.
+[38;5;8mDEBUG[0m [03:36:32] graph is disabled, as DGRAPH_URL is not provided.
+[38;5;8mDEBUG[0m [03:36:32] pubsub is disabled, as pubsub mode is not provided.
+[38;5;6m INFO[0m [03:36:32] container is created
+[38;5;6m INFO[0m [03:36:32] start app pid 1171
+[38;5;6m INFO[0m [03:36:32] auth APIKey initialized
+[38;5;6m INFO[0m [03:36:32] registered static files from directory ./static
+[38;5;8mDEBUG[0m [03:36:32] metrics server is initialized
+[38;5;8mDEBUG[0m [03:36:32] metrics server started
+[38;5;6m INFO[0m [03:36:32] Starting server on port: 8080
+[38;5;6m INFO[0m [03:36:33] 83d33171bf894719ad60cbaa92ea1684	 200 0ms GET /.well-known/health
+[38;5;6m INFO[0m [03:36:33] auth api key called
+[38;5;6m INFO[0m [03:36:33] auth api key called
+[38;5;6m INFO[0m [03:36:33] auth api key called
+[38;5;6m INFO[0m [03:36:33] auth api key called
+[38;5;6m INFO[0m [03:36:33] auth api key called
+[38;5;6m INFO[0m [03:36:33] 614189d1d2ea4232b1982483b5638c25	 200 0ms GET /json
+[38;5;6m INFO[0m [03:36:33] d3c7afdd2a2f4e769ff917d0b2802f6d	 200 0ms GET /json
+[38;5;6m INFO[0m [03:36:33] c5aa75d5e23341dca9e96633a234dab7	 200 0ms GET /json
+[38;5;6m INFO[0m [03:36:33] 4c3d9453a1d44fc68c8a58ff4aea5982	 200 0ms GET /json
+[38;5;6m INFO[0m [03:36:33] 0e68ea11111c44f1b11f7e51a7360df5	 200 0ms GET /json
+[38;5;6m INFO[0m [03:36:33] auth api key called
+[38;5;6m INFO[0m [03:36:33] 6692c9e0a47a4640824500ac058960b9	 200 0ms GET /json
+[38;5;6m INFO[0m [03:36:33] auth api key called
+[38;5;6m INFO[0m [03:36:33] 1e13e23fb037405c8467e6484bae52ff	 200 0ms GET /json
+[38;5;6m INFO[0m [03:36:33] auth api key called
+[38;5;6m INFO[0m [03:36:33] auth api key called
+[38;5;6m INFO[0m [03:36:33] d604cd2a083441d8a12538b794d57385	 200 0ms GET /json
+[38;5;6m INFO[0m [03:36:33] 7929a3511ed84d33b1af4eb1ff9265ec	 200 0ms GET /json
+[38;5;6m INFO[0m [03:36:33] auth api key called
+[38;5;6m INFO[0m [03:36:33] auth api key called
+[38;5;6m INFO[0m [03:36:33] 8608e3368ad74ba6a88afc3191118e5c	 200 0ms GET /json
+[38;5;6m INFO[0m [03:36:33] auth api key called
+[38;5;6m INFO[0m [03:36:33] 2197e7bfe89f4ab7b5d6e8168b0ff90c	 200 0ms GET /json
+[38;5;6m INFO[0m [03:36:33] 2ecd86a3aeeb427e863703cb45298f4d	 200 0ms GET /json
+[38;5;6m INFO[0m [03:36:33] auth api key called
+[38;5;6m INFO[0m [03:36:33] auth api key called
+[38;5;6m INFO[0m [03:36:33] 43c979962fad4034a8a4f7d0f89c7cf7	 200 0ms GET /json
+[38;5;6m INFO[0m [03:36:33] auth api key called
+... [1786478 lines of load/request noise omitted] ...
 ...
-[38;5;6m INFO[0m [05:10:44] auth api key called
-[38;5;6m INFO[0m [05:10:44] auth api key called
-[38;5;6m INFO[0m [05:10:44] ba324b249ff14101b6ba40fe510510da	 200 0ms GET /json
-[38;5;6m INFO[0m [05:10:44] ca6c69c57c534a6db0af067ea458c0c2	 200 0ms GET /json
-[38;5;6m INFO[0m [05:10:44] auth api key called
-[38;5;6m INFO[0m [05:10:44] auth api key called
-[38;5;6m INFO[0m [05:10:44] auth api key called
-[38;5;6m INFO[0m [05:10:44] ba272096eb554427bedb8c69e3025ea3	 200 0ms GET /json
-[38;5;6m INFO[0m [05:10:44] 5ec8215b78b0496b93a47e5418d4b766	 200 0ms GET /json
-[38;5;6m INFO[0m [05:10:44] bc6cd54e7b7448aba575e087c5028077	 200 0ms GET /json
-[38;5;6m INFO[0m [05:10:44] auth api key called
-[38;5;6m INFO[0m [05:10:44] auth api key called
-[38;5;6m INFO[0m [05:10:44] 1ec8c78736f8413090daef3bcc522567	 200 0ms GET /json
-[38;5;6m INFO[0m [05:10:44] fd7719e534ea4d79878205639e681835	 200 0ms GET /json
-[38;5;6m INFO[0m [05:10:44] auth api key called
-[38;5;6m INFO[0m [05:10:44] auth api key called
-[38;5;6m INFO[0m [05:10:44] ebb70d7ff5554ad8afc3bf279431c91e	 200 0ms GET /json
-[38;5;6m INFO[0m [05:10:44] auth api key called
-[38;5;6m INFO[0m [05:10:44] 51dfe41e516c432ca9179ef01526931b	 200 0ms GET /json
-[38;5;6m INFO[0m [05:10:44] auth api key called
-[38;5;6m INFO[0m [05:10:44] dbddc638d167475e96856ec411adb0d9	 200 0ms GET /json
-[38;5;6m INFO[0m [05:10:44] 1335f70ce4ec48e39f4762be53ebe336	 200 0ms GET /json
-[38;5;6m INFO[0m [05:10:44] auth api key called
-[38;5;6m INFO[0m [05:10:44] auth api key called
-[38;5;6m INFO[0m [05:10:44] 1eb34b21f65a4a5b81b8812e5439cd7a	 200 0ms GET /json
-[38;5;6m INFO[0m [05:10:44] auth api key called
-[38;5;6m INFO[0m [05:10:44] da877d03ef904ec98306e9b0ee319ebc	 200 0ms GET /json
-[38;5;6m INFO[0m [05:10:44] 5d14974a30d04a58899116a0ec2df4a6	 200 0ms GET /json
-[38;5;6m INFO[0m [05:10:44] auth api key called
-[38;5;6m INFO[0m [05:10:44] 97b6f449d3c64b12a12341a76aa57803	 200 0ms GET /json
-[38;5;6m INFO[0m [05:10:44] auth api key called
-[38;5;6m INFO[0m [05:10:44] auth api key called
-[38;5;6m INFO[0m [05:10:44] auth api key called
-[38;5;6m INFO[0m [05:10:44] 0c96254a42d541afbe8aee58dd8eddcb	 200 0ms GET /json
-[38;5;6m INFO[0m [05:10:44] 27e54747b8ee4a02b05b8bed2c04d6cd	 200 0ms GET /json
-[38;5;6m INFO[0m [05:10:44] 7a6f55dd4b104808a25a4d98af4314e6	 200 0ms GET /json
-[38;5;6m INFO[0m [05:10:44] auth api key called
-[38;5;6m INFO[0m [05:10:44] 4cc95b5316814261b786076cfd8a9385	 200 0ms GET /json
-[38;5;6m INFO[0m [05:10:44] auth api key called
-[38;5;6m INFO[0m [05:10:44] 7c281b8111df4ce1a1e916b53c6f9efb	 200 0ms GET /json
-[38;5;6m INFO[0m [05:10:44] auth api key called
-[38;5;6m INFO[0m [05:10:44] 2994611e85ae4e4b9f3852cc115ba5f0	 200 0ms GET /json
-[38;5;6m INFO[0m [05:10:44] auth api key called
-[38;5;6m INFO[0m [05:10:44] 38d41a033be84fcfb3f25b0440e2b934	 200 0ms GET /json
-[38;5;6m INFO[0m [05:10:44] auth api key called
-[38;5;6m INFO[0m [05:10:44] 7c21ecabb96d4a52ac745a938dd8b6a7	 200 0ms GET /json
-[38;5;6m INFO[0m [05:10:44] auth api key called
-[38;5;6m INFO[0m [05:10:44] 52cefe0b37e94aba89bb952299512d4d	 200 0ms GET /json
-[38;5;6m INFO[0m [05:10:44] server shutting down
+[38;5;6m INFO[0m [03:37:33] auth api key called
+[38;5;6m INFO[0m [03:37:33] 775063da333c4d97ac71be70cc76211e	 200 0ms GET /json
+[38;5;6m INFO[0m [03:37:33] 2198d5e2fdb14e37b4e05a34b7994aea	 200 0ms GET /json
+[38;5;6m INFO[0m [03:37:33] ec5c0ec638ac45c39717d6f826587ad8	 200 0ms GET /json
+[38;5;6m INFO[0m [03:37:33] auth api key called
+[38;5;6m INFO[0m [03:37:33] auth api key called
+[38;5;6m INFO[0m [03:37:33] auth api key called
+[38;5;6m INFO[0m [03:37:33] auth api key called
+[38;5;6m INFO[0m [03:37:33] auth api key called
+[38;5;6m INFO[0m [03:37:33] 3e80178099e04b1a82bd3d6e62c9f0e6	 200 0ms GET /json
+[38;5;6m INFO[0m [03:37:33] a7624a5a16294054a4514ba8983056ba	 200 0ms GET /json
+[38;5;6m INFO[0m [03:37:33] 39106155f2f94303946a68ff5e0a2a57	 200 0ms GET /json
+[38;5;6m INFO[0m [03:37:33] 6719dd134bba45728b6d7d01009393c0	 200 0ms GET /json
+[38;5;6m INFO[0m [03:37:33] 4d2d3e1702cb41c89e379112dce7cc21	 200 0ms GET /json
+[38;5;6m INFO[0m [03:37:33] auth api key called
+[38;5;6m INFO[0m [03:37:33] auth api key called
+[38;5;6m INFO[0m [03:37:33] auth api key called
+[38;5;6m INFO[0m [03:37:33] 54bf8103f66541c5963a7a4272d33d6c	 200 0ms GET /json
+[38;5;6m INFO[0m [03:37:33] 8d79c403931943c1ababcab6a8e3736d	 200 0ms GET /json
+[38;5;6m INFO[0m [03:37:33] 9d663124c08142bc8230b47a483766af	 200 0ms GET /json
+[38;5;6m INFO[0m [03:37:33] auth api key called
+[38;5;6m INFO[0m [03:37:33] dc68a842ee794689a05e4b1871460305	 200 0ms GET /json
+[38;5;6m INFO[0m [03:37:33] auth api key called
+[38;5;6m INFO[0m [03:37:33] auth api key called
+[38;5;6m INFO[0m [03:37:33] 2b52e16292124964adb2af1215b430a4	 200 0ms GET /json
+[38;5;6m INFO[0m [03:37:33] auth api key called
+[38;5;6m INFO[0m [03:37:33] 2994cd2a532643f8b254271392999a87	 200 0ms GET /json
+[38;5;6m INFO[0m [03:37:33] auth api key called
+[38;5;6m INFO[0m [03:37:33] b3394bd7aa04476c905aa5180591aeec	 200 0ms GET /json
+[38;5;6m INFO[0m [03:37:33] 6f58b783e9fa425c96cf26c17725a917	 200 0ms GET /json
+[38;5;6m INFO[0m [03:37:33] auth api key called
+[38;5;6m INFO[0m [03:37:33] auth api key called
+[38;5;6m INFO[0m [03:37:33] d90a43e6e1964e22980c1c9b5ff578ee	 200 0ms GET /json
+[38;5;6m INFO[0m [03:37:33] auth api key called
+[38;5;6m INFO[0m [03:37:33] 6878cdab3e0a418187e279f1d450bbc6	 200 0ms GET /json
+[38;5;6m INFO[0m [03:37:33] 669e81b763324fca99cc2dc0fafad44d	 200 0ms GET /json
+[38;5;6m INFO[0m [03:37:33] auth api key called
+[38;5;6m INFO[0m [03:37:33] auth api key called
+[38;5;6m INFO[0m [03:37:33] 2933673fe0c447c09a67ce278b45b6c0	 200 0ms GET /json
+[38;5;6m INFO[0m [03:37:33] faa0e452da3349f99b60a8fd4c9ed798	 200 0ms GET /json
+[38;5;6m INFO[0m [03:37:33] auth api key called
+[38;5;6m INFO[0m [03:37:33] auth api key called
+[38;5;6m INFO[0m [03:37:33] 07cebf854b324dcba356f77dc6128ecb	 200 0ms GET /json
+[38;5;6m INFO[0m [03:37:33] 18723e0d12b14f07aa05e9354d0ed25e	 200 0ms GET /json
+[38;5;6m INFO[0m [03:37:33] auth api key called
+[38;5;6m INFO[0m [03:37:33] auth api key called
+[38;5;6m INFO[0m [03:37:33] 3afea1654be6450080c627384520927f	 200 0ms GET /json
+[38;5;6m INFO[0m [03:37:33] 57e478d05bde4ca2aea9745acca3108f	 200 0ms GET /json
+[38;5;6m INFO[0m [03:37:33] server shutting down
 received shutdown signalreceived shutdown signalreceived shutdown signal
