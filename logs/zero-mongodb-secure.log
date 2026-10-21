@@ -1,0 +1,42 @@
+[38;5;6m INFO[0m [15:00:09] Loaded config from file: ./configs/.env
+[38;5;6m INFO[0m [15:00:09] config overriden ./configs/.dev.env file not found.
+[38;5;8mDEBUG[0m [15:00:09] database is disabled, as dialect is not provided.
+[38;5;8mDEBUG[0m [15:00:09] redis is disabled, as redis host is not provided.
+[38;5;6m INFO[0m [15:00:09] connected to local file store
+[38;5;8mDEBUG[0m [15:00:09] sqlite is disabled, as sqlite path is not provided.
+[38;5;8mDEBUG[0m [15:00:09] clickhouse is disabled, as CLICKHOUSE_URL is not provided.
+[38;5;8mDEBUG[0m [15:00:09] time-series is disabled, as INFLUXDB_URL is not provided.
+[38;5;8mDEBUG[0m [15:00:09] opentsdb is disabled, as OPENTSDB_URL is not provided.
+[38;5;8mDEBUG[0m [15:00:09] search is disabled, as SOLR_URL is not provided.
+[38;5;6m INFO[0m [15:00:09] connected to mongodb at 'mongodb:27017' (db 'my_db') (tls)
+[38;5;8mDEBUG[0m [15:00:09] arangodb is disabled, as ARANGO_HOST is not provided.
+[38;5;8mDEBUG[0m [15:00:09] graph is disabled, as DGRAPH_URL is not provided.
+[38;5;8mDEBUG[0m [15:00:09] pubsub is disabled, as pubsub mode is not provided.
+[38;5;6m INFO[0m [15:00:09] container is created
+[38;5;6m INFO[0m [15:00:09] monogo-example app pid 5925
+[38;5;6m INFO[0m [15:00:09] no authentication mode found and disabled.
+General protection exception (no address available)
+/drone/src/zero/examples/zero-mongodb/zig-pkg/httpz-0.0.0-PNVzrPoUCQBcShb3c8vpxqyySWvnjvEs-AwXxaRHPQnz/src/response.zig:97:13: 0x14550cb in setStatus (httpz.zig)
+        self.status = @intFromEnum(status);
+            ^
+/drone/src/zero/examples/zero-mongodb/src/main.zig:282:27: 0x165d5cb in nosqlUpstreamError (main.zig)
+    ctx.response.setStatus(switch (detail.status) {
+                          ^
+/drone/src/zero/examples/zero-mongodb/src/main.zig:68:31: 0x16b9201 in ensureSchema (main.zig)
+        if (nosqlUpstreamError(ctx)) return;
+                              ^
+/drone/src/zero/src/app.zig:571:13: 0x1368f88 in runStartupHooks (zero.zig)
+        hook(&context) catch |err| {
+            ^
+/drone/src/zero/src/app.zig:618:29: 0x1386bc2 in run (zero.zig)
+    try self.runStartupHooks();
+                            ^
+/drone/src/zero/examples/zero-mongodb/src/main.zig:29:16: 0x1389339 in main (main.zig)
+    try app.run();
+               ^
+/opt/zig-x86_64-linux-0.16.0/lib/std/start.zig:737:30: 0x138a277 in callMain (std.zig)
+    return wrapMain(root.main(.{
+                             ^
+???:?:?: 0x7f36eefb8ca7 in ??? (/lib/x86_64-linux-gnu/libc.so.6)
+???:?:?: 0x7f36eefb8d64 in ??? (/lib/x86_64-linux-gnu/libc.so.6)
+???:?:?: 0x1e80910 in ??? (???)

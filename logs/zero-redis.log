@@ -1,102 +1,102 @@
-[38;5;6m INFO[0m [03:45:44] Loaded config from file: ./configs/.env
-[38;5;6m INFO[0m [03:45:44] config loaded from: ./configs/.dev.env
-[38;5;8mDEBUG[0m [03:45:44] database is disabled, as dialect is not provided.
-[38;5;6m INFO[0m [03:45:44] connected to redis at '172.19.0.5:6379' on database 0
-[38;5;8mDEBUG[0m [03:45:44] file store is disabled, as FILE_STORE_ROOT is not provided.
-[38;5;8mDEBUG[0m [03:45:44] sqlite is disabled, as sqlite path is not provided.
-[38;5;8mDEBUG[0m [03:45:44] clickhouse is disabled, as CLICKHOUSE_URL is not provided.
-[38;5;8mDEBUG[0m [03:45:44] time-series is disabled, as INFLUXDB_URL is not provided.
-[38;5;8mDEBUG[0m [03:45:44] opentsdb is disabled, as OPENTSDB_URL is not provided.
-[38;5;8mDEBUG[0m [03:45:44] search is disabled, as SOLR_URL is not provided.
-[38;5;8mDEBUG[0m [03:45:44] nosql is disabled, as CONTACT_POINTS are not provided.
-[38;5;8mDEBUG[0m [03:45:44] arangodb is disabled, as ARANGO_HOST is not provided.
-[38;5;8mDEBUG[0m [03:45:44] graph is disabled, as DGRAPH_URL is not provided.
-[38;5;8mDEBUG[0m [03:45:44] pubsub is disabled, as pubsub mode is not provided.
-[38;5;6m INFO[0m [03:45:44] container is created
-[38;5;6m INFO[0m [03:45:44] zero-redis app pid 687
-[38;5;6m INFO[0m [03:45:44] no authentication mode found and disabled.
-[38;5;6m INFO[0m [03:45:44] warming up the cache entries
-[38;5;6m INFO[0m [03:45:45] cache prepared
-[38;5;6m INFO[0m [03:45:45] registered static files from directory ./static
-[38;5;8mDEBUG[0m [03:45:45] metrics server is initialized
-[38;5;8mDEBUG[0m [03:45:45] metrics server started
-[38;5;6m INFO[0m [03:45:45] Starting server on port: 8080
-[38;5;6m INFO[0m [03:45:46] b0c51e97b52e42c19c8a34ef922d0411	 200 0ms GET /.well-known/health
-[38;5;6m INFO[0m [03:45:46] e781d83de5f44534b26dc0d6cd83b896	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:45:46] 961ae71862cf4741a00288609d669e54	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:45:46] 0d10d2c3e0214fee8897e76089b883aa	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:45:46] 13da440f05464e79b3176fc547c90b67	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:45:46] 8760402cb1ce4ad78b909b5048babcb1	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:45:46] b0d1845dad9d4555bc11394db7e51582	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:45:46] 41a3c8f62dc74957875c9694d68a0b17	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:45:46] 567232552074423fa9dbe2c1d45cf061	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:45:46] 0b1771edc37243cd9e20e3f7052cc7cc	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:45:46] 12d51d7c3b9d414084b2feffe2c2ac97	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:45:46] 30853266134846b1af2f28154d19a96a	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:45:46] fb77764b0f9544b793dee1639a4ccbca	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:45:46] 5209d61463ae423da190a5a7dd53a98c	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:45:46] ee9408cfd8d74438b34cdb0e7f59dde6	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:45:46] 7e4159e8cf7644ef89dad20377c2a06e	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:45:46] a1f41ccc6d114e00ae93d073da5f4d71	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:45:46] 33a8034b458d47a697045eda8d83d421	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:45:46] 0144502b08c7472c8ecfeafe075aab21	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:45:46] 14f246639e864f0196247078220b99ac	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:45:46] 5a6a71d76e004ab781ec9a2572689c74	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:45:46] d5a9cd9c87274db3be8269679561665f	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:45:46] 14f913b35a0b440d9e721fc390319d7f	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:45:46] 99fe0030be6b4967b4b63b10a7137cd7	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:45:46] cb02f16d7d884d41b9e011283099fcee	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:45:46] 65bdf50e87464f608e57d77d44f5ae24	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:45:46] 3e61c6762f27415ebb15746d5f34b55f	 200 0ms GET /redis
-... [943283 lines of load/request noise omitted] ...
+[38;5;6m INFO[0m [14:41:26] Loaded config from file: ./configs/.env
+[38;5;6m INFO[0m [14:41:26] config loaded from: ./configs/.dev.env
+[38;5;8mDEBUG[0m [14:41:26] database is disabled, as dialect is not provided.
+[38;5;6m INFO[0m [14:41:26] connected to redis at '172.19.0.8:6379' on database 0
+[38;5;8mDEBUG[0m [14:41:26] file store is disabled, as FILE_STORE_ROOT is not provided.
+[38;5;8mDEBUG[0m [14:41:26] sqlite is disabled, as sqlite path is not provided.
+[38;5;8mDEBUG[0m [14:41:26] clickhouse is disabled, as CLICKHOUSE_URL is not provided.
+[38;5;8mDEBUG[0m [14:41:26] time-series is disabled, as INFLUXDB_URL is not provided.
+[38;5;8mDEBUG[0m [14:41:26] opentsdb is disabled, as OPENTSDB_URL is not provided.
+[38;5;8mDEBUG[0m [14:41:26] search is disabled, as SOLR_URL is not provided.
+[38;5;8mDEBUG[0m [14:41:26] nosql is disabled, as CONTACT_POINTS are not provided.
+[38;5;8mDEBUG[0m [14:41:26] arangodb is disabled, as ARANGO_HOST is not provided.
+[38;5;8mDEBUG[0m [14:41:26] graph is disabled, as DGRAPH_URL is not provided.
+[38;5;8mDEBUG[0m [14:41:26] pubsub is disabled, as pubsub mode is not provided.
+[38;5;6m INFO[0m [14:41:26] container is created
+[38;5;6m INFO[0m [14:41:26] zero-redis app pid 847
+[38;5;6m INFO[0m [14:41:26] no authentication mode found and disabled.
+[38;5;6m INFO[0m [14:41:26] warming up the cache entries
+[38;5;6m INFO[0m [14:41:27] cache prepared
+[38;5;6m INFO[0m [14:41:27] registered static files from directory ./static
+[38;5;8mDEBUG[0m [14:41:27] metrics server is initialized
+[38;5;8mDEBUG[0m [14:41:27] metrics server started
+[38;5;6m INFO[0m [14:41:27] Starting server on port: 8080
+[38;5;6m INFO[0m [14:41:28] cbb92e85d2bc48d5b2d1ecba902e76c1	 200 0ms GET /.well-known/health
+[38;5;6m INFO[0m [14:41:28] 26399d649eed4b82a882ce05d9f79619	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:41:28] 6bf8e7e9dd59440ebcda35ff49d91d81	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:41:28] c154ad97751f4223a6d5a969369cefb0	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:41:28] d0451c7b5bff4b47960d7c5be730b902	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:41:28] bfff770ea9d74487887c412f775b8b12	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:41:28] 98b875403f7743b2a3104c6e76f947d1	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:41:28] f1c9da313c284e53a7101b26458c57a9	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:41:28] 325211e469064617bb19091210750a67	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:41:28] 11a96308cf8c48f99f2147bd2ab061ff	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:41:28] 791a9c91095c4afc929372d2d264386a	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:41:28] ed784865251b4ed0ba9d200468961a34	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:41:28] 714cd649c522408faeaa7604bb7375e4	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:41:28] 5f95b9528af94207b3b322ed580037e3	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:41:28] ffb8cca24f3b465eb9f4a53b5607ffab	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:41:28] ed3f8acc8b8a42e087334743fd64dca2	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:41:28] 7aaec3b2f2f84ca68d5c1becb885a245	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:41:28] 9e22c989d50940cda06eba16c6f16982	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:41:28] dda37c6cd7804d109a8dbacac6f96ec2	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:41:28] 0876cf24243849babc677653c5a97d19	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:41:28] 0d9aeba70c3b429b83f7edca0884e6ec	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:41:28] 77bb0e18e0f6452b9e8f0089f01daedd	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:41:28] 2c20d4e83ac348acab798de33851ae15	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:41:28] 12c147b3603a4125be185ba9c0c43648	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:41:28] 894b63444ef94e179d88f51cbe71bcde	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:41:28] 964e63ee7ab6451c83e3d00e3fe9157c	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:41:28] 535c3e092a2c481c8e87f5b01c175986	 200 0ms GET /redis
+... [988000 lines of load/request noise omitted] ...
 ...
-[38;5;6m INFO[0m [03:46:46] 2b5a3b8e611a445cad05098577fb6339	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:46:46] 1498ddcc9dc94494b41dc0e9037b88a2	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:46:46] d3cec7c5cdeb44afa3b3facddf8efb45	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:46:46] 16787798593944a081f6cf496988b8f4	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:46:46] 40c69376f708441baa384ed08bd6f0e7	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:46:46] 3a5e92fb337441f983adc04cd2e44c8a	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:46:46] 349c3e1224fa4a22bbe732116b2fde19	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:46:46] 701da61bf3c442f6b5c0be54e262eb21	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:46:46] dbe42ed16d3a43cfa4a8887cd94347ec	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:46:46] 94d674f6e30c4e518a930c8e2ab1ce06	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:46:46] a0a8ca40a2924ec78e800f61db069076	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:46:46] c945ac8987284ff5b766995c4563c1bc	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:46:46] 044713f1a2aa4d9d92157ca177b6fa03	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:46:46] b83ae5b582f5403993eace7586059fc7	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:46:46] 2df00dfb23254e539fd216c13a470252	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:46:46] 9465e14c10ce45dbb422362a940514a3	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:46:46] 533593826a7445c3abaad111e666f00a	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:46:46] 420d6f06bbb147e09a96dc2c27cf17cd	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:46:46] 34b10726159348d0a3ea62cfd611cdd2	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:46:46] 9eba4aaef4ba486abc9e5d371a020cc9	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:46:46] 9daee33a40ee4b11842cada99ecbfb18	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:46:46] 07dd6a5d5bff4f0ab029b4aba2e932bb	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:46:46] e201fd9e6c6149a2a5a8cfde0b3bfcb5	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:46:46] 23aff18f4b0945a1ad7c24fab876816c	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:46:46] 7af5376e462d47a8bde8addebe3d4220	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:46:46] e04dbc6f8c4849a8979b4a8a34feec41	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:46:46] 175972833cdd4deea50ec1b2127f715d	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:46:46] de633b19291742b490337f9d59b4def7	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:46:46] 6bf6deee0c5b4b0f9c3d168df4154bfa	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:46:46] d70bec8388b2476798760aae0273e960	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:46:46] 8728acc11e1448fd8dfa6b5e91a653b3	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:46:46] 332f03b9d0e440af93dd2210a564724a	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:46:46] cf061ba19cc14e8bbb49dbeff0c624f8	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:46:46] c5d528f72e2b412db566b7489704d81b	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:46:46] 62ad8fa32fde49cabd6425d3940eba40	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:46:46] 222add9708c246c6bdf6297bd985e575	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:46:46] 21e7dcafda424b7192bf54dfdc7c9670	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:46:46] 92c09f0b4a30409bb55f4e88b4ed3322	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:46:46] c98d87065ff3409d80f4338149476496	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:46:46] 8c27fc9a412e4fa28b5ff762b4a2cadb	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:46:46] eb79e87f0dd64d21a9c02ec7983b2ea9	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:46:46] d1c02c4e39f24a60b7467473ccc3c591	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:46:46] b116a9abfb074fcea817eadcf310a704	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:46:46] d946451a7c5d4c63ae6f59aac70b6a15	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:46:46] ff8b36280a704a058e77ef7d5f53a191	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:46:51] 08711a8cf61f4543b0a5374f1045290c	 200 3086ms GET /.well-known/health
-[38;5;6m INFO[0m [03:46:52] e79ff59a601143e4bbcf13e2fe495101	 200 0ms GET /.well-known/health
-[38;5;6m INFO[0m [03:46:52] f16c25695b1948008abc9225fe2c6985	 200 0ms GET /redis
-[38;5;6m INFO[0m [03:46:52] server shutting down
+[38;5;6m INFO[0m [14:42:28] 1bf4d9f2d903441cba0c5e5f919a6239	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:42:28] c7e9fdad72a14f78ae031e9758a15400	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:42:28] dbc9b0ec353c49c0ad926e85e2cfb145	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:42:28] 3fd23f875dae4caeac331e3679f8c109	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:42:28] 276aa97659514c1999a5be4b20084de1	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:42:28] d37841ba694c4f1b80de128e8f02de94	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:42:28] dae47c140f524a7ab2e9e230912ed79f	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:42:28] c8bc9f1fc738499688cb05aeb796fb5e	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:42:28] 42a007b1a6a74109a391b0a8133ee8e3	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:42:28] 8a19c98a482440e39cbfcc5761b3ef35	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:42:28] a222746227334a7ab4cff7d95074d876	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:42:28] 21477a6310b74a2b8de036027920b873	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:42:28] dfbc40dd8dfd456db390e3245965cfe0	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:42:28] bde827134e5442899beefc8e54ee2c60	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:42:28] 265e3576789e457e9dd083dd0bdb158b	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:42:28] 6e13f1e4b74840d1852d5c17fe5b1a08	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:42:28] 38716b467b0a4647b6e4ffdd99aae357	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:42:28] d924964ee57a4a28928616b6615c1ab5	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:42:28] c53f2fd5127e48fa92069eb86b1a75f3	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:42:28] c529fa2ead264654ad91684bec9fc054	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:42:28] 5f3974eba4d74aa0a39a27015725f7a9	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:42:28] 4e3fc58990d04894b688fe4213f1ebe1	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:42:28] a16e606f52fa4fbb8bc35ad3a5c66a27	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:42:28] 2b21531ed9d3426ba986761dc3d1525e	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:42:28] 04d13de534ab4318a0cd796e447e97fb	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:42:28] d5cb38dd63404251abbc4a5ad822321a	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:42:28] 934ad44f3100435d84a9aa815020149c	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:42:28] 5476de2e851d4ba19cb577a389945b59	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:42:28] c3c4ac93a2514a93a227beac6c976b66	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:42:28] 232af33b57d0421581cefc2878e49c5a	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:42:28] 6c3826c77cc8476695c9dc7f7bb27d4e	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:42:28] a1a882ff5a2a49639577fae5bf3eca68	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:42:28] e6ce30db6daa4c9cb1da6a771aec9ead	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:42:28] 99bac58a2e2b4cfeac5959f0130fe3f2	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:42:28] d71bdd88162d4d968f856b15f8586ad2	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:42:28] 2c84db8752fc4b6db59bf47b812eafea	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:42:28] 34fd32d9c43347518279116061342e07	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:42:28] 5502c7b1840f4770a510375b24dd3b3f	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:42:28] 128daad2f935403c8ff8171e1c9cf9ea	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:42:28] 7d7442f0557342c2ab95c83bc43d6e3b	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:42:28] 372911df3aff4b74bd64e017704ea59c	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:42:28] 5cbe1ec120ab404e868f7ddae6989f50	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:42:28] 70930122a0ce4373b72d5981616cc7a1	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:42:28] 2dcbdc0a30bf41e99cbf957d91a8fc8c	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:42:28] 9e2b7ccfb6204f8f90f2c1aa4dbf72f3	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:42:34] 2dfffcb94cd547be924291ef8b611cb1	 200 3134ms GET /.well-known/health
+[38;5;6m INFO[0m [14:42:35] 0d7ef78330eb4abbbf9bfc6cbfe4d9cf	 200 0ms GET /.well-known/health
+[38;5;6m INFO[0m [14:42:35] b8fcabd3031c4004996649b23bb020b5	 200 0ms GET /redis
+[38;5;6m INFO[0m [14:42:35] server shutting down
 received shutdown signalreceived shutdown signalreceived shutdown signal
