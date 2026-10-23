@@ -1,25 +1,31 @@
 # zero-soak report (gate)
 
-generated: 2026-10-21 15:34:38 UTC · build: 0
+generated: 2026-10-23 02:12:47 UTC · commit: e4c2e37fe701bb737390629782a48e2f4ab4377c · build: 3
 
-**PASS** — 12 services, 12 pass, 0 fail, 0 missing.
+**MISSING** — 12 services, 11 pass, 0 fail, 1 missing.
 
 | Service | Status | Port | Backends | Chaos | Checks | RSS growth | Links | TLS |
 |---|---|---|---|---|---|---|---|---|
-| zero-auth | PASS | 8080 | — | no | 2/0 | 2900 KiB | <a href="logs/zero-auth.log">log</a> · <a href="logs/zero-auth.vmrss.txt">rss</a> | — |
-| zero-autocrud | PASS | 8082 | — | no | 2/0 | 4604 KiB | <a href="logs/zero-autocrud.log">log</a> · <a href="logs/zero-autocrud.vmrss.txt">rss</a> | — |
-| zero-basic-secure | PASS | 8080 | postgres | yes | 3/0 | 3140 KiB | <a href="logs/zero-basic-secure.log">log</a> · <a href="logs/zero-basic-secure.vmrss.txt">rss</a> | 🔒 |
-| zero-duckdb | PASS | 8083 | — | no | 2/0 | 5984 KiB | <a href="logs/zero-duckdb.log">log</a> · <a href="logs/zero-duckdb.vmrss.txt">rss</a> | — |
-| zero-graphql | PASS | 8080 | postgres | yes | 4/0 | 1728 KiB | <a href="logs/zero-graphql.log">log</a> · <a href="logs/zero-graphql.vmrss.txt">rss</a> | — |
-| zero-nosql-secure | PASS | 8080 | cassandra | no | 2/0 | 7708 KiB | <a href="logs/zero-nosql-secure.log">log</a> · <a href="logs/zero-nosql-secure.vmrss.txt">rss</a> | 🔒 |
-| zero-redis | PASS | 8080 | redis | yes | 3/0 | 2508 KiB | <a href="logs/zero-redis.log">log</a> · <a href="logs/zero-redis.vmrss.txt">rss</a> | — |
-| zero-s3 | PASS | 8080 | rustfs | yes | 4/0 | 6736 KiB | <a href="logs/zero-s3.log">log</a> · <a href="logs/zero-s3.vmrss.txt">rss</a> | — |
-| zero-search | PASS | 8080 | solr | no | 2/0 | 7320 KiB | <a href="logs/zero-search.log">log</a> · <a href="logs/zero-search.vmrss.txt">rss</a> | — |
-| zero-sql-secure | PASS | 8080 | mysql | yes | 3/0 | 3676 KiB | <a href="logs/zero-sql-secure.log">log</a> · <a href="logs/zero-sql-secure.vmrss.txt">rss</a> | — |
-| zero-sqlite | PASS | 8081 | — | no | 2/0 | 4624 KiB | <a href="logs/zero-sqlite.log">log</a> · <a href="logs/zero-sqlite.vmrss.txt">rss</a> | — |
-| zero-timeseries | PASS | 8080 | influx | no | 2/0 | 2536 KiB | <a href="logs/zero-timeseries.log">log</a> · <a href="logs/zero-timeseries.vmrss.txt">rss</a> | — |
+| zero-autocrud | MISSING | 8082 | — | no | — | — | — | — |
+| zero-auth | PASS | 8080 | — | no | 2/0 | 2960 KiB | <a href="logs/zero-auth.log">log</a> · <a href="logs/zero-auth.vmrss.txt">rss</a> | — |
+| zero-basic-secure | PASS | 8080 | postgres | yes | 3/0 | 3464 KiB | <a href="logs/zero-basic-secure.log">log</a> · <a href="logs/zero-basic-secure.vmrss.txt">rss</a> | 🔒 |
+| zero-duckdb | PASS | 8083 | — | no | 2/0 | 6084 KiB | <a href="logs/zero-duckdb.log">log</a> · <a href="logs/zero-duckdb.vmrss.txt">rss</a> | — |
+| zero-graphql | PASS | 8080 | postgres | yes | 4/0 | 2128 KiB | <a href="logs/zero-graphql.log">log</a> · <a href="logs/zero-graphql.vmrss.txt">rss</a> | — |
+| zero-nosql-secure | PASS | 8080 | cassandra | no | 2/0 | 7832 KiB | <a href="logs/zero-nosql-secure.log">log</a> · <a href="logs/zero-nosql-secure.vmrss.txt">rss</a> | 🔒 |
+| zero-redis | PASS | 8080 | redis | yes | 3/0 | 2504 KiB | <a href="logs/zero-redis.log">log</a> · <a href="logs/zero-redis.vmrss.txt">rss</a> | — |
+| zero-s3 | PASS | 8080 | rustfs | yes | 4/0 | 6568 KiB | <a href="logs/zero-s3.log">log</a> · <a href="logs/zero-s3.vmrss.txt">rss</a> | — |
+| zero-search | PASS | 8080 | solr | no | 2/0 | 6600 KiB | <a href="logs/zero-search.log">log</a> · <a href="logs/zero-search.vmrss.txt">rss</a> | — |
+| zero-sql-secure | PASS | 8080 | mysql | yes | 3/0 | 3768 KiB | <a href="logs/zero-sql-secure.log">log</a> · <a href="logs/zero-sql-secure.vmrss.txt">rss</a> | — |
+| zero-sqlite | PASS | 8081 | — | no | 2/0 | 4604 KiB | <a href="logs/zero-sqlite.log">log</a> · <a href="logs/zero-sqlite.vmrss.txt">rss</a> | — |
+| zero-timeseries | PASS | 8080 | influx | no | 2/0 | 2500 KiB | <a href="logs/zero-timeseries.log">log</a> · <a href="logs/zero-timeseries.vmrss.txt">rss</a> | — |
 
 ## Details
+
+### zero-autocrud (MISSING)
+
+| Status | Check | Detail |
+|---|---|---|
+| — | no checks recorded | |
 
 ### zero-auth (PASS)
 
@@ -27,26 +33,9 @@ generated: 2026-10-21 15:34:38 UTC · build: 0
 
 | Metric | Value |
 |---|---|
-| Baseline | 206092 KiB |
-| Overall RSS | 208992 KiB |
-| dRss (growth) | 2900 KiB |
-
-| Status | Check | Detail |
-|---|---|---|
-| PASS | health up |  |
-| PASS | RSS plateau (no leak) |  |
-
-**Load applied:** loader=go-wrk, concurrency=5 (per route), duration_min=1, mode=gate
-
-### zero-autocrud (PASS)
-
-**RSS**
-
-| Metric | Value |
-|---|---|
-| Baseline | 257344 KiB |
-| Overall RSS | 261948 KiB |
-| dRss (growth) | 4604 KiB |
+| Baseline | 212084 KiB |
+| Overall RSS | 215044 KiB |
+| dRss (growth) | 2960 KiB |
 
 | Status | Check | Detail |
 |---|---|---|
@@ -61,9 +50,9 @@ generated: 2026-10-21 15:34:38 UTC · build: 0
 
 | Metric | Value |
 |---|---|
-| Baseline | 212704 KiB |
-| Overall RSS | 215844 KiB |
-| dRss (growth) | 3140 KiB |
+| Baseline | 219400 KiB |
+| Overall RSS | 222864 KiB |
+| dRss (growth) | 3464 KiB |
 
 | Status | Check | Detail |
 |---|---|---|
@@ -79,9 +68,9 @@ generated: 2026-10-21 15:34:38 UTC · build: 0
 
 | Metric | Value |
 |---|---|
-| Baseline | 245824 KiB |
-| Overall RSS | 251808 KiB |
-| dRss (growth) | 5984 KiB |
+| Baseline | 248280 KiB |
+| Overall RSS | 254364 KiB |
+| dRss (growth) | 6084 KiB |
 
 | Status | Check | Detail |
 |---|---|---|
@@ -96,9 +85,9 @@ generated: 2026-10-21 15:34:38 UTC · build: 0
 
 | Metric | Value |
 |---|---|
-| Baseline | 220596 KiB |
-| Overall RSS | 222324 KiB |
-| dRss (growth) | 1728 KiB |
+| Baseline | 226152 KiB |
+| Overall RSS | 228280 KiB |
+| dRss (growth) | 2128 KiB |
 
 | Status | Check | Detail |
 |---|---|---|
@@ -115,9 +104,9 @@ generated: 2026-10-21 15:34:38 UTC · build: 0
 
 | Metric | Value |
 |---|---|
-| Baseline | 207216 KiB |
-| Overall RSS | 214924 KiB |
-| dRss (growth) | 7708 KiB |
+| Baseline | 213136 KiB |
+| Overall RSS | 220968 KiB |
+| dRss (growth) | 7832 KiB |
 
 | Status | Check | Detail |
 |---|---|---|
@@ -132,9 +121,9 @@ generated: 2026-10-21 15:34:38 UTC · build: 0
 
 | Metric | Value |
 |---|---|
-| Baseline | 205704 KiB |
-| Overall RSS | 208212 KiB |
-| dRss (growth) | 2508 KiB |
+| Baseline | 212596 KiB |
+| Overall RSS | 215100 KiB |
+| dRss (growth) | 2504 KiB |
 
 | Status | Check | Detail |
 |---|---|---|
@@ -150,9 +139,9 @@ generated: 2026-10-21 15:34:38 UTC · build: 0
 
 | Metric | Value |
 |---|---|
-| Baseline | 205820 KiB |
-| Overall RSS | 212556 KiB |
-| dRss (growth) | 6736 KiB |
+| Baseline | 211772 KiB |
+| Overall RSS | 218340 KiB |
+| dRss (growth) | 6568 KiB |
 
 | Status | Check | Detail |
 |---|---|---|
@@ -169,9 +158,9 @@ generated: 2026-10-21 15:34:38 UTC · build: 0
 
 | Metric | Value |
 |---|---|
-| Baseline | 206532 KiB |
-| Overall RSS | 213852 KiB |
-| dRss (growth) | 7320 KiB |
+| Baseline | 212316 KiB |
+| Overall RSS | 218916 KiB |
+| dRss (growth) | 6600 KiB |
 
 | Status | Check | Detail |
 |---|---|---|
@@ -186,9 +175,9 @@ generated: 2026-10-21 15:34:38 UTC · build: 0
 
 | Metric | Value |
 |---|---|
-| Baseline | 208596 KiB |
-| Overall RSS | 212272 KiB |
-| dRss (growth) | 3676 KiB |
+| Baseline | 213968 KiB |
+| Overall RSS | 217736 KiB |
+| dRss (growth) | 3768 KiB |
 
 | Status | Check | Detail |
 |---|---|---|
@@ -204,9 +193,9 @@ generated: 2026-10-21 15:34:38 UTC · build: 0
 
 | Metric | Value |
 |---|---|
-| Baseline | 211836 KiB |
-| Overall RSS | 216460 KiB |
-| dRss (growth) | 4624 KiB |
+| Baseline | 218108 KiB |
+| Overall RSS | 222712 KiB |
+| dRss (growth) | 4604 KiB |
 
 | Status | Check | Detail |
 |---|---|---|
@@ -221,9 +210,9 @@ generated: 2026-10-21 15:34:38 UTC · build: 0
 
 | Metric | Value |
 |---|---|
-| Baseline | 207344 KiB |
-| Overall RSS | 209880 KiB |
-| dRss (growth) | 2536 KiB |
+| Baseline | 213500 KiB |
+| Overall RSS | 216000 KiB |
+| dRss (growth) | 2500 KiB |
 
 | Status | Check | Detail |
 |---|---|---|
