@@ -1,14 +1,13 @@
 # zero-soak report (gate)
 
-generated: 2026-10-24 04:11:38 UTC · commit: 486be546481a1cdf1b0b980b0b6d7da8a2b61632 · build: 6
+generated: 2026-10-24 04:43:05 UTC · commit: 0286466326b17f63806323ff531ca4b850ca2d76 · build: 7
 
-**MISSING** — 14 services, 11 pass, 0 fail, 3 missing.
+**FAIL** — 14 services, 12 pass, 2 fail, 0 missing.
 
 | Service | Status | Port | Backends | Chaos | Checks | RSS growth | Links | TLS |
 |---|---|---|---|---|---|---|---|---|
-| zero-autocrud | MISSING | 8082 | — | no | — | — | — | — |
-| zero-pubsub-subscriber | MISSING | 8080 | nats | no | — | — | — | — |
-| zero-ws-client | MISSING | 8080 | — | no | — | — | — | — |
+| zero-autocrud | FAIL | 8082 | — | no | 1/1 | — | <a href="logs/zero-autocrud.log">log</a> · <a href="logs/zero-autocrud.vmrss.txt">rss</a> | — |
+| zero-pubsub-subscriber | FAIL | 8080 | nats | no | 2/1 | — | <a href="logs/zero-pubsub-subscriber.log">log</a> · <a href="logs/zero-pubsub-subscriber.vmrss.txt">rss</a> | — |
 | zero-auth | PASS | 8080 | — | no | 2/0 | — | <a href="logs/zero-auth.log">log</a> · <a href="logs/zero-auth.vmrss.txt">rss</a> | — |
 | zero-basic-secure | PASS | 8080 | postgres | yes | 3/0 | — | <a href="logs/zero-basic-secure.log">log</a> · <a href="logs/zero-basic-secure.vmrss.txt">rss</a> | 🔒 |
 | zero-duckdb | PASS | 8083 | — | no | 2/0 | — | <a href="logs/zero-duckdb.log">log</a> · <a href="logs/zero-duckdb.vmrss.txt">rss</a> | — |
@@ -20,26 +19,28 @@ generated: 2026-10-24 04:11:38 UTC · commit: 486be546481a1cdf1b0b980b0b6d7da8a2
 | zero-sql-secure | PASS | 8080 | mysql | yes | 3/0 | — | <a href="logs/zero-sql-secure.log">log</a> · <a href="logs/zero-sql-secure.vmrss.txt">rss</a> | — |
 | zero-sqlite | PASS | 8081 | — | no | 2/0 | — | <a href="logs/zero-sqlite.log">log</a> · <a href="logs/zero-sqlite.vmrss.txt">rss</a> | — |
 | zero-timeseries | PASS | 8080 | influx | no | 2/0 | — | <a href="logs/zero-timeseries.log">log</a> · <a href="logs/zero-timeseries.vmrss.txt">rss</a> | — |
+| zero-ws-client | PASS | 8080 | — | no | 2/0 | — | <a href="logs/zero-ws-client.log">log</a> · <a href="logs/zero-ws-client.vmrss.txt">rss</a> | 🔒 |
 
 ## Details
 
-### zero-autocrud (MISSING)
+### zero-autocrud (FAIL)
 
 | Status | Check | Detail |
 |---|---|---|
-| — | no checks recorded | |
+| PASS | health up |  |
+| FAIL | RSS leak signal | RSS grew 68068KiB (> 8MiB and > 15%): possible leak |
 
-### zero-pubsub-subscriber (MISSING)
+**Load applied:** loader=go-wrk, concurrency=5 (per route), duration_min=1, mode=gate
 
-| Status | Check | Detail |
-|---|---|---|
-| — | no checks recorded | |
-
-### zero-ws-client (MISSING)
+### zero-pubsub-subscriber (FAIL)
 
 | Status | Check | Detail |
 |---|---|---|
-| — | no checks recorded | |
+| PASS | dep zero-pubsub-publisher up |  |
+| PASS | health up |  |
+| FAIL | RSS leak signal | RSS grew 293740KiB (> 8MiB and > 15%): possible leak |
+
+**Load applied:** loader=go-wrk, concurrency=5 (per route), duration_min=1, mode=gate
 
 ### zero-auth (PASS)
 
@@ -139,6 +140,15 @@ generated: 2026-10-24 04:11:38 UTC · commit: 486be546481a1cdf1b0b980b0b6d7da8a2
 **Load applied:** loader=go-wrk, concurrency=5 (per route), duration_min=1, mode=gate
 
 ### zero-timeseries (PASS)
+
+| Status | Check | Detail |
+|---|---|---|
+| PASS | health up |  |
+| PASS | RSS plateau (no leak) |  |
+
+**Load applied:** loader=go-wrk, concurrency=5 (per route), duration_min=1, mode=gate
+
+### zero-ws-client (PASS)
 
 | Status | Check | Detail |
 |---|---|---|
