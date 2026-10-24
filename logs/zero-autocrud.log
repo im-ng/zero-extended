@@ -1,102 +1,102 @@
-[38;5;6m INFO[0m [15:33:36] Loaded config from file: ./configs/.env
-[38;5;6m INFO[0m [15:33:36] config loaded from: ./configs/.env
-[38;5;6m INFO[0m [15:33:36] connected to sqlite at '/drone/src/zero/examples/zero-autocrud/data/autocrud.db'
-[38;5;6m INFO[0m [15:33:36] connected to sqlite at '/drone/src/zero/examples/zero-autocrud/data/autocrud.db'
-[38;5;6m INFO[0m [15:33:36] container is created
-[38;5;6m INFO[0m [15:33:36] autocrud-demo app pid 4711
-[38;5;6m INFO[0m [15:33:36] no authentication mode found and disabled.
-[38;5;6m INFO[0m [15:33:36] registered static files from directory ./static
-[38;5;6m INFO[0m [15:33:36] Starting server on port: 8082
+[38;5;6m INFO[0m [03:19:05] Loaded config from file: ./configs/.env
+[38;5;6m INFO[0m [03:19:05] config loaded from: ./configs/.env
+[38;5;6m INFO[0m [03:19:05] connected to sqlite at '/drone/src/zero/examples/zero-autocrud/data/autocrud.db'
+[38;5;6m INFO[0m [03:19:05] connected to sqlite at '/drone/src/zero/examples/zero-autocrud/data/autocrud.db'
+[38;5;6m INFO[0m [03:19:05] container is created
+[38;5;6m INFO[0m [03:19:05] autocrud-demo app pid 5606
+[38;5;6m INFO[0m [03:19:05] no authentication mode found and disabled.
+[38;5;6m INFO[0m [03:19:05] registered static files from directory ./static
 error: AddressInUse
-/drone/src/zero/examples/zero-autocrud/zig-pkg/httpz-0.0.0-PNVzrPoUCQBcShb3c8vpxqyySWvnjvEs-AwXxaRHPQnz/src/posix.zig:258:27: 0x1b4de2a in bind (autocrud)
+[38;5;6m INFO[0m [03:19:05] Starting server on port: 8082
+/drone/src/zero/examples/zero-autocrud/zig-pkg/httpz-0.0.0-PNVzrPoUCQBcShb3c8vpxqyySWvnjvEs-AwXxaRHPQnz/src/posix.zig:258:27: 0x1b501ba in bind (autocrud)
             .ADDRINUSE => return error.AddressInUse,
                           ^
-/drone/src/zero/examples/zero-autocrud/zig-pkg/httpz-0.0.0-PNVzrPoUCQBcShb3c8vpxqyySWvnjvEs-AwXxaRHPQnz/src/httpz.zig:390:17: 0x1bc873a in listen (autocrud)
+/drone/src/zero/examples/zero-autocrud/zig-pkg/httpz-0.0.0-PNVzrPoUCQBcShb3c8vpxqyySWvnjvEs-AwXxaRHPQnz/src/httpz.zig:390:17: 0x1bcaa2a in listen (autocrud)
                 try posix.bind(listener, &address.any, socklen);
                 ^
-[38;5;6m INFO[0m [15:33:37] 67bb966082d348db84db496ad8c266da	 200 0ms GET /.well-known/health
-[38;5;6m INFO[0m [15:33:37] 070c9e01a7924f3fb3640d670761bd72	 200 0ms GET /users
-[38;5;6m INFO[0m [15:33:37] 3dd42eb13cb14eaab0d06e40183da389	 200 0ms GET /users
-[38;5;6m INFO[0m [15:33:37] caadc8ae3a5a48d7a5dd926d63546907	 200 0ms GET /users
-[38;5;6m INFO[0m [15:33:37] 9a961f37bf3d48d4a58930956ad3f7a3	 200 0ms GET /users
-[38;5;6m INFO[0m [15:33:37] 6cc476dbeac24f5f848a33a10461a7a3	 200 0ms GET /users
-[38;5;6m INFO[0m [15:33:37] 0f25b66f43004aadb09f3080ae0ad82c	 200 0ms GET /users
-[38;5;6m INFO[0m [15:33:37] 15fa93a3b20049e68ffdace90a508865	 200 0ms GET /users
-[38;5;6m INFO[0m [15:33:37] 43f45ad8d831430eacd949632a2fc34c	 200 0ms GET /users
-[38;5;6m INFO[0m [15:33:37] 16a4a46f63e84bd2906162af653dc0c4	 200 1ms GET /users
-[38;5;6m INFO[0m [15:33:37] 6c46d9d9dd6040418ae976d7efc3e3ef	 200 0ms GET /users
-[38;5;6m INFO[0m [15:33:37] 5543ced47e2842a9aedbda776fa2d866	 200 0ms GET /users
-[38;5;6m INFO[0m [15:33:37] bb576c2bf83d466fb6fcfa1677eb43d4	 200 0ms GET /users
-[38;5;6m INFO[0m [15:33:37] a04f0f2042a544a2a75b9737fe4dc0e6	 200 0ms GET /users
-[38;5;6m INFO[0m [15:33:37] cdc3c9be83d54fc793440e42aa42d313	 200 0ms GET /users
-[38;5;6m INFO[0m [15:33:37] 3701b27e40c046558f245cb038ba44b9	 200 0ms GET /users
-[38;5;6m INFO[0m [15:33:37] d74db46194944c5599b319b1ed9f670c	 200 0ms GET /users
-[38;5;6m INFO[0m [15:33:37] 6826db5254ef4d8fa8e2768205f25fc4	 200 0ms GET /users
-[38;5;6m INFO[0m [15:33:37] 4cc3cb22774345d3bf383d5c71aed250	 200 0ms GET /users
-[38;5;6m INFO[0m [15:33:37] 7e939cecacd04bb89f86538387bede1d	 200 0ms GET /users
-[38;5;6m INFO[0m [15:33:37] 7e17a71ec87d4b73b601934403763e1e	 200 0ms GET /users
-[38;5;6m INFO[0m [15:33:37] c355253b0be14882918c94bb093b7f52	 200 0ms GET /users
-[38;5;6m INFO[0m [15:33:37] bbb463bb0099497484e86a9da0c74440	 200 0ms GET /users
-[38;5;6m INFO[0m [15:33:37] 228f6382ae254f0a85e63ffa35020e06	 200 0ms GET /users
-[38;5;6m INFO[0m [15:33:37] 4ff05182f3634dc29538a856884aca7c	 200 0ms GET /users
-[38;5;6m INFO[0m [15:33:37] 4aeb5b8a0b7d46e48ca67f3fb36060eb	 200 0ms GET /users
-[38;5;6m INFO[0m [15:33:37] 2cb4574b24fc43cd9da98dee64362e5d	 200 0ms GET /users
-[38;5;6m INFO[0m [15:33:37] a17b066b711940a7a6c1223fc266d9b5	 200 0ms GET /users
-[38;5;6m INFO[0m [15:33:37] deaa3546b4ab4ffbbcb77220ab16c27d	 200 0ms GET /users
-[38;5;6m INFO[0m [15:33:37] b1dac4d5ea9d4d958d1ac61a6a01f9e4	 200 0ms GET /users
-[38;5;6m INFO[0m [15:33:37] 32feedcf554248d79271333196a367aa	 200 0ms GET /users
-[38;5;6m INFO[0m [15:33:37] 011baf64de7d450c82d84ab2053078a6	 200 0ms GET /users
-[38;5;6m INFO[0m [15:33:37] c14e50a4e9d149aabe57502b1dd3701d	 200 0ms GET /users
-[38;5;6m INFO[0m [15:33:37] 2897714e3fa545b28fcf6b3a6fd381b6	 200 0ms GET /users
-... [293809 lines of load/request noise omitted] ...
+[38;5;6m INFO[0m [03:19:06] 165228843e6c4c6692af4559fed5f95c	 200 0ms GET /.well-known/health
+[38;5;6m INFO[0m [03:19:06] fa6b118aa8ce41c78596364a534a9b2a	 200 0ms GET /users
+[38;5;6m INFO[0m [03:19:06] 36b2b5f65a6244edafb55de84866a361	 200 0ms GET /users
+[38;5;6m INFO[0m [03:19:06] 2f207d1367574a85ae559d27a26f04ae	 200 0ms GET /users
+[38;5;6m INFO[0m [03:19:06] 992472e755594308a392618e56ff5b9e	 200 0ms GET /users
+[38;5;6m INFO[0m [03:19:06] 581842caec4242ca84cd2c8d53b5aa44	 200 0ms GET /users
+[38;5;6m INFO[0m [03:19:06] ea3cd71d014c4065b603a8d7ad48279c	 200 0ms GET /users
+[38;5;6m INFO[0m [03:19:06] 3f545c55e8f744bf82fa35e4aa3e669e	 200 0ms GET /users
+[38;5;6m INFO[0m [03:19:06] 61edca64c53f4821b266e7638fc535ba	 200 0ms GET /users
+[38;5;6m INFO[0m [03:19:06] b99ee0952e7d4835aff6f67fd7afd714	 200 0ms GET /users
+[38;5;6m INFO[0m [03:19:06] d50f5c039d73466cbb508f7ee3f6b365	 200 0ms GET /users
+[38;5;6m INFO[0m [03:19:06] 1dbfd4c486914b89bba40953975b7713	 200 0ms GET /users
+[38;5;6m INFO[0m [03:19:06] c76de269a20a422f8ded4689dd3d5c42	 200 0ms GET /users
+[38;5;6m INFO[0m [03:19:06] e4fde3bf89a34c328fb0fe8e6afdc174	 200 0ms GET /users
+[38;5;6m INFO[0m [03:19:06] 6413a4e202214dddac991b49cee8c148	 200 0ms GET /users
+[38;5;6m INFO[0m [03:19:06] 57783c26fb3545acaaeece0389f898dd	 200 0ms GET /users
+[38;5;6m INFO[0m [03:19:06] 80ece52bdbd74fa7976dc5d4ed57a0f2	 200 0ms GET /users
+[38;5;6m INFO[0m [03:19:06] c816900a02184671958c08df7acd2d7d	 200 0ms GET /users
+[38;5;6m INFO[0m [03:19:06] e121977aa9db4b8d82dbb9bd818ce387	 200 0ms GET /users
+[38;5;6m INFO[0m [03:19:06] 46c50d589bef49b2949845ea43070a0b	 200 0ms GET /users
+[38;5;6m INFO[0m [03:19:06] 9f5dd3ab2819453ab5c8ca59366d539d	 200 0ms GET /users
+[38;5;6m INFO[0m [03:19:06] b274779d96a54f94b67b5f5e259035e0	 200 0ms GET /users
+[38;5;6m INFO[0m [03:19:06] 9823bb6d92bf41e58984516d3fb30878	 200 0ms GET /users
+[38;5;6m INFO[0m [03:19:06] 8c9b10f770e7495ea4c6a0be3532be5a	 200 0ms GET /users
+[38;5;6m INFO[0m [03:19:06] fc9438945fff4c18a60b0d9ac602548e	 200 1ms GET /users
+[38;5;6m INFO[0m [03:19:06] cba066e635e740479cad8f181793a8bf	 200 0ms GET /users
+[38;5;6m INFO[0m [03:19:06] f6b7d2940ae548e184ce8633d85c9ca9	 200 0ms GET /users
+[38;5;6m INFO[0m [03:19:06] 6c806502ce7448a689754619d177a1bd	 200 0ms GET /users
+[38;5;6m INFO[0m [03:19:06] 9eda15ed898646ce8c698549b8333cf9	 200 0ms GET /users
+[38;5;6m INFO[0m [03:19:06] fa8a989bf5694c67adea74905c8f5b07	 200 0ms GET /users
+[38;5;6m INFO[0m [03:19:06] b5eff97930be47589be84ca2d7a079f4	 200 0ms GET /users
+[38;5;6m INFO[0m [03:19:06] e1f5315cb2ec4dc99929c73ce6542850	 200 0ms GET /users
+[38;5;6m INFO[0m [03:19:06] 73661169a38f483c832413bb82f25a67	 200 0ms GET /users
+[38;5;6m INFO[0m [03:19:06] bc6e8dae58b64d4482aee7290f14a8f3	 200 0ms GET /users
+... [337965 lines of load/request noise omitted] ...
 ...
-[38;5;6m INFO[0m [15:34:37] e47e898b7e9d42b7bcef751143317f80	 200 0ms GET /users
-[38;5;6m INFO[0m [15:34:37] 7832a4ef1238490893e41bb606bcb06f	 200 0ms GET /users
-[38;5;6m INFO[0m [15:34:37] 8f0b7874a7ca48488fe76d7b5c250e9d	 200 0ms GET /users
-[38;5;6m INFO[0m [15:34:37] fec9f70bb9d8452b8c11fa2ff2b74081	 200 0ms GET /users
-[38;5;6m INFO[0m [15:34:37] a9bb0d926f5149d3875446f3be70cb94	 200 0ms GET /users
-[38;5;6m INFO[0m [15:34:37] d56c0ea7bfc34395a0ee7ef5298170a0	 200 0ms GET /users
-[38;5;6m INFO[0m [15:34:37] 219134d1a2ae4638bab750a82879e0db	 200 0ms GET /users
-[38;5;6m INFO[0m [15:34:37] 31f3288a779c44219392a1b5873c21d7	 200 0ms GET /users
-[38;5;6m INFO[0m [15:34:37] 962b2617ad1a4f2e9f8068d4e85d0171	 200 0ms GET /users
-[38;5;6m INFO[0m [15:34:37] a8ae42f54a5d4f9dab6f82b04b9fd668	 200 0ms GET /users
-[38;5;6m INFO[0m [15:34:37] d31631cae9654c789710e186ea0e0719	 200 0ms GET /users
-[38;5;6m INFO[0m [15:34:37] 87de56f28bee424a901196920729e7d9	 200 0ms GET /users
-[38;5;6m INFO[0m [15:34:37] 08a1be6b78404753baf4f562ee68f7bb	 200 0ms GET /users
-[38;5;6m INFO[0m [15:34:37] fd06e2a9f54e433c87ccbe7930ab46f1	 200 0ms GET /users
-[38;5;6m INFO[0m [15:34:37] fb3612a1e52b44c6986a853f4b87ece1	 200 0ms GET /users
-[38;5;6m INFO[0m [15:34:37] 210fc3d2979544d4a1479a8be019b400	 200 0ms GET /users
-[38;5;6m INFO[0m [15:34:37] a39f455787e644f7add88a06d1971400	 200 1ms GET /users
-[38;5;6m INFO[0m [15:34:37] 22a0bd38a56049249ccf945c06129dcd	 200 0ms GET /users
-[38;5;6m INFO[0m [15:34:37] ae700407d80847698c8a183a4c845257	 200 0ms GET /users
-[38;5;6m INFO[0m [15:34:37] 57b90931938c4e188b23d07e1e81e64f	 200 0ms GET /users
-[38;5;6m INFO[0m [15:34:37] 2f7e8b8ed302416a950d315167c803bf	 200 0ms GET /users
-[38;5;6m INFO[0m [15:34:37] d1f1ad0664c041abaf30b0fe1f7ec90e	 200 0ms GET /users
-[38;5;6m INFO[0m [15:34:37] d7d2b7148f7343bf8cc545e649ce97af	 200 0ms GET /users
-[38;5;6m INFO[0m [15:34:37] c98931e358f44e2da8cc5ea2d78fd358	 200 0ms GET /users
-[38;5;6m INFO[0m [15:34:37] 19e11e6240594bde83411379cac24c47	 200 0ms GET /users
-[38;5;6m INFO[0m [15:34:37] a3bd212d153a48059267ab2d2ade4371	 200 0ms GET /users
-[38;5;6m INFO[0m [15:34:37] cbf8116b9d9242ce8ff41d4d3f41d85d	 200 0ms GET /users
-[38;5;6m INFO[0m [15:34:37] be1e958926324d5cabef511e72fcfe0f	 200 0ms GET /users
-[38;5;6m INFO[0m [15:34:37] 550ec65ea11344179db669edc4512baf	 200 0ms GET /users
-[38;5;6m INFO[0m [15:34:37] 86b011030f974ba3ba4ed3179dec7b93	 200 0ms GET /users
-[38;5;6m INFO[0m [15:34:37] d666cc02582c4e9ba00e7925b8a4dc3b	 200 0ms GET /users
-[38;5;6m INFO[0m [15:34:37] 77addccd1fa94f47a557d55b5babc1fd	 200 1ms GET /users
-[38;5;6m INFO[0m [15:34:37] add54c00708549789921422be40252d0	 200 0ms GET /users
-[38;5;6m INFO[0m [15:34:37] 84cd503269d5430c90ea4598f24a537f	 200 0ms GET /users
-[38;5;6m INFO[0m [15:34:37] cff6fdec7422445dac5c890342abb410	 200 0ms GET /users
-[38;5;6m INFO[0m [15:34:37] bef50f137e634b8d93c62462518041df	 200 0ms GET /users
-[38;5;6m INFO[0m [15:34:37] 9915fda932874456852a0d16c336b120	 200 0ms GET /users
-[38;5;6m INFO[0m [15:34:37] ed05034d004e4c878a6dc15683daa39f	 200 0ms GET /users
-[38;5;6m INFO[0m [15:34:37] d648168c55a04d82b2add264d1041122	 200 0ms GET /users
-[38;5;6m INFO[0m [15:34:37] d26c2af6447745b8a5dc815bc967208e	 200 0ms GET /users
-[38;5;6m INFO[0m [15:34:37] 86e3d35117c74ef793867331bdf868eb	 200 0ms GET /users
-[38;5;6m INFO[0m [15:34:37] fae28bc0c6414492a7fb8fb93db6a48a	 200 0ms GET /users
-[38;5;6m INFO[0m [15:34:37] b2f52b706c8549e29f76a4268cce4e45	 200 0ms GET /users
-[38;5;6m INFO[0m [15:34:37] 83d8076442f8499d858ff9a0a81209eb	 200 0ms GET /users
-[38;5;6m INFO[0m [15:34:37] c1df98f1469a46cdb07a850c9d584adb	 200 0ms GET /users
-[38;5;6m INFO[0m [15:34:37] e0f3253e3a544badb0fa8198133016d4	 200 0ms GET /users
-[38;5;6m INFO[0m [15:34:37] 97f21455da2348daa4aad7024bc4aa3c	 200 0ms GET /users
-[38;5;6m INFO[0m [15:34:37] 425da62fa8b44fbb9c30642469502952	 200 0ms GET /users
-[38;5;6m INFO[0m [15:34:37] server shutting down
-received shutdown signalreceived shutdown signal
+[38;5;6m INFO[0m [03:20:06] 9ea4c47673fd443881dbff7fc0ef18c9	 200 0ms GET /users
+[38;5;6m INFO[0m [03:20:06] e7396a24e14f4dd988bfb9e38627f72c	 200 0ms GET /users
+[38;5;6m INFO[0m [03:20:06] a02aaf2431f34fc4b3e60526d599fa81	 200 0ms GET /users
+[38;5;6m INFO[0m [03:20:06] 7af10721d7b34c7287d046fc597fc664	 200 0ms GET /users
+[38;5;6m INFO[0m [03:20:06] 8d1c59cd375743b8bd7ece33b374157a	 200 0ms GET /users
+[38;5;6m INFO[0m [03:20:06] d7b4f58dca934d2fb07edf55bf11c33a	 200 0ms GET /users
+[38;5;6m INFO[0m [03:20:06] 3bde3fc8bb0d49f38c29b13eb67977b8	 200 0ms GET /users
+[38;5;6m INFO[0m [03:20:06] accbedb5035044e9aec27e83f27c67d5	 200 0ms GET /users
+[38;5;6m INFO[0m [03:20:06] 9af8ff2aa33341b28a93d332cbeb19af	 200 0ms GET /users
+[38;5;6m INFO[0m [03:20:06] 13195267c5e74b509f99959a9da87f88	 200 0ms GET /users
+[38;5;6m INFO[0m [03:20:06] 3dcea193787c457ca8a440225443d8bf	 200 0ms GET /users
+[38;5;6m INFO[0m [03:20:06] caff33ec4b6f4038a1d6a32bbca90b5f	 200 0ms GET /users
+[38;5;6m INFO[0m [03:20:06] 884c7d1a0ade4218a5b34eba6e7405b7	 200 0ms GET /users
+[38;5;6m INFO[0m [03:20:06] cb5a6a7565764103a729d135948f7af2	 200 0ms GET /users
+[38;5;6m INFO[0m [03:20:06] 915374ba95e3433dbfe70bb90abae5ff	 200 0ms GET /users
+[38;5;6m INFO[0m [03:20:06] ae9e8054553247c58d736d21927664df	 200 0ms GET /users
+[38;5;6m INFO[0m [03:20:06] 234de21540744be2b2f82313c670f829	 200 0ms GET /users
+[38;5;6m INFO[0m [03:20:06] 44f98672af504c88bae3ade5fdcd63a4	 200 0ms GET /users
+[38;5;6m INFO[0m [03:20:06] 08f6914def1d46c8a650cef22b4941da	 200 0ms GET /users
+[38;5;6m INFO[0m [03:20:06] 325f38d9d63643278962e79c83f74fc7	 200 0ms GET /users
+[38;5;6m INFO[0m [03:20:06] 60518eaec060435b8db4a115a40e4c7b	 200 0ms GET /users
+[38;5;6m INFO[0m [03:20:06] 8b0ecb35e1e44a0f9cd814217985f56d	 200 0ms GET /users
+[38;5;6m INFO[0m [03:20:06] 2efaa8d9ecc54e3f8ec40f9924955b0c	 200 0ms GET /users
+[38;5;6m INFO[0m [03:20:06] ec1eb69cfdf74b1c9b8450acffba4024	 200 0ms GET /users
+[38;5;6m INFO[0m [03:20:06] 1734f5bee21b45e5ae556031e46cec41	 200 0ms GET /users
+[38;5;6m INFO[0m [03:20:06] cd3448a8a887498fb2d0bf5c36ddd3b1	 200 0ms GET /users
+[38;5;6m INFO[0m [03:20:06] 1d55d0a6ff0544d78bb9a7556a90c48a	 200 0ms GET /users
+[38;5;6m INFO[0m [03:20:06] 9bd724e7ee2f4c8d952cb75acce2541e	 200 0ms GET /users
+[38;5;6m INFO[0m [03:20:06] fc208810b2aa426a892a98764bb447cd	 200 0ms GET /users
+[38;5;6m INFO[0m [03:20:06] b194638c192748108a6dd8f476133451	 200 0ms GET /users
+[38;5;6m INFO[0m [03:20:06] deed7eb1dbf341b59522b8c8a7d809f0	 200 0ms GET /users
+[38;5;6m INFO[0m [03:20:06] fee042158a1f45c0a01d54ec7369d287	 200 0ms GET /users
+[38;5;6m INFO[0m [03:20:06] 319fa4446caf434d902493bdc56e734d	 200 0ms GET /users
+[38;5;6m INFO[0m [03:20:06] 5c7678ca532748ef8cd9b174f55b7e46	 200 0ms GET /users
+[38;5;6m INFO[0m [03:20:06] 787b0dbdfe2d492c8586868af560fbe7	 200 0ms GET /users
+[38;5;6m INFO[0m [03:20:06] ef264fdaa5af48b68fa51e81dce066c5	 200 0ms GET /users
+[38;5;6m INFO[0m [03:20:06] cc27a68e37cc4dbaae0f05ca989f5614	 200 0ms GET /users
+[38;5;6m INFO[0m [03:20:06] 703fa058f95b4de78f763ec243b60cc2	 200 0ms GET /users
+[38;5;6m INFO[0m [03:20:06] 1fbd0e36c62449f396c3bdde0c2ada45	 200 0ms GET /users
+[38;5;6m INFO[0m [03:20:06] c61d319ac4824a109f7c6003a5e7d1c1	 200 0ms GET /users
+[38;5;6m INFO[0m [03:20:06] 6563002f3a2d422abb9658bf4e9f5315	 200 0ms GET /users
+[38;5;6m INFO[0m [03:20:06] 49373bd8792b4cdd8c2119bcd648a77e	 200 0ms GET /users
+[38;5;6m INFO[0m [03:20:06] dae93d48147e4fa4a94f10270f4ec724	 200 0ms GET /users
+[38;5;6m INFO[0m [03:20:06] 32f24efcc70a4d508f7e162102f3870e	 200 0ms GET /users
+[38;5;6m INFO[0m [03:20:06] 903d429a270540689d20c39060762515	 200 0ms GET /users
+[38;5;6m INFO[0m [03:20:06] 71f7bc81b4704814b627d6a02c5abde9	 200 0ms GET /users
+[38;5;6m INFO[0m [03:20:06] c76347d6070a485493567c26743ef8a7	 200 0ms GET /users
+[38;5;6m INFO[0m [03:20:06] b977159bf0d24394b5df8ea5e1602f9c	 200 0ms GET /users
+[38;5;6m INFO[0m [03:20:06] server shutting down
+received shutdown signalreceived shutdown signalCannot stop server, .listen() was never called

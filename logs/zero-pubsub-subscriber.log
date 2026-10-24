@@ -1,0 +1,102 @@
+[38;5;6m INFO[0m [03:23:23] Loaded config from file: ./configs/.env
+[38;5;6m INFO[0m [03:23:23] config loaded from: ./configs/.env
+[38;5;6m INFO[0m [03:23:23] connected to NATS at 'nats:4222'
+[38;5;6m INFO[0m [03:23:23] container is created
+[38;5;6m INFO[0m [03:23:23] pubsub-publisher app pid 6648
+[38;5;6m INFO[0m [03:23:23] no authentication mode found and disabled.
+[38;5;6m INFO[0m [03:23:23] topic:zero nats subscriber added
+[38;5;6m INFO[0m [03:23:23] registered static files from directory ./static
+[38;5;6m INFO[0m [03:23:23] starting nats subscriptions
+error: AddressInUse
+[38;5;6m INFO[0m [03:23:23] Starting server on port: 8080
+/drone/src/zero/examples/zero-pubsub-subscriber/zig-pkg/httpz-0.0.0-PNVzrPoUCQBcShb3c8vpxqyySWvnjvEs-AwXxaRHPQnz/src/posix.zig:258:27: 0x1b44b8a in bind (pubsub-subscriber)
+            .ADDRINUSE => return error.AddressInUse,
+                          ^
+/drone/src/zero/examples/zero-pubsub-subscriber/zig-pkg/httpz-0.0.0-PNVzrPoUCQBcShb3c8vpxqyySWvnjvEs-AwXxaRHPQnz/src/httpz.zig:390:17: 0x1bbf3fa in listen (pubsub-subscriber)
+                try posix.bind(listener, &address.any, socklen);
+                ^
+[38;5;6m INFO[0m [03:23:24] received on [zero] 2026-10-24T03:22:30
+[38;5;6m INFO[0m [03:23:24] received on [zero] 2026-10-24T03:22:35
+[38;5;6m INFO[0m [03:23:24] received on [zero] 2026-10-24T03:22:40
+[38;5;6m INFO[0m [03:23:24] received on [zero] 2026-10-24T03:22:45
+[38;5;6m INFO[0m [03:23:24] received on [zero] 2026-10-24T03:22:50
+[38;5;6m INFO[0m [03:23:24] received on [zero] 2026-10-24T03:22:55
+[38;5;6m INFO[0m [03:23:24] received on [zero] 2026-10-24T03:23:00
+[38;5;6m INFO[0m [03:23:24] received on [zero] 2026-10-24T03:23:05
+[38;5;6m INFO[0m [03:23:24] received on [zero] 2026-10-24T03:23:10
+[38;5;6m INFO[0m [03:23:24] received on [zero] 2026-10-24T03:23:15
+[38;5;6m INFO[0m [03:23:24] received on [zero] 2026-10-24T03:23:20
+[38;5;6m INFO[0m [03:23:25] received on [zero] 2026-10-24T03:23:25
+[38;5;6m INFO[0m [03:23:29] 7e4ba50cd3c14b72aa8d1c51fc6be566	 200 0ms GET /
+[38;5;6m INFO[0m [03:23:29] 06ba8ba613574b8ca8745a42db949f24	 200 0ms GET /
+[38;5;6m INFO[0m [03:23:29] d5e3174323b148789f6430d2e90f3fd4	 200 0ms GET /
+[38;5;6m INFO[0m [03:23:29] b6887187960145fa87ce030bd25b8dc0	 200 0ms GET /
+[38;5;6m INFO[0m [03:23:29] ad26a2b60fb04062ad8202e11bd28666	 200 0ms GET /
+[38;5;6m INFO[0m [03:23:29] 001dce5806dc484f94070b1cc9eecb91	 200 0ms GET /
+[38;5;6m INFO[0m [03:23:29] 3f804fa4ebb8468286715b5616656351	 200 0ms GET /
+[38;5;6m INFO[0m [03:23:29] f90599679cda401fa6e1aeb44cecd94c	 200 0ms GET /
+[38;5;6m INFO[0m [03:23:29] 935dc80738374ebb81c408e4982ffd5f	 200 0ms GET /
+[38;5;6m INFO[0m [03:23:29] 6b67d86fde3644d2aad7279b610b2e78	 200 0ms GET /
+[38;5;6m INFO[0m [03:23:29] e992e75f388e46329b07dc766f657e70	 200 0ms GET /
+[38;5;6m INFO[0m [03:23:29] 70695883a36440e09834a45778979eb4	 200 0ms GET /
+[38;5;6m INFO[0m [03:23:29] bae507f8fb004b49bb0d96d6a1a78267	 200 0ms GET /
+[38;5;6m INFO[0m [03:23:29] e64cb60ce5ff4b078c2674d523a9fb5b	 200 0ms GET /
+[38;5;6m INFO[0m [03:23:29] c63f9c81dbf647a4bdd11daac1da31eb	 200 0ms GET /
+[38;5;6m INFO[0m [03:23:29] 4c0003c145fe4b508abb1127dec94ca3	 200 0ms GET /
+[38;5;6m INFO[0m [03:23:29] fe6b22464759473396def7c27036c3ae	 200 0ms GET /
+[38;5;6m INFO[0m [03:23:29] ea9ff4e273a44afea17aa3a326a7910c	 200 0ms GET /
+[38;5;6m INFO[0m [03:23:29] a24eecaabaae4b978e8d0c6d4bfa3fbc	 200 0ms GET /
+[38;5;6m INFO[0m [03:23:29] d84dda4077e048c7ac462106b4df1422	 200 0ms GET /
+[38;5;6m INFO[0m [03:23:29] c57a445f57244d2b81a763797b8b30d5	 200 0ms GET /
+... [549060 lines of load/request noise omitted] ...
+...
+[38;5;6m INFO[0m [03:24:23] 5ae8651a672f4f0681f2be6da63eea56	 200 0ms GET /
+[38;5;6m INFO[0m [03:24:23] c6c7dcbb19b0428289d9a955262a5e23	 200 0ms GET /
+[38;5;6m INFO[0m [03:24:23] 21b66b2a9c7b401494f637c6d1952756	 200 0ms GET /
+[38;5;6m INFO[0m [03:24:23] cf8c12bb4b684cc79db7e2ab0ae83f68	 200 0ms GET /
+[38;5;6m INFO[0m [03:24:23] 2dd07bb7fd8841b3826fc84fdaf5c62d	 200 0ms GET /
+[38;5;6m INFO[0m [03:24:23] 666740d336cd4cb483871b7181f90c36	 200 0ms GET /
+[38;5;6m INFO[0m [03:24:23] 735ee04b4e3146a3a77d475c4f141f3c	 200 0ms GET /
+[38;5;6m INFO[0m [03:24:23] 9ecbab79da3e46dfba763ca74dec08fb	 200 0ms GET /
+[38;5;6m INFO[0m [03:24:23] 9e8dae5ffc1449328967d572893b21c6	 200 0ms GET /
+[38;5;6m INFO[0m [03:24:23] 0afe33c34acd492e860b1068a8d2b28b	 200 0ms GET /
+[38;5;6m INFO[0m [03:24:23] fd97f4ce4e86451f8c8a77b1193c386d	 200 0ms GET /
+[38;5;6m INFO[0m [03:24:23] 2552571815c448969c4df76bf62c16c7	 200 0ms GET /
+[38;5;6m INFO[0m [03:24:23] 37e0cf8b01ee48c898ec05802326f867	 200 0ms GET /
+[38;5;6m INFO[0m [03:24:23] 88e52924461b411481691f05dddbb490	 200 0ms GET /
+[38;5;6m INFO[0m [03:24:23] ba08c0c624424dec9a86120b45b6335c	 200 0ms GET /
+[38;5;6m INFO[0m [03:24:23] 27aef21294e3499eb59a47bf879aed59	 200 0ms GET /
+[38;5;6m INFO[0m [03:24:23] b5bb543ddc4049b0be90f0575ebd4b22	 200 0ms GET /
+[38;5;6m INFO[0m [03:24:23] 32c481dcf4ec466ab504031c018c4e72	 200 0ms GET /
+[38;5;6m INFO[0m [03:24:23] 61632331fdb145e195bac5cde02aa00f	 200 0ms GET /
+[38;5;6m INFO[0m [03:24:23] 61f3988847154617826fe1cf56e356e7	 200 0ms GET /
+[38;5;6m INFO[0m [03:24:23] f49e10cec44841b39e6cd6eefef6ab67	 200 0ms GET /
+[38;5;6m INFO[0m [03:24:23] 0c2eed27b4174deca9a18789bdfa7570	 200 0ms GET /
+[38;5;6m INFO[0m [03:24:23] a27ee7092b9a4f4dbc1c3763a44c52c7	 200 0ms GET /
+[38;5;6m INFO[0m [03:24:23] cleaning running cronz
+[38;5;6m INFO[0m [03:24:23] server shutting down
+received shutdown signalreceived shutdown signalCannot stop server, .listen() was never calledSegmentation fault at address 0x7f5daddc5010
+/drone/src/zero/examples/zero-pubsub-publisher/zig-pkg/nats-0.1.0-991asQCWHwBIwVHZJpXV_b7mll-5F78o_F_vunrfuBm7/src/Client.zig:3452:23: 0x1b31c81 in deinit (pubsub-publisher)
+    const alloc = self.allocator;
+                      ^
+/drone/src/zero/src/pubsub/nats/NATS.zig:108:23: 0x1b31ad2 in destroy (pubsub-publisher)
+    self.client.deinit();
+                      ^
+/drone/src/zero/src/container.zig:318:18: 0x1b12ae4 in destroy (pubsub-publisher)
+        n.destroy();
+                 ^
+/drone/src/zero/src/app.zig:289:27: 0x1b0dbc9 in destroy (pubsub-publisher)
+    self.container.destroy();
+                          ^
+/drone/src/zero/src/app.zig:672:17: 0x1b0b1e3 in run (pubsub-publisher)
+    self.destroy();
+                ^
+/drone/src/zero/examples/zero-pubsub-publisher/src/main.zig:30:16: 0x1b0b6c8 in main (pubsub-publisher)
+    try app.run();
+               ^
+/opt/zig-x86_64-linux-0.16.0/lib/std/start.zig:737:30: 0x1b0be91 in callMain (pubsub-publisher)
+    return wrapMain(root.main(.{
+                             ^
+???:?:?: 0x7f5db2946ca7 in ??? (/lib/x86_64-linux-gnu/libc.so.6)
+???:?:?: 0x7f5db2946d64 in ??? (/lib/x86_64-linux-gnu/libc.so.6)
+???:?:?: 0x198cdb0 in ??? (???)
