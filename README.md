@@ -14,6 +14,10 @@ Soak testing runs the framework's own examples under real load for minutes to ho
 
 For a web framework this matters because the examples are the contract. If `zero-basic` leaks under load, every app built on it leaks too. A soak is how we find that before a user does.
 
+| Drone Execution                            | Report Dashboard                             |
+| ------------------------------------------ | -------------------------------------------- |
+| ![Drone](./resources/drone-execution.webp) | ![Report](./resources/report-dashboard.webp) |
+
 ## The path from commit to report
 
 Here is the real flow. You write code, and a chain of mirrors and triggers turns it into a published report.
