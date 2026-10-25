@@ -1,6 +1,6 @@
 # zero-soak report (gate)
 
-generated: 2026-10-24 04:43:05 UTC · commit: 0286466326b17f63806323ff531ca4b850ca2d76 · build: 7
+generated: 2026-10-25 04:50:04 UTC · commit: 8b020cf321fea7b0061ba34dd8da0652d1a41164 · build: 8
 
 **FAIL** — 14 services, 12 pass, 2 fail, 0 missing.
 
@@ -28,7 +28,7 @@ generated: 2026-10-24 04:43:05 UTC · commit: 0286466326b17f63806323ff531ca4b850
 | Status | Check | Detail |
 |---|---|---|
 | PASS | health up |  |
-| FAIL | RSS leak signal | RSS grew 68068KiB (> 8MiB and > 15%): possible leak |
+| FAIL | RSS leak signal | RSS grew 73868KiB (> 8MiB and > 15%): possible leak |
 
 **Load applied:** loader=go-wrk, concurrency=5 (per route), duration_min=1, mode=gate
 
@@ -38,7 +38,7 @@ generated: 2026-10-24 04:43:05 UTC · commit: 0286466326b17f63806323ff531ca4b850
 |---|---|---|
 | PASS | dep zero-pubsub-publisher up |  |
 | PASS | health up |  |
-| FAIL | RSS leak signal | RSS grew 293740KiB (> 8MiB and > 15%): possible leak |
+| FAIL | RSS leak signal | RSS grew 284048KiB (> 8MiB and > 15%): possible leak |
 
 **Load applied:** loader=go-wrk, concurrency=5 (per route), duration_min=1, mode=gate
 
