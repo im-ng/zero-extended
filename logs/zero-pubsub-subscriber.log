@@ -1,81 +1,81 @@
-[38;5;6m INFO[0m [04:49:02] Loaded config from file: ./configs/.env
-[38;5;6m INFO[0m [04:49:02] config loaded from: ./configs/.env
-[38;5;6m INFO[0m [04:49:02] connected to NATS at 'nats:4222'
-[38;5;6m INFO[0m [04:49:02] container is created
-[38;5;6m INFO[0m [04:49:02] pubsub-publisher app pid 6659
-[38;5;6m INFO[0m [04:49:02] no authentication mode found and disabled.
-[38;5;6m INFO[0m [04:49:02] topic:zero nats subscriber added
-[38;5;6m INFO[0m [04:49:02] registered static files from directory ./static
-[38;5;6m INFO[0m [04:49:02] starting nats subscriptions
+[38;5;6m INFO[0m [07:11:13] Loaded config from file: ./configs/.env
+[38;5;6m INFO[0m [07:11:13] config loaded from: ./configs/.env
+[38;5;6m INFO[0m [07:11:13] connected to NATS at 'nats:4222'
+[38;5;6m INFO[0m [07:11:13] container is created
+[38;5;6m INFO[0m [07:11:13] pubsub-publisher app pid 6668
+[38;5;6m INFO[0m [07:11:13] no authentication mode found and disabled.
+[38;5;6m INFO[0m [07:11:13] topic:zero nats subscriber added
+[38;5;6m INFO[0m [07:11:13] registered static files from directory ./static
+[38;5;6m INFO[0m [07:11:13] starting nats subscriptions
 error: AddressInUse
-[38;5;6m INFO[0m [04:49:02] Starting server on port: 8080
+[38;5;6m INFO[0m [07:11:13] Starting server on port: 8080
 /drone/src/zero/examples/zero-pubsub-subscriber/zig-pkg/httpz-0.0.0-PNVzrPoUCQBcShb3c8vpxqyySWvnjvEs-AwXxaRHPQnz/src/posix.zig:258:27: 0x1b44b8a in bind (pubsub-subscriber)
             .ADDRINUSE => return error.AddressInUse,
                           ^
 /drone/src/zero/examples/zero-pubsub-subscriber/zig-pkg/httpz-0.0.0-PNVzrPoUCQBcShb3c8vpxqyySWvnjvEs-AwXxaRHPQnz/src/httpz.zig:390:17: 0x1bbf3fa in listen (pubsub-subscriber)
                 try posix.bind(listener, &address.any, socklen);
                 ^
-[38;5;6m INFO[0m [04:49:03] received on [zero] 2026-10-25T04:48:10
-[38;5;6m INFO[0m [04:49:03] received on [zero] 2026-10-25T04:48:15
-[38;5;6m INFO[0m [04:49:03] received on [zero] 2026-10-25T04:48:20
-[38;5;6m INFO[0m [04:49:03] received on [zero] 2026-10-25T04:48:25
-[38;5;6m INFO[0m [04:49:03] received on [zero] 2026-10-25T04:48:30
-[38;5;6m INFO[0m [04:49:03] received on [zero] 2026-10-25T04:48:35
-[38;5;6m INFO[0m [04:49:03] received on [zero] 2026-10-25T04:48:40
-[38;5;6m INFO[0m [04:49:03] received on [zero] 2026-10-25T04:48:45
-[38;5;6m INFO[0m [04:49:03] received on [zero] 2026-10-25T04:48:50
-[38;5;6m INFO[0m [04:49:03] received on [zero] 2026-10-25T04:48:55
-[38;5;6m INFO[0m [04:49:03] received on [zero] 2026-10-25T04:49:00
-[38;5;6m INFO[0m [04:49:05] received on [zero] 2026-10-25T04:49:05
-[38;5;6m INFO[0m [04:49:05] 39b502ea476744fc8c9f2fcd837a2d04	 200 0ms GET /
-[38;5;6m INFO[0m [04:49:05] 3cf845c23ff34a64868a5c3b5d857a52	 200 0ms GET /
-[38;5;6m INFO[0m [04:49:05] 4ec579e3ddc8414c99c83f6886a50ff3	 200 0ms GET /
-[38;5;6m INFO[0m [04:49:05] f5aa4214d1f04de9bb2215a8ed39bea3	 200 0ms GET /
-[38;5;6m INFO[0m [04:49:05] 46ada6ceb10a4b2387283460f7f31e84	 200 0ms GET /
-[38;5;6m INFO[0m [04:49:05] 73d110bdf99f4245bb53e5a0f6696159	 200 0ms GET /
-[38;5;6m INFO[0m [04:49:05] 52abc1bca7cc476ea85f30b80b456a64	 200 0ms GET /
-[38;5;6m INFO[0m [04:49:05] 940f93a34bcc4e8c8da3628d17c8ad0f	 200 0ms GET /
-[38;5;6m INFO[0m [04:49:05] a47cbc03309d439b8ce825f6e7312123	 200 0ms GET /
-[38;5;6m INFO[0m [04:49:05] 0625a125e72f4e8f8d2ab379692eb917	 200 0ms GET /
-[38;5;6m INFO[0m [04:49:05] 997b0c8007c34ee3945bc7ccc6a499a5	 200 0ms GET /
-[38;5;6m INFO[0m [04:49:05] d2c42175bef94461a53e9fb66566c9f1	 200 0ms GET /
-[38;5;6m INFO[0m [04:49:05] 61891cf106b1421287678d2baaf23bb9	 200 0ms GET /
-[38;5;6m INFO[0m [04:49:05] bc8244f3bfd544c38ee6a7628a287d55	 200 0ms GET /
-[38;5;6m INFO[0m [04:49:05] 2ef4a38e98eb4407afb3fa0603b49c95	 200 0ms GET /
-[38;5;6m INFO[0m [04:49:05] c6132781ccfb47dbba3d958e4c3beede	 200 0ms GET /
-[38;5;6m INFO[0m [04:49:05] fedbaf6a71824e4084a89bd02752b593	 200 0ms GET /
-[38;5;6m INFO[0m [04:49:05] d670406708a14a4cb78fdca9b512c6ed	 200 0ms GET /
-[38;5;6m INFO[0m [04:49:05] 643c2788602149c48f55de39e13b6eef	 200 0ms GET /
-[38;5;6m INFO[0m [04:49:05] 304ec6bc3fb94467ba7b33de9cea858d	 200 0ms GET /
-[38;5;6m INFO[0m [04:49:05] 12e073849e164e9aa99d0ea0b71394a9	 200 0ms GET /
-... [554471 lines of load/request noise omitted] ...
+[38;5;6m INFO[0m [07:11:14] received on [zero] 2026-10-25T07:10:20
+[38;5;6m INFO[0m [07:11:14] received on [zero] 2026-10-25T07:10:25
+[38;5;6m INFO[0m [07:11:14] received on [zero] 2026-10-25T07:10:30
+[38;5;6m INFO[0m [07:11:14] received on [zero] 2026-10-25T07:10:35
+[38;5;6m INFO[0m [07:11:14] received on [zero] 2026-10-25T07:10:40
+[38;5;6m INFO[0m [07:11:14] received on [zero] 2026-10-25T07:10:45
+[38;5;6m INFO[0m [07:11:14] received on [zero] 2026-10-25T07:10:50
+[38;5;6m INFO[0m [07:11:14] received on [zero] 2026-10-25T07:10:55
+[38;5;6m INFO[0m [07:11:14] received on [zero] 2026-10-25T07:11:00
+[38;5;6m INFO[0m [07:11:14] received on [zero] 2026-10-25T07:11:05
+[38;5;6m INFO[0m [07:11:14] received on [zero] 2026-10-25T07:11:10
+[38;5;6m INFO[0m [07:11:15] c89e746890854b368971b607c489fa3e	 200 0ms GET /
+[38;5;6m INFO[0m [07:11:15] 6f08a73177314b2cbf575e12424815cd	 200 0ms GET /
+[38;5;6m INFO[0m [07:11:15] 1ed5369618084fc880f31e46f3512db3	 200 0ms GET /
+[38;5;6m INFO[0m [07:11:15] ca209def0d40470ab585b02375bd02a1	 200 0ms GET /
+[38;5;6m INFO[0m [07:11:15] 69f7022ef0c14895ad0219eeca8b2ce5	 200 0ms GET /
+[38;5;6m INFO[0m [07:11:15] 565493610a704e5f9ba4c64d019d6ec3	 200 0ms GET /
+[38;5;6m INFO[0m [07:11:15] 6543c51aef35402c93535f0142d5dac7	 200 0ms GET /
+[38;5;6m INFO[0m [07:11:15] 6588f696f9cb44fbaccffcf9d2992099	 200 0ms GET /
+[38;5;6m INFO[0m [07:11:15] aa122a660f27496c806fcc0abd1f54af	 200 0ms GET /
+[38;5;6m INFO[0m [07:11:15] f97c808841594c4e8abf0c47a418b800	 200 0ms GET /
+[38;5;6m INFO[0m [07:11:15] 1d90a97e5ee84d549ae4fdc6132c3f26	 200 0ms GET /
+[38;5;6m INFO[0m [07:11:15] e4b5275979b440f1b7f17819c8b2701b	 200 0ms GET /
+[38;5;6m INFO[0m [07:11:15] 3274d26864784c41b5a4a276c2a50f08	 200 0ms GET /
+[38;5;6m INFO[0m [07:11:15] 2fc9f04d1f7947c4ac8c07f7670683f2	 200 0ms GET /
+[38;5;6m INFO[0m [07:11:15] 0a08d85872304600ae861986cb1ca5a2	 200 0ms GET /
+[38;5;6m INFO[0m [07:11:15] 915017cd0932484da5d68c061fdae0cc	 200 0ms GET /
+[38;5;6m INFO[0m [07:11:15] f577667c682a4d769faca61305f5aa86	 200 0ms GET /
+[38;5;6m INFO[0m [07:11:15] 947f6c575ba540b998e49c13ba9e980e	 200 0ms GET /
+[38;5;6m INFO[0m [07:11:15] 395daadfda36404ab85dbc4006cbed89	 200 0ms GET /
+[38;5;6m INFO[0m [07:11:15] e23bef550d55439ab5da015b1db7bed9	 200 0ms GET /
+[38;5;6m INFO[0m [07:11:15] 1aa32731de5d4dcebe979fdd70f6e0cb	 200 0ms GET /
+[38;5;6m INFO[0m [07:11:15] c1ffb348301b4977ae150247f94c6391	 200 0ms GET /
+... [559113 lines of load/request noise omitted] ...
 ...
-[38;5;6m INFO[0m [04:50:02] ce9ba7024e6941b6925d3b0e4f899603	 200 0ms GET /
-[38;5;6m INFO[0m [04:50:02] 7817824932154d45b72109566da223aa	 200 0ms GET /
-[38;5;6m INFO[0m [04:50:02] 3bd384b27b494fea8ae3acee2ed896a5	 200 0ms GET /
-[38;5;6m INFO[0m [04:50:02] f6751dc3ea9d451ea57ad8a18650cb55	 200 0ms GET /
-[38;5;6m INFO[0m [04:50:02] 0eaea6f35fa2418bad4233502323daca	 200 0ms GET /
-[38;5;6m INFO[0m [04:50:02] 7fcd89fe833f4c6a88d91dc42b932b17	 200 0ms GET /
-[38;5;6m INFO[0m [04:50:02] 57bdd249a1344e2bbd7da418a493002d	 200 0ms GET /
-[38;5;6m INFO[0m [04:50:02] b5bcf7909e7643668e734d6918ca46cf	 200 0ms GET /
-[38;5;6m INFO[0m [04:50:02] d915ddf5a17349cab6019ffd8376977d	 200 0ms GET /
-[38;5;6m INFO[0m [04:50:02] a3c234b072834a33847b4de89cc8e1cf	 200 0ms GET /
-[38;5;6m INFO[0m [04:50:02] 52866956f7d7434387e2ebf03d586e3c	 200 0ms GET /
-[38;5;6m INFO[0m [04:50:02] 71ae29e4e0c04dd3a2c497dc1b11771d	 200 0ms GET /
-[38;5;6m INFO[0m [04:50:02] 82effb3414f64356a54badbe050c4087	 200 0ms GET /
-[38;5;6m INFO[0m [04:50:02] 7953363f5c72472cb7767b9da43bf5bc	 200 0ms GET /
-[38;5;6m INFO[0m [04:50:02] 609e9c2c66b441f48e207f451318be26	 200 0ms GET /
-[38;5;6m INFO[0m [04:50:02] 3e47ff937a3a4d01a0440dc4e771c149	 200 0ms GET /
-[38;5;6m INFO[0m [04:50:02] 2fe37d78383745fda828b276fda4022d	 200 0ms GET /
-[38;5;6m INFO[0m [04:50:02] 7983f50fe85d47d0a8fd38165e38b463	 200 0ms GET /
-[38;5;6m INFO[0m [04:50:02] df1cdc50b932465184036f3e8c0d9325	 200 0ms GET /
-[38;5;6m INFO[0m [04:50:02] f169d5ba9e6c4590930d22e2b634be3f	 200 0ms GET /
-[38;5;6m INFO[0m [04:50:02] 0431579172b44cffa83bc2e1269d6723	 200 0ms GET /
-[38;5;6m INFO[0m [04:50:02] 4a5d7f27de544ce2bd042359cee18c5e	 200 0ms GET /
-[38;5;6m INFO[0m [04:50:02] 6fdc755d4cf04432aee2466280df96af	 200 0ms GET /
-[38;5;6m INFO[0m [04:50:02] cleaning running cronz
-[38;5;6m INFO[0m [04:50:02] server shutting down
-received shutdown signalreceived shutdown signalCannot stop server, .listen() was never calledSegmentation fault at address 0x7f0dfc1c5010
+[38;5;6m INFO[0m [07:12:13] d64d601b784147a78990304e1884332b	 200 0ms GET /
+[38;5;6m INFO[0m [07:12:13] 39d2db0a3e9e4fcdab1bfe895788c629	 200 0ms GET /
+[38;5;6m INFO[0m [07:12:13] 7d6dc822a7cf4347b162ed4658f9c9f6	 200 0ms GET /
+[38;5;6m INFO[0m [07:12:13] 8d78ab5bb38241349faf1533a509d21f	 200 0ms GET /
+[38;5;6m INFO[0m [07:12:13] de4371cda91f47ebb9a40cdc63dfc39a	 200 0ms GET /
+[38;5;6m INFO[0m [07:12:13] 71809c14bef046128b8d688a23c7989c	 200 0ms GET /
+[38;5;6m INFO[0m [07:12:13] 545d696fb8ac45e2822f58f90d030ff1	 200 0ms GET /
+[38;5;6m INFO[0m [07:12:13] e1056077d7324898ad6fe14788321e3c	 200 0ms GET /
+[38;5;6m INFO[0m [07:12:13] 93f5acb7ee6c499c8cb5836c99db9bd0	 200 0ms GET /
+[38;5;6m INFO[0m [07:12:13] 22a908cdfad2498ba91095014eedc238	 200 0ms GET /
+[38;5;6m INFO[0m [07:12:13] fd41498002664b3c81c3cea00ada4213	 200 0ms GET /
+[38;5;6m INFO[0m [07:12:13] d745d1a3e2d641f2a88837f745efe9f5	 200 0ms GET /
+[38;5;6m INFO[0m [07:12:13] 9f3e75a4e5b1418592102c1222094495	 200 0ms GET /
+[38;5;6m INFO[0m [07:12:13] 3b3f319d62b84ec59b3bf5ef9840b1ef	 200 0ms GET /
+[38;5;6m INFO[0m [07:12:13] e6e5f03f77db4f0eacdf8204d2b8ea99	 200 0ms GET /
+[38;5;6m INFO[0m [07:12:13] 810f0742c9b74de2bb9300f52a2093a1	 200 0ms GET /
+[38;5;6m INFO[0m [07:12:13] e25d824f909146cfb1fd9e31b4539f6a	 200 0ms GET /
+[38;5;6m INFO[0m [07:12:13] 61d9d41dcc6d4c7bb52e8aa0aff1929e	 200 0ms GET /
+[38;5;6m INFO[0m [07:12:13] 80f61be1426b4df5b488936099b13390	 200 0ms GET /
+[38;5;6m INFO[0m [07:12:13] abab038246b142fe8f07a9a5a75e825a	 200 0ms GET /
+[38;5;6m INFO[0m [07:12:13] a29595be7b594bf08d09d8fe88a03d6b	 200 0ms GET /
+[38;5;6m INFO[0m [07:12:13] 4ea6b3aa49d84a6fac01f933ea9c7016	 200 0ms GET /
+[38;5;6m INFO[0m [07:12:13] 75e7e9a4f8474b95b98dcf00a7b70482	 200 0ms GET /
+[38;5;6m INFO[0m [07:12:13] cleaning running cronz
+[38;5;6m INFO[0m [07:12:13] server shutting down
+received shutdown signalreceived shutdown signalCannot stop server, .listen() was never calledSegmentation fault at address 0x7f000f5c5010
 /drone/src/zero/examples/zero-pubsub-publisher/zig-pkg/nats-0.1.0-991asQCWHwBIwVHZJpXV_b7mll-5F78o_F_vunrfuBm7/src/Client.zig:3452:23: 0x1b31c81 in deinit (pubsub-publisher)
     const alloc = self.allocator;
                       ^
@@ -97,6 +97,6 @@ received shutdown signalreceived shutdown signalCannot stop server, .listen() wa
 /opt/zig-x86_64-linux-0.16.0/lib/std/start.zig:737:30: 0x1b0be91 in callMain (pubsub-publisher)
     return wrapMain(root.main(.{
                              ^
-???:?:?: 0x7f0e00e3eca7 in ??? (/lib/x86_64-linux-gnu/libc.so.6)
-???:?:?: 0x7f0e00e3ed64 in ??? (/lib/x86_64-linux-gnu/libc.so.6)
+???:?:?: 0x7f001421eca7 in ??? (/lib/x86_64-linux-gnu/libc.so.6)
+???:?:?: 0x7f001421ed64 in ??? (/lib/x86_64-linux-gnu/libc.so.6)
 ???:?:?: 0x198cdb0 in ??? (???)

@@ -1,6 +1,7 @@
 # zero-soak report (gate)
 
-generated: 2026-10-25 04:50:04 UTC · commit: 8b020cf321fea7b0061ba34dd8da0652d1a41164 · build: 8
+generated: 2026-10-25 07:12:15 UTC · build: 9
+framework: zero @ main (e90434ee) · https://gitea.pi/ng/zero.git
 
 **FAIL** — 14 services, 12 pass, 2 fail, 0 missing.
 
@@ -28,7 +29,7 @@ generated: 2026-10-25 04:50:04 UTC · commit: 8b020cf321fea7b0061ba34dd8da0652d1
 | Status | Check | Detail |
 |---|---|---|
 | PASS | health up |  |
-| FAIL | RSS leak signal | RSS grew 73868KiB (> 8MiB and > 15%): possible leak |
+| FAIL | RSS leak signal | RSS grew 66348KiB (> 16MiB and > 25%): possible leak |
 
 **Load applied:** loader=go-wrk, concurrency=5 (per route), duration_min=1, mode=gate
 
@@ -38,7 +39,7 @@ generated: 2026-10-25 04:50:04 UTC · commit: 8b020cf321fea7b0061ba34dd8da0652d1
 |---|---|---|
 | PASS | dep zero-pubsub-publisher up |  |
 | PASS | health up |  |
-| FAIL | RSS leak signal | RSS grew 284048KiB (> 8MiB and > 15%): possible leak |
+| FAIL | RSS leak signal | RSS grew 293644KiB (> 16MiB and > 25%): possible leak |
 
 **Load applied:** loader=go-wrk, concurrency=5 (per route), duration_min=1, mode=gate
 
@@ -59,7 +60,7 @@ generated: 2026-10-25 04:50:04 UTC · commit: 8b020cf321fea7b0061ba34dd8da0652d1
 | PASS | RSS plateau (no leak) |  |
 | PASS | chaos survived + recovered |  |
 
-**Load applied:** loader=go-wrk, concurrency=5 (per route), duration_min=1, mode=gate, chaos kill-window=2s
+**Load applied:** loader=go-wrk, concurrency=5 (per route), duration_min=1, mode=gate, chaos kill-window=10s
 
 ### zero-duckdb (PASS)
 
@@ -79,7 +80,7 @@ generated: 2026-10-25 04:50:04 UTC · commit: 8b020cf321fea7b0061ba34dd8da0652d1
 | PASS | graphql query OK (200, data.users present) |  |
 | PASS | chaos survived + recovered |  |
 
-**Load applied:** loader=graphql POST loop, concurrency=1 (sequential), duration_min=1, mode=gate, chaos kill-window=2s
+**Load applied:** loader=graphql POST loop, concurrency=1 (sequential), duration_min=1, mode=gate, chaos kill-window=10s
 
 ### zero-nosql-secure (PASS)
 
@@ -98,7 +99,7 @@ generated: 2026-10-25 04:50:04 UTC · commit: 8b020cf321fea7b0061ba34dd8da0652d1
 | PASS | RSS plateau (no leak) |  |
 | PASS | chaos survived + recovered |  |
 
-**Load applied:** loader=go-wrk, concurrency=5 (per route), duration_min=1, mode=gate, chaos kill-window=2s
+**Load applied:** loader=go-wrk, concurrency=5 (per route), duration_min=1, mode=gate, chaos kill-window=10s
 
 ### zero-s3 (PASS)
 
@@ -109,7 +110,7 @@ generated: 2026-10-25 04:50:04 UTC · commit: 8b020cf321fea7b0061ba34dd8da0652d1
 | PASS | filestore round-trip (upload+download) OK |  |
 | PASS | chaos survived + recovered |  |
 
-**Load applied:** loader=filestore (upload→download→delete), concurrency=8, duration_min=1, mode=gate, chaos kill-window=2s
+**Load applied:** loader=filestore (upload→download→delete), concurrency=8, duration_min=1, mode=gate, chaos kill-window=10s
 
 ### zero-search (PASS)
 
@@ -128,7 +129,7 @@ generated: 2026-10-25 04:50:04 UTC · commit: 8b020cf321fea7b0061ba34dd8da0652d1
 | PASS | RSS plateau (no leak) |  |
 | PASS | chaos survived + recovered |  |
 
-**Load applied:** loader=go-wrk, concurrency=5 (per route), duration_min=1, mode=gate, chaos kill-window=2s
+**Load applied:** loader=go-wrk, concurrency=5 (per route), duration_min=1, mode=gate, chaos kill-window=10s
 
 ### zero-sqlite (PASS)
 
@@ -156,3 +157,31 @@ generated: 2026-10-25 04:50:04 UTC · commit: 8b020cf321fea7b0061ba34dd8da0652d1
 | PASS | RSS plateau (no leak) |  |
 
 **Load applied:** loader=go-wrk, concurrency=5 (per route), duration_min=1, mode=gate
+
+
+## Framework probes
+
+### Allocation probe (GET /ping → pong)
+
+| backing | allocs/req | bytes/req | latency/req ns | alloc-time/req ns | dispatch-only/req ns | leaked |
+|---|---|---|---|---|---|---|
+| fallback | 20.00 | 13663 | 60734.7 | 4392.5 | 56342.2 | 0 bytes OK |
+
+top call-sites (alloc-probe-fallback.json):
+
+| site | count/req | bytes/req |
+|---|---|---|
+| 0x1896ed4 | 4.00 | 8448 |
+| 0x1896744 | 1.00 | 3136 |
+| 0x1392697 | 1.00 | 768 |
+| 0x13923c3 | 1.00 | 256 |
+| 0x13931fe | 1.00 | 248 |
+
+### Route probe (literal static routes)
+
+- routes: 1000
+- registration allocs: 9
+- registration bytes: 625680
+- bytes/route: 625.7
+- route match time: 549.29 ns/req
+- match-time allocs: 0
