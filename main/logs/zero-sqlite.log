@@ -1,102 +1,102 @@
-[38;5;6m INFO[0m [01:25:31] Loaded config from file: ./configs/.env
-[38;5;6m INFO[0m [01:25:31] config overriden ./configs/.dev.env file not found.
-[38;5;6m INFO[0m [01:25:31] connected to sqlite at '/drone/src/zero/examples/zero-sqlite/data/sqlite-app.db'
-[38;5;8mDEBUG[0m [01:25:31] redis is disabled, as redis host is not provided.
-[38;5;8mDEBUG[0m [01:25:31] file store is disabled, as FILE_STORE_ROOT is not provided.
-[38;5;6m INFO[0m [01:25:31] connected to sqlite at '/drone/src/zero/examples/zero-sqlite/data/sqlite-app.db'
-[38;5;8mDEBUG[0m [01:25:31] clickhouse is disabled, as CLICKHOUSE_URL is not provided.
-[38;5;8mDEBUG[0m [01:25:31] time-series is disabled, as INFLUXDB_URL is not provided.
-[38;5;8mDEBUG[0m [01:25:31] opentsdb is disabled, as OPENTSDB_URL is not provided.
-[38;5;8mDEBUG[0m [01:25:31] search is disabled, as SOLR_URL is not provided.
-[38;5;8mDEBUG[0m [01:25:31] nosql is disabled, as CONTACT_POINTS are not provided.
-[38;5;8mDEBUG[0m [01:25:31] arangodb is disabled, as ARANGO_HOST is not provided.
-[38;5;8mDEBUG[0m [01:25:31] graph is disabled, as DGRAPH_URL is not provided.
-[38;5;8mDEBUG[0m [01:25:31] pubsub is disabled, as pubsub mode is not provided.
-[38;5;6m INFO[0m [01:25:31] container is created
-[38;5;6m INFO[0m [01:25:31] sqlite-demo app pid 1661
-[38;5;6m INFO[0m [01:25:31] no authentication mode found and disabled.
-[38;5;6m INFO[0m [01:25:31] migration table created
-[38;5;6m INFO[0m [01:25:31] 1790396525: migration completed  
-[38;5;6m INFO[0m [01:25:31] registered static files from directory ./static
-[38;5;8mDEBUG[0m [01:25:31] metrics server is initialized
-[38;5;8mDEBUG[0m [01:25:31] metrics server started
-[38;5;6m INFO[0m [01:25:31] Starting server on port: 8081
-[38;5;6m INFO[0m [01:25:32] 168aa4c7548c4ac5b9e1b37937e97353	 200 0ms GET /.well-known/health
-[38;5;6m INFO[0m [01:25:32] f1513b0baced4a43aecbafbd9411815c	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:25:32] d79b22c38714495ab52f1694a1bfbbf7	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:25:32] 7f85da22e63f4374bd96cde5e599e574	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:25:32] 628c6d8098754c25a854ca7bb7cd10d5	 200 1ms GET /sqlite/users
-[38;5;6m INFO[0m [01:25:32] d278f55df5b24f9a935a51e90664769e	 200 1ms GET /sqlite/users
-[38;5;6m INFO[0m [01:25:32] d36e11290cd840f3ac33288c521b23c7	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:25:32] 433362ebbc2e425c8374c942255b705a	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:25:32] 3573e837dc1f48f3a2bff288ec7e5525	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:25:32] 19b52baba894475589a1ebc837304ea2	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:25:32] 6f1d948329e9410e94d0bca913ed97f6	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:25:32] 83a5d2ad9b33449d9684520cc42c3473	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:25:32] 031768903e6844f69ba7bbc7d777f75b	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:25:32] 575f88f54adf4c9eaa02056ca1615c84	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:25:32] b2eefcd480c24fb09018928900f35716	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:25:32] 17327ba35b5a406e8b9696eb797d1959	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:25:32] 82ded511a87d4a08988f034991418aa5	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:25:32] 65dac470a7854d6d8e78d4a23f4d8494	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:25:32] 230db2e8ccbf4939b976fdc2041d3899	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:25:32] 12b13192b3f945f09a7550492f3b34ba	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:25:32] 69138f3062f54563842aaa4b00f0642b	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:25:32] 0a73493722754414b34e5cfabcb48cf8	 200 1ms GET /sqlite/users
-[38;5;6m INFO[0m [01:25:32] fdcb754c17dc410ca7d759baea8f7d74	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:25:32] 6408d8557b274b5ea6ffb072fdc2df42	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:25:32] c1a610ce06aa478e97864b9abacb889f	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:25:32] 0f9d527ad7794890b3b7dcbe503b775e	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:25:32] ad0854b1ece3413db2d5857e2df623b3	 200 0ms GET /sqlite/users
-... [361423 lines of load/request noise omitted] ...
+[38;5;6m INFO[0m [02:45:23] Loaded config from file: ./configs/.env
+[38;5;6m INFO[0m [02:45:23] config overriden ./configs/.dev.env file not found.
+[38;5;6m INFO[0m [02:45:23] connected to sqlite at '/drone/src/zero/examples/zero-sqlite/data/sqlite-app.db'
+[38;5;8mDEBUG[0m [02:45:23] redis is disabled, as redis host is not provided.
+[38;5;8mDEBUG[0m [02:45:23] file store is disabled, as FILE_STORE_ROOT is not provided.
+[38;5;6m INFO[0m [02:45:23] connected to sqlite at '/drone/src/zero/examples/zero-sqlite/data/sqlite-app.db'
+[38;5;8mDEBUG[0m [02:45:23] clickhouse is disabled, as CLICKHOUSE_URL is not provided.
+[38;5;8mDEBUG[0m [02:45:23] time-series is disabled, as INFLUXDB_URL is not provided.
+[38;5;8mDEBUG[0m [02:45:23] opentsdb is disabled, as OPENTSDB_URL is not provided.
+[38;5;8mDEBUG[0m [02:45:23] search is disabled, as SOLR_URL is not provided.
+[38;5;8mDEBUG[0m [02:45:23] nosql is disabled, as CONTACT_POINTS are not provided.
+[38;5;8mDEBUG[0m [02:45:23] arangodb is disabled, as ARANGO_HOST is not provided.
+[38;5;8mDEBUG[0m [02:45:23] graph is disabled, as DGRAPH_URL is not provided.
+[38;5;8mDEBUG[0m [02:45:23] pubsub is disabled, as pubsub mode is not provided.
+[38;5;6m INFO[0m [02:45:23] container is created
+[38;5;6m INFO[0m [02:45:23] sqlite-demo app pid 1661
+[38;5;6m INFO[0m [02:45:23] no authentication mode found and disabled.
+[38;5;6m INFO[0m [02:45:23] migration table created
+[38;5;6m INFO[0m [02:45:23] 1790396525: migration completed  
+[38;5;6m INFO[0m [02:45:23] registered static files from directory ./static
+[38;5;8mDEBUG[0m [02:45:23] metrics server is initialized
+[38;5;8mDEBUG[0m [02:45:23] metrics server started
+[38;5;6m INFO[0m [02:45:23] Starting server on port: 8081
+[38;5;6m INFO[0m [02:45:24] a08e35eb821b4a65b1671a7df97fcbc4	 200 0ms GET /.well-known/health
+[38;5;6m INFO[0m [02:45:24] 1ce6e466c9c64b56a08a23aaa83d3b8b	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:45:24] 5ae6f145267944849923eadf8b82829b	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:45:24] 120dc363b84e458c8a42e04d2e69deae	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:45:24] e444342bde934653a6854fe228cfc61b	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:45:24] fef85e7dc7b74d09808ba6bcdae0adb9	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:45:24] ef5a98cab4ec4c5f95bb9278729d9727	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:45:24] bc01364f805c43ba8af61a6ae60a3353	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:45:24] 4688bae525704411ad60ea0ae2530226	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:45:24] 2c6a978cc88c44c9829d7f59266abdf7	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:45:24] 9539e26fd18744829f70d81358ee0768	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:45:24] 1be412100ee34052b29bea37a8c472e5	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:45:24] a4e600b6009a422385927628d5f59b5d	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:45:24] b71772eb4cce472594bb976838a544aa	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:45:24] 1610456cf5434c8f9eaa7d5a5aa4a927	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:45:24] 42486379a5584c788e43cca3deed9f5d	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:45:24] 4b247b28f4d54e8a9f1b33c6307cfc04	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:45:24] f5db90839bfa492bbc0dbd1d59428a13	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:45:24] 0bbe8244dc59494c96f4f8e6966050d6	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:45:24] 85d85ddbbe3c4533a2f19c581e0166d0	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:45:24] cc49f5955dfb4e7d80199a561c5f7dad	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:45:24] 3a20cb1320524251b74f760c99ea5011	 200 1ms GET /sqlite/users
+[38;5;6m INFO[0m [02:45:24] 257c1aa37f6444c8ac407b2d7bd824ac	 200 1ms GET /sqlite/users
+[38;5;6m INFO[0m [02:45:24] 1895d484d0a6405b85a6381d9e8428dd	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:45:24] 9259662df1ff4cf29ef37d599a9dfcda	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:45:24] 77ed21e449504168a9acb398825d9464	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:45:24] 94e251d17b0a42d8a302071a5a5fcc04	 200 1ms GET /sqlite/users
+... [347990 lines of load/request noise omitted] ...
 ...
-[38;5;6m INFO[0m [01:26:32] 4bfaf8c9944745d481e2d038f945dba7	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:26:32] ce881b08549e4318ae5983c0da8160de	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:26:32] e5537b43703c426083acf3b85f52d316	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:26:32] aa222430e7064351af327eb80d40fa77	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:26:32] 1cdf5c6c3c7143ab8d7bb49c6c891fbd	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:26:32] 07d3231d904f4ce5adf012f2fb3b0af1	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:26:32] 14efe420267749fc8fe8bc5d7c16740e	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:26:32] 2897cc87d3714eaeb312801253ee9301	 200 1ms GET /sqlite/users
-[38;5;6m INFO[0m [01:26:32] ab3437a38b96426a9bd463092172b078	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:26:32] 3d73d3b5563e40208b28a83a7b31156e	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:26:32] 0a65e1c3fc964a0fb26227d6e7fb155b	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:26:32] 19748aef36fe4b2bbada8b0d597f8069	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:26:32] 6dbf9ebbf0a24e86bca89314722cac67	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:26:32] b62e78699582432cbc827e9965558513	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:26:32] 305969eea0e44b57b923309e228bdc7e	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:26:32] 6b4a9ebca9e2499cb833559c8112f0fd	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:26:32] d63159bd6c2d4960b17642c0c8d9bb14	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:26:32] fd75ab6768084e0fb6b0a8799972b88a	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:26:32] 3698f377e6114e4fa459c0e315e30560	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:26:32] 6abcc8dc7819444ca3765acabf6c71a8	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:26:32] 1b18d665c77c4cc0b9a1309e64288d6c	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:26:32] 60b2f20644e845fda579d49e239da26d	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:26:32] 43db0cba96e04c12883b0c1bd8ce02a3	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:26:32] b572ce7204dd4fdd961fd4bdff1fa530	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:26:32] 8486a4fdf294469ab79fb753d0f2333d	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:26:32] 632598b1cd184adc8755c1959751b373	 200 1ms GET /sqlite/users
-[38;5;6m INFO[0m [01:26:32] a7dffb90d62040edbf2e797eaa6c5583	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:26:32] e9f53e5cef0b4cc089df3958866a2aab	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:26:32] 1e96c2e0556a49d29554364109b120e7	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:26:32] d63b2639ec3247edaa6c7990da8971b7	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:26:32] f3b1e9169d574bb48f740c8f3d0c232d	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:26:32] 523e306f301b4b79a4bfe6c861d2a615	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:26:32] ccab309940e0428fb876778c42d2301b	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:26:32] a00bfaac7d5740758fae0be0249df928	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:26:32] aa5a4e8dd35a44dcab229bc870b565f4	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:26:32] 9c19a28e47fb46eb8bbc71a9680b2f3b	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:26:32] ea42b90e84ee49e88231d5d9de15e676	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:26:32] 4955e11d0a8845ee87726d9fbc2aa00a	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:26:32] eaacd7ebdb9f4e50b97279edcba33266	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:26:32] 9abf63ef0b3a4ebf807e98ada764d49d	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:26:32] 376ffce5b77f4f7fadd8ca13e7f915af	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:26:32] 7dc6a085033244db8e1dde192b23fd8b	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:26:32] fa73f65d073e4cbebf7e782e6a84fc2c	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:26:32] dcc5e7fd5a4346e9afe5ff518efa42da	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:26:32] ea72a790cdfd4a0aa3660b99ec3afe43	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:26:32] bf636500d7fb49549b629170b66801cc	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:26:32] 193dc330750541f5aa70145e6381d090	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:26:32] 3eb2a4850105461898025f38b9da0d81	 200 0ms GET /sqlite/users
-[38;5;6m INFO[0m [01:26:32] server shutting down
+[38;5;6m INFO[0m [02:46:24] 865625bbafa5428e8313855e80691fc6	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:46:24] b814c89df74e439fbebcb76443b3996d	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:46:24] 5649df33cd64434f863fad389dc21239	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:46:24] 2e0b94c300924fbb8092a28cff021e00	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:46:24] 09fdf492f9594a85a7c9e0e1530fbfc9	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:46:24] e063e55eee3b476eb2bd36fe069c1d1b	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:46:24] 3aedf99d3f484990a6ae6114682079b5	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:46:24] 39702565c4c1414b97d4083f0f339399	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:46:24] 0b415eed14d0483d94611219427bb874	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:46:24] 171a9dd2637e4955a1e2db496101532a	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:46:24] ec659cd7459c46ac90e09fb1b32ca30b	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:46:24] c6dbfdcb7fdb4c5bb6c509f98dfc51ec	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:46:24] 3d0773fa232341c3908e0feb8074b170	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:46:24] f8383ffb2a634767be1a36257efb4a11	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:46:24] 3a6489dde3284f3d8421db82dc345bde	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:46:24] 70ba5d0a941948289686419644914338	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:46:24] fe4d3802db424f569c10069b7a7ca05f	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:46:24] d8104a14caa34bc1ad5edb2aea0fb08b	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:46:24] 3c10f2bf4e6b451cbf50fb4bcac94748	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:46:24] f87f95adcdfd4170b46fe7394f09b250	 200 1ms GET /sqlite/users
+[38;5;6m INFO[0m [02:46:24] 7cb85cbe803b4b83957ecc3ddae5fbdc	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:46:24] 0000a1b1a15e4d2bb6fc2bed6d51ea6d	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:46:24] c6c98c36d4b445b2888aa9263a793119	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:46:24] ef6c40d6e5f54323b0502a850e8526c7	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:46:24] 5e56762351b94933b9220e65fbaecdb8	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:46:24] 1ceccf40ee374464ab6ced64c40ad75f	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:46:24] 321a6f55362346dfb16a25e4c6deac3b	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:46:24] 48b9d602bd5344959da836622f610286	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:46:24] 92421626b0a04814a4c5a00baf1ed8d0	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:46:24] 4eba48e3d9e54371938d397e27354190	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:46:24] 8d55e5681a2f4b0bb8a8a1f431ca13e4	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:46:24] c05f4144a6cb4077ad78aec92ef307a6	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:46:24] d9110824737d45c6abcd817a3b04f0c8	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:46:24] b82663c70d27466d98656f08ce7dc517	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:46:24] e293bacec0254626b3eecf8850278925	 200 1ms GET /sqlite/users
+[38;5;6m INFO[0m [02:46:24] be2eb94305dc455aaf53b26b1cf5bbd4	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:46:24] 1f418b1dbe9449e0aa7068f09133eed5	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:46:24] ee738b4fbeef409ab9b99c96ccabadcd	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:46:24] d5a35c75c9d64b93a69c62ca196b82a4	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:46:24] 733ff37898224d32b9f9b4193289d54d	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:46:24] 92f8f7a059224c5eb6954aa8001f9b8f	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:46:24] 9282349291b44e88b5172108d34cd7ea	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:46:24] 2b81a6340c2d4425a1e3d2837d2c5a70	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:46:24] d385734fda8d46a1a21cbd980ad7035a	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:46:24] 73482b2cd438405bb0f82c3a86430400	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:46:24] 70886a3c44c44541abbaf7c6649759d9	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:46:24] e91843a59b1c4b99a920bf2465bb8a1f	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:46:24] 4b6773d1ce33492f9b86270683494119	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [02:46:24] server shutting down
 received shutdown signalreceived shutdown signalreceived shutdown signal

@@ -1,102 +1,102 @@
-[38;5;6m INFO[0m [01:31:25] Loaded config from file: ./configs/.env
-[38;5;6m INFO[0m [01:31:25] config loaded from: ./configs/.dev.env
-[38;5;8mDEBUG[0m [01:31:25] database is disabled, as dialect is not provided.
-[38;5;8mDEBUG[0m [01:31:25] redis is disabled, as redis host is not provided.
-[38;5;6m INFO[0m [01:31:25] connected to local file store
-[38;5;8mDEBUG[0m [01:31:25] sqlite is disabled, as sqlite path is not provided.
-[38;5;8mDEBUG[0m [01:31:25] clickhouse is disabled, as CLICKHOUSE_URL is not provided.
-[38;5;8mDEBUG[0m [01:31:25] time-series is disabled, as INFLUXDB_URL is not provided.
-[38;5;8mDEBUG[0m [01:31:25] opentsdb is disabled, as OPENTSDB_URL is not provided.
-[38;5;6m INFO[0m [01:31:25] connected to solr at 'http://solr:8983/solr' (default collection 'docs')
-[38;5;8mDEBUG[0m [01:31:25] nosql is disabled, as CONTACT_POINTS are not provided.
-[38;5;8mDEBUG[0m [01:31:25] arangodb is disabled, as ARANGO_HOST is not provided.
-[38;5;8mDEBUG[0m [01:31:25] graph is disabled, as DGRAPH_URL is not provided.
-[38;5;8mDEBUG[0m [01:31:25] pubsub is disabled, as pubsub mode is not provided.
-[38;5;6m INFO[0m [01:31:25] container is created
-[38;5;6m INFO[0m [01:31:25] search-example-overriden app pid 2927
-[38;5;6m INFO[0m [01:31:25] no authentication mode found and disabled.
-[38;5;6m INFO[0m [01:31:25] registered static files from directory ./static
-[38;5;8mDEBUG[0m [01:31:25] metrics server is initialized
-[38;5;8mDEBUG[0m [01:31:25] metrics server started
-[38;5;6m INFO[0m [01:31:25] Starting server on port: 8080
-[38;5;6m INFO[0m [01:31:26] d856f3cb211d47f2ba92eff6eaabcf53	 200 0ms GET /.well-known/health
-[38;5;6m INFO[0m [01:31:26] b6bc60ae82f2417e84227be2ba66dd48	 200 0ms GET /
-[38;5;6m INFO[0m [01:31:26] 7981f056ae86491d8f00d4cb6b57c5b9	 200 0ms GET /
-[38;5;6m INFO[0m [01:31:26] 268739060e6f4822823c4309ac2b0431	 200 0ms GET /
-[38;5;6m INFO[0m [01:31:26] 4493f5600ee04d468601f56305cb1932	 200 0ms GET /
-[38;5;6m INFO[0m [01:31:26] d04c1255087e4f2fae5bc5384e17afdf	 200 0ms GET /
-[38;5;6m INFO[0m [01:31:26] 195555d3ee8149d8ad1ef705f94d6ccc	 200 0ms GET /
-[38;5;6m INFO[0m [01:31:26] 155cca9d58ff4db99ed1fac0591296af	 200 0ms GET /
-[38;5;6m INFO[0m [01:31:26] 4eb81ed1fcb04b4593b078e3915ff877	 200 0ms GET /
-[38;5;6m INFO[0m [01:31:26] bcc7fbc37a6e4963b3f8556a0f4db9fa	 200 0ms GET /
-[38;5;6m INFO[0m [01:31:26] 4b308331fe074d52a325c2c21d98e5b0	 200 0ms GET /
-[38;5;6m INFO[0m [01:31:26] f0491b101a9f4ed9a2e21c89b578cefd	 200 0ms GET /
-[38;5;6m INFO[0m [01:31:26] af40d68a0b8f46c385c5192dd309a05c	 200 0ms GET /
-[38;5;6m INFO[0m [01:31:26] e5b86fbe1e7e4062a7fe6ece5a8b2933	 200 0ms GET /
-[38;5;6m INFO[0m [01:31:26] c2a386adab8b4b75b327bc1e2a4c3d56	 200 0ms GET /
-[38;5;6m INFO[0m [01:31:26] be67c8faca7045b690827a93c422591d	 200 0ms GET /
-[38;5;6m INFO[0m [01:31:26] a6cc47b48bf642b59bf79b9cbebc8003	 200 0ms GET /
-[38;5;6m INFO[0m [01:31:26] 35a55137099041ab97939975a0de1dd2	 404 61ms GET /search
-[38;5;6m INFO[0m [01:31:26] 8aa5f9bdccb14f2ea4340823d27e83ca	 404 62ms GET /search
-[38;5;6m INFO[0m [01:31:26] 74500611e337404a978507a4d97589f8	 404 63ms GET /search
-[38;5;6m INFO[0m [01:31:26] d81394de820e4b9faf6b04e7dd8a0e01	 404 63ms GET /search
-[38;5;6m INFO[0m [01:31:26] 346d5ad3d06048cd80de7905d20ae2b1	 200 0ms GET /
-[38;5;6m INFO[0m [01:31:26] 413aead9f44644f5b30b392166569f59	 200 0ms GET /
-[38;5;6m INFO[0m [01:31:26] e7bd4ea9a8304673a6b56a2cde9435a5	 200 0ms GET /
-[38;5;6m INFO[0m [01:31:26] bbc90cf6d6514e479282a009b9ef8756	 200 0ms GET /
-[38;5;6m INFO[0m [01:31:26] 34ab7edecb554ceaa0262b3602874051	 200 0ms GET /
-[38;5;6m INFO[0m [01:31:26] 82a09a77f1404354ba70bbef0c307ac5	 200 0ms GET /
-[38;5;6m INFO[0m [01:31:26] 691131c3e6174fff86f31db732ad5701	 200 0ms GET /
-[38;5;6m INFO[0m [01:31:26] 2fbd3c38569144e2a48c8e292859a284	 200 0ms GET /
-... [794538 lines of load/request noise omitted] ...
+[38;5;6m INFO[0m [02:51:17] Loaded config from file: ./configs/.env
+[38;5;6m INFO[0m [02:51:17] config loaded from: ./configs/.dev.env
+[38;5;8mDEBUG[0m [02:51:17] database is disabled, as dialect is not provided.
+[38;5;8mDEBUG[0m [02:51:17] redis is disabled, as redis host is not provided.
+[38;5;6m INFO[0m [02:51:17] connected to local file store
+[38;5;8mDEBUG[0m [02:51:17] sqlite is disabled, as sqlite path is not provided.
+[38;5;8mDEBUG[0m [02:51:17] clickhouse is disabled, as CLICKHOUSE_URL is not provided.
+[38;5;8mDEBUG[0m [02:51:17] time-series is disabled, as INFLUXDB_URL is not provided.
+[38;5;8mDEBUG[0m [02:51:17] opentsdb is disabled, as OPENTSDB_URL is not provided.
+[38;5;6m INFO[0m [02:51:17] connected to solr at 'http://solr:8983/solr' (default collection 'docs')
+[38;5;8mDEBUG[0m [02:51:17] nosql is disabled, as CONTACT_POINTS are not provided.
+[38;5;8mDEBUG[0m [02:51:17] arangodb is disabled, as ARANGO_HOST is not provided.
+[38;5;8mDEBUG[0m [02:51:17] graph is disabled, as DGRAPH_URL is not provided.
+[38;5;8mDEBUG[0m [02:51:17] pubsub is disabled, as pubsub mode is not provided.
+[38;5;6m INFO[0m [02:51:17] container is created
+[38;5;6m INFO[0m [02:51:17] search-example-overriden app pid 2926
+[38;5;6m INFO[0m [02:51:17] no authentication mode found and disabled.
+[38;5;6m INFO[0m [02:51:17] registered static files from directory ./static
+[38;5;8mDEBUG[0m [02:51:17] metrics server is initialized
+[38;5;8mDEBUG[0m [02:51:17] metrics server started
+[38;5;6m INFO[0m [02:51:17] Starting server on port: 8080
+[38;5;6m INFO[0m [02:51:18] 628117d8bd3e432a82af5f042008ab5c	 200 0ms GET /.well-known/health
+[38;5;6m INFO[0m [02:51:18] 7d4e657b301741b6a5e918135c9e1c14	 200 0ms GET /
+[38;5;6m INFO[0m [02:51:18] acb2ea5bcb214f5995920440295ba624	 200 0ms GET /
+[38;5;6m INFO[0m [02:51:18] 9aad789aa49a49febcbe391d6fdd62d5	 200 0ms GET /
+[38;5;6m INFO[0m [02:51:18] 28ca054dce5f408d9019ed56359436e8	 200 0ms GET /
+[38;5;6m INFO[0m [02:51:18] 82160387131d4feeba8f5f12a911e891	 200 0ms GET /
+[38;5;6m INFO[0m [02:51:18] 4d1898baed8b4044b470f7d820ff7d45	 200 0ms GET /
+[38;5;6m INFO[0m [02:51:18] ff763cd9c38c4e648dd06c938437f497	 200 0ms GET /
+[38;5;6m INFO[0m [02:51:18] bd7717028a464e8b9a16a1096729e0d7	 200 0ms GET /
+[38;5;6m INFO[0m [02:51:18] 5f3c103bc1b5484abf525616f3d7e7ef	 200 0ms GET /
+[38;5;6m INFO[0m [02:51:18] 3130fae5feaa453a8dfcf133f86413e6	 200 0ms GET /
+[38;5;6m INFO[0m [02:51:18] 09d7026573fb4528a2144e8dd0ddf0e2	 200 0ms GET /
+[38;5;6m INFO[0m [02:51:18] 49f20268082142798a24860ff32649ac	 200 0ms GET /
+[38;5;6m INFO[0m [02:51:18] 3be92b24f57243eeb0faaa9baec4d343	 200 0ms GET /
+[38;5;6m INFO[0m [02:51:18] 105d868e58f64aeab8b6bc5184f33768	 200 0ms GET /
+[38;5;6m INFO[0m [02:51:18] 63135244d8d94c33bd74a6672f1a77c8	 200 0ms GET /
+[38;5;6m INFO[0m [02:51:18] 2c57a270430541a9acefc89258012d1e	 200 0ms GET /
+[38;5;6m INFO[0m [02:51:18] aab75424d62d4decbe106a9c2ea2880d	 200 0ms GET /
+[38;5;6m INFO[0m [02:51:18] 11bb8b2ee9d64a0c93a0ced49e11ff05	 200 0ms GET /
+[38;5;6m INFO[0m [02:51:18] 7f91cff34c554726b98acb80ee48ec78	 200 0ms GET /
+[38;5;6m INFO[0m [02:51:18] c0b0caebe66e425bbda174f4879f18e4	 200 0ms GET /
+[38;5;6m INFO[0m [02:51:18] d825269b9530445a87ff98cd03055526	 200 0ms GET /
+[38;5;6m INFO[0m [02:51:18] 6590b0d93da247df9d2ce7377e4024bc	 200 0ms GET /
+[38;5;6m INFO[0m [02:51:18] c83da8ed7818453985e63f4cca7eaf3d	 200 0ms GET /
+[38;5;6m INFO[0m [02:51:18] 853e5ce54aee4375ba043ffe663cc8b2	 200 0ms GET /
+[38;5;6m INFO[0m [02:51:18] 72f69a6f51b44fe7a2e2fb8cf76a377d	 200 0ms GET /
+[38;5;6m INFO[0m [02:51:18] b4a5f99a61884c0a84984d9d1be38d1d	 200 0ms GET /
+[38;5;6m INFO[0m [02:51:18] 7721e388db3b4b2da19a6489e1e7abc7	 200 0ms GET /
+[38;5;6m INFO[0m [02:51:18] 445c425218df4bf68de2d591aeffded7	 200 0ms GET /
+... [769370 lines of load/request noise omitted] ...
 ...
-[38;5;6m INFO[0m [01:32:26] 36872f0ba3984d808bdadc60b5b93643	 404 0ms GET /search
-[38;5;6m INFO[0m [01:32:26] 87342b101fec41debd34e13cbd3cd531	 200 0ms GET /
-[38;5;6m INFO[0m [01:32:26] 02861f9faf1b46d2a90afaee1218d8e7	 200 0ms GET /
-[38;5;6m INFO[0m [01:32:26] d21ade88315c4d1abfe6a507e993380c	 200 0ms GET /
-[38;5;6m INFO[0m [01:32:26] cd691dec175a4d5da70083c748691824	 200 0ms GET /
-[38;5;6m INFO[0m [01:32:26] 8aa9b98ed49540e88213c27fc86c8e84	 200 0ms GET /
-[38;5;6m INFO[0m [01:32:26] 5886ba5f667d4b898860a62d7373615a	 200 0ms GET /
-[38;5;6m INFO[0m [01:32:26] 1fe0cb0abca848f09fee427afb684293	 404 0ms GET /search
-[38;5;6m INFO[0m [01:32:26] 323568c9eb744a58b5b4ff5830541d94	 200 0ms GET /
-[38;5;6m INFO[0m [01:32:26] 510e60d2a97e40d997e4e3ced9ca86f4	 200 0ms GET /
-[38;5;6m INFO[0m [01:32:26] 90506f13d3d14245bb7eb13703f23465	 200 0ms GET /
-[38;5;6m INFO[0m [01:32:26] 2257290938fe4bb8955ead18269368f7	 200 0ms GET /
-[38;5;6m INFO[0m [01:32:26] 993f27856e044740a7a8f40417c14fd9	 200 0ms GET /
-[38;5;6m INFO[0m [01:32:26] 26bba2f7fb814a3983df2f1d29c567bb	 200 0ms GET /
-[38;5;6m INFO[0m [01:32:26] 9a08c195e4ce469398b32585a7faa395	 200 0ms GET /
-[38;5;6m INFO[0m [01:32:26] 5c464dd5f4e6444d88c4c09e93f19fe3	 200 0ms GET /
-[38;5;6m INFO[0m [01:32:26] 5e9c3038fdc949d0be6775282b174d6b	 200 0ms GET /
-[38;5;6m INFO[0m [01:32:26] 4e273ab8ca6f43609fcbc427872c9a5e	 200 0ms GET /
-[38;5;6m INFO[0m [01:32:26] fb6b5c8a0263457d9b3c5b5fd966975e	 200 0ms GET /
-[38;5;6m INFO[0m [01:32:26] 7a2f040e435141e09bf44dfd2acc2ec3	 404 0ms GET /search
-[38;5;6m INFO[0m [01:32:26] ef8015692cfd4887999dddd7c778f284	 200 0ms GET /
-[38;5;6m INFO[0m [01:32:26] 85a4600c396d4c1e90d1ab01b5eef097	 200 0ms GET /
-[38;5;6m INFO[0m [01:32:26] 29d465c63e414323b9a6c3129739f498	 200 0ms GET /
-[38;5;6m INFO[0m [01:32:26] 6ec8848f324e4608b1537c28f4afcec5	 200 0ms GET /
-[38;5;6m INFO[0m [01:32:26] a6a61890d8794a1faa8e3df5fc8405b2	 200 0ms GET /
-[38;5;6m INFO[0m [01:32:26] 51729611a77d45fbbb9aa2d6b33e02b1	 200 0ms GET /
-[38;5;6m INFO[0m [01:32:26] 2b8938e19a0d4f5b8434ade9dca446a5	 200 0ms GET /
-[38;5;6m INFO[0m [01:32:26] 6fb3563a89304eb58c1a9d1940cd9485	 200 0ms GET /
-[38;5;6m INFO[0m [01:32:26] bc4156b96a234173b4ecfe3774978ade	 200 0ms GET /
-[38;5;6m INFO[0m [01:32:26] 9f73de4979b2405a9a22f57ca07f1d17	 200 0ms GET /
-[38;5;6m INFO[0m [01:32:26] 246d79e7f82b4c3f8fedd8b0cf127ec6	 200 0ms GET /
-[38;5;6m INFO[0m [01:32:26] a7adec63b77d452d8be5cc0ed46597ad	 200 0ms GET /
-[38;5;6m INFO[0m [01:32:26] 60c69b03bc5d4ce4a143828cf66b7c73	 200 0ms GET /
-[38;5;6m INFO[0m [01:32:26] a0fe537397724632a6ed5191ab91ba22	 200 0ms GET /
-[38;5;6m INFO[0m [01:32:26] 556739fdc2e54aa4a8ed6cd6544fabac	 200 0ms GET /
-[38;5;6m INFO[0m [01:32:26] 1489cdc6b22941cdbedc7b51f6bd200c	 200 0ms GET /
-[38;5;6m INFO[0m [01:32:26] cf1fb4e4062845cfb7516c87799fb9c0	 200 0ms GET /
-[38;5;6m INFO[0m [01:32:26] d9a25c86cab5456fa4ea9034e67103de	 200 0ms GET /
-[38;5;6m INFO[0m [01:32:26] 98eded911e2f49f5a578d1fc57692b68	 200 0ms GET /
-[38;5;6m INFO[0m [01:32:26] 379fb286812343728cd3245fffd98416	 200 0ms GET /
-[38;5;6m INFO[0m [01:32:26] e27a543593e34fcd9a9f67d292836a37	 200 0ms GET /
-[38;5;6m INFO[0m [01:32:26] 23d1052666dd4a25b30d56692a6ed186	 200 0ms GET /
-[38;5;6m INFO[0m [01:32:26] 4da0c8004ba4441486f41ff28224e023	 200 0ms GET /
-[38;5;6m INFO[0m [01:32:26] 20bce77e679240f38444df9b96cff7b6	 200 0ms GET /
-[38;5;6m INFO[0m [01:32:26] d9d1c40942554eda942bede122edefad	 200 0ms GET /
-[38;5;6m INFO[0m [01:32:26] 8e2fe6404db5464ea00084380d296baf	 200 0ms GET /
-[38;5;6m INFO[0m [01:32:26] 9feac494d054493f9e1cd2d31a45f3e6	 200 0ms GET /
-[38;5;6m INFO[0m [01:32:26] 57d4832698b24c76b9bd7a8c07f7ae5a	 200 0ms GET /
-[38;5;6m INFO[0m [01:32:26] server shutting down
+[38;5;6m INFO[0m [02:52:18] e1506e299e6b428891b32b30f47d7d8e	 200 0ms GET /
+[38;5;6m INFO[0m [02:52:18] 63a39cfffbd14f91984baea88953fe77	 200 0ms GET /
+[38;5;6m INFO[0m [02:52:18] 600f404ad8144457a21e8c0bec866b89	 404 1ms GET /search
+[38;5;6m INFO[0m [02:52:18] 17cbcff099824bda91c47eaf0abacb76	 404 1ms GET /search
+[38;5;6m INFO[0m [02:52:18] 8d54031691c142acbaf2783d7339a604	 200 0ms GET /
+[38;5;6m INFO[0m [02:52:18] bef1ff68d9204cf3a739f2088b1cf88d	 200 0ms GET /
+[38;5;6m INFO[0m [02:52:18] ec32161356314846b6605facf836815e	 200 0ms GET /
+[38;5;6m INFO[0m [02:52:18] de94ed38d38d4d40b470eecae5bb1a08	 404 1ms GET /search
+[38;5;6m INFO[0m [02:52:18] 2efb13a057494fbaa13a6db9281ca8bc	 200 0ms GET /
+[38;5;6m INFO[0m [02:52:18] a92a05c933b64a1582e994f82349b470	 404 0ms GET /search
+[38;5;6m INFO[0m [02:52:18] fa1d5c07f68c44998548e6de7dfa1b97	 200 0ms GET /
+[38;5;6m INFO[0m [02:52:18] c7449fdd497b4cf4ac8342b4bad48dd9	 404 0ms GET /search
+[38;5;6m INFO[0m [02:52:18] 8bae02ac402f42f59f60a66835bc3dd2	 200 0ms GET /
+[38;5;6m INFO[0m [02:52:18] 9ee477d444364a2ea867cbe7b23e94d2	 200 0ms GET /
+[38;5;6m INFO[0m [02:52:18] ade15e4364734b59ba44dc92ebb15031	 200 0ms GET /
+[38;5;6m INFO[0m [02:52:18] eeb030ed54e04b85a6c21863bb690a61	 200 0ms GET /
+[38;5;6m INFO[0m [02:52:18] 8799c4f7456f4fc6b70acb1bd3fdcee7	 200 0ms GET /
+[38;5;6m INFO[0m [02:52:18] 12c13aac7e644772948a3d909694fea8	 200 0ms GET /
+[38;5;6m INFO[0m [02:52:18] 80df12f543c44a0c966b7dcd1ed4117f	 200 0ms GET /
+[38;5;6m INFO[0m [02:52:18] a95dce2f63c248dca6ddc778199701c8	 404 1ms GET /search
+[38;5;6m INFO[0m [02:52:18] f7fe4e2baa084e0eb39483f43c5f2bc9	 404 1ms GET /search
+[38;5;6m INFO[0m [02:52:18] 4c6c9267919b4ef4bc5941a69941f1db	 200 0ms GET /
+[38;5;6m INFO[0m [02:52:18] 4f7355cc73c14b2a922c62bf04c0d11d	 200 0ms GET /
+[38;5;6m INFO[0m [02:52:18] 5b322ff7ddf34a09885eae1f70f8711e	 404 1ms GET /search
+[38;5;6m INFO[0m [02:52:18] 1ba7d4773bc1433eb5af416a5c944e76	 200 0ms GET /
+[38;5;6m INFO[0m [02:52:18] 872f226556e74d548dd5d3ac1e4686db	 200 0ms GET /
+[38;5;6m INFO[0m [02:52:18] 3daf92afd9ef4d48b88e836d9301624b	 404 1ms GET /search
+[38;5;6m INFO[0m [02:52:18] 5f7a294bc00d4bbab350660154b5a4f0	 404 1ms GET /search
+[38;5;6m INFO[0m [02:52:18] 57b71be8dd0048639042454bc5d2ec99	 200 0ms GET /
+[38;5;6m INFO[0m [02:52:18] 0d0ccd67bb3f488eb620b27fc03d9b52	 200 0ms GET /
+[38;5;6m INFO[0m [02:52:18] b12cbee9edb04b65a07d733118547f5e	 200 0ms GET /
+[38;5;6m INFO[0m [02:52:18] ecaf58f882f74eadb440dab864a5509c	 200 0ms GET /
+[38;5;6m INFO[0m [02:52:18] 965e3a577a1144ca96ab2610691a9090	 200 0ms GET /
+[38;5;6m INFO[0m [02:52:18] 53f8200996054841b33781869eb95ec0	 200 0ms GET /
+[38;5;6m INFO[0m [02:52:18] c412b77ff0de4b968f22a512fc7f5b6f	 404 1ms GET /search
+[38;5;6m INFO[0m [02:52:18] 82f04a798b2f453e8e5f5e9ac861e68a	 200 0ms GET /
+[38;5;6m INFO[0m [02:52:18] ab4f7b45912349c1aaea5fd6d9fcaef3	 200 0ms GET /
+[38;5;6m INFO[0m [02:52:18] ff892162909b4d1b8879a84569501dbc	 404 0ms GET /search
+[38;5;6m INFO[0m [02:52:18] b32f1d5c277d4649900a4731183431f6	 200 0ms GET /
+[38;5;6m INFO[0m [02:52:18] f04a54b4e9b74ce9842668e6ec038661	 404 0ms GET /search
+[38;5;6m INFO[0m [02:52:18] 64090a7568e14d35a6def869102e45fc	 404 0ms GET /search
+[38;5;6m INFO[0m [02:52:18] 579578857cfc49ab84db03e87175d117	 404 0ms GET /search
+[38;5;6m INFO[0m [02:52:18] 33011899b952454aaadf22a0e0f860f1	 404 1ms GET /search
+[38;5;6m INFO[0m [02:52:18] 7448e2aad37d4be680274ebba7106454	 404 1ms GET /search
+[38;5;6m INFO[0m [02:52:18] bffd47dd061d47f99a5abc21d96d694e	 404 1ms GET /search
+[38;5;6m INFO[0m [02:52:18] 0e17f0433b814a16b30728039487190a	 404 0ms GET /search
+[38;5;6m INFO[0m [02:52:18] 029ac48d472b4c6d897b655d58ddc455	 404 1ms GET /search
+[38;5;6m INFO[0m [02:52:18] 42424aac79ce4816a78f0deaa444da5b	 404 1ms GET /search
+[38;5;6m INFO[0m [02:52:18] server shutting down
 received shutdown signalreceived shutdown signalreceived shutdown signal

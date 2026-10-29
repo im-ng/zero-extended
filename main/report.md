@@ -1,7 +1,7 @@
 # zero-soak report (gate)
 
-generated: 2026-10-29 01:45:35 UTC · build: 10
-framework: zero @ main (e90434ee) · https://gitea.pi/ng/zero.git
+generated: 2026-10-29 03:05:25 UTC · build: 11
+framework: zero @ main (e3fb9eab) · https://gitea.pi/ng/zero.git
 
 **FAIL** — 14 services, 12 pass, 2 fail, 0 missing.
 
@@ -29,7 +29,7 @@ framework: zero @ main (e90434ee) · https://gitea.pi/ng/zero.git
 | Status | Check | Detail |
 |---|---|---|
 | PASS | health up |  |
-| FAIL | RSS leak signal | RSS grew 69564KiB (> 16MiB and > 25%): possible leak |
+| FAIL | RSS leak signal | RSS grew 68848KiB (> 16MiB and > 25%): possible leak |
 
 **Load applied:** loader=go-wrk, concurrency=5 (per route), duration_min=1, mode=gate
 
@@ -39,7 +39,7 @@ framework: zero @ main (e90434ee) · https://gitea.pi/ng/zero.git
 |---|---|---|
 | PASS | dep zero-pubsub-publisher up |  |
 | PASS | health up |  |
-| FAIL | RSS leak signal | RSS grew 292724KiB (> 16MiB and > 25%): possible leak |
+| FAIL | RSS leak signal | RSS grew 284428KiB (> 16MiB and > 25%): possible leak |
 
 **Load applied:** loader=go-wrk, concurrency=5 (per route), duration_min=1, mode=gate
 
@@ -165,7 +165,7 @@ framework: zero @ main (e90434ee) · https://gitea.pi/ng/zero.git
 
 | backing | allocs/req | bytes/req | latency/req ns | alloc-time/req ns | dispatch-only/req ns | leaked |
 |---|---|---|---|---|---|---|
-| fallback | 20.00 | 13663 | 60492.0 | 4345.7 | 56146.3 | 0 bytes OK |
+| fallback | 20.00 | 13663 | 59883.1 | 4251.8 | 55631.3 | 0 bytes OK |
 
 top call-sites (alloc-probe-fallback.json):
 
@@ -183,5 +183,5 @@ top call-sites (alloc-probe-fallback.json):
 - registration allocs: 9
 - registration bytes: 625680
 - bytes/route: 625.7
-- route match time: 554.35 ns/req
+- route match time: 554.76 ns/req
 - match-time allocs: 0
