@@ -1,0 +1,55 @@
+[38;5;6m INFO[0m [01:28:19] Loaded config from file: ./configs/.env
+[38;5;6m INFO[0m [01:28:19] config overriden ./configs/.dev.env file not found.
+[38;5;8mDEBUG[0m [01:28:19] database is disabled, as dialect is not provided.
+[38;5;8mDEBUG[0m [01:28:19] redis is disabled, as redis host is not provided.
+[38;5;6m INFO[0m [01:28:19] connected to s3 file store
+[38;5;8mDEBUG[0m [01:28:19] sqlite is disabled, as sqlite path is not provided.
+[38;5;8mDEBUG[0m [01:28:19] clickhouse is disabled, as CLICKHOUSE_URL is not provided.
+[38;5;8mDEBUG[0m [01:28:19] time-series is disabled, as INFLUXDB_URL is not provided.
+[38;5;8mDEBUG[0m [01:28:19] opentsdb is disabled, as OPENTSDB_URL is not provided.
+[38;5;8mDEBUG[0m [01:28:19] search is disabled, as SOLR_URL is not provided.
+[38;5;8mDEBUG[0m [01:28:19] nosql is disabled, as CONTACT_POINTS are not provided.
+[38;5;8mDEBUG[0m [01:28:19] arangodb is disabled, as ARANGO_HOST is not provided.
+[38;5;8mDEBUG[0m [01:28:19] graph is disabled, as DGRAPH_URL is not provided.
+[38;5;8mDEBUG[0m [01:28:19] pubsub is disabled, as pubsub mode is not provided.
+[38;5;6m INFO[0m [01:28:19] container is created
+[38;5;6m INFO[0m [01:28:19] zero-filestore app pid 2457
+[38;5;6m INFO[0m [01:28:19] no authentication mode found and disabled.
+[38;5;6m INFO[0m [01:28:19] registered static files from directory ./static
+[38;5;8mDEBUG[0m [01:28:19] metrics server is initialized
+[38;5;8mDEBUG[0m [01:28:19] metrics server started
+[38;5;6m INFO[0m [01:28:19] Starting server on port: 8080
+[38;5;6m INFO[0m [01:28:20] 529bb69a08524d8f89437765124a70a7	 200 0ms GET /.well-known/health
+[38;5;6m INFO[0m [01:28:20] d41ca31da2084c7087b23ff4b7696c12	 200 18ms POST /upload
+[38;5;6m INFO[0m [01:28:20] 9233ad8488d4421eb3cf4ddf4e9a6816	 200 23ms POST /upload
+[38;5;6m INFO[0m [01:28:20] 101d1f8ff61c46b5a3ccb10f25439b67	 200 23ms POST /upload
+[38;5;6m INFO[0m [01:28:20] dea97c24470b452585b1576b084bc1fe	 200 24ms POST /upload
+[38;5;6m INFO[0m [01:28:20] f88758495ad5421b979b1004be1db856	 200 18ms POST /upload
+[38;5;6m INFO[0m [01:28:20] 1b8a5df162a44a5aa8f0791a3991ea45	 200 23ms POST /upload
+[38;5;6m INFO[0m [01:28:20] cf711d47a25740d3b26e1443613eee80	 200 22ms POST /upload
+[38;5;6m INFO[0m [01:28:20] 7f245b16b39840bcb7e6f4df9502eb5d	 200 16ms POST /upload
+[38;5;6m INFO[0m [01:28:20] ea2337bfa38c48d3ab07ea21e45e0933	 200 2ms GET /file/soak-5-1-2177.bin
+[38;5;6m INFO[0m [01:28:20] 95d75048a0ff407e856e4125ac161215	 200 3ms GET /file/soak-1-1-2177.bin
+[38;5;6m INFO[0m [01:28:20] d6d4b9e457fa48e88742118ff132ba53	 200 3ms GET /file/soak-6-1-2177.bin
+[38;5;6m INFO[0m [01:28:20] 9b9271c7e053476f8dd55cc1f5ce8122	 200 3ms GET /file/soak-8-1-2177.bin
+[38;5;6m INFO[0m [01:28:20] 345b698a9ae0442ebe973eda5745b0bb	 200 3ms GET /file/soak-4-1-2177.bin
+[38;5;6m INFO[0m [01:28:20] a8bab0049be047928d724dc10c86dd9f	 200 5ms GET /file/soak-7-1-2177.bin
+[38;5;6m INFO[0m [01:28:20] 148c35ae85cf4b2bb38ec8f69009a3ba	 200 5ms GET /file/soak-3-1-2177.bin
+[38;5;6m INFO[0m [01:28:20] 8c725da87c304946a0780b35bbe00e8b	 200 3ms GET /file/soak-2-1-2177.bin
+[38;5;6m INFO[0m [01:29:35] 18d6cc171d144af1834d2b72bdf2021e	 200 75062ms DELETE /file/soak-4-1-2177.bin
+[38;5;6m INFO[0m [01:29:35] 13380c6fd4574b75b21cd65fc57a52f9	 200 75064ms DELETE /file/soak-5-1-2177.bin
+[38;5;6m INFO[0m [01:29:35] 040e8a06863f4137a8e4e13b1282774b	 200 75062ms DELETE /file/soak-1-1-2177.bin
+[38;5;6m INFO[0m [01:29:35] e38eeac648144b41988d6b0408a15320	 200 75065ms DELETE /file/soak-6-1-2177.bin
+[38;5;6m INFO[0m [01:29:35] c182638971f141a8a4d226be8f8106f1	 200 75064ms DELETE /file/soak-7-1-2177.bin
+[38;5;6m INFO[0m [01:29:35] 468b82ae119447dfa2abe0a1df69799a	 200 75062ms DELETE /file/soak-3-1-2177.bin
+[38;5;6m INFO[0m [01:29:35] 53e77c29ca0d43d088ac6d55e85ebe23	 200 75066ms DELETE /file/soak-8-1-2177.bin
+[38;5;6m INFO[0m [01:29:35] 80dd5ec475014c2abd0561cf1d83efd0	 200 75059ms DELETE /file/soak-2-1-2177.bin
+[38;5;6m INFO[0m [01:29:35] 4aff0708dddf45ebae71a52c053a71d8	 200 9ms POST /upload
+[38;5;6m INFO[0m [01:29:35] f0f67135edf6484ca23df030b6ea7ff7	 200 2ms GET /file/soak-verify-2177.txt
+[38;5;6m INFO[0m [01:30:51] 77ef4ae917d54f79af91d2fb5a2370ee	 200 75049ms DELETE /file/soak-verify-2177.txt
+[38;5;6m INFO[0m [01:30:56] de30c3884960496488690c09835344ef	 200 0ms GET /.well-known/health
+[38;5;6m INFO[0m [01:31:01] 802ce59943174780bec81976b9fa18af	 200 0ms GET /.well-known/health
+[38;5;6m INFO[0m [01:31:02] 8f72c48df50b4948a364aeab3e6de3e7	 200 0ms GET /.well-known/health
+[38;5;6m INFO[0m [01:31:02] b460f48ccbcf49cdb5858fd3aa890397	 200 10ms POST /upload
+[38;5;6m INFO[0m [01:31:02] server shutting down
+received shutdown signalreceived shutdown signalreceived shutdown signal
