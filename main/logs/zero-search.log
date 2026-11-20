@@ -1,0 +1,102 @@
+[38;5;6m INFO[0m [14:18:07] Loaded config from file: ./configs/.env
+[38;5;6m INFO[0m [14:18:07] config loaded from: ./configs/.dev.env
+[38;5;8mDEBUG[0m [14:18:07] database is disabled, as dialect is not provided.
+[38;5;8mDEBUG[0m [14:18:07] redis is disabled, as redis host is not provided.
+[38;5;6m INFO[0m [14:18:07] connected to local file store
+[38;5;8mDEBUG[0m [14:18:07] sqlite is disabled, as sqlite path is not provided.
+[38;5;8mDEBUG[0m [14:18:07] clickhouse is disabled, as CLICKHOUSE_URL is not provided.
+[38;5;8mDEBUG[0m [14:18:07] time-series is disabled, as INFLUXDB_URL is not provided.
+[38;5;8mDEBUG[0m [14:18:07] opentsdb is disabled, as OPENTSDB_URL is not provided.
+[38;5;6m INFO[0m [14:18:07] connected to solr at 'http://solr:8983/solr' (default collection 'docs')
+[38;5;8mDEBUG[0m [14:18:07] nosql is disabled, as CONTACT_POINTS are not provided.
+[38;5;8mDEBUG[0m [14:18:07] arangodb is disabled, as ARANGO_HOST is not provided.
+[38;5;8mDEBUG[0m [14:18:07] graph is disabled, as DGRAPH_URL is not provided.
+[38;5;8mDEBUG[0m [14:18:07] pubsub is disabled, as pubsub mode is not provided.
+[38;5;6m INFO[0m [14:18:07] container is created
+[38;5;6m INFO[0m [14:18:07] search-example-overriden app pid 3505
+[38;5;6m INFO[0m [14:18:07] no authentication mode found and disabled.
+[38;5;6m INFO[0m [14:18:07] registered static files from directory ./static
+[38;5;8mDEBUG[0m [14:18:07] metrics server is initialized
+[38;5;8mDEBUG[0m [14:18:07] metrics server started
+error: AddressInUse
+/drone/src/zero/examples/zero-search/zig-pkg/httpz-0.0.17-PNVzrGMYCQDr8ZuCn_1Cz75ZnVcg46JlYk66_ARWR_qa/src/posix.zig:258:27: 0x143a491 in bind (httpz.zig)
+[38;5;6m INFO[0m [14:18:08] Starting server on port: 8080
+            .ADDRINUSE => return error.AddressInUse,
+                          ^
+/drone/src/zero/examples/zero-search/zig-pkg/httpz-0.0.17-PNVzrGMYCQDr8ZuCn_1Cz75ZnVcg46JlYk66_ARWR_qa/src/httpz.zig:390:17: 0x14f574e in listen (httpz.zig)
+                try posix.bind(listener, &address.any, socklen);
+                ^
+[38;5;6m INFO[0m [14:18:08] 49ac4e3d25d44c2daa7b0c113b63b42a	 200 0ms GET /.well-known/health
+[38;5;6m INFO[0m [14:18:08] b67a89adf4ce41828b0e114f1c60f664	 200 0ms GET /
+[38;5;6m INFO[0m [14:18:08] 7c0cc140831949abbf55d379be210f78	 200 0ms GET /
+[38;5;6m INFO[0m [14:18:08] 7a2f554b722b4f0b84963d512f4a7029	 200 0ms GET /
+[38;5;6m INFO[0m [14:18:08] 913190e9800849168c39beafd9556533	 200 0ms GET /
+[38;5;6m INFO[0m [14:18:08] 5ffb419906124a2f972047b8ee6c5d3d	 200 0ms GET /
+[38;5;6m INFO[0m [14:18:08] be839424c32c49c598398b4dd5efb474	 200 0ms GET /
+[38;5;6m INFO[0m [14:18:08] c5c52bdcbf2e485093093d49ee0f2836	 200 0ms GET /
+[38;5;6m INFO[0m [14:18:08] 1befbfdd6b4e40c3a195af60f7c95249	 200 0ms GET /
+[38;5;6m INFO[0m [14:18:08] 9795f64a76504eeb982bfd3f9e18aa34	 200 0ms GET /
+[38;5;6m INFO[0m [14:18:08] 289138bd41fd4643ae6f1854f087cdfb	 200 0ms GET /
+[38;5;6m INFO[0m [14:18:08] 43dceaa173f54ce48820cfb212207341	 200 0ms GET /
+[38;5;6m INFO[0m [14:18:08] 84eacd65ba864b85af861250775797c6	 200 0ms GET /
+[38;5;6m INFO[0m [14:18:08] bc32f8ad46544c13afce41928d77686f	 200 0ms GET /
+[38;5;6m INFO[0m [14:18:08] aa7cc972b8b74fe391406543013455bf	 200 0ms GET /
+[38;5;6m INFO[0m [14:18:08] 80d984b4d3f94925b9e2185c9e9538dd	 200 0ms GET /
+[38;5;6m INFO[0m [14:18:08] 6ebf5072103147b882b5db211a2c54ba	 200 0ms GET /
+[38;5;6m INFO[0m [14:18:08] 2ff3fd63d44041a39b9896e8f1fc887a	 200 0ms GET /
+[38;5;6m INFO[0m [14:18:08] 62d11094aa8e4cfdb091d82196be6cca	 200 0ms GET /
+[38;5;6m INFO[0m [14:18:08] c9ab3e961c704c38bdcc13c86e108d9b	 200 0ms GET /
+[38;5;6m INFO[0m [14:18:08] 15a0202c1ba14e1c8b54f6f0c1a61a62	 200 0ms GET /
+[38;5;6m INFO[0m [14:18:08] 8f9fca3a8ff44191a75590c56fc6c678	 200 0ms GET /
+... [769178 lines of load/request noise omitted] ...
+...
+[38;5;6m INFO[0m [14:19:08] b56560ff8c654182a7005b66429416cc	 200 0ms GET /
+[38;5;6m INFO[0m [14:19:08] 472aa2eee7d347968b5923778e2ef254	 200 0ms GET /
+[38;5;6m INFO[0m [14:19:08] 122b958907054268aee43735ae518f8d	 200 0ms GET /
+[38;5;6m INFO[0m [14:19:08] beaf240322b245a78c179a9ac621d165	 200 0ms GET /
+[38;5;6m INFO[0m [14:19:08] 40675e53866f475581aba712c78b3475	 200 0ms GET /
+[38;5;6m INFO[0m [14:19:08] 9955619b3e564db7afcc94d3e340621f	 200 0ms GET /
+[38;5;6m INFO[0m [14:19:08] 5b8a68ac13bc425e86dbc820b05ed045	 200 0ms GET /
+[38;5;6m INFO[0m [14:19:08] 5a5dfc4a11434999857d640d69ed2908	 200 0ms GET /
+[38;5;6m INFO[0m [14:19:08] c35f7b3c4e794db7b38a6ecfe2d48fc1	 200 0ms GET /
+[38;5;6m INFO[0m [14:19:08] 2f9b939cf6944830a37317e54eea78a3	 200 0ms GET /
+[38;5;6m INFO[0m [14:19:08] 885926857c8b4418a24ba732ed185382	 200 0ms GET /
+[38;5;6m INFO[0m [14:19:08] cef5cb69db7d45f2b51fe30fe5b243d6	 200 0ms GET /
+[38;5;6m INFO[0m [14:19:08] 50ae72a40f864373b6c60adf3d871a0b	 200 0ms GET /
+[38;5;6m INFO[0m [14:19:08] 926ed4bce1a94482aa353573625c11c3	 404 0ms GET /search
+[38;5;6m INFO[0m [14:19:08] 546f13b271c84d7c9a49c44e28a6bfb7	 404 1ms GET /search
+[38;5;6m INFO[0m [14:19:08] 9f587f75410b48ccab0128a27abedd8d	 200 0ms GET /
+[38;5;6m INFO[0m [14:19:08] caf7b6c810fc464f9135d4c9f70fe437	 200 0ms GET /
+[38;5;6m INFO[0m [14:19:08] 3e55dbb8918e42ce946d25b9d61e26fd	 200 0ms GET /
+[38;5;6m INFO[0m [14:19:08] 5a47c6be7bd845878f4b7870b605a08a	 404 1ms GET /search
+[38;5;6m INFO[0m [14:19:08] 26507e62ec5f46cb85c76f3d164e591d	 200 0ms GET /
+[38;5;6m INFO[0m [14:19:08] 2495079fe19644d59fd91177075d02e7	 200 0ms GET /
+[38;5;6m INFO[0m [14:19:08] cb123c2dbd674d6d8393a371802e1f03	 200 0ms GET /
+[38;5;6m INFO[0m [14:19:08] 4994011fbb5049b68638125dd698f3d3	 200 0ms GET /
+[38;5;6m INFO[0m [14:19:08] 5b28f17f830e479e8a8b37c3aa760b28	 200 0ms GET /
+[38;5;6m INFO[0m [14:19:08] 40d4a67cebf74452b48de7d79d7d2f36	 200 0ms GET /
+[38;5;6m INFO[0m [14:19:08] ce6d07d2ce6443098da30195dab2f9ae	 200 0ms GET /
+[38;5;6m INFO[0m [14:19:08] 9e64ca2ca7854c44bc91130b270cbe2d	 200 0ms GET /
+[38;5;6m INFO[0m [14:19:08] 1241db83889740f786a2f45104498573	 200 0ms GET /
+[38;5;6m INFO[0m [14:19:08] 90f3fee35d3e48a5b1b90d557d20ed73	 200 0ms GET /
+[38;5;6m INFO[0m [14:19:08] 742e4cf20dbd4b059850a834664b3d6b	 200 0ms GET /
+[38;5;6m INFO[0m [14:19:08] 49f1c80aa0b54f6c9ceb28ef8f75f3bf	 200 0ms GET /
+[38;5;6m INFO[0m [14:19:08] 8b1045ebda054e75abb7665651067b98	 404 0ms GET /search
+[38;5;6m INFO[0m [14:19:08] 4884fc80ecd24864a60ab1c51cc52fa8	 200 0ms GET /
+[38;5;160mERROR[0m [14:19:08] handler error (correlation=305d6f7b2ee949b89117a5200e0db2b7): error.SolrQueryFailed
+[38;5;6m INFO[0m [14:19:08] 305d6f7b2ee949b89117a5200e0db2b7	 500 1ms GET /search
+[38;5;6m INFO[0m [14:19:08] 576a8890977e4f248bd912f9b26ff327	 200 0ms GET /
+[38;5;6m INFO[0m [14:19:08] dd2cef7c09da4c34ac933dd9b3d9a6dc	 200 0ms GET /
+[38;5;6m INFO[0m [14:19:08] b0ba4b48b06f4e8aab52a29a66d0cb9e	 200 0ms GET /
+[38;5;6m INFO[0m [14:19:08] 2fa591f3d68541f5b52db9965f70dd2f	 404 0ms GET /search
+[38;5;6m INFO[0m [14:19:08] 87c19fa8b57345faa37dd51f8268b212	 200 0ms GET /
+[38;5;6m INFO[0m [14:19:08] 150971276a55454ab3de7ac7b26a10c3	 404 1ms GET /search
+[38;5;6m INFO[0m [14:19:08] 75bfddfb3c2c4e189c0f7a1d6a696788	 200 0ms GET /
+[38;5;6m INFO[0m [14:19:08] 92f0ca209bf248e8a990083ee73d0fa0	 404 0ms GET /search
+[38;5;6m INFO[0m [14:19:08] 6083855ec33041eb867b76ca798112ab	 404 1ms GET /search
+[38;5;6m INFO[0m [14:19:08] ed222b5ceee944b1a95d2bfe704540c0	 404 1ms GET /search
+[38;5;6m INFO[0m [14:19:08] 4d12bfd8bf354ee58288f548558926be	 404 0ms GET /search
+[38;5;6m INFO[0m [14:19:08] 757d2526653046aa8aafe73f8d7482c4	 404 0ms GET /search
+[38;5;6m INFO[0m [14:19:08] 278b3bf1b147464590b4e8ec94589585	 404 0ms GET /search
+[38;5;6m INFO[0m [14:19:08] server shutting down
+received shutdown signalreceived shutdown signalCannot stop server, .listen() was never called

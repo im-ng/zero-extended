@@ -1,0 +1,102 @@
+[38;5;6m INFO[0m [14:20:59] Loaded config from file: ./configs/.env
+[38;5;6m INFO[0m [14:20:59] config overriden ./configs/.dev.env file not found.
+[38;5;6m INFO[0m [14:20:59] configured mysql pool (size 10) for user 'user1' at '172.18.0.10:3306'
+[38;5;8mDEBUG[0m [14:20:59] redis is disabled, as redis host is not provided.
+[38;5;6m INFO[0m [14:20:59] connected to local file store
+[38;5;8mDEBUG[0m [14:20:59] sqlite is disabled, as sqlite path is not provided.
+[38;5;8mDEBUG[0m [14:20:59] clickhouse is disabled, as CLICKHOUSE_URL is not provided.
+[38;5;8mDEBUG[0m [14:20:59] time-series is disabled, as INFLUXDB_URL is not provided.
+[38;5;8mDEBUG[0m [14:20:59] opentsdb is disabled, as OPENTSDB_URL is not provided.
+[38;5;8mDEBUG[0m [14:20:59] search is disabled, as SOLR_URL is not provided.
+[38;5;8mDEBUG[0m [14:20:59] nosql is disabled, as CONTACT_POINTS are not provided.
+[38;5;8mDEBUG[0m [14:20:59] arangodb is disabled, as ARANGO_HOST is not provided.
+[38;5;8mDEBUG[0m [14:20:59] graph is disabled, as DGRAPH_URL is not provided.
+[38;5;8mDEBUG[0m [14:20:59] pubsub is disabled, as pubsub mode is not provided.
+[38;5;6m INFO[0m [14:20:59] container is created
+[38;5;6m INFO[0m [14:20:59] zero-sql app pid 4443
+[38;5;6m INFO[0m [14:20:59] no authentication mode found and disabled.
+[38;5;6m INFO[0m [14:20:59] migration table created
+[38;5;8mDEBUG[0m [14:20:59] 1700000001: migration is skipped  
+[38;5;8mDEBUG[0m [14:20:59] 1700000002: migration is skipped  
+[38;5;8mDEBUG[0m [14:20:59] 1700000003: migration is skipped  
+[38;5;8mDEBUG[0m [14:20:59] 1700000004: migration is skipped  
+[38;5;6m INFO[0m [14:20:59] 1700000005: migration completed  
+[38;5;6m INFO[0m [14:20:59] registered static files from directory ./static
+[38;5;8mDEBUG[0m [14:20:59] metrics server is initialized
+[38;5;8mDEBUG[0m [14:20:59] metrics server started
+[38;5;6m INFO[0m [14:20:59] Starting server on port: 8080
+[38;5;6m INFO[0m [14:21:00] 57ba2f7dbb214dc0aeee5e5b7f317a7c	 200 0ms GET /.well-known/health
+[38;5;6m INFO[0m [14:21:00] eb16062b865343a39f40087f86de2896	 200 0ms GET /
+[38;5;6m INFO[0m [14:21:00] 77452e17f782441f99bf2092b00ca905	 200 0ms GET /
+[38;5;6m INFO[0m [14:21:00] 1abb20db683e4d3e9e9a571d69d61cf8	 200 1ms GET /users
+[38;5;6m INFO[0m [14:21:00] 1c7f42238de34a20b40280ae5a64e536	 200 0ms GET /
+[38;5;6m INFO[0m [14:21:00] 9db70d978242483d9db46470819c9277	 200 0ms GET /
+[38;5;6m INFO[0m [14:21:00] fd70697b68eb43229d82ff78355a5db6	 200 0ms GET /
+[38;5;6m INFO[0m [14:21:00] b205b1732e074744bd81739094cfcf97	 200 3ms GET /users
+[38;5;6m INFO[0m [14:21:00] cb6ff393aa32450d9cad9271b1d83f5b	 200 0ms GET /
+[38;5;6m INFO[0m [14:21:00] 9e36f1e1643f4bc09ab9c2e33940bfde	 200 0ms GET /
+[38;5;6m INFO[0m [14:21:00] 83dc950115c74eedaa74396d041835b8	 200 3ms GET /users
+[38;5;6m INFO[0m [14:21:00] f231f5afaffc48eaa7e311a2c4c096b6	 200 1ms GET /users
+[38;5;6m INFO[0m [14:21:00] 7a7ffc9dc16749469781739c42f78879	 200 0ms GET /
+[38;5;6m INFO[0m [14:21:00] 31f6c18aa69d4f2dacf23f42ccf90326	 200 0ms GET /
+[38;5;6m INFO[0m [14:21:00] 060837db3a9a40b890cb36915d45ae2c	 200 0ms GET /users
+[38;5;6m INFO[0m [14:21:00] 37fc52fac8e94bd7b718a16e30379b83	 200 0ms GET /
+[38;5;6m INFO[0m [14:21:00] d935fc4e89ba4f41b7f1b930692eada0	 200 1ms GET /users
+[38;5;6m INFO[0m [14:21:00] 8f352c72dc2f4ac5a3820ea333c97fc4	 200 0ms GET /
+[38;5;6m INFO[0m [14:21:00] b57962bba5934f5395ec53157a563038	 200 0ms GET /
+[38;5;6m INFO[0m [14:21:00] 222e506c279243a1a3501555d38ab9fc	 200 0ms GET /
+[38;5;6m INFO[0m [14:21:00] 2f2c2ff57e88437dacd011b3a0a480af	 200 0ms GET /
+[38;5;6m INFO[0m [14:21:00] 51fc37e831f54df5843bf3beba05207b	 200 0ms GET /
+[38;5;6m INFO[0m [14:21:00] c10ab646ea2f4597a25ab45f3b7d1904	 200 0ms GET /
+... [793552 lines of load/request noise omitted] ...
+...
+/drone/src/zero/src/datasource/sql/mysql.zig:1002:46: 0x16eeb35 in acquireConn (zero.zig)
+        return try self.getPool().poolAcquire();
+                                             ^
+/drone/src/zero/src/datasource/sql/mysql.zig:1129:42: 0x17ad1db in queryRows__func_3062 (zero.zig)
+        const conn = try self.acquireConn();
+                                         ^
+/drone/src/zero/src/datasource/sql/interface.zig:256:81: 0x17ae77b in queryRows__func_3056 (zero.zig)
+            .mysql => @as(*root.MySQL, @ptrCast(@alignCast(self.ptr))).queryRows(
+                                                                                ^
+(additional stack frames may have been skipped...)
+memory address 0x7f10ee4a0000 leaked: 
+/drone/src/zero/src/datasource/sql/mysql.zig:129:45: 0x16eccdb in connectAttempt (zero.zig)
+        const recv_buf = try allocator.alloc(u8, 1 << 16);
+                                            ^
+/drone/src/zero/src/datasource/sql/mysql.zig:105:61: 0x16ed7a5 in connect (zero.zig)
+        if (cfg.ssl_mode == .disabled) return connectAttempt(allocator, io, cfg);
+                                                            ^
+/drone/src/zero/src/datasource/sql/mysql.zig:1053:49: 0x16edff0 in poolAcquire (zero.zig)
+                    const c = Connection.connect(self.allocator, self.io, self.config()) catch |err| {
+                                                ^
+/drone/src/zero/src/datasource/sql/mysql.zig:1002:46: 0x16eeb35 in acquireConn (zero.zig)
+        return try self.getPool().poolAcquire();
+                                             ^
+/drone/src/zero/src/datasource/sql/mysql.zig:1129:42: 0x17ad1db in queryRows__func_3062 (zero.zig)
+        const conn = try self.acquireConn();
+                                         ^
+/drone/src/zero/src/datasource/sql/interface.zig:256:81: 0x17ae77b in queryRows__func_3056 (zero.zig)
+            .mysql => @as(*root.MySQL, @ptrCast(@alignCast(self.ptr))).queryRows(
+                                                                                ^
+(additional stack frames may have been skipped...)
+memory address 0x7f10ee410000 leaked: 
+/drone/src/zero/src/datasource/sql/mysql.zig:130:45: 0x16ecd76 in connectAttempt (zero.zig)
+        const send_buf = try allocator.alloc(u8, 1 << 16);
+                                            ^
+/drone/src/zero/src/datasource/sql/mysql.zig:105:61: 0x16ed7a5 in connect (zero.zig)
+        if (cfg.ssl_mode == .disabled) return connectAttempt(allocator, io, cfg);
+                                                            ^
+/drone/src/zero/src/datasource/sql/mysql.zig:1053:49: 0x16edff0 in poolAcquire (zero.zig)
+                    const c = Connection.connect(self.allocator, self.io, self.config()) catch |err| {
+                                                ^
+/drone/src/zero/src/datasource/sql/mysql.zig:1002:46: 0x16eeb35 in acquireConn (zero.zig)
+        return try self.getPool().poolAcquire();
+                                             ^
+/drone/src/zero/src/datasource/sql/mysql.zig:1129:42: 0x17ad1db in queryRows__func_3062 (zero.zig)
+        const conn = try self.acquireConn();
+                                         ^
+/drone/src/zero/src/datasource/sql/interface.zig:256:81: 0x17ae77b in queryRows__func_3056 (zero.zig)
+            .mysql => @as(*root.MySQL, @ptrCast(@alignCast(self.ptr))).queryRows(
+                                                                                ^
+(additional stack frames may have been skipped...)

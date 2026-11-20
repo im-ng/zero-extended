@@ -1,0 +1,2 @@
+[38;5;6m INFO[0m [14:39:44] Loaded config from file: ./configs/.env
+[38;5;6m INFO[0m [14:39:44] config overriden ./configs/.dev.env file not found.

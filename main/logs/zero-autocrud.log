@@ -1,0 +1,102 @@
+[38;5;6m INFO[0m [14:41:41] Loaded config from file: ./configs/.env
+[38;5;6m INFO[0m [14:41:41] config loaded from: ./configs/.env
+[38;5;6m INFO[0m [14:41:41] connected to sqlite at '/drone/src/zero/examples/zero-autocrud/data/autocrud.db'
+[38;5;6m INFO[0m [14:41:41] connected to sqlite at '/drone/src/zero/examples/zero-autocrud/data/autocrud.db'
+[38;5;6m INFO[0m [14:41:41] container is created
+[38;5;6m INFO[0m [14:41:41] autocrud-demo app pid 6909
+[38;5;6m INFO[0m [14:41:41] no authentication mode found and disabled.
+[38;5;6m INFO[0m [14:41:41] registered static files from directory ./static
+error: AddressInUse
+/drone/src/zero/examples/zero-autocrud/zig-pkg/httpz-0.0.17-PNVzrGMYCQDr8ZuCn_1Cz75ZnVcg46JlYk66_ARWR_qa/src/posix.zig:258:27: 0x1b84fca in bind (autocrud)
+            .ADDRINUSE => return error.AddressInUse,
+[38;5;6m INFO[0m [14:41:42] Starting server on port: 8082
+                          ^
+/drone/src/zero/examples/zero-autocrud/zig-pkg/httpz-0.0.17-PNVzrGMYCQDr8ZuCn_1Cz75ZnVcg46JlYk66_ARWR_qa/src/httpz.zig:390:17: 0x1c05c6a in listen (autocrud)
+                try posix.bind(listener, &address.any, socklen);
+                ^
+[38;5;6m INFO[0m [14:41:43] f09d637ccd174e75ba76338592473eda	 200 0ms GET /.well-known/health
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:41:43] f6c59f0baa4c41b19fe5d3aa8cbd537f	 200 0ms GET /users
+[38;5;6m INFO[0m [14:41:43] 9f10e45f0c114e10aea615b9f14a5bdb	 200 0ms GET /users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:41:43] a20e2fedabd34804abfafc705f6128b8	 200 0ms GET /users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:41:43] e74871c51dce4afaaf4c7389dc00d807	 200 0ms GET /users
+[38;5;6m INFO[0m [14:41:43] fc75b6b487c84f7c938d51e019087202	 200 0ms GET /users
+[38;5;6m INFO[0m [14:41:43] e9602a5c2fda4ebb803751a9bd59a351	 200 0ms GET /users
+[38;5;6m INFO[0m [14:41:43] 392e4b254ffd4629afc9b00dff7fb7c5	 200 0ms GET /users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:41:43] d28724a4d21d408598df17b07c36421c	 200 0ms GET /users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:41:43] f7329fffc9c647be8ec726a16e512480	 200 0ms GET /users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:41:43] b1b2a8a37c0640a4a1ccf7d622de2c9c	 200 0ms GET /users
+[38;5;6m INFO[0m [14:41:43] c05913bcc977464e8f4f3b8211e42163	 200 0ms GET /users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:41:43] 5ee1e1b01c834909a4c049f59c796b69	 200 0ms GET /users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:41:43] 951880eccbf34152b21b68d696630961	 200 0ms GET /users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:41:43] 103a4294a9ba4eb5bf540e8548e57ebb	 200 0ms GET /users
+[38;5;6m INFO[0m [14:41:43] 78fb18b092ad49a3b124c1369807e114	 200 0ms GET /users
+[38;5;6m INFO[0m [14:41:43] be010099a46b4d1891cc5e6dd615fd72	 200 0ms GET /users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:41:43] bec53c6a962843579e9d15fcf35c795f	 200 0ms GET /users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:41:43] 58f9e25cc6874fbf90ddb472a5b90ff7	 200 0ms GET /users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:41:43] dfbee0140be249d9b253146f39443019	 200 0ms GET /users
+[38;5;6m INFO[0m [14:41:43] 21d6acf5ca3e4ed1b70521d720b7cdd7	 200 0ms GET /users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:41:43] 802efb01ac854809876497dfbb6a02f0	 200 0ms GET /users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:41:43] 372daf1a514e4bb490a18c4086443d78	 200 0ms GET /users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:41:43] 772e975d97d24a9d9ca0ad9272474bc0	 200 0ms GET /users
+[38;5;6m INFO[0m [14:41:43] 9e528eb32ae341bb884e7fed61b71ff7	 200 0ms GET /users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:41:43] 9f4f92558cec42d1bc6d899ad5c546a8	 200 0ms GET /users
+[38;5;6m INFO[0m [14:41:43] 8cd1885515b347f4b643e303d48feb4c	 200 0ms GET /users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:41:43] 7df2dc80986a46c78a43572f6a8dbaf2	 200 0ms GET /users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:41:43] d40b6b32b87e4c2a869e944891925e09	 200 0ms GET /users
+[38;5;6m INFO[0m [14:41:43] e3640fe38bc043aab9888bcd5bfbdf15	 200 0ms GET /users
+[38;5;6m INFO[0m [14:41:43] 947c5588a9204f2f90c256d2b940fd3e	 200 0ms GET /users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:41:43] 426163d101a14621a6cdefc1878443e4	 200 0ms GET /users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:41:43] 4def7bc59e7f49b0a760a45e8f5b0883	 200 0ms GET /users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:41:43] 2ddcbb9c23ca46a18f29eb5fa1eb0246	 200 0ms GET /users
+... [154149 lines of load/request noise omitted] ...
+...
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:42:43] a05530c74cb342bfaff25bf611bb63b3	 200 0ms GET /users
+[38;5;6m INFO[0m [14:42:43] 1cb4c838e1dd40798d193f905fd2c959	 200 0ms GET /users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:42:43] d37a2b0449bb4f8aa5e375b61178e3d3	 200 0ms GET /users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:42:43] a0fb6abdbcac459db4219fe56edc4e00	 200 0ms GET /users
+[38;5;6m INFO[0m [14:42:43] 4a932c414a4c4897b2463285d9ad71e8	 200 0ms GET /users
+[38;5;6m INFO[0m [14:42:43] e961a35192c1419c8ff8ca89edb9c9b2	 200 0ms GET /users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:42:43] 4690b0f6957f402099e3794aba95f9fa	 200 0ms GET /users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:42:43] 48e8585eab2242f191f97d85723fdb7c	 200 0ms GET /users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:42:43] c920fac5bbad42c9b1a14adc3f31b9f8	 200 0ms GET /users
+[38;5;6m INFO[0m [14:42:43] af6b933c6f574afeab66b485b72ae2cb	 200 0ms GET /users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:42:43] e7c3565f4c56442bb342cdb32f9b248b	 200 0ms GET /users
+[38;5;6m INFO[0m [14:42:43] 900f231fb8804851b7d818f611462c2e	 200 0ms GET /users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:42:43] 75476dc252884d4c9148cc1807933324	 200 0ms GET /users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:42:43] 68eb8291ce51446487b11d5e4f1d572e	 200 0ms GET /users
+[38;5;6m INFO[0m [14:42:43] 6707365f5e794d6fa277bbfef0294d4b	 200 0ms GET /users
+[38;5;6m INFO[0m [14:42:43] e7e74fc6e29d4ec480c105558409652b	 200 0ms GET /users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:42:43] 301c345f480742a19d200462ff5e4cec	 200 0ms GET /users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:42:43] 2dfe5b83d26e49469e9f14bbcdfc9e14	 200 0ms GET /users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:42:43] bc5e89453f564f15a13930ac3c1c9e71	 200 0ms GET /users
+[38;5;6m INFO[0m [14:42:43] 0529426e5be345af95748ff3f41a0137	 200 1ms GET /users
+[38;5;6m INFO[0m [14:42:43] 4ed7f15dc4b64cd1805785d8059b7893	 200 0ms GET /users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:42:43] 5fb1f23963d94efa89c70fb47969ac65	 200 0ms GET /users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:42:43] f4639767764346f9ad765c00f2acda2a	 200 0ms GET /users
+[38;5;6m INFO[0m [14:42:43] 2a025c4078554ef89dcbad996b27b289	 200 0ms GET /users
+[38;5;6m INFO[0m [14:42:43] ed5367f864fd427087722a9ff7954051	 200 0ms GET /users
+[38;5;6m INFO[0m [14:42:43] b765866cc7704306a9e993e62d5fec7c	 200 0ms GET /users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:42:43] 70cc472dae73412ea2d90129c86b1b63	 200 1ms GET /users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:42:43] ffb0c06579bc4be0bcdc5973182560ba	 200 0ms GET /users
+[38;5;6m INFO[0m [14:42:43] 4917e499146c496eb8469a44191a255a	 200 0ms GET /users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:42:43] f6e197e90f3f435fa1a0ad635c924e6b	 200 0ms GET /users
+[38;5;6m INFO[0m [14:42:43] b2df11adeab2429ba7f1c22b23f54b1a	 200 0ms GET /users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:42:43] 2c2b606abbcd477a958f8f48c9c04d86	 200 0ms GET /users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:42:43] f2e2e2cef1974b308c530a5fe62baa8b	 200 0ms GET /users
+[38;5;6m INFO[0m [14:42:43] effcc2f5c5b94fa991c6dc3d87a40fef	 200 1ms GET /users
+[38;5;6m INFO[0m [14:42:43] abac11ba06464f3c808bcc9085905baa	 200 0ms GET /users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:42:43] b9837b57f3e845859ba95611136432b0	 200 0ms GET /users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:42:43] 925ead84fac9470790946820f6c7f577	 200 0ms GET /users
+[38;5;6m INFO[0m [14:42:43] ae263abe191d4b7796db6caea007a5a4	 200 0ms GET /users
+[38;5;6m INFO[0m [14:42:43] f9f679d302e341af89a5a79f3f046774	 200 0ms GET /users
+[38;5;6m INFO[0m [14:42:43] 23155b48677d46e2b0d3cd25d63aa9fd	 200 0ms GET /users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:42:43] a221b52fe3dc4b36a5e3f77fe7aeaeab	 200 0ms GET /users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:42:43] ba1829817e3242b7a6618f9a7087a716	 200 0ms GET /users
+[38;5;6m INFO[0m [14:42:43] fa048af45d6648fd8ca71c5056d62d58	 200 0ms GET /users
+[38;5;6m INFO[0m [14:42:43] 7acdf544f7eb41b0852985a528f63bcd	 200 0ms GET /users
+[38;5;6m INFO[0m [14:42:43] d7cacebec83c49c7b966a3cc6ac08b40	 200 0ms GET /users
+[38;5;6m INFO[0m [14:42:43] 7fcc3632bb9f4489ad658842f17c195b	 200 0ms GET /users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:42:43] 5b26dbeeb4054af8ad610dd1d37ee70d	 200 0ms GET /users
+[38;5;6m INFO[0m [14:42:43] dea9381e30514ee086961ffd72ad09bf	 200 0ms GET /users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:42:43] server shutting down
+received shutdown signalreceived shutdown signalCannot stop server, .listen() was never called

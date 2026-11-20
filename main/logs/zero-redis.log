@@ -1,0 +1,18 @@
+[38;5;6m INFO[0m [14:08:53] Loaded config from file: ./configs/.env
+[38;5;6m INFO[0m [14:08:53] config loaded from: ./configs/.dev.env
+[38;5;8mDEBUG[0m [14:08:53] database is disabled, as dialect is not provided.
+[38;5;6m INFO[0m [14:08:53] connected to redis at '172.18.0.9:6379' on database 0
+[38;5;8mDEBUG[0m [14:08:53] file store is disabled, as FILE_STORE_ROOT is not provided.
+[38;5;8mDEBUG[0m [14:08:53] sqlite is disabled, as sqlite path is not provided.
+[38;5;8mDEBUG[0m [14:08:53] clickhouse is disabled, as CLICKHOUSE_URL is not provided.
+[38;5;8mDEBUG[0m [14:08:53] time-series is disabled, as INFLUXDB_URL is not provided.
+[38;5;8mDEBUG[0m [14:08:53] opentsdb is disabled, as OPENTSDB_URL is not provided.
+[38;5;8mDEBUG[0m [14:08:53] search is disabled, as SOLR_URL is not provided.
+[38;5;8mDEBUG[0m [14:08:53] nosql is disabled, as CONTACT_POINTS are not provided.
+[38;5;8mDEBUG[0m [14:08:53] arangodb is disabled, as ARANGO_HOST is not provided.
+[38;5;8mDEBUG[0m [14:08:53] graph is disabled, as DGRAPH_URL is not provided.
+[38;5;8mDEBUG[0m [14:08:53] pubsub is disabled, as pubsub mode is not provided.
+[38;5;6m INFO[0m [14:08:53] container is created
+[38;5;6m INFO[0m [14:08:53] zero-redis app pid 1049
+[38;5;6m INFO[0m [14:08:53] no authentication mode found and disabled.
+[38;5;6m INFO[0m [14:08:53] warming up the cache entries

@@ -1,0 +1,102 @@
+[38;5;6m INFO[0m [14:12:14] Loaded config from file: ./configs/.env
+[38;5;6m INFO[0m [14:12:14] config overriden ./configs/.dev.env file not found.
+[38;5;6m INFO[0m [14:12:14] connected to sqlite at '/drone/src/zero/examples/zero-sqlite/data/sqlite-app.db'
+[38;5;8mDEBUG[0m [14:12:14] redis is disabled, as redis host is not provided.
+[38;5;8mDEBUG[0m [14:12:14] file store is disabled, as FILE_STORE_ROOT is not provided.
+[38;5;6m INFO[0m [14:12:14] connected to sqlite at '/drone/src/zero/examples/zero-sqlite/data/sqlite-app.db'
+[38;5;8mDEBUG[0m [14:12:14] clickhouse is disabled, as CLICKHOUSE_URL is not provided.
+[38;5;8mDEBUG[0m [14:12:14] time-series is disabled, as INFLUXDB_URL is not provided.
+[38;5;8mDEBUG[0m [14:12:14] opentsdb is disabled, as OPENTSDB_URL is not provided.
+[38;5;8mDEBUG[0m [14:12:14] search is disabled, as SOLR_URL is not provided.
+[38;5;8mDEBUG[0m [14:12:14] nosql is disabled, as CONTACT_POINTS are not provided.
+[38;5;8mDEBUG[0m [14:12:14] arangodb is disabled, as ARANGO_HOST is not provided.
+[38;5;8mDEBUG[0m [14:12:14] graph is disabled, as DGRAPH_URL is not provided.
+[38;5;8mDEBUG[0m [14:12:14] pubsub is disabled, as pubsub mode is not provided.
+[38;5;6m INFO[0m [14:12:14] container is created
+[38;5;6m INFO[0m [14:12:14] sqlite-demo app pid 1983
+[38;5;6m INFO[0m [14:12:14] no authentication mode found and disabled.
+[38;5;6m INFO[0m [14:12:14] migration table created
+[38;5;6m INFO[0m [14:12:14] 1790396525: migration completed  
+[38;5;6m INFO[0m [14:12:14] registered static files from directory ./static
+[38;5;8mDEBUG[0m [14:12:14] metrics server is initialized
+[38;5;8mDEBUG[0m [14:12:14] metrics server started
+[38;5;6m INFO[0m [14:12:14] Starting server on port: 8081
+[38;5;6m INFO[0m [14:12:15] 9232b67ce9314610bdbd841a565aa93f	 200 0ms GET /.well-known/health
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:12:15] 995d24d6692b4e70b6867234fde104c9	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [14:12:15] 964dd85c90f34bf9963380006272fa29	 200 0ms GET /sqlite/users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:12:15] c2b851b3ca8046638a9dd6c0b1c11bb2	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [14:12:15] 521e1beab4b648ee8c16b65486f333f4	 200 1ms GET /sqlite/users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:12:15] d791f907aee248388e286365baf8b6a8	 200 0ms GET /sqlite/users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:12:15] 076a13426455480089b2defb4cf488fc	 200 0ms GET /sqlite/users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:12:15] 0bb8c6a5e0914fa6ab59b10c623b71f2	 200 0ms GET /sqlite/users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:12:15] ca25fdd8a3194763bf1506a2f28161aa	 200 0ms GET /sqlite/users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:12:15] 7b385a36a690470290e568c7af76bda1	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [14:12:15] 7fbdd2f0d5d54c77a048627ba9cac304	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [14:12:15] d95826f91af94777a69c777debbd44fd	 200 1ms GET /sqlite/users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:12:15] e7a0165c0bdb4cd2b43c807c43e2f33f	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [14:12:15] c95635a2db5c48b2ac65de8f0d763bcb	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [14:12:15] 84788c245c024600b379aec6417631fb	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [14:12:15] 943604b89ba74128abf91254bc367c9d	 200 0ms GET /sqlite/users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:12:15] ca9708f0f9d04515b29cb40d7b622ae7	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [14:12:15] 91ef351f7eeb4ed7a622abb9b420c74f	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [14:12:15] ca9fa9f6d88145afa5fc968c0832030b	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [14:12:15] 6f8ed6fd30e2453f8ca7989e0c8e64eb	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [14:12:15] bbe2cd6ac24247acbb4d5c855c6e1d3e	 200 0ms GET /sqlite/users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:12:15] 4099d91ddede4dd4ac61e3683341d842	 200 0ms GET /sqlite/users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:12:15] 26a44b6f46ca499ab71163c4593a9dd2	 200 0ms GET /sqlite/users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:12:15] cfa38447aba14edcb512160111148af9	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [14:12:15] 0b4e1758a7004441add41521d6d0ea1c	 200 0ms GET /sqlite/users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:12:15] d88b43b3395848e29fddd0e85279aab0	 200 0ms GET /sqlite/users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:12:15] 943ffd6dc051458bb5c933f4c2350283	 200 0ms GET /sqlite/users
+... [155920 lines of load/request noise omitted] ...
+...
+[38;5;6m INFO[0m [14:13:15] bac255c168a84342a076551274a658e2	 200 0ms GET /sqlite/users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:13:15] 9ce97b1ebbef442eb03e9ad2a2d21778	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [14:13:15] 2e3d5860fd534ebdacc712cc53bf72d5	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [14:13:15] d34d206a2a0f48189e33b1e8fbf6208a	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [14:13:15] 19d182c4c26a4c27a75fa860ae9e886d	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [14:13:15] e2a75376471644ec996fc0bb07df56a4	 200 0ms GET /sqlite/users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:13:15] 0b17d6a3a72044d9b71aa7bf22f5f503	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [14:13:15] 1a9f14646f3e4f24a3ad655aae178c8a	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [14:13:15] 26fe4d81b07c4ce78883d7beb47a4ff5	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [14:13:15] 775be5301ad4479283454e521dc4e2d6	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [14:13:15] 8daca6f5afef4fc891829392b35d13a1	 200 0ms GET /sqlite/users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:13:15] 78b95fcda8bc49bb85f19feaad314e6a	 200 0ms GET /sqlite/users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:13:15] c66b6d1dba4e43028621fd78282614dd	 200 0ms GET /sqlite/users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:13:15] f9b813d659f6492cb4b657cc7520b0d0	 200 0ms GET /sqlite/users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:13:15] 06df6d93aefd4bcfa6b4ff231bf84703	 200 0ms GET /sqlite/users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:13:15] cd6545182e2f46938c75ab322c6f6fe3	 200 0ms GET /sqlite/users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:13:15] 0b6999e561334f2d9cad19b31646e4d4	 200 0ms GET /sqlite/users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:13:15] ed591e9ff0094d95ab3badd566fd198a	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [14:13:15] 9abc9a9814c7489ca22e27a7d7bb8b60	 200 0ms GET /sqlite/users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:13:15] 26ba830dd8dd4754b191c1de940045bc	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [14:13:15] a48f38e779994e4099c94125242c0552	 200 0ms GET /sqlite/users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:13:15] 6993906a62e94914998567905ad7639a	 200 0ms GET /sqlite/users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:13:15] a17972051f8243bcb7e227d33c68579f	 200 1ms GET /sqlite/users
+[38;5;6m INFO[0m [14:13:15] c672748cd78149ef9d2fde84ba47a71c	 200 0ms GET /sqlite/users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:13:15] c08779c5df7945ac97072525c2a3cdd5	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [14:13:15] 48077e7d082443e78231fe34e88329b7	 200 0ms GET /sqlite/users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:13:15] 34d83b0a1cf04544b64b69bbcd1f15c2	 200 0ms GET /sqlite/users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:13:15] 63d4cb8678674b5892757c7e01295e1e	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [14:13:15] 1a7d4370176747639f6be24e21b888a2	 200 0ms GET /sqlite/users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:13:15] 11c5ef6ace714bed9b5ce1bb054bcc8b	 200 1ms GET /sqlite/users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:13:15] 850f08e4f4bd4ade803bdab6bbe2e9ee	 200 0ms GET /sqlite/users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:13:15] 2d82c5ae36514192bd0821b7fc45cd14	 200 0ms GET /sqlite/users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:13:15] 1d0b41dd83464bbbb19a566d1ea75df5	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [14:13:15] c0c933a8ae51454bad694162e7a2ae1b	 200 0ms GET /sqlite/users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:13:15] e61deba9dc9f44448a725bbb4a2ae681	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [14:13:15] 1de55282c1934810b93b8c37189f9249	 200 0ms GET /sqlite/users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:13:15] 591e852457624bb3bab8eb66d849df07	 200 0ms GET /sqlite/users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:13:15] d043faed04e7475985bce191a0b19f14	 200 0ms GET /sqlite/users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:13:15] 0b7ff3fb8676405f8ace27e4867c4337	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [14:13:15] 30f7a87d3e544f678192e34a688b420d	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [14:13:15] 4228982bed1243ef82b8ba630013a93a	 200 0ms GET /sqlite/users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:13:15] 1ba768e600d1452eae04bcc403c18ffc	 200 0ms GET /sqlite/users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:13:15] 0e527177f54840c5a2d3a570a95e8dac	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [14:13:15] 812cdd6960304f5589025b5e070848ef	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [14:13:15] aed20b8f05ad4d458be72d8331297d84	 200 0ms GET /sqlite/users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:13:15] 729d7599137146c29f0fb424738ee295	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [14:13:15] 3557f967f246400ea85080082c0ebc5b	 200 0ms GET /sqlite/users
+[38;5;6m INFO[0m [14:13:15] 7ced0bf68bd4412f9b7e1b115ae0727b	 200 0ms GET /sqlite/users
+unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}unable to finalize prepared statement, result: 1, detailed error: {code: 1, near: -1, message: cannot rollback - no transaction is active}[38;5;6m INFO[0m [14:13:15] server shutting down
+received shutdown signalreceived shutdown signalreceived shutdown signal
