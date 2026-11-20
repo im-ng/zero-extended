@@ -1,187 +1,124 @@
 # zero-soak report (gate)
 
-generated: 2026-10-29 03:05:25 UTC · build: 11
-framework: zero @ main (e3fb9eab) · https://gitea.pi/ng/zero.git
+generated: 2026-11-20 03:54:04 UTC · build: 13
+framework: zero @ experimental-0.17 (6e2994a8) · https://gitea.pi/ng/zero.git
 
-**FAIL** — 14 services, 12 pass, 2 fail, 0 missing.
+**MISSING** — 16 services, 0 pass, 0 fail, 16 missing.
 
 | Service | Status | Port | Backends | Chaos | Checks | RSS growth | Links | TLS |
 |---|---|---|---|---|---|---|---|---|
-| zero-autocrud | FAIL | 8082 | — | no | 1/1 | — | <a href="logs/zero-autocrud.log">log</a> · <a href="logs/zero-autocrud.vmrss.txt">rss</a> | — |
-| zero-pubsub-subscriber | FAIL | 8080 | nats | no | 2/1 | — | <a href="logs/zero-pubsub-subscriber.log">log</a> · <a href="logs/zero-pubsub-subscriber.vmrss.txt">rss</a> | — |
-| zero-auth | PASS | 8080 | — | no | 2/0 | — | <a href="logs/zero-auth.log">log</a> · <a href="logs/zero-auth.vmrss.txt">rss</a> | — |
-| zero-basic-secure | PASS | 8080 | postgres | yes | 3/0 | — | <a href="logs/zero-basic-secure.log">log</a> · <a href="logs/zero-basic-secure.vmrss.txt">rss</a> | 🔒 |
-| zero-duckdb | PASS | 8083 | — | no | 2/0 | — | <a href="logs/zero-duckdb.log">log</a> · <a href="logs/zero-duckdb.vmrss.txt">rss</a> | — |
-| zero-graphql | PASS | 8080 | postgres | yes | 4/0 | — | <a href="logs/zero-graphql.log">log</a> · <a href="logs/zero-graphql.vmrss.txt">rss</a> | — |
-| zero-nosql-secure | PASS | 8080 | cassandra | no | 2/0 | — | <a href="logs/zero-nosql-secure.log">log</a> · <a href="logs/zero-nosql-secure.vmrss.txt">rss</a> | 🔒 |
-| zero-redis | PASS | 8080 | redis | yes | 3/0 | — | <a href="logs/zero-redis.log">log</a> · <a href="logs/zero-redis.vmrss.txt">rss</a> | — |
-| zero-s3 | PASS | 8080 | rustfs | yes | 4/0 | — | <a href="logs/zero-s3.log">log</a> · <a href="logs/zero-s3.vmrss.txt">rss</a> | — |
-| zero-search | PASS | 8080 | solr | no | 2/0 | — | <a href="logs/zero-search.log">log</a> · <a href="logs/zero-search.vmrss.txt">rss</a> | — |
-| zero-sql-secure | PASS | 8080 | mysql | yes | 3/0 | — | <a href="logs/zero-sql-secure.log">log</a> · <a href="logs/zero-sql-secure.vmrss.txt">rss</a> | — |
-| zero-sqlite | PASS | 8081 | — | no | 2/0 | — | <a href="logs/zero-sqlite.log">log</a> · <a href="logs/zero-sqlite.vmrss.txt">rss</a> | — |
-| zero-timeseries | PASS | 8080 | influx | no | 2/0 | — | <a href="logs/zero-timeseries.log">log</a> · <a href="logs/zero-timeseries.vmrss.txt">rss</a> | — |
-| zero-ws-client | PASS | 8080 | — | no | 2/0 | — | <a href="logs/zero-ws-client.log">log</a> · <a href="logs/zero-ws-client.vmrss.txt">rss</a> | 🔒 |
+| zero-auth | MISSING | 8080 | — | no | — | — | — | — |
+| zero-autocrud | MISSING | 8082 | — | no | — | — | — | — |
+| zero-basic-secure | MISSING | 8080 | postgres | yes | — | — | — | — |
+| zero-circuitbreaker | MISSING | 9090 | zero-auth | yes | — | — | — | — |
+| zero-duckdb | MISSING | 8083 | — | no | — | — | — | — |
+| zero-graphql | MISSING | 8080 | postgres | yes | — | — | — | — |
+| zero-nosql-secure | MISSING | 8080 | cassandra | no | — | — | — | — |
+| zero-pubsub-subscriber | MISSING | 8080 | nats | no | — | — | — | — |
+| zero-ratelimit | MISSING | 8080 | postgres | yes | — | — | — | — |
+| zero-redis | MISSING | 8080 | redis | yes | — | — | — | — |
+| zero-s3 | MISSING | 8080 | rustfs | yes | — | — | — | — |
+| zero-search | MISSING | 8080 | solr | no | — | — | — | — |
+| zero-sql-secure | MISSING | 8080 | mysql | yes | — | — | — | — |
+| zero-sqlite | MISSING | 8081 | — | no | — | — | — | — |
+| zero-timeseries | MISSING | 8080 | influx | no | — | — | — | — |
+| zero-ws-client | MISSING | 8080 | — | no | — | — | — | — |
 
 ## Details
 
-### zero-autocrud (FAIL)
+### zero-auth (MISSING)
 
 | Status | Check | Detail |
 |---|---|---|
-| PASS | health up |  |
-| FAIL | RSS leak signal | RSS grew 68848KiB (> 16MiB and > 25%): possible leak |
+| — | no checks recorded | |
 
-**Load applied:** loader=go-wrk, concurrency=5 (per route), duration_min=1, mode=gate
-
-### zero-pubsub-subscriber (FAIL)
+### zero-autocrud (MISSING)
 
 | Status | Check | Detail |
 |---|---|---|
-| PASS | dep zero-pubsub-publisher up |  |
-| PASS | health up |  |
-| FAIL | RSS leak signal | RSS grew 284428KiB (> 16MiB and > 25%): possible leak |
+| — | no checks recorded | |
 
-**Load applied:** loader=go-wrk, concurrency=5 (per route), duration_min=1, mode=gate
-
-### zero-auth (PASS)
+### zero-basic-secure (MISSING)
 
 | Status | Check | Detail |
 |---|---|---|
-| PASS | health up |  |
-| PASS | RSS plateau (no leak) |  |
+| — | no checks recorded | |
 
-**Load applied:** loader=go-wrk, concurrency=5 (per route), duration_min=1, mode=gate
-
-### zero-basic-secure (PASS)
+### zero-circuitbreaker (MISSING)
 
 | Status | Check | Detail |
 |---|---|---|
-| PASS | health up |  |
-| PASS | RSS plateau (no leak) |  |
-| PASS | chaos survived + recovered |  |
+| — | no checks recorded | |
 
-**Load applied:** loader=go-wrk, concurrency=5 (per route), duration_min=1, mode=gate, chaos kill-window=10s
-
-### zero-duckdb (PASS)
+### zero-duckdb (MISSING)
 
 | Status | Check | Detail |
 |---|---|---|
-| PASS | health up |  |
-| PASS | RSS plateau (no leak) |  |
+| — | no checks recorded | |
 
-**Load applied:** loader=go-wrk, concurrency=5 (per route), duration_min=1, mode=gate
-
-### zero-graphql (PASS)
+### zero-graphql (MISSING)
 
 | Status | Check | Detail |
 |---|---|---|
-| PASS | health up |  |
-| PASS | RSS plateau (no leak) |  |
-| PASS | graphql query OK (200, data.users present) |  |
-| PASS | chaos survived + recovered |  |
+| — | no checks recorded | |
 
-**Load applied:** loader=graphql POST loop, concurrency=1 (sequential), duration_min=1, mode=gate, chaos kill-window=10s
-
-### zero-nosql-secure (PASS)
+### zero-nosql-secure (MISSING)
 
 | Status | Check | Detail |
 |---|---|---|
-| PASS | health up |  |
-| PASS | RSS plateau (no leak) |  |
+| — | no checks recorded | |
 
-**Load applied:** loader=go-wrk, concurrency=5 (per route), duration_min=1, mode=gate
-
-### zero-redis (PASS)
+### zero-pubsub-subscriber (MISSING)
 
 | Status | Check | Detail |
 |---|---|---|
-| PASS | health up |  |
-| PASS | RSS plateau (no leak) |  |
-| PASS | chaos survived + recovered |  |
+| — | no checks recorded | |
 
-**Load applied:** loader=go-wrk, concurrency=5 (per route), duration_min=1, mode=gate, chaos kill-window=10s
-
-### zero-s3 (PASS)
+### zero-ratelimit (MISSING)
 
 | Status | Check | Detail |
 |---|---|---|
-| PASS | health up |  |
-| PASS | RSS plateau (no leak) |  |
-| PASS | filestore round-trip (upload+download) OK |  |
-| PASS | chaos survived + recovered |  |
+| — | no checks recorded | |
 
-**Load applied:** loader=filestore (upload→download→delete), concurrency=8, duration_min=1, mode=gate, chaos kill-window=10s
-
-### zero-search (PASS)
+### zero-redis (MISSING)
 
 | Status | Check | Detail |
 |---|---|---|
-| PASS | health up |  |
-| PASS | RSS plateau (no leak) |  |
+| — | no checks recorded | |
 
-**Load applied:** loader=go-wrk, concurrency=5 (per route), duration_min=1, mode=gate
-
-### zero-sql-secure (PASS)
+### zero-s3 (MISSING)
 
 | Status | Check | Detail |
 |---|---|---|
-| PASS | health up |  |
-| PASS | RSS plateau (no leak) |  |
-| PASS | chaos survived + recovered |  |
+| — | no checks recorded | |
 
-**Load applied:** loader=go-wrk, concurrency=5 (per route), duration_min=1, mode=gate, chaos kill-window=10s
-
-### zero-sqlite (PASS)
+### zero-search (MISSING)
 
 | Status | Check | Detail |
 |---|---|---|
-| PASS | health up |  |
-| PASS | RSS plateau (no leak) |  |
+| — | no checks recorded | |
 
-**Load applied:** loader=go-wrk, concurrency=5 (per route), duration_min=1, mode=gate
-
-### zero-timeseries (PASS)
+### zero-sql-secure (MISSING)
 
 | Status | Check | Detail |
 |---|---|---|
-| PASS | health up |  |
-| PASS | RSS plateau (no leak) |  |
+| — | no checks recorded | |
 
-**Load applied:** loader=go-wrk, concurrency=5 (per route), duration_min=1, mode=gate
-
-### zero-ws-client (PASS)
+### zero-sqlite (MISSING)
 
 | Status | Check | Detail |
 |---|---|---|
-| PASS | health up |  |
-| PASS | RSS plateau (no leak) |  |
+| — | no checks recorded | |
 
-**Load applied:** loader=go-wrk, concurrency=5 (per route), duration_min=1, mode=gate
+### zero-timeseries (MISSING)
 
-
-## Framework probes
-
-### Allocation probe (GET /ping → pong)
-
-| backing | allocs/req | bytes/req | latency/req ns | alloc-time/req ns | dispatch-only/req ns | leaked |
-|---|---|---|---|---|---|---|
-| fallback | 20.00 | 13663 | 59883.1 | 4251.8 | 55631.3 | 0 bytes OK |
-
-top call-sites (alloc-probe-fallback.json):
-
-| site | count/req | bytes/req |
+| Status | Check | Detail |
 |---|---|---|
-| 0x1896ed4 | 4.00 | 8448 |
-| 0x1896744 | 1.00 | 3136 |
-| 0x1392697 | 1.00 | 768 |
-| 0x13923c3 | 1.00 | 256 |
-| 0x13931fe | 1.00 | 248 |
+| — | no checks recorded | |
 
-### Route probe (literal static routes)
+### zero-ws-client (MISSING)
 
-- routes: 1000
-- registration allocs: 9
-- registration bytes: 625680
-- bytes/route: 625.7
-- route match time: 554.76 ns/req
-- match-time allocs: 0
+| Status | Check | Detail |
+|---|---|---|
+| — | no checks recorded | |
+
