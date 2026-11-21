@@ -1,102 +1,102 @@
-[38;5;6m INFO[0m [02:15:39] Loaded config from file: ./configs/.env
-[38;5;6m INFO[0m [02:15:39] config overriden ./configs/.dev.env file not found.
-[38;5;6m INFO[0m [02:15:39] configured mysql pool (size 10) for user 'user1' at '172.18.0.5:3306'
-[38;5;8mDEBUG[0m [02:15:39] redis is disabled, as redis host is not provided.
-[38;5;6m INFO[0m [02:15:39] connected to local file store
-[38;5;8mDEBUG[0m [02:15:39] sqlite is disabled, as sqlite path is not provided.
-[38;5;8mDEBUG[0m [02:15:39] clickhouse is disabled, as CLICKHOUSE_URL is not provided.
-[38;5;8mDEBUG[0m [02:15:39] time-series is disabled, as INFLUXDB_URL is not provided.
-[38;5;8mDEBUG[0m [02:15:39] opentsdb is disabled, as OPENTSDB_URL is not provided.
-[38;5;8mDEBUG[0m [02:15:39] search is disabled, as SOLR_URL is not provided.
-[38;5;8mDEBUG[0m [02:15:39] nosql is disabled, as CONTACT_POINTS are not provided.
-[38;5;8mDEBUG[0m [02:15:39] arangodb is disabled, as ARANGO_HOST is not provided.
-[38;5;8mDEBUG[0m [02:15:39] graph is disabled, as DGRAPH_URL is not provided.
-[38;5;8mDEBUG[0m [02:15:39] pubsub is disabled, as pubsub mode is not provided.
-[38;5;6m INFO[0m [02:15:39] container is created
-[38;5;6m INFO[0m [02:15:39] zero-sql app pid 4531
-[38;5;6m INFO[0m [02:15:39] no authentication mode found and disabled.
-[38;5;6m INFO[0m [02:15:40] migration table created
-[38;5;8mDEBUG[0m [02:15:40] 1700000001: migration is skipped  
-[38;5;8mDEBUG[0m [02:15:40] 1700000002: migration is skipped  
-[38;5;8mDEBUG[0m [02:15:40] 1700000003: migration is skipped  
-[38;5;8mDEBUG[0m [02:15:40] 1700000004: migration is skipped  
-[38;5;6m INFO[0m [02:15:40] 1700000005: migration completed  
-[38;5;6m INFO[0m [02:15:40] registered static files from directory ./static
-[38;5;8mDEBUG[0m [02:15:40] metrics server is initialized
-[38;5;8mDEBUG[0m [02:15:40] metrics server started
-error: AddressInUse
-/drone/src/zero/examples/zero-sql/zig-pkg/httpz-0.0.17-PNVzrGMYCQDr8ZuCn_1Cz75ZnVcg46JlYk66_ARWR_qa/src/posix.zig:258:27: 0x14538e1 in bind (httpz.zig)
-[38;5;6m INFO[0m [02:15:40] Starting server on port: 8080
-            .ADDRINUSE => return error.AddressInUse,
-                          ^
-/drone/src/zero/examples/zero-sql/zig-pkg/httpz-0.0.17-PNVzrGMYCQDr8ZuCn_1Cz75ZnVcg46JlYk66_ARWR_qa/src/httpz.zig:390:17: 0x150eb9e in listen (httpz.zig)
-                try posix.bind(listener, &address.any, socklen);
-                ^
-[38;5;6m INFO[0m [02:15:40] 7bfe55a5241b4a5faa835558fb90e12d	 200 0ms GET /.well-known/health
-[38;5;6m INFO[0m [02:15:40] a106b69732ce49d1b7ae3805d7865858	 200 0ms GET /
-[38;5;6m INFO[0m [02:15:40] 4ed06e1f13b94ebb8e1d62ec7a47b8d3	 200 0ms GET /
-[38;5;6m INFO[0m [02:15:40] d92cf5cecbd545c0abd9415377a4c413	 200 0ms GET /
-[38;5;6m INFO[0m [02:15:40] 7dda2176aa324239b1967c510380fde9	 200 0ms GET /
-[38;5;6m INFO[0m [02:15:40] 2c9cd6325cfa47c2b0f01cf1fb0ed919	 200 0ms GET /
-[38;5;6m INFO[0m [02:15:40] be0677b46fbb4e3a89d68b8704cddb86	 200 0ms GET /
-[38;5;6m INFO[0m [02:15:40] a447f9dd2da743a193c8c853720e1ed8	 200 0ms GET /
-[38;5;6m INFO[0m [02:15:40] fc8f0c1012944c539f6dcbfff982d739	 200 0ms GET /
-[38;5;6m INFO[0m [02:15:40] c77ad6345c774cda90b47e62a864985d	 200 0ms GET /
-[38;5;6m INFO[0m [02:15:40] 2bf4f6f7fc3e421195c150bddb91bafd	 200 0ms GET /
-[38;5;6m INFO[0m [02:15:40] 229267b2f9be4dc58075ce9338518863	 200 0ms GET /
-[38;5;6m INFO[0m [02:15:40] b9166eb7037a4954b81814f25a1fde3b	 200 2ms GET /users
-[38;5;6m INFO[0m [02:15:40] e0fa52d525aa4bb9803c39503cdfbbc0	 200 0ms GET /
-[38;5;6m INFO[0m [02:15:40] 1e2653dfc80c4c8b9aa318021a0cef04	 200 0ms GET /
-[38;5;6m INFO[0m [02:15:40] ec86f59ac0ac42e582fc8d55b3557529	 200 0ms GET /
-... [228484 lines of load/request noise omitted] ...
+[38;5;6m INFO[0m [03:28:46] Loaded config from file: ./configs/.env
+[38;5;6m INFO[0m [03:28:46] config overriden ./configs/.dev.env file not found.
+[38;5;6m INFO[0m [03:28:46] configured mysql pool (size 10) for user 'user1' at '172.18.0.5:3306'
+[38;5;8mDEBUG[0m [03:28:46] redis is disabled, as redis host is not provided.
+[38;5;6m INFO[0m [03:28:46] connected to local file store
+[38;5;8mDEBUG[0m [03:28:46] sqlite is disabled, as sqlite path is not provided.
+[38;5;8mDEBUG[0m [03:28:46] clickhouse is disabled, as CLICKHOUSE_URL is not provided.
+[38;5;8mDEBUG[0m [03:28:46] time-series is disabled, as INFLUXDB_URL is not provided.
+[38;5;8mDEBUG[0m [03:28:46] opentsdb is disabled, as OPENTSDB_URL is not provided.
+[38;5;8mDEBUG[0m [03:28:46] search is disabled, as SOLR_URL is not provided.
+[38;5;8mDEBUG[0m [03:28:46] nosql is disabled, as CONTACT_POINTS are not provided.
+[38;5;8mDEBUG[0m [03:28:46] arangodb is disabled, as ARANGO_HOST is not provided.
+[38;5;8mDEBUG[0m [03:28:46] graph is disabled, as DGRAPH_URL is not provided.
+[38;5;8mDEBUG[0m [03:28:46] pubsub is disabled, as pubsub mode is not provided.
+[38;5;6m INFO[0m [03:28:46] container is created
+[38;5;6m INFO[0m [03:28:46] zero-sql app pid 4629
+[38;5;6m INFO[0m [03:28:46] no authentication mode found and disabled.
+[38;5;6m INFO[0m [03:28:46] migration table created
+[38;5;8mDEBUG[0m [03:28:46] 1700000001: migration is skipped  
+[38;5;8mDEBUG[0m [03:28:46] 1700000002: migration is skipped  
+[38;5;8mDEBUG[0m [03:28:46] 1700000003: migration is skipped  
+[38;5;8mDEBUG[0m [03:28:46] 1700000004: migration is skipped  
+[38;5;6m INFO[0m [03:28:46] 1700000005: migration completed  
+[38;5;6m INFO[0m [03:28:46] registered static files from directory ./static
+[38;5;8mDEBUG[0m [03:28:46] metrics server is initialized
+[38;5;8mDEBUG[0m [03:28:47] metrics server started
+[38;5;6m INFO[0m [03:28:47] Starting server on port: 8080
+[38;5;6m INFO[0m [03:28:47] 77dc456754054ba59028280b784b3d15	 200 0ms GET /.well-known/health
+[38;5;6m INFO[0m [03:28:47] e8eb536f5f774673bf790bee3ff976f5	 200 2ms GET /users
+[38;5;6m INFO[0m [03:28:47] 13462649ba2a4250ab4bbfdd1a514a96	 200 3ms GET /users
+[38;5;6m INFO[0m [03:28:47] 637ef0d301c443c0a845e9fb60dda509	 200 3ms GET /users
+[38;5;6m INFO[0m [03:28:47] 3b7f4d0639a24f82b6369fed1f2b6f9a	 200 4ms GET /users
+[38;5;6m INFO[0m [03:28:47] d0fccd87b2b948f8b0805784201503a3	 200 0ms GET /
+[38;5;6m INFO[0m [03:28:47] d933e197200f4d8ab8e9bfb662594d66	 200 0ms GET /
+[38;5;6m INFO[0m [03:28:47] 4cd55d02228541c0b014e845780b68bf	 200 1ms GET /users
+[38;5;6m INFO[0m [03:28:47] 2b96253dec614f23a1e282a8792d0ff3	 200 0ms GET /
+[38;5;6m INFO[0m [03:28:47] 9c5cb10ae8bf48918578db9e5339fd4b	 200 0ms GET /
+[38;5;6m INFO[0m [03:28:47] 73bc2f3e33da43c7950b149e44e4ede8	 200 0ms GET /
+[38;5;6m INFO[0m [03:28:47] b50285f053c0477982112782badb67e3	 200 1ms GET /users
+[38;5;6m INFO[0m [03:28:47] 89cb28bb6e7b4eb686267bb9f234fc1b	 200 1ms GET /users
+[38;5;6m INFO[0m [03:28:47] 2053faadff62455cb48bd7ed5e8657bd	 200 0ms GET /
+[38;5;6m INFO[0m [03:28:47] 43e7a4e75da348ff8b3c409e142dcd6b	 200 0ms GET /
+[38;5;6m INFO[0m [03:28:47] d1388224159c4a5faf2d7b3fb932e68e	 200 0ms GET /
+[38;5;6m INFO[0m [03:28:47] d0bcd989ed7a40c48f8f285697359632	 200 0ms GET /
+[38;5;6m INFO[0m [03:28:47] d8acb90a840a4be79132aebff10bc95f	 200 0ms GET /
+[38;5;6m INFO[0m [03:28:47] 0ed78defe98a48b684d6bce0fb633399	 200 5ms GET /users
+[38;5;6m INFO[0m [03:28:47] b0a23b1ef7244f638dcf44ebaa51eed3	 200 0ms GET /users
+[38;5;6m INFO[0m [03:28:47] bcba8094141e47a69cff94ad79df9572	 200 0ms GET /
+[38;5;6m INFO[0m [03:28:47] 50f3ad1cd2954b08b3b1d4c93ae39346	 200 0ms GET /
+[38;5;6m INFO[0m [03:28:47] a382c06bdaa24cf58b79ddde38ffbf9f	 200 0ms GET /
+... [171299 lines of load/request noise omitted] ...
 ...
-/drone/src/zero/src/datasource/sql/mysql.zig:1002:46: 0x16eeb35 in acquireConn (zero.zig)
-        return try self.getPool().poolAcquire();
-                                             ^
-/drone/src/zero/src/datasource/sql/mysql.zig:1129:42: 0x17ad1db in queryRows__func_3062 (zero.zig)
-        const conn = try self.acquireConn();
-                                         ^
-/drone/src/zero/src/datasource/sql/interface.zig:256:81: 0x17ae77b in queryRows__func_3056 (zero.zig)
-            .mysql => @as(*root.MySQL, @ptrCast(@alignCast(self.ptr))).queryRows(
-                                                                                ^
-(additional stack frames may have been skipped...)
-memory address 0x7f7218c10000 leaked: 
-/drone/src/zero/src/datasource/sql/mysql.zig:129:45: 0x16eccdb in connectAttempt (zero.zig)
-        const recv_buf = try allocator.alloc(u8, 1 << 16);
-                                            ^
-/drone/src/zero/src/datasource/sql/mysql.zig:105:61: 0x16ed7a5 in connect (zero.zig)
-        if (cfg.ssl_mode == .disabled) return connectAttempt(allocator, io, cfg);
-                                                            ^
-/drone/src/zero/src/datasource/sql/mysql.zig:1053:49: 0x16edff0 in poolAcquire (zero.zig)
-                    const c = Connection.connect(self.allocator, self.io, self.config()) catch |err| {
-                                                ^
-/drone/src/zero/src/datasource/sql/mysql.zig:1002:46: 0x16eeb35 in acquireConn (zero.zig)
-        return try self.getPool().poolAcquire();
-                                             ^
-/drone/src/zero/src/datasource/sql/mysql.zig:1129:42: 0x17ad1db in queryRows__func_3062 (zero.zig)
-        const conn = try self.acquireConn();
-                                         ^
-/drone/src/zero/src/datasource/sql/interface.zig:256:81: 0x17ae77b in queryRows__func_3056 (zero.zig)
-            .mysql => @as(*root.MySQL, @ptrCast(@alignCast(self.ptr))).queryRows(
-                                                                                ^
-(additional stack frames may have been skipped...)
-memory address 0x7f7218c00000 leaked: 
-/drone/src/zero/src/datasource/sql/mysql.zig:130:45: 0x16ecd76 in connectAttempt (zero.zig)
-        const send_buf = try allocator.alloc(u8, 1 << 16);
-                                            ^
-/drone/src/zero/src/datasource/sql/mysql.zig:105:61: 0x16ed7a5 in connect (zero.zig)
-        if (cfg.ssl_mode == .disabled) return connectAttempt(allocator, io, cfg);
-                                                            ^
-/drone/src/zero/src/datasource/sql/mysql.zig:1053:49: 0x16edff0 in poolAcquire (zero.zig)
-                    const c = Connection.connect(self.allocator, self.io, self.config()) catch |err| {
-                                                ^
-/drone/src/zero/src/datasource/sql/mysql.zig:1002:46: 0x16eeb35 in acquireConn (zero.zig)
-        return try self.getPool().poolAcquire();
-                                             ^
-/drone/src/zero/src/datasource/sql/mysql.zig:1129:42: 0x17ad1db in queryRows__func_3062 (zero.zig)
-        const conn = try self.acquireConn();
-                                         ^
-/drone/src/zero/src/datasource/sql/interface.zig:256:81: 0x17ae77b in queryRows__func_3056 (zero.zig)
-            .mysql => @as(*root.MySQL, @ptrCast(@alignCast(self.ptr))).queryRows(
-                                                                                ^
-(additional stack frames may have been skipped...)
+[38;5;6m INFO[0m [03:29:02] b0b0314f93c649968a1f15f5f9dcd63f	 200 0ms GET /
+[38;5;6m INFO[0m [03:29:02] c205cee5832646a4bd404e6a99ffe261	 200 2ms GET /users
+[38;5;6m INFO[0m [03:29:02] 639d7009e0e74f3986d5287fa2211707	 200 0ms GET /
+[38;5;6m INFO[0m [03:29:02] e93d639d25fd4618b94af955ff2be63c	 200 1ms GET /users
+[38;5;6m INFO[0m [03:29:02] 0953ac25e608411bb1143e54efd54550	 200 0ms GET /
+[38;5;6m INFO[0m [03:29:02] bd51ef2347164cdda96ff20bb47c65ba	 200 0ms GET /
+[38;5;6m INFO[0m [03:29:02] ada642d5d5694e608ccb4c4c67a6ef39	 200 0ms GET /
+[38;5;6m INFO[0m [03:29:02] 056bac4d98e3490784eeaa7b4b1a8dce	 200 0ms GET /
+[38;5;6m INFO[0m [03:29:02] 84e046b34c454c749623ad21b4f3dad3	 200 0ms GET /
+[38;5;6m INFO[0m [03:29:02] 4131cbc868534355aa1a7e23bfc1dc33	 200 0ms GET /
+[38;5;6m INFO[0m [03:29:02] daa5a5308b1c4de49107227c7e02e0ad	 200 0ms GET /
+[38;5;6m INFO[0m [03:29:02] d5f525ad263a493bb68fd757c2480819	 200 0ms GET /
+[38;5;6m INFO[0m [03:29:02] edbac43acc514a74a4f8eb76757e53f8	 200 0ms GET /
+[38;5;6m INFO[0m [03:29:02] a29333cb300b425dbd8ca8b31d61e8fc	 200 1ms GET /users
+[38;5;6m INFO[0m [03:29:02] bb1d707a02d94e1988d861a090e683a9	 200 0ms GET /
+[38;5;6m INFO[0m [03:29:02] 6ea7c8fbaa2b4ee9ad4a48bdd4e9afa1	 200 2ms GET /users
+[38;5;6m INFO[0m [03:29:02] dca30574567246b5a6f66f334262547d	 200 1ms GET /users
+[38;5;6m INFO[0m [03:29:02] 70cced2df56147d6bbceebcc14583728	 200 0ms GET /
+[38;5;6m INFO[0m [03:29:02] 08d9b1fb292f44a2b7a609a1e58e114c	 200 0ms GET /
+[38;5;6m INFO[0m [03:29:02] 6f79b6d577f24885aa1e4800b08697ef	 200 3ms GET /users
+[38;5;6m INFO[0m [03:29:02] 271cffb88cd44b158fcaafaef1a4d751	 200 0ms GET /
+[38;5;6m INFO[0m [03:29:02] d65b9a7ade1a486cba1bb7e1cfcefa06	 200 0ms GET /
+[38;5;6m INFO[0m [03:29:02] 0d651ff160644648ba395ffaf5d7ae7c	 200 0ms GET /
+[38;5;6m INFO[0m [03:29:02] 14fbbf14a1134025b07a67dd7eb370f7	 200 0ms GET /
+[38;5;6m INFO[0m [03:29:02] 1d580f1284ca417a893b77e33e6268e6	 200 0ms GET /
+[38;5;6m INFO[0m [03:29:02] 3717de5f70e746dea22772c851779fea	 200 0ms GET /
+[38;5;6m INFO[0m [03:29:02] 48377ac3d9dd4ec3a588f5445cd1f548	 200 0ms GET /
+[38;5;6m INFO[0m [03:29:02] 0de329ecf0154362ae9c1473b84a70e9	 200 0ms GET /
+[38;5;6m INFO[0m [03:29:02] 1a892d894b2a4aacab8b1f979bef60ec	 200 3ms GET /users
+[38;5;6m INFO[0m [03:29:02] 2ed33bcfa65a43c2b295df4efc0fda47	 200 0ms GET /
+[38;5;6m INFO[0m [03:29:02] 88e00754b2bf4c26af86d48b5f540a4a	 200 0ms GET /
+[38;5;6m INFO[0m [03:29:02] 6b3b27070a384e72b3bff9f4f4f7c71e	 200 0ms GET /
+[38;5;6m INFO[0m [03:29:02] ff9e57e2fd5747a7b4d8f9a62c6843ab	 200 0ms GET /
+[38;5;6m INFO[0m [03:29:02] a265fe3efb0e42df817ba15f469db863	 200 0ms GET /
+[38;5;6m INFO[0m [03:29:02] 80e6fe44c07f4a0d9ad21b71a8dcfa58	 200 0ms GET /
+[38;5;6m INFO[0m [03:29:02] fcecc217c4204b8d8d07f5eb6d7a7ba9	 200 0ms GET /
+[38;5;6m INFO[0m [03:29:02] b5bd7c4cac0d498fbc14348828819cdc	 200 0ms GET /
+[38;5;6m INFO[0m [03:29:02] cb39ec94ee014dce9e7c7ad89c99f306	 200 0ms GET /
+[38;5;6m INFO[0m [03:29:02] 6d2ff216328e41de8ff197a5dacc791e	 200 0ms GET /
+[38;5;6m INFO[0m [03:29:02] 11660a3c1b0e439489f961159afd37c1	 200 0ms GET /
+[38;5;6m INFO[0m [03:29:02] f0f34dfb8d004707b1accf8e79408084	 200 0ms GET /
+[38;5;6m INFO[0m [03:29:02] 0126c33e42f24abab131b256c5403b3c	 200 0ms GET /
+[38;5;6m INFO[0m [03:29:02] d360dc6c5e7e48089936d4f4e4b3c070	 200 0ms GET /
+[38;5;6m INFO[0m [03:29:02] 0b75666f67a84a38a99caac2e38c55af	 200 0ms GET /
+[38;5;6m INFO[0m [03:29:02] 2fea59fd533945d38fdf1b5149b8998a	 200 0ms GET /
+[38;5;6m INFO[0m [03:29:07] 9cfc4e7f038846c981c26ca8d600c3c0	 200 0ms GET /.well-known/health
+[38;5;6m INFO[0m [03:29:08] 4764052d100f4fc7876b052326342573	 200 0ms GET /.well-known/health
+[38;5;6m INFO[0m [03:29:08] b94636e87c7344d6890cdf49f5b12312	 200 0ms GET /
+[38;5;6m INFO[0m [03:29:08] server shutting down
+received shutdown signalreceived shutdown signalreceived shutdown signal

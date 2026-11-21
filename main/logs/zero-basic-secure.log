@@ -1,102 +1,102 @@
-[38;5;6m INFO[0m [02:05:16] Loaded config from file: ./configs/.env
-[38;5;6m INFO[0m [02:05:16] config loaded from: ./configs/.dev.env
-[38;5;6m INFO[0m [02:05:18] generating database connection string for postgres
-[38;5;6m INFO[0m [02:05:18] connected to postgres user to postgres database at '172.18.0.12:5432' (tls)
-[38;5;8mDEBUG[0m [02:05:18] redis is disabled, as redis host is not provided.
-[38;5;6m INFO[0m [02:05:18] connected to local file store
-[38;5;8mDEBUG[0m [02:05:18] sqlite is disabled, as sqlite path is not provided.
-[38;5;8mDEBUG[0m [02:05:18] clickhouse is disabled, as CLICKHOUSE_URL is not provided.
-[38;5;8mDEBUG[0m [02:05:18] time-series is disabled, as INFLUXDB_URL is not provided.
-[38;5;8mDEBUG[0m [02:05:18] opentsdb is disabled, as OPENTSDB_URL is not provided.
-[38;5;8mDEBUG[0m [02:05:18] search is disabled, as SOLR_URL is not provided.
-[38;5;8mDEBUG[0m [02:05:18] nosql is disabled, as CONTACT_POINTS are not provided.
-[38;5;8mDEBUG[0m [02:05:18] arangodb is disabled, as ARANGO_HOST is not provided.
-[38;5;8mDEBUG[0m [02:05:18] graph is disabled, as DGRAPH_URL is not provided.
-[38;5;8mDEBUG[0m [02:05:18] pubsub is disabled, as pubsub mode is not provided.
-[38;5;6m INFO[0m [02:05:18] container is created
-[38;5;6m INFO[0m [02:05:18] basic-overriden app pid 482
-[38;5;6m INFO[0m [02:05:18] no authentication mode found and disabled.
-[38;5;6m INFO[0m [02:05:18] registered static files from directory ./static
-[38;5;8mDEBUG[0m [02:05:18] metrics server is initialized
-[38;5;8mDEBUG[0m [02:05:18] metrics server started
-[38;5;6m INFO[0m [02:05:18] Starting server on port: 8080
-[38;5;6m INFO[0m [02:05:18] a3217afa735847ed8764101457914ef6	 200 0ms GET /.well-known/health
-[38;5;6m INFO[0m [02:05:18] c206977c5b764923891bc91a1e06be08	 200 0ms GET /json
-[38;5;6m INFO[0m [02:05:18] cbe37757a28f40fe86feaffe58a5e748	 200 0ms GET /json
-[38;5;6m INFO[0m [02:05:18] debug message
-[38;5;6m INFO[0m [02:05:18] 35b3c21f6f164019bacc8a497f1a04c2	 200 0ms GET /
-[38;5;6m INFO[0m [02:05:18] 8f922c8084f44a76ba166a87c2357c5a	 200 2ms GET /db
-[38;5;6m INFO[0m [02:05:18] debug message
-[38;5;6m INFO[0m [02:05:18] debug message
-[38;5;6m INFO[0m [02:05:18] 4ab5d35b7c0c43b8bc7be747c7f52695	 200 0ms GET /keys
-[38;5;6m INFO[0m [02:05:18] debug message
-[38;5;6m INFO[0m [02:05:18] ef569dd60d0941739562937e4c7a3eaa	 200 0ms GET /keys
-[38;5;6m INFO[0m [02:05:18] 94fb566e302f47009c4e59edb7818731	 200 0ms GET /keys
-[38;5;6m INFO[0m [02:05:18] debug message
-[38;5;6m INFO[0m [02:05:18] 9942b9021c99420391f37661f17ffb8d	 200 0ms GET /keys
-[38;5;6m INFO[0m [02:05:18] debug message
-[38;5;6m INFO[0m [02:05:18] f99097f4b183439787cb469e393f8e7f	 200 0ms GET /
-[38;5;6m INFO[0m [02:05:18] debug message
-[38;5;6m INFO[0m [02:05:18] debug message
-[38;5;6m INFO[0m [02:05:18] 373cfcfee6f24cd4b5c6cf3dad6e2dba	 200 0ms GET /
-[38;5;6m INFO[0m [02:05:18] eeba988f304d4e0184902f0fb2278059	 200 0ms GET /keys
-[38;5;6m INFO[0m [02:05:18] debug message
-[38;5;6m INFO[0m [02:05:18] 59dfb7a6a588497084a94a76a55d51ec	 200 0ms GET /json
-[38;5;6m INFO[0m [02:05:18] e10717d8ec3549f7815b07ea1a8d5230	 200 0ms GET /keys
-[38;5;6m INFO[0m [02:05:18] 08e7a3adb06946c5b86e0f3850d528dc	 200 2ms GET /db
-[38;5;6m INFO[0m [02:05:18] debug message
-[38;5;6m INFO[0m [02:05:18] 4fa24eba7a1f4ef194ed8e61e1b5004c	 200 0ms GET /keys
-[38;5;6m INFO[0m [02:05:18] e1367a1a6a904e12a619962ab564f596	 200 0ms GET /json
-[38;5;6m INFO[0m [02:05:18] debug message
-... [505369 lines of load/request noise omitted] ...
+[38;5;6m INFO[0m [03:18:35] Loaded config from file: ./configs/.env
+[38;5;6m INFO[0m [03:18:35] config loaded from: ./configs/.dev.env
+[38;5;6m INFO[0m [03:18:37] generating database connection string for postgres
+[38;5;6m INFO[0m [03:18:37] connected to postgres user to postgres database at '172.18.0.12:5432' (tls)
+[38;5;8mDEBUG[0m [03:18:37] redis is disabled, as redis host is not provided.
+[38;5;6m INFO[0m [03:18:37] connected to local file store
+[38;5;8mDEBUG[0m [03:18:37] sqlite is disabled, as sqlite path is not provided.
+[38;5;8mDEBUG[0m [03:18:37] clickhouse is disabled, as CLICKHOUSE_URL is not provided.
+[38;5;8mDEBUG[0m [03:18:37] time-series is disabled, as INFLUXDB_URL is not provided.
+[38;5;8mDEBUG[0m [03:18:37] opentsdb is disabled, as OPENTSDB_URL is not provided.
+[38;5;8mDEBUG[0m [03:18:37] search is disabled, as SOLR_URL is not provided.
+[38;5;8mDEBUG[0m [03:18:37] nosql is disabled, as CONTACT_POINTS are not provided.
+[38;5;8mDEBUG[0m [03:18:37] arangodb is disabled, as ARANGO_HOST is not provided.
+[38;5;8mDEBUG[0m [03:18:37] graph is disabled, as DGRAPH_URL is not provided.
+[38;5;8mDEBUG[0m [03:18:37] pubsub is disabled, as pubsub mode is not provided.
+[38;5;6m INFO[0m [03:18:37] container is created
+[38;5;6m INFO[0m [03:18:37] basic-overriden app pid 482
+[38;5;6m INFO[0m [03:18:37] no authentication mode found and disabled.
+[38;5;6m INFO[0m [03:18:37] registered static files from directory ./static
+[38;5;8mDEBUG[0m [03:18:37] metrics server is initialized
+[38;5;8mDEBUG[0m [03:18:37] metrics server started
+[38;5;6m INFO[0m [03:18:37] Starting server on port: 8080
+[38;5;6m INFO[0m [03:18:37] f478b974b8c645569b180239dddfc5ca	 200 0ms GET /.well-known/health
+[38;5;6m INFO[0m [03:18:37] debug message
+[38;5;6m INFO[0m [03:18:37] debug message
+[38;5;6m INFO[0m [03:18:37] 122b0ff83627403b8e7b4835efc84213	 200 0ms GET /json
+[38;5;6m INFO[0m [03:18:37] f59e3d61c8a94894936611878bc8b16c	 200 0ms GET /
+[38;5;6m INFO[0m [03:18:37] fa39a7659a424644992991bc373390d6	 200 0ms GET /json
+[38;5;6m INFO[0m [03:18:37] c083f9b304da4684904c10ef587187cc	 200 0ms GET /json
+[38;5;6m INFO[0m [03:18:37] ab9a99837fc84f68afc6180b60f1c47d	 200 0ms GET /json
+[38;5;6m INFO[0m [03:18:37] 36df4edec1654c4d885f32e2bbae7534	 200 0ms GET /json
+[38;5;6m INFO[0m [03:18:37] 7b1f3a1fea4f47c5aad7e59cb3310c66	 200 0ms GET /json
+[38;5;6m INFO[0m [03:18:37] debug message
+[38;5;6m INFO[0m [03:18:37] debug message
+[38;5;6m INFO[0m [03:18:37] 656eb88c9597415abc747892c1e1c2dd	 200 0ms GET /
+[38;5;6m INFO[0m [03:18:37] debug message
+[38;5;6m INFO[0m [03:18:37] debug message
+[38;5;6m INFO[0m [03:18:37] f57cb25eabe34d7195873e4e6ce50694	 200 0ms GET /keys
+[38;5;6m INFO[0m [03:18:37] b6ff328f251f456da69910f395722c02	 200 0ms GET /
+[38;5;6m INFO[0m [03:18:37] 80fbc579b48048d3b3179963039ab39c	 200 0ms GET /
+[38;5;6m INFO[0m [03:18:37] 02611e1218d540f99e8fa880f508bb0c	 200 0ms GET /json
+[38;5;6m INFO[0m [03:18:37] debug message
+[38;5;6m INFO[0m [03:18:37] 762432e7c13b481ca76b6d77e2e28232	 200 0ms GET /keys
+[38;5;6m INFO[0m [03:18:37] debug message
+[38;5;6m INFO[0m [03:18:37] b52bec1e07d143bea04c9a8affb274c7	 200 0ms GET /
+[38;5;6m INFO[0m [03:18:37] debug message
+[38;5;6m INFO[0m [03:18:37] aff1e70537c94bd7bc8ee6e1b9355540	 200 0ms GET /json
+[38;5;6m INFO[0m [03:18:37] 83469e8de2f3465db9177288f2e8d1fb	 200 0ms GET /
+[38;5;6m INFO[0m [03:18:37] debug message
+[38;5;6m INFO[0m [03:18:37] 6145952582404290a22c488b6023f133	 200 0ms GET /
+... [501586 lines of load/request noise omitted] ...
 ...
-[38;5;6m INFO[0m [02:05:33] 47be16ca889a4af19fbd2425a0112579	 200 0ms GET /keys
-[38;5;6m INFO[0m [02:05:33] debug message
-[38;5;6m INFO[0m [02:05:33] 638e810daa234429b06acf2e18314020	 200 0ms GET /keys
-[38;5;6m INFO[0m [02:05:33] 645e67cd91294f47bdca5ae9b55f95e3	 200 0ms GET /
-[38;5;6m INFO[0m [02:05:33] debug message
-[38;5;6m INFO[0m [02:05:33] 24a134d82b9e4d64b921e8b38d6aaec7	 200 0ms GET /keys
-[38;5;6m INFO[0m [02:05:33] debug message
-[38;5;6m INFO[0m [02:05:33] debug message
-[38;5;6m INFO[0m [02:05:33] fb081d1ef8eb4ec9bc4b9bdc1ef16d91	 200 0ms GET /keys
-[38;5;6m INFO[0m [02:05:33] 1c88aa2b7b07465093239b0bc1b7d3d6	 200 0ms GET /keys
-[38;5;6m INFO[0m [02:05:33] debug message
-[38;5;6m INFO[0m [02:05:33] a3bfda4cef984b26a64da8972c0538f0	 200 0ms GET /keys
-[38;5;6m INFO[0m [02:05:33] debug message
-[38;5;6m INFO[0m [02:05:33] 631bf56cd1dd4256b6f2ea75205c4b52	 200 0ms GET /keys
-[38;5;6m INFO[0m [02:05:33] debug message
-[38;5;6m INFO[0m [02:05:33] 55cf769bdaee4d019c4a166fea26b564	 200 0ms GET /keys
-[38;5;6m INFO[0m [02:05:33] debug message
-[38;5;6m INFO[0m [02:05:33] fb7cb359a33641599591ea778f9876a8	 200 0ms GET /keys
-[38;5;6m INFO[0m [02:05:33] debug message
-[38;5;6m INFO[0m [02:05:33] b4498da7bc694454ac19aa9fae75962f	 200 0ms GET /keys
-[38;5;6m INFO[0m [02:05:33] debug message
-[38;5;6m INFO[0m [02:05:33] b80704ed62614ffba3ac5442715ad4d5	 200 0ms GET /keys
-[38;5;6m INFO[0m [02:05:33] debug message
-[38;5;6m INFO[0m [02:05:33] e5c5782384144a4e8185f94eb2c86a1d	 200 0ms GET /keys
-[38;5;6m INFO[0m [02:05:33] debug message
-[38;5;6m INFO[0m [02:05:33] caf3c4d2cb6b4647841be43febb1b288	 200 0ms GET /keys
-[38;5;6m INFO[0m [02:05:33] debug message
-[38;5;6m INFO[0m [02:05:33] 261c30d071824064af41040f38f5f8d6	 200 0ms GET /keys
-[38;5;6m INFO[0m [02:05:33] debug message
-[38;5;6m INFO[0m [02:05:33] cbf25145066842d1b0e083ce7360b04f	 200 0ms GET /keys
-[38;5;6m INFO[0m [02:05:33] debug message
-[38;5;6m INFO[0m [02:05:33] debug message
-[38;5;6m INFO[0m [02:05:33] 76fbd42569e34ec19bfba1d0bbb7d96e	 200 0ms GET /keys
-[38;5;6m INFO[0m [02:05:33] 79279fe2a7c944be9f4ea6a730a3ac7b	 200 0ms GET /keys
-[38;5;6m INFO[0m [02:05:33] debug message
-[38;5;6m INFO[0m [02:05:33] a24646fd31ed4a6898b5cf7aeace4e43	 200 0ms GET /keys
-[38;5;6m INFO[0m [02:05:33] debug message
-[38;5;6m INFO[0m [02:05:33] debug message
-[38;5;6m INFO[0m [02:05:33] 1500c261f9854ef78b0c8f2924e8f3e5	 200 0ms GET /keys
-[38;5;6m INFO[0m [02:05:33] debug message
-[38;5;6m INFO[0m [02:05:33] 38f1b48327e4411fb82d38719e6574ef	 200 0ms GET /keys
-[38;5;6m INFO[0m [02:05:33] 77513f2a5cc74215a16ed3bbd8fe4623	 200 0ms GET /keys
-[38;5;6m INFO[0m [02:05:33] debug message
-[38;5;6m INFO[0m [02:05:33] eaa81a54fbe5431b802afc966e7a24e9	 200 0ms GET /keys
-[38;5;6m INFO[0m [02:05:38] 6743060b28ee4e2d90cdb0effa134a07	 200 0ms GET /.well-known/health
-[38;5;6m INFO[0m [02:05:39] 7de38995d49942139fb0c614d077bbc4	 200 0ms GET /.well-known/health
-[38;5;6m INFO[0m [02:05:39] debug message
-[38;5;6m INFO[0m [02:05:39] 739c2c1bf00e4583aeadd61bdebae01b	 200 0ms GET /
-[38;5;6m INFO[0m [02:05:39] server shutting down
+[38;5;6m INFO[0m [03:18:52] 8462a2a200a64485bc7873fb647e1fdf	 200 0ms GET /keys
+[38;5;6m INFO[0m [03:18:52] debug message
+[38;5;6m INFO[0m [03:18:52] debug message
+[38;5;6m INFO[0m [03:18:52] d1971886891f461ead1789ed84106719	 200 0ms GET /
+[38;5;6m INFO[0m [03:18:52] 943abb697ca441b399009401f86ae803	 200 0ms GET /
+[38;5;6m INFO[0m [03:18:52] d9daae6c0ef949bfb2b890a675731cdd	 200 0ms GET /db
+[38;5;6m INFO[0m [03:18:52] f3954e6c516a487a80341de0dbd9f3a7	 200 0ms GET /json
+[38;5;6m INFO[0m [03:18:52] debug message
+[38;5;6m INFO[0m [03:18:52] debug message
+[38;5;6m INFO[0m [03:18:52] 4efe7cb57df846bdbf79c5ffef2c6cff	 200 0ms GET /
+[38;5;6m INFO[0m [03:18:52] eecdef0b31ae496e9fc4325a5adad6a1	 200 0ms GET /keys
+[38;5;6m INFO[0m [03:18:52] debug message
+[38;5;6m INFO[0m [03:18:52] 206d9018b28f46d3b1745d5315a5dfcb	 200 0ms GET /db
+[38;5;6m INFO[0m [03:18:52] bfb9ae77db2e4992ae551c7af55ff65a	 200 0ms GET /
+[38;5;6m INFO[0m [03:18:52] 0c38c3e7be6f4ab4b4540ca1f6779e10	 200 0ms GET /json
+[38;5;6m INFO[0m [03:18:52] debug message
+[38;5;6m INFO[0m [03:18:52] debug message
+[38;5;6m INFO[0m [03:18:52] 423a2d5f1e1d412bb4ece939a0441d0a	 200 0ms GET /db
+[38;5;6m INFO[0m [03:18:52] 3e63c17a7de649678284b707df5a051b	 200 0ms GET /keys
+[38;5;6m INFO[0m [03:18:52] ccd8c986b6c14ec7b61e78e9ea7ff396	 200 0ms GET /
+[38;5;6m INFO[0m [03:18:52] debug message
+[38;5;6m INFO[0m [03:18:52] debug message
+[38;5;6m INFO[0m [03:18:52] a9f3a8edaa11453a9a055f40f1f6284f	 200 0ms GET /keys
+[38;5;6m INFO[0m [03:18:52] 0c86dafac6124b9387be85ae32e616d0	 200 0ms GET /keys
+[38;5;6m INFO[0m [03:18:52] debug message
+[38;5;6m INFO[0m [03:18:52] d6dd24cea138478ca2393e48e9e51ade	 200 0ms GET /keys
+[38;5;6m INFO[0m [03:18:52] debug message
+[38;5;6m INFO[0m [03:18:52] e266a7b18d814f8295494807a583c927	 200 0ms GET /db
+[38;5;6m INFO[0m [03:18:52] 98c9f09934b3441ca399ef4d174a31fa	 200 0ms GET /keys
+[38;5;6m INFO[0m [03:18:52] debug message
+[38;5;6m INFO[0m [03:18:52] d355937cd85549478bb3aa1a3de6ab2c	 200 0ms GET /db
+[38;5;6m INFO[0m [03:18:52] fb14a9f31b79474390cfa1a5b8b30d40	 200 0ms GET /
+[38;5;6m INFO[0m [03:18:52] debug message
+[38;5;6m INFO[0m [03:18:52] 8437d55981494e5aa30d1e1e22df8e95	 200 0ms GET /
+[38;5;6m INFO[0m [03:18:52] debug message
+[38;5;6m INFO[0m [03:18:52] 10198e0182e24544a9db7d709a2e17b6	 200 0ms GET /keys
+[38;5;6m INFO[0m [03:18:52] 31f5bb4cd11149e2b1d1b417cc93c6b0	 200 0ms GET /db
+[38;5;6m INFO[0m [03:18:52] a1860e4d541e4f58a131055d74c8347b	 200 0ms GET /db
+[38;5;6m INFO[0m [03:18:52] 0b41dbf9c0434f34928ba636eef9b28f	 200 0ms GET /db
+[38;5;6m INFO[0m [03:18:52] e87558d2edb0401fb62b38354af64301	 200 0ms GET /db
+[38;5;6m INFO[0m [03:18:52] 83e1ce814a0e464baaf2e40df31bac5e	 200 0ms GET /db
+[38;5;6m INFO[0m [03:18:52] bd5d2ba9898042b28f4cf1a43644972b	 200 0ms GET /db
+[38;5;6m INFO[0m [03:18:52] 28518a18619b459bbd520ecad73f7266	 200 0ms GET /db
+[38;5;6m INFO[0m [03:18:52] 004e79ee8b4e420989e2c01641a8bbc1	 200 0ms GET /db
+[38;5;6m INFO[0m [03:18:56] 1ddfe061376841fe89af6ed694ed36fe	 200 0ms GET /.well-known/health
+[38;5;6m INFO[0m [03:18:57] 8b764dc092dd4519a51aa1f1f8d29473	 200 0ms GET /.well-known/health
+[38;5;6m INFO[0m [03:18:57] debug message
+[38;5;6m INFO[0m [03:18:57] 3e8303619eee4821b301b5e4f3a45863	 200 0ms GET /
+[38;5;6m INFO[0m [03:18:57] server shutting down
 received shutdown signalreceived shutdown signalreceived shutdown signal
