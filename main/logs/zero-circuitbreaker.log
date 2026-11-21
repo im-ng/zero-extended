@@ -1,102 +1,102 @@
-[38;5;6m INFO[0m [14:47:17] Loaded config from file: ./configs/.env
-[38;5;6m INFO[0m [14:47:17] config overriden ./configs/.dev.env file not found.
-[38;5;8mDEBUG[0m [14:47:17] database is disabled, as dialect is not provided.
-[38;5;8mDEBUG[0m [14:47:17] redis is disabled, as redis host is not provided.
-[38;5;8mDEBUG[0m [14:47:17] file store is disabled, as FILE_STORE_ROOT is not provided.
-[38;5;8mDEBUG[0m [14:47:17] sqlite is disabled, as sqlite path is not provided.
-[38;5;8mDEBUG[0m [14:47:17] clickhouse is disabled, as CLICKHOUSE_URL is not provided.
-[38;5;8mDEBUG[0m [14:47:17] time-series is disabled, as INFLUXDB_URL is not provided.
-[38;5;8mDEBUG[0m [14:47:17] opentsdb is disabled, as OPENTSDB_URL is not provided.
-[38;5;8mDEBUG[0m [14:47:17] search is disabled, as SOLR_URL is not provided.
-[38;5;8mDEBUG[0m [14:47:17] nosql is disabled, as CONTACT_POINTS are not provided.
-[38;5;8mDEBUG[0m [14:47:17] arangodb is disabled, as ARANGO_HOST is not provided.
-[38;5;8mDEBUG[0m [14:47:17] graph is disabled, as DGRAPH_URL is not provided.
-[38;5;8mDEBUG[0m [14:47:17] pubsub is disabled, as pubsub mode is not provided.
-[38;5;6m INFO[0m [14:47:17] container is created
-[38;5;6m INFO[0m [14:47:17] service-client app pid 8867
-[38;5;6m INFO[0m [14:47:17] no valid auth mode found and disabled.
-[38;5;220m WARN[0m [14:47:17] service 'auth-service': timeout_ms is configured but the pinned zul client has no request deadline; the option is not enforced
-[38;5;6m INFO[0m [14:47:17] registered static files from directory ./static
-[38;5;8mDEBUG[0m [14:47:17] metrics server is initialized
-[38;5;8mDEBUG[0m [14:47:17] metrics server started
+[38;5;6m INFO[0m [02:38:15] Loaded config from file: ./configs/.env
+[38;5;6m INFO[0m [02:38:15] config overriden ./configs/.dev.env file not found.
+[38;5;8mDEBUG[0m [02:38:15] database is disabled, as dialect is not provided.
+[38;5;8mDEBUG[0m [02:38:15] redis is disabled, as redis host is not provided.
+[38;5;8mDEBUG[0m [02:38:15] file store is disabled, as FILE_STORE_ROOT is not provided.
+[38;5;8mDEBUG[0m [02:38:15] sqlite is disabled, as sqlite path is not provided.
+[38;5;8mDEBUG[0m [02:38:15] clickhouse is disabled, as CLICKHOUSE_URL is not provided.
+[38;5;8mDEBUG[0m [02:38:15] time-series is disabled, as INFLUXDB_URL is not provided.
+[38;5;8mDEBUG[0m [02:38:15] opentsdb is disabled, as OPENTSDB_URL is not provided.
+[38;5;8mDEBUG[0m [02:38:15] search is disabled, as SOLR_URL is not provided.
+[38;5;8mDEBUG[0m [02:38:15] nosql is disabled, as CONTACT_POINTS are not provided.
+[38;5;8mDEBUG[0m [02:38:15] arangodb is disabled, as ARANGO_HOST is not provided.
+[38;5;8mDEBUG[0m [02:38:15] graph is disabled, as DGRAPH_URL is not provided.
+[38;5;8mDEBUG[0m [02:38:15] pubsub is disabled, as pubsub mode is not provided.
+[38;5;6m INFO[0m [02:38:15] container is created
+[38;5;6m INFO[0m [02:38:15] service-client app pid 8988
+[38;5;6m INFO[0m [02:38:15] no valid auth mode found and disabled.
+[38;5;220m WARN[0m [02:38:15] service 'auth-service': timeout_ms is configured but the pinned zul client has no request deadline; the option is not enforced
+[38;5;6m INFO[0m [02:38:15] registered static files from directory ./static
+[38;5;8mDEBUG[0m [02:38:15] metrics server is initialized
+[38;5;8mDEBUG[0m [02:38:15] metrics server started
 error: AddressInUse
 /drone/src/zero/examples/zero-service-client/zig-pkg/httpz-0.0.17-PNVzrGMYCQDr8ZuCn_1Cz75ZnVcg46JlYk66_ARWR_qa/src/posix.zig:258:27: 0x13ffe21 in bind (httpz.zig)
-[38;5;6m INFO[0m [14:47:17] Starting server on port: 9090
+[38;5;6m INFO[0m [02:38:16] Starting server on port: 9090
             .ADDRINUSE => return error.AddressInUse,
                           ^
 /drone/src/zero/examples/zero-service-client/zig-pkg/httpz-0.0.17-PNVzrGMYCQDr8ZuCn_1Cz75ZnVcg46JlYk66_ARWR_qa/src/httpz.zig:390:17: 0x14bb0de in listen (httpz.zig)
                 try posix.bind(listener, &address.any, socklen);
                 ^
-[38;5;6m INFO[0m [14:51:14] server shutting down
-received shutdown signalreceived shutdown signalCannot stop server, .listen() was never called8;5;6m INFO[0m [14:47:17] api key header is not found.
-[38;5;6m INFO[0m [14:47:17] auth api key called
-[38;5;6m INFO[0m [14:47:17] api key header is not found.
-[38;5;6m INFO[0m [14:47:17] api key header is not found.
-[38;5;6m INFO[0m [14:47:17] auth api key called
-[38;5;6m INFO[0m [14:47:17] api key header is not found.
-[38;5;6m INFO[0m [14:47:17] auth api key called
-[38;5;6m INFO[0m [14:47:17] auth api key called
-[38;5;6m INFO[0m [14:47:17] api key header is not found.
-[38;5;6m INFO[0m [14:47:17] api key header is not found.
-[38;5;6m INFO[0m [14:47:17] auth api key called
-[38;5;6m INFO[0m [14:47:17] api key header is not found.
-[38;5;6m INFO[0m [14:47:17] auth api key called
-[38;5;6m INFO[0m [14:47:17] api key header is not found.
-[38;5;6m INFO[0m [14:47:17] auth api key called
-[38;5;6m INFO[0m [14:47:17] api key header is not found.
-[38;5;6m INFO[0m [14:47:17] auth api key called
-[38;5;6m INFO[0m [14:47:17] api key header is not found.
-[38;5;6m INFO[0m [14:47:17] auth api key called
-[38;5;6m INFO[0m [14:47:17] api key header is not found.
-... [1967613 lines of load/request noise omitted] ...
+[38;5;6m INFO[0m [02:39:08] server shutting down
+received shutdown signalreceived shutdown signalCannot stop server, .listen() was never called8;5;6m INFO[0m [02:38:15] api key header is not found.
+[38;5;6m INFO[0m [02:38:15] api key header is not found.
+[38;5;6m INFO[0m [02:38:15] auth api key called
+[38;5;6m INFO[0m [02:38:15] api key header is not found.
+[38;5;6m INFO[0m [02:38:15] auth api key called
+[38;5;6m INFO[0m [02:38:15] auth api key called
+[38;5;6m INFO[0m [02:38:15] api key header is not found.
+[38;5;6m INFO[0m [02:38:15] api key header is not found.
+[38;5;6m INFO[0m [02:38:15] auth api key called
+[38;5;6m INFO[0m [02:38:15] api key header is not found.
+[38;5;6m INFO[0m [02:38:15] auth api key called
+[38;5;6m INFO[0m [02:38:15] api key header is not found.
+[38;5;6m INFO[0m [02:38:15] auth api key called
+[38;5;6m INFO[0m [02:38:15] api key header is not found.
+[38;5;6m INFO[0m [02:38:15] auth api key called
+[38;5;6m INFO[0m [02:38:15] auth api key called
+[38;5;6m INFO[0m [02:38:15] api key header is not found.
+[38;5;6m INFO[0m [02:38:15] api key header is not found.
+[38;5;6m INFO[0m [02:38:15] auth api key called
+[38;5;6m INFO[0m [02:38:15] api key header is not found.
+... [484522 lines of load/request noise omitted] ...
 ...
-[38;5;6m INFO[0m [14:48:17] api key header is not found.
-[38;5;6m INFO[0m [14:48:17] auth api key called
-[38;5;6m INFO[0m [14:48:17] auth api key called
-[38;5;6m INFO[0m [14:48:17] api key header is not found.
-[38;5;6m INFO[0m [14:48:17] api key header is not found.
-[38;5;6m INFO[0m [14:48:17] auth api key called
-[38;5;6m INFO[0m [14:48:17] api key header is not found.
-[38;5;6m INFO[0m [14:48:17] auth api key called
-[38;5;6m INFO[0m [14:48:17] api key header is not found.
-[38;5;6m INFO[0m [14:48:17] auth api key called
-[38;5;6m INFO[0m [14:48:17] api key header is not found.
-[38;5;6m INFO[0m [14:48:17] auth api key called
-[38;5;6m INFO[0m [14:48:17] api key header is not found.
-[38;5;6m INFO[0m [14:48:17] auth api key called
-[38;5;6m INFO[0m [14:48:17] auth api key called
-[38;5;6m INFO[0m [14:48:17] api key header is not found.
-[38;5;6m INFO[0m [14:48:17] auth api key called
-[38;5;6m INFO[0m [14:48:17] api key header is not found.
-[38;5;6m INFO[0m [14:48:17] api key header is not found.
-[38;5;6m INFO[0m [14:48:17] auth api key called
-[38;5;6m INFO[0m [14:48:17] auth api key called
-[38;5;6m INFO[0m [14:48:17] api key header is not found.
-[38;5;6m INFO[0m [14:48:17] api key header is not found.
-[38;5;6m INFO[0m [14:48:17] auth api key called
-[38;5;6m INFO[0m [14:48:17] api key header is not found.
-[38;5;6m INFO[0m [14:48:17] auth api key called
-[38;5;6m INFO[0m [14:48:17] auth api key called
-[38;5;6m INFO[0m [14:48:17] api key header is not found.
-[38;5;6m INFO[0m [14:48:17] api key header is not found.
-[38;5;6m INFO[0m [14:48:17] auth api key called
-[38;5;6m INFO[0m [14:48:17] api key header is not found.
-[38;5;6m INFO[0m [14:48:17] auth api key called
-[38;5;6m INFO[0m [14:48:17] api key header is not found.
-[38;5;6m INFO[0m [14:48:17] auth api key called
-[38;5;6m INFO[0m [14:48:17] api key header is not found.
-[38;5;6m INFO[0m [14:48:17] auth api key called
-[38;5;6m INFO[0m [14:48:17] api key header is not found.
-[38;5;6m INFO[0m [14:48:17] auth api key called
-[38;5;6m INFO[0m [14:48:17] api key header is not found.
-[38;5;6m INFO[0m [14:48:17] auth api key called
-[38;5;6m INFO[0m [14:48:17] api key header is not found.
-[38;5;6m INFO[0m [14:48:17] auth api key called
-[38;5;6m INFO[0m [14:48:17] api key header is not found.
-[38;5;6m INFO[0m [14:48:17] auth api key called
-[38;5;6m INFO[0m [14:48:17] api key header is not found.
-[38;5;6m INFO[0m [14:51:13] server shutting down
-received shutdown signalreceived shutdown signalreceived shutdown signale: health missed during 127.0.0.1:9090 outage (worker likely blocked on dropped backend)
-note: health missed during 127.0.0.1:9090 outage (worker likely blocked on dropped backend)
+[38;5;6m INFO[0m [02:38:30] auth api key called
+[38;5;6m INFO[0m [02:38:30] api key header is not found.
+[38;5;6m INFO[0m [02:38:30] auth api key called
+[38;5;6m INFO[0m [02:38:30] api key header is not found.
+[38;5;6m INFO[0m [02:38:30] auth api key called
+[38;5;6m INFO[0m [02:38:30] auth api key called
+[38;5;6m INFO[0m [02:38:30] api key header is not found.
+[38;5;6m INFO[0m [02:38:30] auth api key called
+[38;5;6m INFO[0m [02:38:30] api key header is not found.
+[38;5;6m INFO[0m [02:38:30] api key header is not found.
+[38;5;6m INFO[0m [02:38:30] auth api key called
+[38;5;6m INFO[0m [02:38:30] api key header is not found.
+[38;5;6m INFO[0m [02:38:30] auth api key called
+[38;5;6m INFO[0m [02:38:30] api key header is not found.
+[38;5;6m INFO[0m [02:38:30] auth api key called
+[38;5;6m INFO[0m [02:38:30] api key header is not found.
+[38;5;6m INFO[0m [02:38:30] auth api key called
+[38;5;6m INFO[0m [02:38:30] api key header is not found.
+[38;5;6m INFO[0m [02:38:30] auth api key called
+[38;5;6m INFO[0m [02:38:30] auth api key called
+[38;5;6m INFO[0m [02:38:30] api key header is not found.
+[38;5;6m INFO[0m [02:38:30] api key header is not found.
+[38;5;6m INFO[0m [02:38:30] auth api key called
+[38;5;6m INFO[0m [02:38:30] auth api key called
+[38;5;6m INFO[0m [02:38:30] api key header is not found.
+[38;5;6m INFO[0m [02:38:30] api key header is not found.
+[38;5;6m INFO[0m [02:38:30] auth api key called
+[38;5;6m INFO[0m [02:38:30] api key header is not found.
+[38;5;6m INFO[0m [02:38:30] auth api key called
+[38;5;6m INFO[0m [02:38:30] api key header is not found.
+[38;5;6m INFO[0m [02:38:30] auth api key called
+[38;5;6m INFO[0m [02:38:30] api key header is not found.
+[38;5;6m INFO[0m [02:38:30] auth api key called
+[38;5;6m INFO[0m [02:38:30] api key header is not found.
+[38;5;6m INFO[0m [02:38:30] auth api key called
+[38;5;6m INFO[0m [02:38:30] api key header is not found.
+[38;5;6m INFO[0m [02:38:30] auth api key called
+[38;5;6m INFO[0m [02:38:30] api key header is not found.
+[38;5;6m INFO[0m [02:38:30] auth api key called
+[38;5;6m INFO[0m [02:38:30] api key header is not found.
+[38;5;6m INFO[0m [02:38:30] auth api key called
+[38;5;6m INFO[0m [02:38:30] api key header is not found.
+[38;5;6m INFO[0m [02:38:30] auth api key called
+[38;5;6m INFO[0m [02:38:30] api key header is not found.
+[38;5;6m INFO[0m [02:38:30] auth api key called
+[38;5;6m INFO[0m [02:38:30] api key header is not found.
+[38;5;6m INFO[0m [02:39:07] server shutting down
+received shutdown signalreceived shutdown signalreceived shutdown signal: health missed during 127.0.0.1:9090 outage (worker likely blocked on dropped backend)
 chaos: server process stayed up through 127.0.0.1:9090 outage
 chaos: app did NOT recover connectivity to 127.0.0.1:9090
