@@ -1,9 +1,9 @@
 # zero-soak report (gate)
 
-generated: 2026-11-23 02:11:00 UTC · build: 23
+generated: 2026-11-23 02:45:27 UTC · build: 24
 framework: zero @ experimental-0.17 (6e2994a8) · https://gitea.pi/ng/zero.git
 
-**FAIL** — 2 services, 0 pass, 2 fail, 0 missing.
+**FAIL** — 2 services, 1 pass, 1 fail, 0 missing.
 
 
 ## Framework probes (hot-path micro-benchmark)
@@ -14,14 +14,14 @@ framework: zero @ experimental-0.17 (6e2994a8) · https://gitea.pi/ng/zero.git
 | bytes / request | 13615 |
 | alloc leak | 0 bytes OK |
 | route-match allocs | 0 |
-| route match time | 577.27 ns |
+| route match time | 565.16 ns |
 
 _Dispatch/routing internals — not application throughput._
 
 | Service | Status | Port | Backends | Chaos | Checks | RSS growth | Links | TLS |
 |---|---|---|---|---|---|---|---|---|
-| zero-circuitbreaker | FAIL | 9090 | zero-auth | yes | 3/1 | 177660 KiB | <a href="logs/zero-circuitbreaker.log">log</a> · <a href="logs/zero-circuitbreaker.vmrss.txt">rss</a> | — |
-| zero-ratelimit | FAIL | 8080 | postgres | yes | 4/1 | 2736 KiB | <a href="logs/zero-ratelimit.log">log</a> · <a href="logs/zero-ratelimit.vmrss.txt">rss</a> | — |
+| zero-circuitbreaker | FAIL | 9090 | zero-auth | yes | 3/1 | 4408 KiB | <a href="logs/zero-circuitbreaker.log">log</a> · <a href="logs/zero-circuitbreaker.vmrss.txt">rss</a> | — |
+| zero-ratelimit | PASS | 8080 | postgres | yes | 5/0 | 2740 KiB | <a href="logs/zero-ratelimit.log">log</a> · <a href="logs/zero-ratelimit.vmrss.txt">rss</a> | — |
 
 ## Details
 
@@ -31,33 +31,33 @@ _Dispatch/routing internals — not application throughput._
 
 | Metric | Value |
 |---|---|
-| Baseline | 34300 KiB |
-| Overall RSS | 211960 KiB |
-| dRss (growth) | 177660 KiB |
+| Baseline | 213964 KiB |
+| Overall RSS | 218372 KiB |
+| dRss (growth) | 4408 KiB |
 
 | Status | Check | Detail |
 |---|---|---|
 | PASS | dep zero-auth up |  |
 | PASS | health up |  |
-| PASS | RSS growth (informational in fast gate) | RSS grew 177660KiB (> 32MiB and > 50%): possible leak (Debug guard pages; nightly leak phase is authoritative) |
+| PASS | RSS plateau (no leak) |  |
 | FAIL | circuit breaker did not engage / did not recover |  |
 
 **Load applied:** loader=go-wrk, concurrency=5 (per route), duration_min=0.25, mode=gate, chaos kill-window=6s
 
-### zero-ratelimit (FAIL)
+### zero-ratelimit (PASS)
 
 **RSS**
 
 | Metric | Value |
 |---|---|
-| Baseline | 215440 KiB |
-| Overall RSS | 218176 KiB |
-| dRss (growth) | 2736 KiB |
+| Baseline | 215992 KiB |
+| Overall RSS | 218732 KiB |
+| dRss (growth) | 2740 KiB |
 
 | Status | Check | Detail |
 |---|---|---|
 | PASS | health up |  |
-| FAIL | rate limit: no 429 observed (0/40) — limiter may be disabled or limit too high |  |
+| PASS | rate limit: server returned 429 (30/40 requests rejected) |  |
 | PASS | RSS plateau (no leak) |  |
 | PASS | chaos survived + recovered |  |
 | PASS | chaos cleanup: postgres reachable |  |
@@ -71,7 +71,7 @@ _Dispatch/routing internals — not application throughput._
 
 | backing | allocs/req | bytes/req | latency/req ns | alloc-time/req ns | dispatch-only/req ns | leaked |
 |---|---|---|---|---|---|---|
-| fallback | 20.00 | 13615 | 60479.0 | 4396.3 | 56082.7 | 0 bytes OK |
+| fallback | 20.00 | 13615 | 60409.9 | 4249.1 | 56160.7 | 0 bytes OK |
 
 top call-sites (alloc-probe-fallback.json):
 
@@ -89,5 +89,5 @@ top call-sites (alloc-probe-fallback.json):
 - registration allocs: 9
 - registration bytes: 625680
 - bytes/route: 625.7
-- route match time: 577.27 ns/req
+- route match time: 565.16 ns/req
 - match-time allocs: 0
