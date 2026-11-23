@@ -1,102 +1,102 @@
-[38;5;6m INFO[0m [02:57:29] Loaded config from file: ./configs/.env
-[38;5;6m INFO[0m [02:57:29] config overriden ./configs/.dev.env file not found.
-[38;5;8mDEBUG[0m [02:57:29] database is disabled, as dialect is not provided.
-[38;5;8mDEBUG[0m [02:57:29] redis is disabled, as redis host is not provided.
-[38;5;8mDEBUG[0m [02:57:29] file store is disabled, as FILE_STORE_ROOT is not provided.
-[38;5;8mDEBUG[0m [02:57:29] sqlite is disabled, as sqlite path is not provided.
-[38;5;8mDEBUG[0m [02:57:29] clickhouse is disabled, as CLICKHOUSE_URL is not provided.
-[38;5;8mDEBUG[0m [02:57:29] time-series is disabled, as INFLUXDB_URL is not provided.
-[38;5;8mDEBUG[0m [02:57:29] opentsdb is disabled, as OPENTSDB_URL is not provided.
-[38;5;8mDEBUG[0m [02:57:29] search is disabled, as SOLR_URL is not provided.
-[38;5;8mDEBUG[0m [02:57:29] nosql is disabled, as CONTACT_POINTS are not provided.
-[38;5;8mDEBUG[0m [02:57:29] arangodb is disabled, as ARANGO_HOST is not provided.
-[38;5;8mDEBUG[0m [02:57:29] graph is disabled, as DGRAPH_URL is not provided.
-[38;5;8mDEBUG[0m [02:57:29] pubsub is disabled, as pubsub mode is not provided.
-[38;5;6m INFO[0m [02:57:29] container is created
-[38;5;6m INFO[0m [02:57:29] service-client app pid 808
-[38;5;6m INFO[0m [02:57:29] no valid auth mode found and disabled.
-[38;5;220m WARN[0m [02:57:29] service 'auth-service': timeout_ms is configured but the pinned zul client has no request deadline; the option is not enforced
-[38;5;6m INFO[0m [02:57:29] registered static files from directory ./static
-[38;5;8mDEBUG[0m [02:57:29] metrics server is initialized
-[38;5;8mDEBUG[0m [02:57:[38;5;6m INFO[0m [02:57:29] 307bb26f7e0f4a52b1fe92fc8fdba3c6	 200 0ms GET /.well-know[38;5;6m[38;5;6m INFO[0m [02:58:01] 3a8d33443a414aae9eb7d26748cd883c	 200 0ms GET /.well-known/health
-[38;5;6m INFO[0m [02:58:02] b44c38c95fe34e2b91a1107aeb09c84e	 200 0ms GET /.well-known/health
-[38;5;6m INFO[0m [02:58:03] bab3bef283154a27874076c66eb11317	 200 0ms GET /.well-known/health
-[38;5;6m INFO[0m [02:58:04] 4699c07a737746faa0800beb4544cb05	 200 0ms GET /.well-known/health
-[38;5;6m INFO[0m [02:58:05] 57c0bb82188b4d21b3dfe37586156264	 200 0ms GET /.well-known/health
-[38;5;6m INFO[0m [02:58:05] bab4e3d69d3c42e88c95d7f0f321c039	 200 0ms GET /.well-known/health
-[38;5;6m INFO[0m [02:58:06] 64de39b1ffc04ca095c9978ceaa19b12	 200 0ms GET /.well-known/health
-[38;5;6m INFO[0m [02:58:06] 80e657ed9aec441d9685af53692caeba	 200 0ms GET /.well-known/health
-[38;5;6m INFO[0m [02:58:07] 8167290480d740eca5dc36eaac2e3161	 200 0ms GET /.well-known/health
-[38;5;6m INFO[0m [02:58:08] 10fbf825b9874506aa00254f5313d8b3	 200 0ms GET /.well-known/health
-[38;5;6m INFO[0m [02:58:09] a797e55478c64f77aee36058bf4e14aa	 200 0ms GET /.well-known/health
-[38;5;6m INFO[0m [02:58:10] d5eab6beba344e54a538b7903beff61e	 200 0ms GET /.well-known/health
-[38;5;6m INFO[0m [02:58:11] ade969198b2747b4ad005e18b41839ff	 200 0ms GET /.well-known/health
-[38;5;6m INFO[0m [02:58:11] c63f0f59f057444d83cff665ced3ba28	 200 0ms GET /.well-known/health
-[38;5;6m INFO[0m [02:58:12] 0a94d8cdf9734f73a4f382019565eb59	 200 0ms GET /.well-known/health
-[38;5;6m INFO[0m [02:58:13] 0b0c913cde67443d82b14d30614ceaba	 200 0ms GET /.well-known/health
-[38;5;6m INFO[0m [02:58:14] 416a682e82604b4fb2e6e669293b963b	 200 0ms GET /.well-known/health
-[38;5;6m INFO[0m [02:58:15] d35162f5ebb9442e82b40104bd283d17	 200 0ms GET /.well-known/health
-[38;5;6m INFO[0m [02:58:16] 370d445be5464b0ebec81eab0e8bf50c	 200 0ms GET /.well-known/health
-[38;5;6m INFO[0m [02:58:16] 00ec9af3d55b448187418febbed57d0e	 200 0ms GET /.well-known/health
-[38;5;6m INFO[0m [02:58:17] e0db95774b114b5dad80036791fd81b7	 200 0ms GET /.well-known/health
-[38;5;6m INFO[0m [02:58:18] 8921936d916a4a05ba93fbb0bba4a601	 200 0ms GET /.well-known/health
-[38;5;6m INFO[0m [02:58:19] 376a0431407240b0afd8dae1b2380335	 200 0ms GET /.well-known/health
-[38;5;6m INFO[0m [02:58:21] 3211b632722a477a96ba49ee6e3cc4f0	 200 0ms GET /.well-known/health
-[38;5;6m INFO[0m [02:58:22] 435ae720583e4882b2f41b07fe32ed33	 200 0ms GET /.well-known/health
-[38;5;6m INFO[0m [02:58:22] be182782f0834653a91a75f3c60aebb0	 200 0ms GET /.well-known/health
-[38;5;6m INFO[0m [02:58:23] server shutting down
-received shutdown signalreceived shutdown signalreceived shutdown signale687a5ddce21b6564a	 500 0ms GET /keys
-[38;5;6m INFO[0m [02:57:30] 7c3e3902072c4e0dbaa72a6357977ac6	 500 0ms GET /keys
-[38;5;160mERROR[0m [02:57:30] handler error (correlation=1ffd9f0163a44f0aa6ca1cf591ec560f): error.OAuthTokenFetchFailed
-... [343359 lines of load/request noise omitted] ...
+[38;5;6m INFO[0m [03:20:33] Loaded config from file: ./configs/.env
+[38;5;6m INFO[0m [03:20:33] config overriden ./configs/.dev.env file not found.
+[38;5;8mDEBUG[0m [03:20:33] database is disabled, as dialect is not provided.
+[38;5;8mDEBUG[0m [03:20:33] redis is disabled, as redis host is not provided.
+[38;5;8mDEBUG[0m [03:20:33] file store is disabled, as FILE_STORE_ROOT is not provided.
+[38;5;8mDEBUG[0m [03:20:33] sqlite is disabled, as sqlite path is not provided.
+[38;5;8mDEBUG[0m [03:20:33] clickhouse is disabled, as CLICKHOUSE_URL is not provided.
+[38;5;8mDEBUG[0m [03:20:33] time-series is disabled, as INFLUXDB_URL is not provided.
+[38;5;8mDEBUG[0m [03:20:33] opentsdb is disabled, as OPENTSDB_URL is not provided.
+[38;5;8mDEBUG[0m [03:20:33] search is disabled, as SOLR_URL is not provided.
+[38;5;8mDEBUG[0m [03:20:33] nosql is disabled, as CONTACT_POINTS are not provided.
+[38;5;8mDEBUG[0m [03:20:33] arangodb is disabled, as ARANGO_HOST is not provided.
+[38;5;8mDEBUG[0m [03:20:33] graph is disabled, as DGRAPH_URL is not provided.
+[38;5;8mDEBUG[0m [03:20:33] pubsub is disabled, as pubsub mode is not provided.
+[38;5;6m INFO[0m [03:20:33] container is created
+[38;5;6m INFO[0m [03:20:33] service-client app pid 808
+[38;5;6m INFO[0m [03:20:33] no valid auth mode found and disabled.
+[38;5;220m WARN[0m [03:20:33] service 'auth-service': timeout_ms is configured but the pinned zul client has no request deadline; the option is not enforced
+[38;5;6m INFO[0m [03:20:33] registered static files from directory ./static
+[38;5;8mDEBUG[0m [03:20:33] metrics server is initialized
+[38;5;8mDEBUG[0m [03:20:[38;5;6m INFO[0m [03:20:34] bdd2c09125594c62991f0533bcd2a5db	 200 0ms GET /.well-know[38;5;6m[38;5;6m INFO[0m [03:21:05] a21e371bf1744566aee38408537d1a8d	 200 0ms GET /.well-known/health
+[38;5;6m INFO[0m [03:21:06] 76d4226072af43eea8580c030d9612c2	 200 0ms GET /.well-known/health
+[38;5;6m INFO[0m [03:21:07] 29dcd4b0b8fb4b9abce06088f23acc48	 200 0ms GET /.well-known/health
+[38;5;6m INFO[0m [03:21:08] dfb1f63bbc5e4dbcb4c4292f222a37aa	 200 0ms GET /.well-known/health
+[38;5;6m INFO[0m [03:21:09] 2eaeecdc452840b0bb1a37c84c70303e	 200 0ms GET /.well-known/health
+[38;5;6m INFO[0m [03:21:09] 0d2baa408e4c40a9a88bc7485de94b8e	 200 0ms GET /.well-known/health
+[38;5;6m INFO[0m [03:21:10] 9888d6583b554ae6a6a75b8019fda104	 200 0ms GET /.well-known/health
+[38;5;6m INFO[0m [03:21:10] 972bc0204e4449ea9ef9333e86f912fe	 200 0ms GET /.well-known/health
+[38;5;6m INFO[0m [03:21:11] dd14442700354609bcde24a06083c29f	 200 0ms GET /.well-known/health
+[38;5;6m INFO[0m [03:21:12] f67c01423993418da601171a7655d8d3	 200 0ms GET /.well-known/health
+[38;5;6m INFO[0m [03:21:13] e7bf1839375e4722a21b72d102d8aebb	 200 0ms GET /.well-known/health
+[38;5;6m INFO[0m [03:21:14] 7a88d0c2a851440fbcfab89ccf0a911c	 200 0ms GET /.well-known/health
+[38;5;6m INFO[0m [03:21:15] 97039589de2d41abbb0e38f059a6149a	 200 0ms GET /.well-known/health
+[38;5;6m INFO[0m [03:21:15] 3371f9d2827c44049478a2c39aef4ea3	 200 0ms GET /.well-known/health
+[38;5;6m INFO[0m [03:21:16] 35d5f5493d414c45878b30efad466520	 200 0ms GET /.well-known/health
+[38;5;6m INFO[0m [03:21:18] 5b709edd7a6f442ab4b22515f755f1ac	 200 0ms GET /.well-known/health
+[38;5;6m INFO[0m [03:21:19] 3769944bac7b425194347f03a35ff743	 200 0ms GET /.well-known/health
+[38;5;6m INFO[0m [03:21:20] 06c9be8ff41c409eac1d65eec15050ce	 200 0ms GET /.well-known/health
+[38;5;6m INFO[0m [03:21:21] f793d0e1b26948bc885dc1f13cdf5665	 200 0ms GET /.well-known/health
+[38;5;6m INFO[0m [03:21:21] ff408fa993824bef9fec9f18251e5dbf	 200 0ms GET /.well-known/health
+[38;5;6m INFO[0m [03:21:22] 07176cdc93c54d4e9f6a058298647ef5	 200 0ms GET /.well-known/health
+[38;5;6m INFO[0m [03:21:23] ceebc0d8b3104c33a7008326055a1403	 200 0ms GET /.well-known/health
+[38;5;6m INFO[0m [03:21:24] 32f51dcdfa394e16abd9eadfe6124ed4	 200 0ms GET /.well-known/health
+[38;5;6m INFO[0m [03:21:25] 94fc9a3e0d704a43a88b139b29c56570	 200 0ms GET /.well-known/health
+[38;5;6m INFO[0m [03:21:26] 29d6f721dce540719e4b9f0643fdb774	 200 0ms GET /.well-known/health
+[38;5;6m INFO[0m [03:21:26] cc2824849f054903a85f8810c1515e3e	 200 0ms GET /.well-known/health
+[38;5;6m INFO[0m [03:21:27] server shutting down
+received shutdown signalreceived shutdown signalreceived shutdown signal7d233aa): error.OAuthTokenFetchFailed
+[38;5;160mERROR[0m [03:20:34] handler error (correlation=79fa9db764f841cc9df58c82c9ca9c24): error.OAuthTokenFetchFailed
+[38;5;6m INFO[0m [03:20:34] 9bf3a79df68648478bbd339437d233aa	 500 0ms GET /keys
+... [351177 lines of load/request noise omitted] ...
 ...
-[38;5;6m INFO[0m [02:58:07] f8cfd2aaa7a443cab3bf046f310602e9	 200 0ms GET /.well-known/health
-[38;5;160mERROR[0m [02:58:07] handler error (correlation=3affcf1fb7df486d9251b36ce417da29): error.OAuthTokenFetchFailed
-[38;5;6m INFO[0m [02:58:07] 3affcf1fb7df486d9251b36ce417da29	 500 0ms GET /keys
-[38;5;6m INFO[0m [02:58:08] 01543fe3e3b24f53ae250221e67c3984	 200 0ms GET /.well-known/health
-[38;5;160mERROR[0m [02:58:08] handler error (correlation=14dc3fdb5b624b72a94abb8ee1e84b63): error.OAuthTokenFetchFailed
-[38;5;6m INFO[0m [02:58:08] 14dc3fdb5b624b72a94abb8ee1e84b63	 500 0ms GET /keys
-[38;5;6m INFO[0m [02:58:09] 8865150163d845cfa32025a4cab567e7	 200 0ms GET /.well-known/health
-[38;5;160mERROR[0m [02:58:09] handler error (correlation=87812c3e42ce4d82b5741c8a1a07fc91): error.OAuthTokenFetchFailed
-[38;5;6m INFO[0m [02:58:09] 87812c3e42ce4d82b5741c8a1a07fc91	 500 0ms GET /keys
-[38;5;6m INFO[0m [02:58:10] c0773d5147a54566852b05db1cf89b4a	 200 0ms GET /.well-known/health
-[38;5;160mERROR[0m [02:58:10] handler error (correlation=ff347ea677764989b8d381ca266358aa): error.OAuthTokenFetchFailed
-[38;5;6m INFO[0m [02:58:10] ff347ea677764989b8d381ca266358aa	 500 0ms GET /keys
-[38;5;6m INFO[0m [02:58:11] e811de8f974e48d3a0bf4bd38dc5326b	 200 0ms GET /.well-known/health
-[38;5;160mERROR[0m [02:58:11] handler error (correlation=c3f72c88fc6c4d14a3f378b27c80aaea): error.OAuthTokenFetchFailed
-[38;5;6m INFO[0m [02:58:11] c3f72c88fc6c4d14a3f378b27c80aaea	 500 0ms GET /keys
-[38;5;6m INFO[0m [02:58:11] 68d1b73c945246b4a1186adfce200ccf	 200 0ms GET /.well-known/health
-[38;5;6m INFO[0m [02:58:12] 42164075460a4e72b3ef68c24b3c442a	 200 0ms GET /.well-known/health
-[38;5;160mERROR[0m [02:58:12] handler error (correlation=655cf69b07634c8a806c6c485641e85b): error.OAuthTokenFetchFailed
-[38;5;6m INFO[0m [02:58:12] 655cf69b07634c8a806c6c485641e85b	 500 0ms GET /keys
-[38;5;6m INFO[0m [02:58:13] 4888f74e8a484639b8b3c4342c095964	 200 0ms GET /.well-known/health
-[38;5;160mERROR[0m [02:58:13] handler error (correlation=ce235eee8290417298e1255356499a16): error.OAuthTokenFetchFailed
-[38;5;6m INFO[0m [02:58:13] ce235eee8290417298e1255356499a16	 500 0ms GET /keys
-[38;5;6m INFO[0m [02:58:14] 4607868f89d84facb7b9e34291f195d4	 200 0ms GET /.well-known/health
-[38;5;160mERROR[0m [02:58:14] handler error (correlation=c2566ae5471b46b2a78296050a6b5faa): error.OAuthTokenFetchFailed
-[38;5;6m INFO[0m [02:58:14] c2566ae5471b46b2a78296050a6b5faa	 500 0ms GET /keys
-[38;5;6m INFO[0m [02:58:15] ce51b03b659c48bd8d8372cbaf572d1c	 200 0ms GET /.well-known/health
-[38;5;160mERROR[0m [02:58:15] handler error (correlation=bfa877bd0d5442b696f7bf187eae7fc5): error.OAuthTokenFetchFailed
-[38;5;6m INFO[0m [02:58:15] bfa877bd0d5442b696f7bf187eae7fc5	 500 0ms GET /keys
-[38;5;6m INFO[0m [02:58:16] f310f60aa5d54b40adaa0ff48db6f505	 200 0ms GET /.well-known/health
-[38;5;160mERROR[0m [02:58:16] handler error (correlation=baa80b4e8560478b8d5bd37047f8be47): error.OAuthTokenFetchFailed
-[38;5;6m INFO[0m [02:58:16] baa80b4e8560478b8d5bd37047f8be47	 500 0ms GET /keys
-[38;5;6m INFO[0m [02:58:16] 2e166f5037144f8cb294744e92415e52	 200 0ms GET /.well-known/health
-[38;5;6m INFO[0m [02:58:17] e0b1cdbc2a67410db8718de7206d70e3	 200 0ms GET /.well-known/health
-[38;5;160mERROR[0m [02:58:17] handler error (correlation=cecb176b70184533b894461cee9e3905): error.OAuthTokenFetchFailed
-[38;5;6m INFO[0m [02:58:17] cecb176b70184533b894461cee9e3905	 500 0ms GET /keys
-[38;5;6m INFO[0m [02:58:18] 6c65931b9974462aa30c875bf87511a3	 200 0ms GET /.well-known/health
-[38;5;160mERROR[0m [02:58:18] handler error (correlation=500c02a7f7bb415781f5f0034f4715fe): error.OAuthTokenFetchFailed
-[38;5;6m INFO[0m [02:58:18] 500c02a7f7bb415781f5f0034f4715fe	 500 0ms GET /keys
-[38;5;6m INFO[0m [02:58:19] 6438b864d6e944a5ae6a9f2aceee9828	 200 0ms GET /.well-known/health
-[38;5;160mERROR[0m [02:58:19] handler error (correlation=0c5875faab894b9ab07f4d444b761d97): error.OAuthTokenFetchFailed
-[38;5;6m INFO[0m [02:58:19] 0c5875faab894b9ab07f4d444b761d97	 500 0ms GET /keys
-[38;5;6m INFO[0m [02:58:21] 67730d802e1e4537918fcba6094b9eec	 200 0ms GET /.well-known/health
-[38;5;160mERROR[0m [02:58:21] handler error (correlation=53fe5d89a6764aaabf3ef70b8a965ff5): error.OAuthTokenFetchFailed
-[38;5;6m INFO[0m [02:58:21] 53fe5d89a6764aaabf3ef70b8a965ff5	 500 0ms GET /keys
-[38;5;6m INFO[0m [02:58:22] 2a88cc1c1128499f8e46341be28f74f0	 200 0ms GET /.well-known/health
-[38;5;160mERROR[0m [02:58:22] handler error (correlation=45909358c45d4804849a16b385f4ebed): error.OAuthTokenFetchFailed
-[38;5;6m INFO[0m [02:58:22] 45909358c45d4804849a16b385f4ebed	 500 0ms GET /keys
-[38;5;6m INFO[0m [02:58:22] 26516794109e48a4848c7de3ed1fb48a	 200 0ms GET /.well-known/health
-[38;5;6m INFO[0m [02:58:24] server shutting down
-received shutdown signalreceived shutdown signalreceived shutdown signal
+[38;5;6m INFO[0m [03:21:11] 86232358f4df457cb514703289f80beb	 200 0ms GET /.well-known/health
+[38;5;160mERROR[0m [03:21:11] handler error (correlation=65578a0c40534e1ca27ee1c260b6ead3): error.OAuthTokenFetchFailed
+[38;5;6m INFO[0m [03:21:11] 65578a0c40534e1ca27ee1c260b6ead3	 500 0ms GET /keys
+[38;5;6m INFO[0m [03:21:12] 4c449e53065f4614bc89205baedf6488	 200 0ms GET /.well-known/health
+[38;5;160mERROR[0m [03:21:12] handler error (correlation=6bf8204162454fd993e5b4b41ddbc46e): error.OAuthTokenFetchFailed
+[38;5;6m INFO[0m [03:21:12] 6bf8204162454fd993e5b4b41ddbc46e	 500 0ms GET /keys
+[38;5;6m INFO[0m [03:21:13] df6e655da4be48a3a6d1a6c408f7bf60	 200 0ms GET /.well-known/health
+[38;5;160mERROR[0m [03:21:13] handler error (correlation=a2e54ef9d05f47c9859f8d0c735e2f48): error.OAuthTokenFetchFailed
+[38;5;6m INFO[0m [03:21:13] a2e54ef9d05f47c9859f8d0c735e2f48	 500 0ms GET /keys
+[38;5;6m INFO[0m [03:21:14] 87a1b8a67fe1430b864bce10c02891b5	 200 0ms GET /.well-known/health
+[38;5;160mERROR[0m [03:21:14] handler error (correlation=11dcb56f1e14420982e02c2fadf8a304): error.OAuthTokenFetchFailed
+[38;5;6m INFO[0m [03:21:14] 11dcb56f1e14420982e02c2fadf8a304	 500 0ms GET /keys
+[38;5;6m INFO[0m [03:21:15] 2975c97a662746c491702a9cad3e856f	 200 0ms GET /.well-known/health
+[38;5;160mERROR[0m [03:21:15] handler error (correlation=92119ce1611743feaa0e8c012002e217): error.OAuthTokenFetchFailed
+[38;5;6m INFO[0m [03:21:15] 92119ce1611743feaa0e8c012002e217	 500 0ms GET /keys
+[38;5;6m INFO[0m [03:21:15] 7eb16070a6f2487ebbd7d3e444a14631	 200 0ms GET /.well-known/health
+[38;5;6m INFO[0m [03:21:16] c3d39d58e7ee460fa5ee71e344430b80	 200 0ms GET /.well-known/health
+[38;5;160mERROR[0m [03:21:16] handler error (correlation=316c2105a4204d009336814ab8997e6e): error.OAuthTokenFetchFailed
+[38;5;6m INFO[0m [03:21:16] 316c2105a4204d009336814ab8997e6e	 500 0ms GET /keys
+[38;5;6m INFO[0m [03:21:18] da498b6dfbd74c03bd8089c32d34dfe6	 200 0ms GET /.well-known/health
+[38;5;160mERROR[0m [03:21:18] handler error (correlation=dd58a67641f547a9a2fdac6901aaab7f): error.OAuthTokenFetchFailed
+[38;5;6m INFO[0m [03:21:18] dd58a67641f547a9a2fdac6901aaab7f	 500 0ms GET /keys
+[38;5;6m INFO[0m [03:21:19] e699a5facdec411995170be731135baf	 200 0ms GET /.well-known/health
+[38;5;160mERROR[0m [03:21:19] handler error (correlation=5ff4bfac40f84be7b0fe5a27edd68c1b): error.OAuthTokenFetchFailed
+[38;5;6m INFO[0m [03:21:19] 5ff4bfac40f84be7b0fe5a27edd68c1b	 500 0ms GET /keys
+[38;5;6m INFO[0m [03:21:20] a270b00dc54c445ba08e183e37e3651e	 200 0ms GET /.well-known/health
+[38;5;160mERROR[0m [03:21:20] handler error (correlation=cf1746ffdaed418393c1b5a5d187f68d): error.OAuthTokenFetchFailed
+[38;5;6m INFO[0m [03:21:20] cf1746ffdaed418393c1b5a5d187f68d	 500 0ms GET /keys
+[38;5;6m INFO[0m [03:21:21] 2ed9de7da7044908af5c5dcecd75c728	 200 0ms GET /.well-known/health
+[38;5;160mERROR[0m [03:21:21] handler error (correlation=7fbf0e145be24afb9982f94c6bc6711b): error.OAuthTokenFetchFailed
+[38;5;6m INFO[0m [03:21:21] 7fbf0e145be24afb9982f94c6bc6711b	 500 0ms GET /keys
+[38;5;6m INFO[0m [03:21:21] 3f9d276a264144c185b171b4778298bd	 200 0ms GET /.well-known/health
+[38;5;6m INFO[0m [03:21:22] 8827e3cb01f14c97821d86041cb62711	 200 0ms GET /.well-known/health
+[38;5;160mERROR[0m [03:21:22] handler error (correlation=d2761e0016f14bb8b88f13fe495f936f): error.OAuthTokenFetchFailed
+[38;5;6m INFO[0m [03:21:22] d2761e0016f14bb8b88f13fe495f936f	 500 0ms GET /keys
+[38;5;6m INFO[0m [03:21:23] b476216afdc24b1086073e958ccd6063	 200 0ms GET /.well-known/health
+[38;5;160mERROR[0m [03:21:23] handler error (correlation=9c728944cb184f3d87bc07f96899164b): error.OAuthTokenFetchFailed
+[38;5;6m INFO[0m [03:21:23] 9c728944cb184f3d87bc07f96899164b	 500 0ms GET /keys
+[38;5;6m INFO[0m [03:21:24] d6de4bfc668e4983b17c707a1d1e5c1b	 200 0ms GET /.well-known/health
+[38;5;160mERROR[0m [03:21:24] handler error (correlation=8a485767867b4b499ed1ba3a83c70218): error.OAuthTokenFetchFailed
+[38;5;6m INFO[0m [03:21:24] 8a485767867b4b499ed1ba3a83c70218	 500 0ms GET /keys
+[38;5;6m INFO[0m [03:21:25] e1be60cef9f14130bcedbd6c336f708b	 200 0ms GET /.well-known/health
+[38;5;160mERROR[0m [03:21:25] handler error (correlation=5b5a9dcd28c140eeb3d8ef821ec36d5e): error.OAuthTokenFetchFailed
+[38;5;6m INFO[0m [03:21:25] 5b5a9dcd28c140eeb3d8ef821ec36d5e	 500 0ms GET /keys
+[38;5;6m INFO[0m [03:21:26] 03d756c7bb264e5794e090607a81e3da	 200 0ms GET /.well-known/health
+[38;5;160mERROR[0m [03:21:26] handler error (correlation=61891c5d5b7446dc92a5de54b156f4fd): error.OAuthTokenFetchFailed
+[38;5;6m INFO[0m [03:21:26] 61891c5d5b7446dc92a5de54b156f4fd	 500 0ms GET /keys
+[38;5;6m INFO[0m [03:21:26] 255df9049102419690bbe1eb2815172b	 200 0ms GET /.well-known/health
+[38;5;6m INFO[0m [03:21:28] server shutting down
+received shutdown signalreceived shutdown signalreceived shutdown signalovery not asserted
