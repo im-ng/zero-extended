@@ -1,6 +1,6 @@
 # zero-soak report (gate)
 
-generated: 2026-11-23 02:45:27 UTC · build: 24
+generated: 2026-11-23 02:59:09 UTC · build: 25
 framework: zero @ experimental-0.17 (6e2994a8) · https://gitea.pi/ng/zero.git
 
 **FAIL** — 2 services, 1 pass, 1 fail, 0 missing.
@@ -14,14 +14,14 @@ framework: zero @ experimental-0.17 (6e2994a8) · https://gitea.pi/ng/zero.git
 | bytes / request | 13615 |
 | alloc leak | 0 bytes OK |
 | route-match allocs | 0 |
-| route match time | 565.16 ns |
+| route match time | 572.59 ns |
 
 _Dispatch/routing internals — not application throughput._
 
 | Service | Status | Port | Backends | Chaos | Checks | RSS growth | Links | TLS |
 |---|---|---|---|---|---|---|---|---|
-| zero-circuitbreaker | FAIL | 9090 | zero-auth | yes | 3/1 | 4408 KiB | <a href="logs/zero-circuitbreaker.log">log</a> · <a href="logs/zero-circuitbreaker.vmrss.txt">rss</a> | — |
-| zero-ratelimit | PASS | 8080 | postgres | yes | 5/0 | 2740 KiB | <a href="logs/zero-ratelimit.log">log</a> · <a href="logs/zero-ratelimit.vmrss.txt">rss</a> | — |
+| zero-circuitbreaker | FAIL | 9090 | zero-auth | yes | 3/1 | 4700 KiB | <a href="logs/zero-circuitbreaker.log">log</a> · <a href="logs/zero-circuitbreaker.vmrss.txt">rss</a> | — |
+| zero-ratelimit | PASS | 8080 | postgres | yes | 5/0 | 2736 KiB | <a href="logs/zero-ratelimit.log">log</a> · <a href="logs/zero-ratelimit.vmrss.txt">rss</a> | — |
 
 ## Details
 
@@ -31,9 +31,9 @@ _Dispatch/routing internals — not application throughput._
 
 | Metric | Value |
 |---|---|
-| Baseline | 213964 KiB |
-| Overall RSS | 218372 KiB |
-| dRss (growth) | 4408 KiB |
+| Baseline | 214000 KiB |
+| Overall RSS | 218700 KiB |
+| dRss (growth) | 4700 KiB |
 
 | Status | Check | Detail |
 |---|---|---|
@@ -50,9 +50,9 @@ _Dispatch/routing internals — not application throughput._
 
 | Metric | Value |
 |---|---|
-| Baseline | 215992 KiB |
-| Overall RSS | 218732 KiB |
-| dRss (growth) | 2740 KiB |
+| Baseline | 215820 KiB |
+| Overall RSS | 218556 KiB |
+| dRss (growth) | 2736 KiB |
 
 | Status | Check | Detail |
 |---|---|---|
@@ -71,7 +71,7 @@ _Dispatch/routing internals — not application throughput._
 
 | backing | allocs/req | bytes/req | latency/req ns | alloc-time/req ns | dispatch-only/req ns | leaked |
 |---|---|---|---|---|---|---|
-| fallback | 20.00 | 13615 | 60409.9 | 4249.1 | 56160.7 | 0 bytes OK |
+| fallback | 20.00 | 13615 | 59324.0 | 4201.1 | 55122.9 | 0 bytes OK |
 
 top call-sites (alloc-probe-fallback.json):
 
@@ -89,5 +89,5 @@ top call-sites (alloc-probe-fallback.json):
 - registration allocs: 9
 - registration bytes: 625680
 - bytes/route: 625.7
-- route match time: 565.16 ns/req
+- route match time: 572.59 ns/req
 - match-time allocs: 0
