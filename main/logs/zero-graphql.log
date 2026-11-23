@@ -1,102 +1,102 @@
-[38;5;6m INFO[0m [04:22:41] Loaded config from file: ./configs/.env
-[38;5;6m INFO[0m [04:22:41] config overriden ./configs/.dev.env file not found.
-[38;5;6m INFO[0m [04:22:42] generating database connection string for postgres
-[38;5;6m INFO[0m [04:22:42] connected to postgres user to postgres database at '172.18.0.8:5432'
-[38;5;8mDEBUG[0m [04:22:42] redis is disabled, as redis host is not provided.
-[38;5;8mDEBUG[0m [04:22:42] file store is disabled, as FILE_STORE_ROOT is not provided.
-[38;5;8mDEBUG[0m [04:22:42] sqlite is disabled, as sqlite path is not provided.
-[38;5;8mDEBUG[0m [04:22:42] clickhouse is disabled, as CLICKHOUSE_URL is not provided.
-[38;5;8mDEBUG[0m [04:22:42] time-series is disabled, as INFLUXDB_URL is not provided.
-[38;5;8mDEBUG[0m [04:22:42] opentsdb is disabled, as OPENTSDB_URL is not provided.
-[38;5;8mDEBUG[0m [04:22:42] search is disabled, as SOLR_URL is not provided.
-[38;5;8mDEBUG[0m [04:22:42] nosql is disabled, as CONTACT_POINTS are not provided.
-[38;5;8mDEBUG[0m [04:22:42] arangodb is disabled, as ARANGO_HOST is not provided.
-[38;5;8mDEBUG[0m [04:22:42] graph is disabled, as DGRAPH_URL is not provided.
-[38;5;8mDEBUG[0m [04:22:42] pubsub is disabled, as pubsub mode is not provided.
-[38;5;6m INFO[0m [04:22:42] container is created
-[38;5;6m INFO[0m [04:22:42] start app pid 5335
-[38;5;6m INFO[0m [04:22:42] no authentication mode found and disabled.
-[38;5;6m INFO[0m [04:22:42] migration table created
-[38;5;6m INFO[0m [04:22:42] 1760947200: migration completed  
-[38;5;6m INFO[0m [04:22:42] registered static files from directory ./static
-[38;5;8mDEBUG[0m [04:22:42] metrics server is initialized
-[38;5;8mDEBUG[0m [04:22:42] metrics server started
+[38;5;6m INFO[0m [05:05:15] Loaded config from file: ./configs/.env
+[38;5;6m INFO[0m [05:05:15] config overriden ./configs/.dev.env file not found.
+[38;5;6m INFO[0m [05:05:17] generating database connection string for postgres
+[38;5;6m INFO[0m [05:05:17] connected to postgres user to postgres database at '172.18.0.9:5432'
+[38;5;8mDEBUG[0m [05:05:17] redis is disabled, as redis host is not provided.
+[38;5;8mDEBUG[0m [05:05:17] file store is disabled, as FILE_STORE_ROOT is not provided.
+[38;5;8mDEBUG[0m [05:05:17] sqlite is disabled, as sqlite path is not provided.
+[38;5;8mDEBUG[0m [05:05:17] clickhouse is disabled, as CLICKHOUSE_URL is not provided.
+[38;5;8mDEBUG[0m [05:05:17] time-series is disabled, as INFLUXDB_URL is not provided.
+[38;5;8mDEBUG[0m [05:05:17] opentsdb is disabled, as OPENTSDB_URL is not provided.
+[38;5;8mDEBUG[0m [05:05:17] search is disabled, as SOLR_URL is not provided.
+[38;5;8mDEBUG[0m [05:05:17] nosql is disabled, as CONTACT_POINTS are not provided.
+[38;5;8mDEBUG[0m [05:05:17] arangodb is disabled, as ARANGO_HOST is not provided.
+[38;5;8mDEBUG[0m [05:05:17] graph is disabled, as DGRAPH_URL is not provided.
+[38;5;8mDEBUG[0m [05:05:17] pubsub is disabled, as pubsub mode is not provided.
+[38;5;6m INFO[0m [05:05:17] container is created
+[38;5;6m INFO[0m [05:05:17] start app pid 5304
+[38;5;6m INFO[0m [05:05:17] no authentication mode found and disabled.
+[38;5;6m INFO[0m [05:05:17] migration table created
+[38;5;6m INFO[0m [05:05:17] 1760947200: migration completed  
+[38;5;6m INFO[0m [05:05:17] registered static files from directory ./static
+[38;5;8mDEBUG[0m [05:05:17] metrics server is initialized
+[38;5;8mDEBUG[0m [05:05:17] metrics server started
 error: AddressInUse
 /drone/src/zero/examples/zero-graphql/zig-pkg/httpz-0.0.17-PNVzrGMYCQDr8ZuCn_1Cz75ZnVcg46JlYk66_ARWR_qa/src/posix.zig:258:27: 0x1467051 in bind (httpz.zig)
-[38;5;6m INFO[0m [04:22:43] Starting server on port: 8080
+[38;5;6m INFO[0m [05:05:17] Starting server on port: 8080
             .ADDRINUSE => return error.AddressInUse,
                           ^
 /drone/src/zero/examples/zero-graphql/zig-pkg/httpz-0.0.17-PNVzrGMYCQDr8ZuCn_1Cz75ZnVcg46JlYk66_ARWR_qa/src/httpz.zig:390:17: 0x152230e in listen (httpz.zig)
                 try posix.bind(listener, &address.any, socklen);
                 ^
-[38;5;6m INFO[0m [04:22:43] 33639785f66d447e9a8c9d22a44651c9	 200 0ms GET /.well-known/health
-[38;5;6m INFO[0m [04:22:43] 5e00675dbb8e4dcb9430ba4424d5196a	 200 1ms POST /graphql
-[38;5;6m INFO[0m [04:22:43] a9c47d886a864a358ac6718fe45d88f8	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:43] a1066e810c184efcb0d86b15ea961910	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:43] 8f7dd6210386404cba0abd7b4c07905b	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:44] 212b48e1f0564dbc841f5545a27639c3	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:44] d4b83d3e7b33454bbbdeff34e856c0e8	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:44] a3c984b9b6a34c69afde6b9cd5a707d1	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:44] 99a407aa45524bf29942a2e2d2cc65e3	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:44] 4e721dcc80864a7db1c078372d461f97	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:45] b79b57bfd1aa42b19556352bb26add71	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:45] 66ecf5038f7d4099abf8a72e1547d49a	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:45] 1d18d2b451344c67b6b6e094d8e8c9f2	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:45] 5405faa6535c41f08571fffc99158a1c	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:46] ce418d29b0ee4b86ac43233f26b293bc	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:46] 867f546ffc0f42dca17f6cab65b34176	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:46] db5fa3aa3c4047c197076f05b5930ea4	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:46] 4da5493acc934e24ada6e5fb156512e5	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:46] 3c6b9e7c5d374238baf879c9252cb371	 200 0ms POST /graphql
-... [8 lines of load/request noise omitted] ...
+[38;5;6m INFO[0m [05:05:17] 3d287dda29c04df6a18ea90cb43f87df	 200 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:05:18] 2a2a9169d25b4d0292ac29ae2fb3ef4a	 200 1ms POST /graphql
+[38;5;6m INFO[0m [05:05:18] 27182042b7ae4440be8cd64007363c32	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:18] 73fde9568014428c810916199910641b	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:18] 0474b062b0ce4ae1852a015bfd8dc3e9	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:18] dcb174dfec69486a8235c600053cc2a2	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:19] 6b42e43287cf4d8296a34ce201110fd7	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:19] c0b7b523955a46a2a29d603647df7715	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:19] b8d19c7e0ed14389bed6a32c0b8c0d7d	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:19] 350d4c4e48284e338e828cd7e98137be	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:19] 36cfccc475e24424994a11b64e755581	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:20] 998e885e979e4a488f625284302267f6	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:20] 0ed21410359f4f529d9f2aaae3aad964	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:20] 6dba5629638645d6b1494c8e4d2723b5	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:20] 234955552f6342fa8cdeec07788d079a	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:21] 011240929fe241bb944fd6b726df1aed	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:21] a10c0ee9327b4491bb70c22bc641fb5b	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:21] 34679d529b51451481ecc5fb8e60f86b	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:21] ccb36a514ab34cfeb6964f947d6f68b6	 200 0ms POST /graphql
+... [9 lines of load/request noise omitted] ...
 ...
-[38;5;6m INFO[0m [04:22:48] 06b65c82e69e456391504dac7c2d4577	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:49] fd585d9b04b548c1a9678d4b5df0ca36	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:49] 93723119ff234f43af426a1579440005	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:49] 58fecbf651da41e4b60c8ca08f327801	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:49] 5c2422f391d34ea88714cabf0943359e	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:49] d562561be7ff4f91a85864f9cc562e75	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:50] c690239378314ed9938a4972660d5c36	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:50] f2f52cf9f69e4520bc71a366dfd652ba	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:50] c23453be07464b2d93a98488b01a666c	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:50] 0d97d87969a34261989b2f45a1d0da3e	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:51] 3791c4e2ab26473d8c5e140fa4e9ffdb	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:51] 2e0a6adfe9bf4336b9f9f16f82f9d248	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:51] 88cab95114504c8ebe658fc3602d4fe3	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:51] f618dd20e27a42d1a27e443758cc3380	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:51] 181be34e736c4fa4abbb34be456fdd44	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:52] 5216d70561324e72baeaa0e88d6c44cb	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:52] b1de54c280ad4751934320f1aa032178	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:52] e4835d10f16e4fa48ab366a699b1f407	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:52] e01cc788e7dd43ae975433a91df6137c	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:52] f6ab35ad28ec4151a680847a4963641d	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:53] 19d03ed0cdf746009f3ce62b838e9601	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:53] e8f362c7df81426f997001791dde27ec	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:53] 37d8745ba4394aa789bf40dbe4a4db01	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:53] 13cd010b878f459cbe02394507bbf3c2	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:54] 451a415376d2419fb0575c7730cda43d	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:54] d1baa3f7353e4491aaa3558ab9f45574	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:54] edeb96b57c9b4bd2865532de1a1dd44e	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:54] 4aea6d6bdd4e4306bda2535e8d801e21	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:54] a797922c18c14da59fd37bd9246d5928	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:55] 0b0de7f72b36489a9035c3eb2a6b60eb	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:55] f957e9af09d8472394d0606b933e31fe	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:55] 4e22065b8f3f40e98410498e776aee7a	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:55] 9f394c9123034f10afa5cfeb0c8429b9	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:55] a891eacae7d945a1ad3d87db4fefa043	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:56] 2411d997b6a74e878ef2c33888bec627	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:56] 800cab6bfed44d1ba303622d69e2b4ff	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:56] 1bf47e49dd9146d4abb0c0c993389016	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:56] 3549d17b3bae4b498c988c17d029ccde	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:57] 19bee8c9969e4f9982e3ab08795151bb	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:57] 68d9622ec8424984b713d5c5fe2c9e38	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:57] 6a0ab9e7db9c48eab2995a3c3894c5a4	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:57] 4007cc09685947ed9f8ce6fd3aaba935	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:57] e462eecfec964fd385e4ea1f6c92c8cf	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:59] 1c31af50eac542ce87529ec0d626b31b	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:22:59] d37af073399e4348858ed17011f8549c	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:23:02] ca7616d9c5044966b5d8485b45dc3276	 200 0ms GET /.well-known/health
-[38;5;6m INFO[0m [04:23:03] ad0a866048664cc2829ae0934a12cd1e	 200 0ms GET /.well-known/health
-[38;5;6m INFO[0m [04:23:03] c32708e1dcaa42278713e47b2cf11e95	 200 0ms POST /graphql
-[38;5;6m INFO[0m [04:23:03] server shutting down
+[38;5;6m INFO[0m [05:05:23] c9721d50b18140c9a66ec0a7c7fc351a	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:24] e2d83df65ab447a9aa6f8f8ddd58112b	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:24] 92029a06596e4acf811f7a4c1314e1a2	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:24] 8852b596cacf4e63af7025d1030c8d71	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:24] b14211b6d45e4e11beaacbf0709ac3b8	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:24] a97febfc2a4748c5af257d0f4c75fac6	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:25] 70e3d1a9027e48cbb6934e334aa1e26c	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:25] a86e6bf7d390405e8d8516a49f35ca9e	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:25] 83bdbd2132b941c08e4b08deb95e6efe	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:25] 68a2482a95fc4ac7b76c238e3142a0a4	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:26] b93cf9afc0da40938f97790b2486291b	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:26] 09c2ffb3a73040b79eed727fd2b00b99	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:26] 91a1870f684348a3a57ea3b0a0231426	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:26] 3c6627913a69451c894c3d187ec20e3c	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:26] 9368727ac8d04853b43bc4d243a9dc9d	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:27] 4b515e4319c3449db5190a826179e50c	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:27] e3204b8b2b604c638e6554a19634323d	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:27] 4ba19aa133d14ec9af1963e24f30c165	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:27] 4533b049bc404835a360a845b94cf8e7	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:27] 03219b49c5d0480dac0212dff4915321	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:28] ecc5fa0e406840e7a8530f0be430a41f	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:28] 75bb8003d48840398d8e9ac2eafeac64	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:28] e6c0263f856d476aad4dc904421c7f89	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:28] 61b841776d3a400e848f90144a62312d	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:29] ef468b0a64284596acd627f3a491fd24	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:29] 3f9af0d94dcf4cd9a537de0971b1eb9e	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:29] 0d4a2e8c9ce641ed85884cb8f440721d	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:29] 9c4677d2df414cec8020b92a07a444e2	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:29] 158b4516478c49be899ff1fa7171693b	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:30] 6e2f61e512704f4d9d8af0b6f8896737	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:30] 61ae9d81797e4fd79901694b26b85733	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:30] 53748ad0cbff40caa7d214cd6e28e31f	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:30] 8870c6fde52240458fcbcb535d4d7191	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:30] 9ab03f594737419d8b3637c86297e3e4	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:31] 93e1132e12a244cab7cf2f673030087f	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:31] 1404db138c4d47fbaf1bd9f290f0b5ad	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:31] 9c634ce588cc498f842017eae5b3f5c7	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:31] fa7612fe3bdf48f2baa85b873b08a430	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:32] 5297c3949a10410ca63ba75a0ea24839	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:32] 8fb14c24ff174e7cb03ec0bd7937e1ed	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:32] b77b10a9b8b6480d95394d2cb439f1dd	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:32] 6c93a542f0d04f4ea58d7c749c7b5d75	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:32] 60ad8abe54d34578be226055de7c3f00	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:34] 38b6974f414c4581a62f5a280f81bf2a	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:34] 9dca9e5d1c924b2c869f22a7433c9eb8	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:37] 22ab21b4722a41f391a7ea652443873b	 200 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:05:38] 30c09931ab7840a688d4d3f28f035eb9	 200 0ms GET /.well-known/health
+[38;5;6m INFO[0m [05:05:38] b1cc0c3cca8d4e7085b8600776f27ecc	 200 0ms POST /graphql
+[38;5;6m INFO[0m [05:05:38] server shutting down
 received shutdown signalreceived shutdown signalCannot stop server, .listen() was never called
