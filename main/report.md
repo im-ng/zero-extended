@@ -1,6 +1,6 @@
 # zero-soak report (gate)
 
-generated: 2026-11-25 03:10:47 UTC · build: 31
+generated: 2026-11-25 04:18:30 UTC · build: 32
 framework: zero @ experimental-0.17 (717aff42) · https://gitea.pi/ng/zero.git
 
 **PASS** — 13 services, 13 pass, 0 fail, 0 missing.
@@ -14,25 +14,25 @@ framework: zero @ experimental-0.17 (717aff42) · https://gitea.pi/ng/zero.git
 | bytes / request | 13615 |
 | alloc leak | 0 bytes OK |
 | route-match allocs | 0 |
-| route match time | 596.73 ns |
+| route match time | 550.87 ns |
 
 _Dispatch/routing internals — not application throughput._
 
 | Service | Status | Port | Backends | Chaos | Checks | RSS growth | Links | TLS |
 |---|---|---|---|---|---|---|---|---|
 | zero-auth | PASS | 8080 | — | no | 2/0 | 3016 KiB | <a href="logs/zero-auth.log">log</a> · <a href="logs/zero-auth.vmrss.txt">rss</a> | — |
-| zero-autocrud | PASS | 8082 | — | no | 2/0 | 2656 KiB | <a href="logs/zero-autocrud.log">log</a> · <a href="logs/zero-autocrud.vmrss.txt">rss</a> | — |
-| zero-basic-secure | PASS | 8080 | postgres | yes | 4/0 | 3860 KiB | <a href="logs/zero-basic-secure.log">log</a> · <a href="logs/zero-basic-secure.vmrss.txt">rss</a> | 🔒 |
-| zero-duckdb | PASS | 8083 | — | no | 2/0 | 10908 KiB | <a href="logs/zero-duckdb.log">log</a> · <a href="logs/zero-duckdb.vmrss.txt">rss</a> | — |
-| zero-graphql | PASS | 8080 | postgres | yes | 5/0 | 51416 KiB | <a href="logs/zero-graphql.log">log</a> · <a href="logs/zero-graphql.vmrss.txt">rss</a> | — |
-| zero-nosql-secure | PASS | 8080 | cassandra | no | 2/0 | 2404 KiB | <a href="logs/zero-nosql-secure.log">log</a> · <a href="logs/zero-nosql-secure.vmrss.txt">rss</a> | 🔒 |
-| zero-pubsub-subscriber | PASS | 8080 | nats | no | 3/0 | 2240 KiB | <a href="logs/zero-pubsub-subscriber.log">log</a> · <a href="logs/zero-pubsub-subscriber.vmrss.txt">rss</a> | — |
-| zero-ratelimit | PASS | 8080 | postgres | yes | 5/0 | 2624 KiB | <a href="logs/zero-ratelimit.log">log</a> · <a href="logs/zero-ratelimit.vmrss.txt">rss</a> | — |
-| zero-search | PASS | 8080 | solr | no | 2/0 | 7716 KiB | <a href="logs/zero-search.log">log</a> · <a href="logs/zero-search.vmrss.txt">rss</a> | — |
-| zero-sql-secure | PASS | 8080 | mysql | yes | 4/0 | 4220 KiB | <a href="logs/zero-sql-secure.log">log</a> · <a href="logs/zero-sql-secure.vmrss.txt">rss</a> | — |
+| zero-autocrud | PASS | 8082 | — | no | 2/0 | 5040 KiB | <a href="logs/zero-autocrud.log">log</a> · <a href="logs/zero-autocrud.vmrss.txt">rss</a> | — |
+| zero-basic-secure | PASS | 8080 | postgres | yes | 4/0 | 3864 KiB | <a href="logs/zero-basic-secure.log">log</a> · <a href="logs/zero-basic-secure.vmrss.txt">rss</a> | 🔒 |
+| zero-duckdb | PASS | 8083 | — | no | 2/0 | 10932 KiB | <a href="logs/zero-duckdb.log">log</a> · <a href="logs/zero-duckdb.vmrss.txt">rss</a> | — |
+| zero-graphql | PASS | 8080 | postgres | yes | 5/0 | 2328 KiB | <a href="logs/zero-graphql.log">log</a> · <a href="logs/zero-graphql.vmrss.txt">rss</a> | — |
+| zero-nosql-secure | PASS | 8080 | cassandra | no | 2/0 | 2468 KiB | <a href="logs/zero-nosql-secure.log">log</a> · <a href="logs/zero-nosql-secure.vmrss.txt">rss</a> | 🔒 |
+| zero-pubsub-subscriber | PASS | 8080 | nats | no | 3/0 | 4632 KiB | <a href="logs/zero-pubsub-subscriber.log">log</a> · <a href="logs/zero-pubsub-subscriber.vmrss.txt">rss</a> | — |
+| zero-ratelimit | PASS | 8080 | postgres | yes | 5/0 | 10760 KiB | <a href="logs/zero-ratelimit.log">log</a> · <a href="logs/zero-ratelimit.vmrss.txt">rss</a> | — |
+| zero-search | PASS | 8080 | solr | no | 2/0 | 5328 KiB | <a href="logs/zero-search.log">log</a> · <a href="logs/zero-search.vmrss.txt">rss</a> | — |
+| zero-sql-secure | PASS | 8080 | mysql | yes | 4/0 | 4256 KiB | <a href="logs/zero-sql-secure.log">log</a> · <a href="logs/zero-sql-secure.vmrss.txt">rss</a> | — |
 | zero-sqlite | PASS | 8081 | — | no | 2/0 | 5116 KiB | <a href="logs/zero-sqlite.log">log</a> · <a href="logs/zero-sqlite.vmrss.txt">rss</a> | — |
 | zero-timeseries | PASS | 8080 | influx | no | 2/0 | 1260 KiB | <a href="logs/zero-timeseries.log">log</a> · <a href="logs/zero-timeseries.vmrss.txt">rss</a> | — |
-| zero-ws-client | PASS | 8080 | — | no | 2/0 | 100 KiB | <a href="logs/zero-ws-client.log">log</a> · <a href="logs/zero-ws-client.vmrss.txt">rss</a> | 🔒 |
+| zero-ws-client | PASS | 8080 | — | no | 2/0 | 88 KiB | <a href="logs/zero-ws-client.log">log</a> · <a href="logs/zero-ws-client.vmrss.txt">rss</a> | 🔒 |
 
 ## Details
 
@@ -42,8 +42,8 @@ _Dispatch/routing internals — not application throughput._
 
 | Metric | Value |
 |---|---|
-| Baseline | 211876 KiB |
-| Overall RSS | 214892 KiB |
+| Baseline | 212256 KiB |
+| Overall RSS | 215272 KiB |
 | dRss (growth) | 3016 KiB |
 
 | Status | Check | Detail |
@@ -59,9 +59,9 @@ _Dispatch/routing internals — not application throughput._
 
 | Metric | Value |
 |---|---|
-| Baseline | 266336 KiB |
-| Overall RSS | 268992 KiB |
-| dRss (growth) | 2656 KiB |
+| Baseline | 266368 KiB |
+| Overall RSS | 271408 KiB |
+| dRss (growth) | 5040 KiB |
 
 | Status | Check | Detail |
 |---|---|---|
@@ -76,9 +76,9 @@ _Dispatch/routing internals — not application throughput._
 
 | Metric | Value |
 |---|---|
-| Baseline | 220488 KiB |
-| Overall RSS | 224348 KiB |
-| dRss (growth) | 3860 KiB |
+| Baseline | 220588 KiB |
+| Overall RSS | 224452 KiB |
+| dRss (growth) | 3864 KiB |
 
 | Status | Check | Detail |
 |---|---|---|
@@ -95,9 +95,9 @@ _Dispatch/routing internals — not application throughput._
 
 | Metric | Value |
 |---|---|
-| Baseline | 248628 KiB |
-| Overall RSS | 259536 KiB |
-| dRss (growth) | 10908 KiB |
+| Baseline | 249284 KiB |
+| Overall RSS | 260216 KiB |
+| dRss (growth) | 10932 KiB |
 
 | Status | Check | Detail |
 |---|---|---|
@@ -112,9 +112,9 @@ _Dispatch/routing internals — not application throughput._
 
 | Metric | Value |
 |---|---|
-| Baseline | 177712 KiB |
-| Overall RSS | 229128 KiB |
-| dRss (growth) | 51416 KiB |
+| Baseline | 226684 KiB |
+| Overall RSS | 229012 KiB |
+| dRss (growth) | 2328 KiB |
 
 | Status | Check | Detail |
 |---|---|---|
@@ -132,9 +132,9 @@ _Dispatch/routing internals — not application throughput._
 
 | Metric | Value |
 |---|---|
-| Baseline | 213988 KiB |
-| Overall RSS | 216392 KiB |
-| dRss (growth) | 2404 KiB |
+| Baseline | 213516 KiB |
+| Overall RSS | 215984 KiB |
+| dRss (growth) | 2468 KiB |
 
 | Status | Check | Detail |
 |---|---|---|
@@ -149,9 +149,9 @@ _Dispatch/routing internals — not application throughput._
 
 | Metric | Value |
 |---|---|
-| Baseline | 309196 KiB |
-| Overall RSS | 311436 KiB |
-| dRss (growth) | 2240 KiB |
+| Baseline | 309176 KiB |
+| Overall RSS | 313808 KiB |
+| dRss (growth) | 4632 KiB |
 
 | Status | Check | Detail |
 |---|---|---|
@@ -167,9 +167,9 @@ _Dispatch/routing internals — not application throughput._
 
 | Metric | Value |
 |---|---|
-| Baseline | 231212 KiB |
-| Overall RSS | 233836 KiB |
-| dRss (growth) | 2624 KiB |
+| Baseline | 225040 KiB |
+| Overall RSS | 235800 KiB |
+| dRss (growth) | 10760 KiB |
 
 | Status | Check | Detail |
 |---|---|---|
@@ -187,9 +187,9 @@ _Dispatch/routing internals — not application throughput._
 
 | Metric | Value |
 |---|---|
-| Baseline | 212856 KiB |
-| Overall RSS | 220572 KiB |
-| dRss (growth) | 7716 KiB |
+| Baseline | 212624 KiB |
+| Overall RSS | 217952 KiB |
+| dRss (growth) | 5328 KiB |
 
 | Status | Check | Detail |
 |---|---|---|
@@ -204,9 +204,9 @@ _Dispatch/routing internals — not application throughput._
 
 | Metric | Value |
 |---|---|
-| Baseline | 214280 KiB |
-| Overall RSS | 218500 KiB |
-| dRss (growth) | 4220 KiB |
+| Baseline | 214588 KiB |
+| Overall RSS | 218844 KiB |
+| dRss (growth) | 4256 KiB |
 
 | Status | Check | Detail |
 |---|---|---|
@@ -223,8 +223,8 @@ _Dispatch/routing internals — not application throughput._
 
 | Metric | Value |
 |---|---|
-| Baseline | 219280 KiB |
-| Overall RSS | 224396 KiB |
+| Baseline | 219300 KiB |
+| Overall RSS | 224416 KiB |
 | dRss (growth) | 5116 KiB |
 
 | Status | Check | Detail |
@@ -240,8 +240,8 @@ _Dispatch/routing internals — not application throughput._
 
 | Metric | Value |
 |---|---|
-| Baseline | 214516 KiB |
-| Overall RSS | 215776 KiB |
+| Baseline | 214440 KiB |
+| Overall RSS | 215700 KiB |
 | dRss (growth) | 1260 KiB |
 
 | Status | Check | Detail |
@@ -257,9 +257,9 @@ _Dispatch/routing internals — not application throughput._
 
 | Metric | Value |
 |---|---|
-| Baseline | 229768 KiB |
-| Overall RSS | 229868 KiB |
-| dRss (growth) | 100 KiB |
+| Baseline | 227620 KiB |
+| Overall RSS | 227708 KiB |
+| dRss (growth) | 88 KiB |
 
 | Status | Check | Detail |
 |---|---|---|
@@ -275,7 +275,7 @@ _Dispatch/routing internals — not application throughput._
 
 | backing | allocs/req | bytes/req | latency/req ns | alloc-time/req ns | dispatch-only/req ns | leaked |
 |---|---|---|---|---|---|---|
-| fallback | 20.00 | 13615 | 60632.8 | 4278.0 | 56354.8 | 0 bytes OK |
+| fallback | 20.00 | 13615 | 61666.1 | 4269.2 | 57396.9 | 0 bytes OK |
 
 top call-sites (alloc-probe-fallback.json):
 
@@ -293,5 +293,5 @@ top call-sites (alloc-probe-fallback.json):
 - registration allocs: 9
 - registration bytes: 625680
 - bytes/route: 625.7
-- route match time: 596.73 ns/req
+- route match time: 550.87 ns/req
 - match-time allocs: 0

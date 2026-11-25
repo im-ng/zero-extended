@@ -1,102 +1,102 @@
-[38;5;6m INFO[0m [03:05:00] Loaded config from file: ./configs/.env
-[38;5;6m INFO[0m [03:05:00] config loaded from: ./configs/.dev.env
-[38;5;8mDEBUG[0m [03:05:00] database is disabled, as dialect is not provided.
-[38;5;8mDEBUG[0m [03:05:00] redis is disabled, as redis host is not provided.
-[38;5;6m INFO[0m [03:05:00] connected to local file store
-[38;5;8mDEBUG[0m [03:05:00] sqlite is disabled, as sqlite path is not provided.
-[38;5;8mDEBUG[0m [03:05:00] clickhouse is disabled, as CLICKHOUSE_URL is not provided.
-[38;5;8mDEBUG[0m [03:05:00] time-series is disabled, as INFLUXDB_URL is not provided.
-[38;5;8mDEBUG[0m [03:05:00] opentsdb is disabled, as OPENTSDB_URL is not provided.
-[38;5;8mDEBUG[0m [03:05:00] search is disabled, as SOLR_URL is not provided.
-[38;5;6m INFO[0m [03:05:00] connected to cassandra at 'cassandra:9042' (keyspace 'demo') (tls)
-[38;5;8mDEBUG[0m [03:05:00] arangodb is disabled, as ARANGO_HOST is not provided.
-[38;5;8mDEBUG[0m [03:05:00] graph is disabled, as DGRAPH_URL is not provided.
-[38;5;8mDEBUG[0m [03:05:00] pubsub is disabled, as pubsub mode is not provided.
-[38;5;6m INFO[0m [03:05:00] container is created
-[38;5;6m INFO[0m [03:05:00] nosql-example-overriden app pid 4143
-[38;5;6m INFO[0m [03:05:00] no authentication mode found and disabled.
-[38;5;160mERROR[0m [03:05:20] migration execution error
-[38;5;6m INFO[0m [03:05:20] error.CassandraConnectionFailed
-[38;5;6m INFO[0m [03:05:20] registered static files from directory ./static
-[38;5;8mDEBUG[0m [03:05:20] metrics server is initialized
-[38;5;8mDEBUG[0m [03:05:20] metrics server started
-[38;5;6m INFO[0m [03:05:20] Starting server on port: 8080
-[38;5;6m INFO[0m [03:05:20] 492ac9a096c24dd3994f5381a9436024	 200 0ms GET /.well-known/health
-[38;5;6m INFO[0m [03:05:21] 84a8e88a18574cba95c9760125da58ea	 200 0ms GET /
-[38;5;6m INFO[0m [03:05:21] 708bc9ec60a54438bab8adc862937ff0	 200 0ms GET /
-[38;5;6m INFO[0m [03:05:21] 55ee30eeb1744c3f9c83f71ba354b0b1	 200 0ms GET /
-[38;5;6m INFO[0m [03:05:21] 5ae50ea05ca841afb419626cba01e115	 200 0ms GET /
-[38;5;6m INFO[0m [03:05:21] 61376bde96314645b0bb924a65fc19a5	 200 0ms GET /
-[38;5;6m INFO[0m [03:05:21] 2d843c8ba5eb4751bb1fd19eb50927a5	 200 0ms GET /
-[38;5;6m INFO[0m [03:05:21] f14456d1a2b64bcc973c9236dd5aaf6f	 200 0ms GET /
-[38;5;6m INFO[0m [03:05:21] b023a72d323b44d2baf8fe697296d77e	 200 0ms GET /
-[38;5;6m INFO[0m [03:05:21] 4b227dee4875446f8d22242cbde7728a	 200 0ms GET /
-[38;5;6m INFO[0m [03:05:21] 378a24b5138d45c9b024d7b4dc682293	 200 0ms GET /
-[38;5;6m INFO[0m [03:05:21] 8f3c99eab6d54fa684d091843baefe51	 200 0ms GET /
-[38;5;6m INFO[0m [03:05:21] 81808fefa6a94086b6b1e5612b2f0c9e	 200 0ms GET /
-[38;5;6m INFO[0m [03:05:21] 253de79078c4480fa4dec258d86a7f12	 200 0ms GET /
-[38;5;6m INFO[0m [03:05:21] b245403a5a8f4882b3f882ff89ee1442	 200 0ms GET /
-[38;5;6m INFO[0m [03:05:21] 7abc2a93336f44eab4cc8b1575c1cd11	 200 0ms GET /
-[38;5;6m INFO[0m [03:05:21] 4c0a2bab14dd4a87bba9ec6d2c743c9b	 200 0ms GET /
-[38;5;6m INFO[0m [03:05:21] ae1504f4c8574e2384b0c1677f0a7c98	 200 0ms GET /
-[38;5;6m INFO[0m [03:05:21] 7fd9652727f74e1d8f44940a5a6dd173	 200 0ms GET /
-[38;5;6m INFO[0m [03:05:21] a00adcef787c49e2abef1a34bbe7906d	 200 0ms GET /
-[38;5;6m INFO[0m [03:05:21] bd857b0c15a54ff1b2ec190bf175488c	 200 0ms GET /
-[38;5;6m INFO[0m [03:05:21] e53c2601dba84e73bae92c153894be63	 200 0ms GET /
-[38;5;6m INFO[0m [03:05:21] 48147950fd0948bf84432056649e23d0	 200 0ms GET /
-[38;5;6m INFO[0m [03:05:21] 26997aaa66e544c48fcf35f78bed228a	 200 0ms GET /
-[38;5;6m INFO[0m [03:05:21] 7a98a9a8b9374bd181360067bba67949	 200 0ms GET /
-[38;5;6m INFO[0m [03:05:21] cbb76d7b82b24446970feb2336a51249	 200 0ms GET /
-[38;5;6m INFO[0m [03:05:21] dc8ca07f6a9f474aaaa7828ef8041312	 200 0ms GET /
-... [142 lines of load/request noise omitted] ...
+[38;5;6m INFO[0m [04:12:43] Loaded config from file: ./configs/.env
+[38;5;6m INFO[0m [04:12:43] config loaded from: ./configs/.dev.env
+[38;5;8mDEBUG[0m [04:12:43] database is disabled, as dialect is not provided.
+[38;5;8mDEBUG[0m [04:12:43] redis is disabled, as redis host is not provided.
+[38;5;6m INFO[0m [04:12:43] connected to local file store
+[38;5;8mDEBUG[0m [04:12:43] sqlite is disabled, as sqlite path is not provided.
+[38;5;8mDEBUG[0m [04:12:43] clickhouse is disabled, as CLICKHOUSE_URL is not provided.
+[38;5;8mDEBUG[0m [04:12:43] time-series is disabled, as INFLUXDB_URL is not provided.
+[38;5;8mDEBUG[0m [04:12:43] opentsdb is disabled, as OPENTSDB_URL is not provided.
+[38;5;8mDEBUG[0m [04:12:43] search is disabled, as SOLR_URL is not provided.
+[38;5;6m INFO[0m [04:12:43] connected to cassandra at 'cassandra:9042' (keyspace 'demo') (tls)
+[38;5;8mDEBUG[0m [04:12:43] arangodb is disabled, as ARANGO_HOST is not provided.
+[38;5;8mDEBUG[0m [04:12:43] graph is disabled, as DGRAPH_URL is not provided.
+[38;5;8mDEBUG[0m [04:12:43] pubsub is disabled, as pubsub mode is not provided.
+[38;5;6m INFO[0m [04:12:43] container is created
+[38;5;6m INFO[0m [04:12:43] nosql-example-overriden app pid 4138
+[38;5;6m INFO[0m [04:12:43] no authentication mode found and disabled.
+[38;5;160mERROR[0m [04:13:03] migration execution error
+[38;5;6m INFO[0m [04:13:03] error.CassandraConnectionFailed
+[38;5;6m INFO[0m [04:13:03] registered static files from directory ./static
+[38;5;8mDEBUG[0m [04:13:03] metrics server is initialized
+[38;5;8mDEBUG[0m [04:13:03] metrics server started
+[38;5;6m INFO[0m [04:13:03] Starting server on port: 8080
+[38;5;6m INFO[0m [04:13:03] 7231014a99a2403e8d23c6c6dae0bcf6	 200 0ms GET /.well-known/health
+[38;5;6m INFO[0m [04:13:03] 82ad8adcb4214c62af219392825509d6	 200 0ms GET /
+[38;5;6m INFO[0m [04:13:03] 02f6c3853cf84e1c86cd4db022c016f1	 200 0ms GET /
+[38;5;6m INFO[0m [04:13:03] b4974fe5ecd44359a4f0be48e1b8b6a1	 200 0ms GET /
+[38;5;6m INFO[0m [04:13:03] 6f5bac8b965f45aa86937227fb510cb6	 200 0ms GET /
+[38;5;6m INFO[0m [04:13:03] 107ced87cec34b26bb4f205c69c4d795	 200 0ms GET /
+[38;5;6m INFO[0m [04:13:03] e7b0fb501328421992eedb05151de785	 200 0ms GET /
+[38;5;6m INFO[0m [04:13:03] 706a3ba19770494e97735b4a9a92f8f8	 200 0ms GET /
+[38;5;6m INFO[0m [04:13:03] 5d16fa522a064974974fa2140af2cc82	 200 0ms GET /
+[38;5;6m INFO[0m [04:13:03] 848db928f3104a4ba854cf8c055bd8b3	 200 0ms GET /
+[38;5;6m INFO[0m [04:13:03] e23bf34413b143aa903fafb2fd525ae9	 200 0ms GET /
+[38;5;6m INFO[0m [04:13:03] 8232cfaecb15428daabe2e7d68d90885	 200 0ms GET /
+[38;5;6m INFO[0m [04:13:03] 7a24e87c57f6487db9b4cd51aa0d1b8d	 200 0ms GET /
+[38;5;6m INFO[0m [04:13:03] d0a7a30b187341ae8f2f1c7e5d98ab32	 200 0ms GET /
+[38;5;6m INFO[0m [04:13:03] c4f33855a1fb42e8952da5b6a0755157	 200 0ms GET /
+[38;5;6m INFO[0m [04:13:03] 87bb0955a6774f228fd75262d0ef8a2e	 200 0ms GET /
+[38;5;6m INFO[0m [04:13:03] 7563ba24f3ce4e2bb8c43c65c3d53165	 200 0ms GET /
+[38;5;6m INFO[0m [04:13:03] 5868032b56bc469aab9f920dffcb9a1a	 200 0ms GET /
+[38;5;6m INFO[0m [04:13:03] 67c52fb9e79d4efdba758b04600bbfcb	 200 0ms GET /
+[38;5;6m INFO[0m [04:13:03] 743b67369a3d4415a93905fa7ce0a754	 200 0ms GET /
+[38;5;6m INFO[0m [04:13:03] 39b616c303424eda96d2f41264398149	 200 0ms GET /
+[38;5;6m INFO[0m [04:13:03] 69f03331f485490aa9795f15d50aef2f	 200 0ms GET /
+[38;5;6m INFO[0m [04:13:03] 55084da2fbb6422d8616ca2d5d1062f5	 200 0ms GET /
+[38;5;6m INFO[0m [04:13:03] ff1c480ddd5249e0975b83a0c5a1ffb4	 200 0ms GET /
+[38;5;6m INFO[0m [04:13:03] 103e24d766a54794aed9013e43b26bf5	 200 0ms GET /
+[38;5;6m INFO[0m [04:13:03] ead28b7d4074412fa46a6ec29204832c	 200 0ms GET /
+[38;5;6m INFO[0m [04:13:03] a5c9247430734b5f85722e375092e87b	 200 0ms GET /
+... [113 lines of load/request noise omitted] ...
 ...
-[38;5;6m INFO[0m [03:06:21] 04d667ad03034e619c5acce6687ff407	 200 0ms GET /
-[38;5;6m INFO[0m [03:06:21] 781d3fd12d924fc889b19b14a22082d8	 200 0ms GET /
-[38;5;6m INFO[0m [03:06:21] aaca4c8214e346a0ad4a18d8997006b8	 200 0ms GET /
-[38;5;6m INFO[0m [03:06:21] 4b1879be9ef24693aa6dceaeea72f5ac	 200 0ms GET /
-[38;5;6m INFO[0m [03:06:21] 90907c463ace40ada17013ac0d15ee72	 200 0ms GET /
-[38;5;6m INFO[0m [03:06:21] d3dc116d9e424e35b2018502af75ec67	 200 0ms GET /
-[38;5;160mERROR[0m [03:06:41] handler error (correlation=dfc68f63dcfb441cb0fb76b550ec9ad8): error.CassandraConnectionFailed
-[38;5;6m INFO[0m [03:06:41] dfc68f63dcfb441cb0fb76b550ec9ad8	 500 79015ms GET /users
-[38;5;6m INFO[0m [03:06:41] 2e1405dec38d4d6886dda0fde345b890	 200 0ms GET /
-[38;5;6m INFO[0m [03:06:41] 0c67ee71d867446d97360d9ad7757aeb	 200 0ms GET /
-[38;5;160mERROR[0m [03:07:01] handler error (correlation=c8804dd1db63418cbf992dbce4efcc7c): error.CassandraConnectionFailed
-[38;5;6m INFO[0m [03:07:01] c8804dd1db63418cbf992dbce4efcc7c	 500 99017ms GET /users
-[38;5;160mERROR[0m [03:07:21] handler error (correlation=79bfe32e493045679772916dfce29f99): error.CassandraConnectionFailed
-[38;5;6m INFO[0m [03:07:21] 79bfe32e493045679772916dfce29f99	 500 119020ms GET /users
-[38;5;160mERROR[0m [03:07:41] handler error (correlation=b4bc530ad4924162b91aa19ccf23aeb3): error.CassandraConnectionFailed
-[38;5;6m INFO[0m [03:07:41] b4bc530ad4924162b91aa19ccf23aeb3	 500 139022ms GET /users
-[38;5;160mERROR[0m [03:08:01] handler error (correlation=0c679037afb74547b7deac681c109b9e): error.CassandraConnectionFailed
-[38;5;6m INFO[0m [03:08:01] 0c679037afb74547b7deac681c109b9e	 500 159022ms GET /users
-[38;5;6m INFO[0m [03:08:01] 86b0ca3ec7474f73bfff0566b5d1bf82	 200 0ms GET /
-[38;5;160mERROR[0m [03:08:21] handler error (correlation=10dc287983054a128ae689528c0aa2d8): error.CassandraConnectionFailed
-[38;5;6m INFO[0m [03:08:21] 10dc287983054a128ae689528c0aa2d8	 500 178031ms GET /users
-[38;5;160mERROR[0m [03:08:41] handler error (correlation=7196a9c1dd0b4f99b2da27cfff528735): error.CassandraConnectionFailed
-[38;5;6m INFO[0m [03:08:41] 7196a9c1dd0b4f99b2da27cfff528735	 500 198034ms GET /users
-[38;5;6m INFO[0m [03:08:41] 539a9f5a1ab94c2daa79715f856fa1a0	 200 0ms GET /
-[38;5;6m INFO[0m [03:08:41] 9786cd831cc540928676282c21ab4797	 200 0ms GET /
-[38;5;160mERROR[0m [03:09:01] handler error (correlation=59675b68b0ac4eaa8f5fffede31a507b): error.CassandraConnectionFailed
-[38;5;6m INFO[0m [03:09:01] 59675b68b0ac4eaa8f5fffede31a507b	 500 218027ms GET /users
-[38;5;6m INFO[0m [03:09:01] 9e5c25114d3b4d87a04d413a731d9fdf	 200 0ms GET /
-[38;5;6m INFO[0m [03:09:01] 1a5a432fd0be437b865a79f7d22a8387	 200 0ms GET /
-[38;5;160mERROR[0m [03:09:21] handler error (correlation=534901febfc64e81a69e8db0b96ccca7): error.CassandraConnectionFailed
-[38;5;6m INFO[0m [03:09:21] 534901febfc64e81a69e8db0b96ccca7	 500 238029ms GET /users
-[38;5;6m INFO[0m [03:09:21] c3a36eb399f243c79c6529a274fae519	 200 0ms GET /
-[38;5;6m INFO[0m [03:09:21] 54b84b22a6784585b771c1160092a634	 200 0ms GET /
-[38;5;6m INFO[0m [03:09:21] e34a8f0f30f7493193bddf31d3ac8bd5	 200 0ms GET /
-[38;5;6m INFO[0m [03:09:21] e06bd14d140142ca821716e55604ea56	 200 0ms GET /
-[38;5;6m INFO[0m [03:09:21] 66d057e9ea04408290299dd2a1c8e453	 200 0ms GET /
-[38;5;6m INFO[0m [03:09:21] b28c4776cfcb415aa42c92144f366c21	 200 0ms GET /
-[38;5;160mERROR[0m [03:09:41] handler error (correlation=4fa278e0253a4f2fbd4e6fe624dac58f): error.CassandraConnectionFailed
-[38;5;6m INFO[0m [03:09:41] 4fa278e0253a4f2fbd4e6fe624dac58f	 500 20002ms GET /users
-[38;5;160mERROR[0m [03:10:01] handler error (correlation=708d014653864e97b7d42a57ac881973): error.CassandraConnectionFailed
-[38;5;6m INFO[0m [03:10:01] 708d014653864e97b7d42a57ac881973	 500 277033ms GET /users
-[38;5;6m INFO[0m [03:10:01] cb8a3e901b704d49bd3820afa61d2e1b	 200 0ms GET /
-[38;5;6m INFO[0m [03:10:01] d8339f3825054afe8315f5d95aeceebc	 200 0ms GET /
-[38;5;160mERROR[0m [03:10:21] handler error (correlation=9a8dec54b2ae4771bae01a18a6044ea7): error.CassandraConnectionFailed
-[38;5;6m INFO[0m [03:10:21] 9a8dec54b2ae4771bae01a18a6044ea7	 500 296046ms GET /users
-[38;5;160mERROR[0m [03:10:41] handler error (correlation=4d420d2f179e467696a5ae3753458739): error.CassandraConnectionFailed
-[38;5;6m INFO[0m [03:10:41] 4d420d2f179e467696a5ae3753458739	 500 316048ms GET /users
-[38;5;6m INFO[0m [03:10:41] f5c56c275eab4eccb9476ce16a210348	 200 0ms GET /
-[38;5;6m INFO[0m [03:10:41] 988beefee3b444418e930967f37c1e06	 200 0ms GET /
-[38;5;6m INFO[0m [03:10:41] d15b36d8dc5346dbac6b31837b3c7e21	 200 0ms GET /
+[38;5;6m INFO[0m [04:14:23] c9896dcb60b64549b908bd090e8529f1	 200 0ms GET /
+[38;5;6m INFO[0m [04:14:23] c4c066f50e8a4c038a6c2fce0bd626e4	 200 0ms GET /
+[38;5;6m INFO[0m [04:14:23] 3a7d14ceeb3e464489e3cba91c9c8d29	 200 0ms GET /
+[38;5;6m INFO[0m [04:14:23] 7c11f9b3426d4132af501408e4c9ca76	 200 0ms GET /
+[38;5;6m INFO[0m [04:14:23] 73fdd1ad97cf4d84a8386ae113a0f2fa	 200 0ms GET /
+[38;5;6m INFO[0m [04:14:23] 1c00539e27604d98ae2f73a18eb4f700	 200 0ms GET /
+[38;5;160mERROR[0m [04:14:43] handler error (correlation=52322101260a40ef8d16492565f1e9f4): error.CassandraConnectionFailed
+[38;5;6m INFO[0m [04:14:43] 52322101260a40ef8d16492565f1e9f4	 500 100007ms GET /users
+[38;5;6m INFO[0m [04:14:43] 90317d9dd47b40e49a78041dbc05cdc3	 200 0ms GET /
+[38;5;6m INFO[0m [04:14:43] 40e0e0fe68d644ac9717f9cd3d946af5	 200 0ms GET /
+[38;5;6m INFO[0m [04:14:43] c6b6dfb299e24fb6bdca90b99c28bb05	 200 0ms GET /
+[38;5;6m INFO[0m [04:14:43] 461661953ece49ec8a4f9bbe736de67e	 200 0ms GET /
+[38;5;6m INFO[0m [04:14:43] 90afeac1d226497bb943fad3e5f4b721	 200 0ms GET /
+[38;5;6m INFO[0m [04:14:43] a8fd2ed006f041ca8cc84962d3ea68f9	 200 0ms GET /
+[38;5;6m INFO[0m [04:14:43] 5c295f9a87d64a7a896c6983cd3d797d	 200 0ms GET /
+[38;5;160mERROR[0m [04:15:03] handler error (correlation=600cbd1ab2bf4eb1a1adf238a348ecb7): error.CassandraConnectionFailed
+[38;5;6m INFO[0m [04:15:03] 600cbd1ab2bf4eb1a1adf238a348ecb7	 500 119013ms GET /users
+[38;5;6m INFO[0m [04:15:03] 1bc6446c7e9e4c0e91e8d7a41baa925a	 200 0ms GET /
+[38;5;160mERROR[0m [04:15:23] handler error (correlation=d4ae5f3d27a74c628212bd9c9b8de202): error.CassandraConnectionFailed
+[38;5;6m INFO[0m [04:15:23] d4ae5f3d27a74c628212bd9c9b8de202	 500 139013ms GET /users
+[38;5;6m INFO[0m [04:15:23] a2516cbb3a844dc48756984587956e70	 200 0ms GET /
+[38;5;160mERROR[0m [04:15:43] handler error (correlation=30929560a2914b56847314ee8f7c7999): error.CassandraConnectionFailed
+[38;5;6m INFO[0m [04:15:43] 30929560a2914b56847314ee8f7c7999	 500 159016ms GET /users
+[38;5;6m INFO[0m [04:15:43] f8e6b35f3fc949638d1b8375c90a8ba1	 200 0ms GET /
+[38;5;6m INFO[0m [04:15:43] 5e32c9c3ccd8465084c1797ab053fff6	 200 0ms GET /
+[38;5;160mERROR[0m [04:16:03] handler error (correlation=7cfdc94b586441f196a75f4d42ac6475): error.CassandraConnectionFailed
+[38;5;6m INFO[0m [04:16:03] 7cfdc94b586441f196a75f4d42ac6475	 500 179017ms GET /users
+[38;5;160mERROR[0m [04:16:23] handler error (correlation=fb4e37f520324b139e1a910d27090efb): error.CassandraConnectionFailed
+[38;5;6m INFO[0m [04:16:23] fb4e37f520324b139e1a910d27090efb	 500 199019ms GET /users
+[38;5;6m INFO[0m [04:16:23] b2f83649f5274009a95d3e1e3c9d9de0	 200 0ms GET /
+[38;5;6m INFO[0m [04:16:23] fb661b0118e541c785ad688bd7f3bdd8	 200 0ms GET /
+[38;5;6m INFO[0m [04:16:23] 84e267876dda45889d618d2bf1c9b904	 200 0ms GET /
+[38;5;160mERROR[0m [04:16:43] handler error (correlation=e41359a15b384001a01a9391f8c71fa2): error.CassandraConnectionFailed
+[38;5;6m INFO[0m [04:16:43] e41359a15b384001a01a9391f8c71fa2	 500 218023ms GET /users
+[38;5;160mERROR[0m [04:17:03] handler error (correlation=558c2a3072f04f51b62fdb02e251b4c1): error.CassandraConnectionFailed
+[38;5;6m INFO[0m [04:17:03] 558c2a3072f04f51b62fdb02e251b4c1	 500 238026ms GET /users
+[38;5;160mERROR[0m [04:17:23] handler error (correlation=1fa2e47f29ed4467b3afe220aa076d1e): error.CassandraConnectionFailed
+[38;5;6m INFO[0m [04:17:23] 1fa2e47f29ed4467b3afe220aa076d1e	 500 258029ms GET /users
+[38;5;6m INFO[0m [04:17:23] b31b7c5e446747ce9cec0590a4a0c52f	 200 0ms GET /
+[38;5;6m INFO[0m [04:17:23] 8d9ca0eec961458ebc1ce1ddc0e75657	 200 0ms GET /
+[38;5;160mERROR[0m [04:17:43] handler error (correlation=1823412c3c70407f8e43d560eb62dff9): error.CassandraConnectionFailed
+[38;5;6m INFO[0m [04:17:43] 1823412c3c70407f8e43d560eb62dff9	 500 278029ms GET /users
+[38;5;160mERROR[0m [04:18:03] handler error (correlation=5986ac94d7474ed6aae1d4f19e947461): error.CassandraConnectionFailed
+[38;5;6m INFO[0m [04:18:03] 5986ac94d7474ed6aae1d4f19e947461	 500 298032ms GET /users
+[38;5;160mERROR[0m [04:18:23] handler error (correlation=ddd89ba50c284fe9a591b9d2fb1579c5): error.CassandraConnectionFailed
+[38;5;6m INFO[0m [04:18:23] ddd89ba50c284fe9a591b9d2fb1579c5	 500 317036ms GET /users
+[38;5;6m INFO[0m [04:18:23] f6b7c2e0f3234f3ca1c83f5fe46790f5	 200 0ms GET /
+[38;5;6m INFO[0m [04:18:23] fd4476628642425d84576a09181cd6e1	 200 0ms GET /
+[38;5;6m INFO[0m [04:18:23] e7f9fb0633cf4f5b90dad48667c35b46	 200 0ms GET /
+[38;5;6m INFO[0m [04:18:23] 08a6875698ee46fe969e8e06eff35188	 200 0ms GET /
