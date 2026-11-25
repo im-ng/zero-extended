@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>zero head-to-head · gate smoke</title>
+<style>
+:root{color-scheme:light}
+:root{
+  --bg:#ffffff;--fg:#2b2b33;--muted:#7a7a86;--border:#eceaf1;
+  --link:#a3c4f3;                 /* Baby Blue Ice */
+  --pass-bg:#b9fbc0;--pass-fg:#1f6b3a;   /* Celadon */
+  --fail-bg:#ffcfd2;--fail-fg:#9f3b45;   /* Cotton Rose */
+  --miss-bg:#fbf8cc;--miss-fg:#7a6100;   /* Lemon Chiffon */
+  --skip-bg:#cfbaf0;--skip-fg:#4b3d6b;   /* Periwinkle */
+  --ok:#b9fbc0;--leak:#ffcfd2;
+  --wash:#fbf8cc;                 /* Lemon Chiffon wash */
+}
+@media (prefers-color-scheme:dark){
+  :root{color-scheme:dark;--bg:#16151c;--fg:#ecebf2;--muted:#a5a3b0;--border:#34313f;
+    --link:#a3c4f3;--pass-bg:#2b4a34;--pass-fg:#b9fbc0;--fail-bg:#4a2b30;--fail-fg:#ffcfd2;
+    --miss-bg:#423d1f;--miss-fg:#fbf8cc;--skip-bg:#3a3350;--skip-fg:#cfbaf0;
+    --ok:#b9fbc0;--leak:#ffcfd2;--wash:#2a2735;}
+}
+*{box-sizing:border-box}
+body{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+      margin:0;background:var(--bg);color:var(--fg)}
+.wrap{max-width:1100px;margin:0 auto;padding:0 24px 40px}
+header{padding:24px 0 8px;border-bottom:1px solid var(--border)}
+.eyebrow{font-size:12px;letter-spacing:.03em;text-transform:uppercase;color:var(--muted);font-weight:600}
+h1{font-size:22px;margin:4px 0}
+.subtitle{color:var(--muted);font-size:13px;margin:0 0 16px}
+h2{font-size:16px;margin:24px 0 8px}
+h3{font-size:12px;text-transform:uppercase;letter-spacing:.03em;color:var(--muted);margin:0 0 8px}
+.banner{display:inline-block;font-size:14px;font-weight:700;padding:10px 16px;
+         border-radius:10px;margin:0 0 18px}
+.banner.miss{background:var(--miss-bg);color:var(--miss-fg)}
+.note{background:var(--miss-bg);color:var(--miss-fg);padding:8px 12px;
+       border-radius:8px;margin:12px 0}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:10px 0}
+.card{background:var(--bg);border:1px solid var(--border);border-top:4px solid;border-radius:8px;padding:12px}
+.card-name{font-weight:600;text-transform:capitalize}
+.card-num{font-size:20px;font-weight:700;margin-top:4px}
+.card-num span{font-size:12px;font-weight:500;color:var(--muted);margin-left:4px}
+.summary{border:1px solid var(--border);border-radius:8px;padding:12px 16px}
+.summary ul{margin:6px 0 0;padding-left:20px}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{padding:8px 10px;text-align:right;border-bottom:1px solid var(--border)}
+thead th{color:var(--muted);font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.03em}
+th:first-child,td:first-child{text-align:left}
+tbody tr:hover{background:var(--skip-bg)}
+td.best{background:var(--pass-bg);color:var(--pass-fg);font-weight:700}
+td.winner{font-weight:700;text-transform:capitalize}
+.charts{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:12px}
+.chart{border:1px solid var(--border);border-radius:8px;padding:12px}
+.bar-row{display:flex;align-items:center;gap:8px;margin:5px 0;font-size:13px}
+.bar-label{width:56px;text-transform:capitalize;font-weight:600}
+.pastel-rule{height:6px;background:linear-gradient(90deg,#fbf8cc,#fde4cf,#ffcfd2,#f1c0e8,#cfbaf0,#a3c4f3,#90dbf4,#8eecf5,#98f5e1,#b9fbc0)}
+a{color:var(--link);text-decoration:underline}
+.bar-track{flex:1;background:#f4f3f7;border-radius:4px;height:14px;overflow:hidden}
+.bar-fill{display:block;height:100%;border-radius:4px}
+.bar-val{width:80px;text-align:right;font-variant-numeric:tabular-nums}
+.chart-note{font-size:12px;color:var(--muted);margin:8px 0 0}
+footer{color:var(--muted);font-size:12px;margin-top:24px;border-top:1px solid var(--border);padding-top:12px}
+@media print{body{background:#fff}
+  .card,.chart,table{break-inside:avoid}}
+</style></head><body>
+<header><div class="wrap">
+  <div class="eyebrow">Head-to-head · gate smoke</div>
+  <h1>zero vs GoFr vs FastAPI vs axum</h1>
+  <p class="subtitle">SQLite CRUD contract · 50 VUs · 10 s steady stage · generated 2026-11-25 04:14 UTC</p>
+  <div class="banner miss">Gate smoke — not publishable. Every axis names its own winner; losses stay visible.</div>
+</div></header>
+<div class="pastel-rule"></div>
+<div class="wrap">
+<h2>At a glance</h2>
+<div class="cards"><div class="card" style="border-top-color:#a3c4f3"><div class="card-name">zero</div><div class="card-num">8<span>/10 axes</span></div></div><div class="card" style="border-top-color:#b9fbc0"><div class="card-name">gofr</div><div class="card-num">1<span>/10 axes</span></div></div><div class="card" style="border-top-color:#fde4cf"><div class="card-name">fastapi</div><div class="card-num">0<span>/10 axes</span></div></div><div class="card" style="border-top-color:#cfbaf0"><div class="card-name">axum</div><div class="card-num">1<span>/10 axes</span></div></div></div>
+<div class="summary"><p>zero leads 8 of 10 axes; 2 axes still lost — see the gap analysis below.</p><ul><li><strong>Read-heavy throughput:</strong> zero at 8081.00</li><li><strong>Balanced throughput:</strong> zero at 1218.07</li><li><strong>Read-heavy p95:</strong> zero at 12.62</li><li><strong>Balanced p95:</strong> gofr at 91.27</li></ul><p class="note">Gate-smoke results are threshold checks with a 10 s steady stage, <strong>not publishable benchmark numbers</strong>. Run <code>bash compare/run.sh bench</code> for publishable numbers.</p></div>
+
+<h2>Scorecard</h2>
+<table><thead><tr><th>Metric</th><th>zero</th><th>gofr</th><th>fastapi</th><th>axum</th><th>Best</th></tr></thead>
+<tbody><tr><th scope="row">p50 [read-heavy]</th><td class="best">3.17</td><td>19.59</td><td>526.99</td><td>50.14</td><td class="winner">zero</td></tr>
+<tr><th scope="row">p95 [read-heavy]</th><td class="best">12.62</td><td>80.86</td><td>908.00</td><td>70.97</td><td class="winner">zero</td></tr>
+<tr><th scope="row">p99 [read-heavy]</th><td class="best">22.02</td><td>126.56</td><td>950.96</td><td>78.63</td><td class="winner">zero</td></tr>
+<tr><th scope="row">rps [read-heavy]</th><td class="best">8081.00</td><td>1313.25</td><td>71.90</td><td>739.36</td><td class="winner">zero</td></tr>
+<tr><th scope="row">errors [read-heavy]</th><td class="best">0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td class="winner">zero</td></tr>
+<tr><th scope="row">p50 [balanced]</th><td class="best">6.92</td><td>20.87</td><td>46.53</td><td>63.95</td><td class="winner">zero</td></tr>
+<tr><th scope="row">p95 [balanced]</th><td>128.08</td><td class="best">91.27</td><td>1835.99</td><td>107.79</td><td class="winner">gofr</td></tr>
+<tr><th scope="row">p99 [balanced]</th><td>495.76</td><td>141.70</td><td>1929.05</td><td class="best">132.08</td><td class="winner">axum</td></tr>
+<tr><th scope="row">rps [balanced]</th><td class="best">1218.07</td><td>1213.32</td><td>78.91</td><td>547.07</td><td class="winner">zero</td></tr>
+<tr><th scope="row">errors [balanced]</th><td class="best">0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td class="winner">zero</td></tr></tbody></table>
+
+<h2>Throughput &amp; tail latency</h2>
+<div class="charts"><div class="chart"><h3>Throughput · read-heavy</h3><div class="bar-row"><span class="bar-label">zero</span><span class="bar-track"><span class="bar-fill" style="width:100.0%;background:#a3c4f3"></span></span><span class="bar-val">8,081.00</span></div><div class="bar-row"><span class="bar-label">gofr</span><span class="bar-track"><span class="bar-fill" style="width:16.3%;background:#b9fbc0"></span></span><span class="bar-val">1,313.25</span></div><div class="bar-row"><span class="bar-label">fastapi</span><span class="bar-track"><span class="bar-fill" style="width:2.0%;background:#fde4cf"></span></span><span class="bar-val">71.90</span></div><div class="bar-row"><span class="bar-label">axum</span><span class="bar-track"><span class="bar-fill" style="width:9.1%;background:#cfbaf0"></span></span><span class="bar-val">739.36</span></div><p class="chart-note">req/s — higher is better</p></div><div class="chart"><h3>Throughput · balanced</h3><div class="bar-row"><span class="bar-label">zero</span><span class="bar-track"><span class="bar-fill" style="width:100.0%;background:#a3c4f3"></span></span><span class="bar-val">1,218.07</span></div><div class="bar-row"><span class="bar-label">gofr</span><span class="bar-track"><span class="bar-fill" style="width:99.6%;background:#b9fbc0"></span></span><span class="bar-val">1,213.32</span></div><div class="bar-row"><span class="bar-label">fastapi</span><span class="bar-track"><span class="bar-fill" style="width:6.5%;background:#fde4cf"></span></span><span class="bar-val">78.91</span></div><div class="bar-row"><span class="bar-label">axum</span><span class="bar-track"><span class="bar-fill" style="width:44.9%;background:#cfbaf0"></span></span><span class="bar-val">547.07</span></div><p class="chart-note">req/s — higher is better</p></div><div class="chart"><h3>p95 latency · read-heavy</h3><div class="bar-row"><span class="bar-label">zero</span><span class="bar-track"><span class="bar-fill" style="width:2.0%;background:#a3c4f3"></span></span><span class="bar-val">12.62</span></div><div class="bar-row"><span class="bar-label">gofr</span><span class="bar-track"><span class="bar-fill" style="width:8.9%;background:#b9fbc0"></span></span><span class="bar-val">80.86</span></div><div class="bar-row"><span class="bar-label">fastapi</span><span class="bar-track"><span class="bar-fill" style="width:100.0%;background:#fde4cf"></span></span><span class="bar-val">908.00</span></div><div class="bar-row"><span class="bar-label">axum</span><span class="bar-track"><span class="bar-fill" style="width:7.8%;background:#cfbaf0"></span></span><span class="bar-val">70.97</span></div><p class="chart-note">ms — lower is better</p></div><div class="chart"><h3>p95 latency · balanced</h3><div class="bar-row"><span class="bar-label">zero</span><span class="bar-track"><span class="bar-fill" style="width:7.0%;background:#a3c4f3"></span></span><span class="bar-val">128.08</span></div><div class="bar-row"><span class="bar-label">gofr</span><span class="bar-track"><span class="bar-fill" style="width:5.0%;background:#b9fbc0"></span></span><span class="bar-val">91.27</span></div><div class="bar-row"><span class="bar-label">fastapi</span><span class="bar-track"><span class="bar-fill" style="width:100.0%;background:#fde4cf"></span></span><span class="bar-val">1,835.99</span></div><div class="bar-row"><span class="bar-label">axum</span><span class="bar-track"><span class="bar-fill" style="width:5.9%;background:#cfbaf0"></span></span><span class="bar-val">107.79</span></div><p class="chart-note">ms — lower is better</p></div></div>
+
+<h2>Footprint &amp; breadth tax</h2>
+<table><thead><tr><th>Framework</th><th>Idle MiB</th><th>Peak MiB</th><th>Binary MiB</th>
+<th>Deps</th><th>App LOC</th></tr></thead><tbody><tr><th scope='row'>zero</th><td>44.22</td><td>63.64</td><td>32.67</td><td>1</td><td>236</td></tr>
+<tr><th scope='row'>gofr</th><td>33.00</td><td>53.56</td><td>55.86</td><td>101</td><td>161</td></tr>
+<tr><th scope='row'>fastapi</th><td>36.60</td><td>64.81</td><td>—</td><td>2</td><td>87</td></tr>
+<tr><th scope='row'>axum</th><td>5.22</td><td>17.16</td><td>3.30</td><td>14</td><td>151</td></tr></tbody></table>
+
+<h2>Run configuration</h2>
+<p>The only intentional difference is how each stack waits for a free SQLite connection. Everything else is held constant.</p>
+<table><thead><tr><th></th><th>zero</th><th>gofr</th><th>fastapi</th><th>axum</th></tr></thead><tbody><tr><td>Connections</td><td>4 (<code>SQLITE_POOL_SIZE</code>)</td><td>1 (<code>DB_MAX_OPEN_CONNECTION</code>)</td><td>1 per request</td><td>1 (<code>max_connections</code>)</td></tr><tr><td>If all busy</td><td>waits</td><td>queues</td><td>opens a new one</td><td>queues</td></tr></tbody></table>
+<p>Held constant: WAL journal, <code>NORMAL</code> sync, 5 s busy timeout, 1 process (1 uvicorn worker).</p>
+<ul><li><strong>zero build:</strong> ReleaseFast (see <code>results/zero/zero.version.json</code>)</li><li><strong>Logging:</strong> quiet — zero logs nothing, gofr fatal, fastapi critical, axum off (<code>COMPARE_QUIET_LOGS=1</code>; flip to <code>0</code> to change)</li><li><strong>Timeouts:</strong> health gate 120 s; k6 10 s warmup + 10 s steady + 10 s spike; pass = under 1% failed requests and p95 under 2 s</li></ul>
+<blockquote><p>Check the <strong>errors</strong> row before believing a latency or RPS win. A pool that fails instead of waiting makes the survivors look fast.</p></blockquote>
+
+<h2>Where we are behind</h2>
+<ul><li><strong>p95 [balanced]:</strong> best gofr (91.27), zero 128.08</li><li><strong>p99 [balanced]:</strong> best axum (132.08), zero 495.76</li></ul>
+
+<h2>Design internals</h2>
+<p>The CRUD table is dominated by SQLite and JSON encoding. Framework-level micro-benchmarks
+(allocations per dispatch, route-match allocations, match time) are in the soak report's
+<a href="../../soak/report/index.html#probes">Framework probes</a> section — they measure the framework, not the application.</p>
+
+<footer>Generated by <code>compare/report.py</code> from raw k6 JSON in <code>compare/results/</code>.
+Gate-smoke numbers only — not publishable benchmarks.</footer>
+</div></body></html>
