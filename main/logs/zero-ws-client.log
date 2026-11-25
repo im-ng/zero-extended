@@ -1,60 +1,71 @@
-[38;5;6m INFO[0m [05:07:13] Loaded config from file: ./configs/.env
-[38;5;6m INFO[0m [05:07:13] config loaded from: ./configs/.env
-[38;5;8mDEBUG[0m [05:07:13] database is disabled, as dialect is not provided.
-[38;5;8mDEBUG[0m [05:07:13] redis is disabled, as redis host is not provided.
-[38;5;8mDEBUG[0m [05:07:13] file store is disabled, as FILE_STORE_ROOT is not provided.
-[38;5;8mDEBUG[0m [05:07:13] sqlite is disabled, as sqlite path is not provided.
-[38;5;8mDEBUG[0m [05:07:13] clickhouse is disabled, as CLICKHOUSE_URL is not provided.
-[38;5;8mDEBUG[0m [05:07:13] time-series is disabled, as INFLUXDB_URL is not provided.
-[38;5;8mDEBUG[0m [05:07:13] opentsdb is disabled, as OPENTSDB_URL is not provided.
-[38;5;8mDEBUG[0m [05:07:13] search is disabled, as SOLR_URL is not provided.
-[38;5;8mDEBUG[0m [05:07:13] nosql is disabled, as CONTACT_POINTS are not provided.
-[38;5;8mDEBUG[0m [05:07:13] arangodb is disabled, as ARANGO_HOST is not provided.
-[38;5;8mDEBUG[0m [05:07:13] graph is disabled, as DGRAPH_URL is not provided.
-[38;5;8mDEBUG[0m [05:07:13] pubsub is disabled, as pubsub mode is not provided.
-[38;5;6m INFO[0m [05:07:13] container is created
-[38;5;6m INFO[0m [05:07:13] ws-client-demo app pid 6363
-[38;5;6m INFO[0m [05:07:13] no authentication mode found and disabled.
-[38;5;6m INFO[0m [05:07:13] registered static files from directory ./static
-[38;5;8mDEBUG[0m [05:07:13] metrics server is initialized
-[38;5;8mDEBUG[0m [05:07:13] metrics server started
+[38;5;6m INFO[0m [03:07:57] Loaded config from file: ./configs/.env
+[38;5;6m INFO[0m [03:07:57] config loaded from: ./configs/.env
+[38;5;8mDEBUG[0m [03:07:57] database is disabled, as dialect is not provided.
+[38;5;8mDEBUG[0m [03:07:57] redis is disabled, as redis host is not provided.
+[38;5;8mDEBUG[0m [03:07:57] file store is disabled, as FILE_STORE_ROOT is not provided.
+[38;5;8mDEBUG[0m [03:07:57] sqlite is disabled, as sqlite path is not provided.
+[38;5;8mDEBUG[0m [03:07:57] clickhouse is disabled, as CLICKHOUSE_URL is not provided.
+[38;5;8mDEBUG[0m [03:07:57] time-series is disabled, as INFLUXDB_URL is not provided.
+[38;5;8mDEBUG[0m [03:07:57] opentsdb is disabled, as OPENTSDB_URL is not provided.
+[38;5;8mDEBUG[0m [03:07:57] search is disabled, as SOLR_URL is not provided.
+[38;5;8mDEBUG[0m [03:07:57] nosql is disabled, as CONTACT_POINTS are not provided.
+[38;5;8mDEBUG[0m [03:07:57] arangodb is disabled, as ARANGO_HOST is not provided.
+[38;5;8mDEBUG[0m [03:07:57] graph is disabled, as DGRAPH_URL is not provided.
+[38;5;8mDEBUG[0m [03:07:57] pubsub is disabled, as pubsub mode is not provided.
+[38;5;6m INFO[0m [03:07:57] container is created
+[38;5;6m INFO[0m [03:07:57] ws-client-demo app pid 5767
+[38;5;6m INFO[0m [03:07:57] no authentication mode found and disabled.
+[38;5;6m INFO[0m [03:07:57] registered static files from directory ./static
+[38;5;8mDEBUG[0m [03:07:57] metrics server is initialized
+[38;5;8mDEBUG[0m [03:07:57] metrics server started
 error: AddressInUse
-/drone/src/zero/examples/zero-ws-client/zig-pkg/httpz-0.0.17-PNVzrGMYCQDr8ZuCn_1Cz75ZnVcg46JlYk66_ARWR_qa/src/posix.zig:258:27: 0x144c571 in bind (httpz.zig)
-[38;5;6m INFO[0m [05:07:13] Starting server on port: 8080
+/drone/src/zero/examples/zero-ws-client/zig-pkg/httpz-0.0.17-PNVzrGMYCQDr8ZuCn_1Cz75ZnVcg46JlYk66_ARWR_qa/src/posix.zig:258:27: 0x144d7e1 in bind (httpz.zig)
+[38;5;6m INFO[0m [03:07:57] Starting server on port: 8080
             .ADDRINUSE => return error.AddressInUse,
                           ^
-/drone/src/zero/examples/zero-ws-client/zig-pkg/httpz-0.0.17-PNVzrGMYCQDr8ZuCn_1Cz75ZnVcg46JlYk66_ARWR_qa/src/httpz.zig:390:17: 0x1520b8e in listen (httpz.zig)
+/drone/src/zero/examples/zero-ws-client/zig-pkg/httpz-0.0.17-PNVzrGMYCQDr8ZuCn_1Cz75ZnVcg46JlYk66_ARWR_qa/src/httpz.zig:390:17: 0x1509f7e in listen (httpz.zig)
                 try posix.bind(listener, &address.any, socklen);
                 ^
-[38;5;6m INFO[0m [05:07:14] 68869a684acb4364953b7ffb9124366a	 200 0ms GET /.well-known/health
-websocket connected to stream.bybit.com/v5/public/spot[38;5;6m INFO[0m [05:07:14] ETH ETHUSDT last=1724.72
-[38;5;6m INFO[0m [05:07:14] ETH ETHUSDT last=1724.9
-[38;5;6m INFO[0m [05:07:14] ETH ETHUSDT last=1724.9
-[38;5;6m INFO[0m [05:07:15] ETH ETHUSDT last=1724.95
-[38;5;6m INFO[0m [05:07:15] ETH ETHUSDT last=1724.95
-[38;5;6m INFO[0m [05:07:16] ETH ETHUSDT last=1725
-[38;5;6m INFO[0m [05:07:16] ETH ETHUSDT last=1725
-[38;5;6m INFO[0m [05:07:17] ETH ETHUSDT last=1725
-[38;5;6m INFO[0m [05:07:18] ETH ETHUSDT last=1724.87
-[38;5;6m INFO[0m [05:07:18] ETH ETHUSDT last=1724.87
-[38;5;6m INFO[0m [05:07:19] ETH ETHUSDT last=1724.87
-[38;5;6m INFO[0m [05:07:20] ETH ETHUSDT last=1724.87
-[38;5;6m INFO[0m [05:07:20] ETH ETHUSDT last=1724.68
-[38;5;6m INFO[0m [05:07:21] ETH ETHUSDT last=1724.64
-[38;5;6m INFO[0m [05:07:21] ETH ETHUSDT last=1724.54
-[38;5;6m INFO[0m [05:07:21] ETH ETHUSDT last=1724.58
-[38;5;6m INFO[0m [05:07:21] ETH ETHUSDT last=1724.58
-[38;5;6m INFO[0m [05:07:22] ETH ETHUSDT last=1724.61
-[38;5;6m INFO[0m [05:07:22] ETH ETHUSDT last=1724.61
-[38;5;6m INFO[0m [05:07:23] ETH ETHUSDT last=1724.61
-[38;5;6m INFO[0m [05:07:24] ETH ETHUSDT last=1724.69
-[38;5;6m INFO[0m [05:07:24] ETH ETHUSDT last=1724.69
-[38;5;6m INFO[0m [05:07:25] ETH ETHUSDT last=1724.73
-[38;5;6m INFO[0m [05:07:25] ETH ETHUSDT last=1724.73
-[38;5;6m INFO[0m [05:07:26] ETH ETHUSDT last=1724.73
-[38;5;6m INFO[0m [05:07:27] ETH ETHUSDT last=1724.77
-[38;5;6m INFO[0m [05:07:28] ETH ETHUSDT last=1724.77
-[38;5;6m INFO[0m [05:07:29] ETH ETHUSDT last=1724.77
-[38;5;6m INFO[0m [05:07:29] ETH ETHUSDT last=1724.77
-[38;5;6m INFO[0m [05:07:30] server shutting down
-received shutdown signalreceived shutdown signalCannot stop server, .listen() was never called[38;5;6m INFO[0m [05:07:30] ETH ETHUSDT last=1724.77
+[38;5;6m INFO[0m [03:07:58] 5e9e98092e784886bd02b0d6e7fb0571	 200 0ms GET /.well-known/health
+websocket connected to stream.bybit.com/v5/public/spot[38;5;6m INFO[0m [03:07:58] ETH ETHUSDT last=1658.2
+[38;5;6m INFO[0m [03:07:58] ETH ETHUSDT last=1658.11
+[38;5;6m INFO[0m [03:07:58] ETH ETHUSDT last=1658.11
+[38;5;6m INFO[0m [03:07:59] ETH ETHUSDT last=1658.09
+[38;5;6m INFO[0m [03:07:59] ETH ETHUSDT last=1657.97
+[38;5;6m INFO[0m [03:07:59] ETH ETHUSDT last=1658.04
+[38;5;6m INFO[0m [03:07:59] ETH ETHUSDT last=1658.04
+[38;5;6m INFO[0m [03:08:00] ETH ETHUSDT last=1658.27
+[38;5;6m INFO[0m [03:08:00] ETH ETHUSDT last=1658.27
+[38;5;6m INFO[0m [03:08:01] ETH ETHUSDT last=1658.27
+[38;5;6m INFO[0m [03:08:02] ETH ETHUSDT last=1658.04
+[38;5;6m INFO[0m [03:08:02] ETH ETHUSDT last=1658.04
+[38;5;6m INFO[0m [03:08:03] ETH ETHUSDT last=1658.04
+[38;5;6m INFO[0m [03:08:04] ETH ETHUSDT last=1658
+[38;5;6m INFO[0m [03:08:05] ETH ETHUSDT last=1658
+[38;5;6m INFO[0m [03:08:05] ETH ETHUSDT last=1658
+[38;5;6m INFO[0m [03:08:06] ETH ETHUSDT last=1658.12
+[38;5;6m INFO[0m [03:08:06] ETH ETHUSDT last=1658.13
+[38;5;6m INFO[0m [03:08:06] ETH ETHUSDT last=1658.13
+[38;5;6m INFO[0m [03:08:07] ETH ETHUSDT last=1658.17
+[38;5;6m INFO[0m [03:08:07] ETH ETHUSDT last=1658.01
+[38;5;6m INFO[0m [03:08:07] ETH ETHUSDT last=1658.07
+[38;5;6m INFO[0m [03:08:07] ETH ETHUSDT last=1658.07
+[38;5;6m INFO[0m [03:08:08] ETH ETHUSDT last=1658.07
+[38;5;6m INFO[0m [03:08:09] ETH ETHUSDT last=1658.06
+[38;5;6m INFO[0m [03:08:09] ETH ETHUSDT last=1658.06
+[38;5;6m INFO[0m [03:08:10] ETH ETHUSDT last=1658.05
+[38;5;6m INFO[0m [03:08:10] ETH ETHUSDT last=1657.98
+[38;5;6m INFO[0m [03:08:10] ETH ETHUSDT last=1657.96
+[38;5;6m INFO[0m [03:08:10] ETH ETHUSDT last=1657.96
+[38;5;6m INFO[0m [03:08:11] ETH ETHUSDT last=1658.15
+[38;5;6m INFO[0m [03:08:12] ETH ETHUSDT last=1658.03
+[38;5;6m INFO[0m [03:08:12] ETH ETHUSDT last=1657.96
+[38;5;6m INFO[0m [03:08:12] ETH ETHUSDT last=1657.91
+[38;5;6m INFO[0m [03:08:12] ETH ETHUSDT last=1657.91
+[38;5;6m INFO[0m [03:08:13] ETH ETHUSDT last=1657.92
+[38;5;6m INFO[0m [03:08:13] ETH ETHUSDT last=1657.92
+[38;5;6m INFO[0m [03:08:14] ETH ETHUSDT last=1657.95
+[38;5;6m INFO[0m [03:08:14] ETH ETHUSDT last=1658.02
+[38;5;6m INFO[0m [03:08:14] ETH ETHUSDT last=1658.05
+[38;5;6m INFO[0m [03:08:14] server shutting down
+received shutdown signalreceived shutdown signalCannot stop server, .listen() was never called[38;5;6m INFO[0m [03:08:14] ETH ETHUSDT last=1658.22

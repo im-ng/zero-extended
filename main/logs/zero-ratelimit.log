@@ -1,102 +1,102 @@
-[38;5;6m INFO[0m [05:10:58] Loaded config from file: ./configs/.env
-[38;5;6m INFO[0m [05:10:58] config loaded from: ./configs/.dev.env
-[38;5;6m INFO[0m [05:10:59] generating database connection string for postgres
-[38;5;6m INFO[0m [05:10:59] connected to postgres user to postgres database at '172.18.0.9:5432'
-[38;5;8mDEBUG[0m [05:10:59] redis is disabled, as redis host is not provided.
-[38;5;6m INFO[0m [05:10:59] connected to local file store
-[38;5;8mDEBUG[0m [05:10:59] sqlite is disabled, as sqlite path is not provided.
-[38;5;8mDEBUG[0m [05:10:59] clickhouse is disabled, as CLICKHOUSE_URL is not provided.
-[38;5;8mDEBUG[0m [05:10:59] time-series is disabled, as INFLUXDB_URL is not provided.
-[38;5;8mDEBUG[0m [05:10:59] opentsdb is disabled, as OPENTSDB_URL is not provided.
-[38;5;8mDEBUG[0m [05:10:59] search is disabled, as SOLR_URL is not provided.
-[38;5;8mDEBUG[0m [05:10:59] nosql is disabled, as CONTACT_POINTS are not provided.
-[38;5;8mDEBUG[0m [05:10:59] arangodb is disabled, as ARANGO_HOST is not provided.
-[38;5;8mDEBUG[0m [05:10:59] graph is disabled, as DGRAPH_URL is not provided.
-[38;5;8mDEBUG[0m [05:10:59] pubsub is disabled, as pubsub mode is not provided.
-[38;5;6m INFO[0m [05:10:59] container is created
-[38;5;6m INFO[0m [05:10:59] basic-overriden app pid 8474
-[38;5;6m INFO[0m [05:10:59] no authentication mode found and disabled.
-[38;5;6m INFO[0m [05:10:59] registered static files from directory ./static
-[38;5;8mDEBUG[0m [05:10:59] metrics server is initialized
-[38;5;8mDEBUG[0m [05:10:59] metrics server started
+[38;5;6m INFO[0m [03:10:24] Loaded config from file: ./configs/.env
+[38;5;6m INFO[0m [03:10:24] config loaded from: ./configs/.dev.env
+[38;5;6m INFO[0m [03:10:26] generating database connection string for postgres
+[38;5;6m INFO[0m [03:10:26] connected to postgres user to postgres database at '172.18.0.9:5432'
+[38;5;8mDEBUG[0m [03:10:26] redis is disabled, as redis host is not provided.
+[38;5;6m INFO[0m [03:10:26] connected to local file store
+[38;5;8mDEBUG[0m [03:10:26] sqlite is disabled, as sqlite path is not provided.
+[38;5;8mDEBUG[0m [03:10:26] clickhouse is disabled, as CLICKHOUSE_URL is not provided.
+[38;5;8mDEBUG[0m [03:10:26] time-series is disabled, as INFLUXDB_URL is not provided.
+[38;5;8mDEBUG[0m [03:10:26] opentsdb is disabled, as OPENTSDB_URL is not provided.
+[38;5;8mDEBUG[0m [03:10:26] search is disabled, as SOLR_URL is not provided.
+[38;5;8mDEBUG[0m [03:10:26] nosql is disabled, as CONTACT_POINTS are not provided.
+[38;5;8mDEBUG[0m [03:10:26] arangodb is disabled, as ARANGO_HOST is not provided.
+[38;5;8mDEBUG[0m [03:10:26] graph is disabled, as DGRAPH_URL is not provided.
+[38;5;8mDEBUG[0m [03:10:26] pubsub is disabled, as pubsub mode is not provided.
+[38;5;6m INFO[0m [03:10:26] container is created
+[38;5;6m INFO[0m [03:10:26] basic-overriden app pid 7017
+[38;5;6m INFO[0m [03:10:26] no authentication mode found and disabled.
+[38;5;6m INFO[0m [03:10:26] registered static files from directory ./static
+[38;5;8mDEBUG[0m [03:10:26] metrics server is initialized
+[38;5;8mDEBUG[0m [03:10:26] metrics server started
 error: AddressInUse
-/drone/src/zero/examples/zero-basic/zig-pkg/httpz-0.0.17-PNVzrGMYCQDr8ZuCn_1Cz75ZnVcg46JlYk66_ARWR_qa/src/posix.zig:258:27: 0x146ac41 in bind (httpz.zig)
-[38;5;6m INFO[0m [05:11:00] Starting server on port: 8080
+/drone/src/zero/examples/zero-basic/zig-pkg/httpz-0.0.17-PNVzrGMYCQDr8ZuCn_1Cz75ZnVcg46JlYk66_ARWR_qa/src/posix.zig:258:27: 0x14ad9d1 in bind (httpz.zig)
+[38;5;6m INFO[0m [03:10:26] Starting server on port: 8080
             .ADDRINUSE => return error.AddressInUse,
                           ^
-/drone/src/zero/examples/zero-basic/zig-pkg/httpz-0.0.17-PNVzrGMYCQDr8ZuCn_1Cz75ZnVcg46JlYk66_ARWR_qa/src/httpz.zig:390:17: 0x1525efe in listen (httpz.zig)
+/drone/src/zero/examples/zero-basic/zig-pkg/httpz-0.0.17-PNVzrGMYCQDr8ZuCn_1Cz75ZnVcg46JlYk66_ARWR_qa/src/httpz.zig:390:17: 0x1569fae in listen (httpz.zig)
                 try posix.bind(listener, &address.any, socklen);
                 ^
-[38;5;6m INFO[0m [05:11:00] d5033b6d47414bd79f9749e40dcf9964	 200 0ms GET /.well-known/health
-[38;5;6m INFO[0m [05:11:00] debug message
-[38;5;6m INFO[0m [05:11:00] ae1527581be342278eed64122d555707	 200 0ms GET /
-[38;5;6m INFO[0m [05:11:00] debug message
-[38;5;6m INFO[0m [05:11:00] 2f015e9a9b304b2ab7d49cc0fb7aefbf	 200 0ms GET /
-[38;5;6m INFO[0m [05:11:00] debug message
-[38;5;6m INFO[0m [05:11:00] 3d48de81d425465e9dea56ed692e8b82	 200 0ms GET /
-[38;5;6m INFO[0m [05:11:00] debug message
-[38;5;6m INFO[0m [05:11:00] 01c3c4ffa21345c7b3c0041898b81fb0	 200 0ms GET /
-[38;5;6m INFO[0m [05:11:00] debug message
-[38;5;6m INFO[0m [05:11:00] fbcd699603414a2a8d1c0b7b6219374d	 200 0ms GET /
-[38;5;6m INFO[0m [05:11:00] debug message
-[38;5;6m INFO[0m [05:11:00] a9926dc1abe5488799e779ab283a2982	 200 0ms GET /
-[38;5;6m INFO[0m [05:11:00] debug message
-[38;5;6m INFO[0m [05:11:00] 27ee3f0f8bc54a018be3ab1858ad07ba	 200 0ms GET /
-[38;5;6m INFO[0m [05:11:00] debug message
-[38;5;6m INFO[0m [05:11:00] f54c56b03c7b4859af48c39feae103a1	 200 0ms GET /
-[38;5;6m INFO[0m [05:11:00] debug message
-[38;5;6m INFO[0m [05:11:00] 2c37e44fff1d436eaf0254a8a4a321d5	 200 0ms GET /
-[38;5;6m INFO[0m [05:11:00] debug message
-[38;5;6m INFO[0m [05:11:00] 91df01b1fe9c44c1a510a579b91de60c	 200 0ms GET /
+[38;5;6m INFO[0m [03:10:26] 5d647d9d6f1a45cc8f95f1d26923f5cd	 200 0ms GET /.well-known/health
+[38;5;6m INFO[0m [03:10:26] debug message
+[38;5;6m INFO[0m [03:10:26] 8dfb06e033404d569817a17809c9f141	 200 0ms GET /
+[38;5;6m INFO[0m [03:10:26] debug message
+[38;5;6m INFO[0m [03:10:26] e0634e1a6e1843a48033bc5335aee120	 200 0ms GET /
+[38;5;6m INFO[0m [03:10:26] debug message
+[38;5;6m INFO[0m [03:10:26] 4cba1f7c280342e89a442cb09ae6746c	 200 0ms GET /
+[38;5;6m INFO[0m [03:10:26] debug message
+[38;5;6m INFO[0m [03:10:26] 457e69bb05064336b68a2aa778346057	 200 0ms GET /
+[38;5;6m INFO[0m [03:10:26] debug message
+[38;5;6m INFO[0m [03:10:26] cfe1d97ae6204004b0c94869c6b4719e	 200 0ms GET /
+[38;5;6m INFO[0m [03:10:26] debug message
+[38;5;6m INFO[0m [03:10:26] 55fef33983d44f2a870b65fc435a7cca	 200 0ms GET /
+[38;5;6m INFO[0m [03:10:26] debug message
+[38;5;6m INFO[0m [03:10:26] ee48bb4209a145be9a6a2e92d783c957	 200 0ms GET /
+[38;5;6m INFO[0m [03:10:26] debug message
+[38;5;6m INFO[0m [03:10:26] 1f1043b7b19e42d690f57f55ab986cd1	 200 0ms GET /
+[38;5;6m INFO[0m [03:10:26] debug message
+[38;5;6m INFO[0m [03:10:26] e2ef131c84f145c2a84467a8348dde2a	 200 0ms GET /
+[38;5;6m INFO[0m [03:10:26] debug message
+[38;5;6m INFO[0m [03:10:26] 0d3680e0eed24ee5bdaed8e7ac6956f0	 200 0ms GET /
 ... [5207 lines of load/request noise omitted] ...
 ...
-[38;5;6m INFO[0m [05:11:14] 7d9920e89d8f4670a3faf655faad8a02	 200 0ms GET /keys
-[38;5;6m INFO[0m [05:11:14] 3ee041cdcfb7475482c38acea89a69d4	 200 0ms GET /json
-[38;5;6m INFO[0m [05:11:14] debug message
-[38;5;6m INFO[0m [05:11:14] 6f6c5946fe3f4382aca6f9c0ff50345c	 200 0ms GET /json
-[38;5;6m INFO[0m [05:11:14] 762e550a48a249abab5dc6c1d5584e10	 200 0ms GET /keys
-[38;5;160mERROR[0m [05:11:14] handler error (correlation=7eafa94334d14eaeac3845dcc3c5e4a5): error.InvalidType
-[38;5;6m INFO[0m [05:11:14] 4dab2b0c7f8649ca97287936062e848d	 200 0ms GET /json
-[38;5;6m INFO[0m [05:11:14] 7eafa94334d14eaeac3845dcc3c5e4a5	 500 1ms GET /db
-[38;5;160mERROR[0m [05:11:14] handler error (correlation=62e3826ffceb4c25a3d4da4f7ee57293): error.InvalidType
-[38;5;6m INFO[0m [05:11:14] 47b2e375005a468aa1ea09cc4a49e26e	 200 0ms GET /json
-[38;5;6m INFO[0m [05:11:14] 62e3826ffceb4c25a3d4da4f7ee57293	 500 0ms GET /db
-[38;5;6m INFO[0m [05:11:14] debug message
-[38;5;6m INFO[0m [05:11:14] a1da25b357e24ef9a91d227df31ac24b	 200 0ms GET /keys
-[38;5;6m INFO[0m [05:11:14] debug message
-[38;5;160mERROR[0m [05:11:14] handler error (correlation=d665f4b6eb5248abb34036507405d08a): error.InvalidType
-[38;5;6m INFO[0m [05:11:14] 281e68b1813f48a0a11a028a5a5e69e7	 200 0ms GET /keys
-[38;5;6m INFO[0m [05:11:14] d665f4b6eb5248abb34036507405d08a	 500 0ms GET /db
-[38;5;6m INFO[0m [05:11:14] dfef4631e5b74a389f39110513162ae3	 200 0ms GET /json
-[38;5;6m INFO[0m [05:11:14] aff4c7abb7674581914c9718908812e1	 200 0ms GET /json
-[38;5;6m INFO[0m [05:11:14] debug message
-[38;5;6m INFO[0m [05:11:14] 2dba42330b344f6ab7f959af24121f6a	 200 0ms GET /keys
-[38;5;6m INFO[0m [05:11:14] 180d74e0e32f4224a4e2fc6cb1f6e041	 200 0ms GET /json
-[38;5;6m INFO[0m [05:11:14] df8819f5d2404c598502cb00e57822b0	 200 0ms GET /json
-[38;5;160mERROR[0m [05:11:14] handler error (correlation=ec0ad436984f42fda3cc62ab34376b88): error.InvalidType
-[38;5;6m INFO[0m [05:11:14] ec0ad436984f42fda3cc62ab34376b88	 500 0ms GET /db
-[38;5;6m INFO[0m [05:11:14] be164d39af334c1192430b5e94943948	 200 0ms GET /json
-[38;5;6m INFO[0m [05:11:14] debug message
-[38;5;6m INFO[0m [05:11:14] f0f0e95303e84c289cdc5ea66c363855	 200 0ms GET /keys
-[38;5;6m INFO[0m [05:11:14] 287ec8028cb14d1ab97ed58803405862	 200 0ms GET /json
-[38;5;6m INFO[0m [05:11:14] debug message
-[38;5;6m INFO[0m [05:11:14] e0b3b1e2934e4d62bc554369100a05d9	 200 0ms GET /keys
-[38;5;160mERROR[0m [05:11:14] handler error (correlation=226a928a6fd34cd7b409d0f1dfd9969f): error.InvalidType
-[38;5;6m INFO[0m [05:11:14] 226a928a6fd34cd7b409d0f1dfd9969f	 500 0ms GET /db
-[38;5;160mERROR[0m [05:11:14] handler error (correlation=11b4d9344eee4771a5120494200d605f): error.InvalidType
-[38;5;6m INFO[0m [05:11:14] 11b4d9344eee4771a5120494200d605f	 500 0ms GET /db
-[38;5;6m INFO[0m [05:11:14] c23fb0ba034743dcaf77a665dc6a34c2	 200 0ms GET /json
-[38;5;6m INFO[0m [05:11:14] eeee7abb36914c7ea63f070d8d35cffc	 200 0ms GET /json
-[38;5;160mERROR[0m [05:11:14] handler error (correlation=0b3ca998ffcc4e6d8f690baefb717819): error.InvalidType
-[38;5;6m INFO[0m [05:11:14] 0b3ca998ffcc4e6d8f690baefb717819	 500 0ms GET /db
-[38;5;6m INFO[0m [05:11:14] cb5b75fae94b4fe4b9c40aec30d1a4ce	 200 0ms GET /json
-[38;5;6m INFO[0m [05:11:14] 612054c66b6e418f8d84901268093c97	 200 0ms GET /json
-[38;5;160mERROR[0m [05:11:14] handler error (correlation=363dcac1580d42ee9e4caf76405138b5): error.InvalidType
-[38;5;6m INFO[0m [05:11:14] 363dcac1580d42ee9e4caf76405138b5	 500 0ms GET /db
-[38;5;6m INFO[0m [05:11:16] debug message
-[38;5;6m INFO[0m [05:11:16] 4c0a8f3e667647369246fe14999d4532	 200 0ms GET /
-[38;5;6m INFO[0m [05:11:19] ba12839df2d94a559a2f4ba20ebfedd4	 200 0ms GET /.well-known/health
-[38;5;6m INFO[0m [05:11:20] 3fbf223d4e75454d888933f26b200ea4	 200 0ms GET /.well-known/health
-[38;5;6m INFO[0m [05:11:20] debug message
-[38;5;6m INFO[0m [05:11:20] e8b9c393a0d04e889ff719045ed8ed26	 200 0ms GET /
+[38;5;6m INFO[0m [03:10:40] d721ef059642436ba13a519f053d3579	 500 0ms GET /db
+[38;5;160mERROR[0m [03:10:40] handler error (correlation=8f1023eb238a4fbfbfe706165f53f262): error.InvalidType
+[38;5;6m INFO[0m [03:10:40] 8f1023eb238a4fbfbfe706165f53f262	 500 0ms GET /db
+[38;5;160mERROR[0m [03:10:40] handler error (correlation=4e9c7301c18b40f488c75724d58b19f3): error.InvalidType
+[38;5;6m INFO[0m [03:10:40] 4e9c7301c18b40f488c75724d58b19f3	 500 1ms GET /db
+[38;5;160mERROR[0m [03:10:40] handler error (correlation=8a2b05e44a7e430b92396630533fbc12): error.InvalidType
+[38;5;6m INFO[0m [03:10:40] 8a2b05e44a7e430b92396630533fbc12	 500 0ms GET /db
+[38;5;160mERROR[0m [03:10:40] handler error (correlation=90a261d0df884595b3bd1763d1e5c4b9): error.InvalidType
+[38;5;160mERROR[0m [03:10:40] handler error (correlation=7b0ca2afdd3d4f7a9aa2561bf8e401b6): error.InvalidType
+[38;5;6m INFO[0m [03:10:40] 7b0ca2afdd3d4f7a9aa2561bf8e401b6	 500 1ms GET /db
+[38;5;6m INFO[0m [03:10:40] 90a261d0df884595b3bd1763d1e5c4b9	 500 0ms GET /db
+[38;5;160mERROR[0m [03:10:40] handler error (correlation=63fcf9371e744e238c330a2ff2aeafcd): error.InvalidType
+[38;5;6m INFO[0m [03:10:40] 63fcf9371e744e238c330a2ff2aeafcd	 500 1ms GET /db
+[38;5;160mERROR[0m [03:10:40] handler error (correlation=c25396448590422fa576c5090c818716): error.InvalidType
+[38;5;6m INFO[0m [03:10:40] c25396448590422fa576c5090c818716	 500 0ms GET /db
+[38;5;160mERROR[0m [03:10:40] handler error (correlation=ae2e8d6c673e4fe3be5ebb6fd61187a4): error.InvalidType
+[38;5;6m INFO[0m [03:10:40] ae2e8d6c673e4fe3be5ebb6fd61187a4	 500 0ms GET /db
+[38;5;160mERROR[0m [03:10:40] handler error (correlation=d7a553fffa0c4a0e8045293f7279c36b): error.InvalidType
+[38;5;6m INFO[0m [03:10:40] d7a553fffa0c4a0e8045293f7279c36b	 500 1ms GET /db
+[38;5;160mERROR[0m [03:10:40] handler error (correlation=01cd425eef99461480e5aba6d47f4809): error.InvalidType
+[38;5;6m INFO[0m [03:10:40] 01cd425eef99461480e5aba6d47f4809	 500 1ms GET /db
+[38;5;160mERROR[0m [03:10:40] handler error (correlation=27cfb3af8ca145d399b2e5b8f7f42899): error.InvalidType
+[38;5;160mERROR[0m [03:10:40] handler error (correlation=9747ffa94f6a49c4b6a12881af5a09f1): error.InvalidType
+[38;5;6m INFO[0m [03:10:40] 27cfb3af8ca145d399b2e5b8f7f42899	 500 0ms GET /db
+[38;5;6m INFO[0m [03:10:40] 9747ffa94f6a49c4b6a12881af5a09f1	 500 2ms GET /db
+[38;5;160mERROR[0m [03:10:40] handler error (correlation=f88b6eaf3fce4ad99c02d3772001a388): error.InvalidType
+[38;5;6m INFO[0m [03:10:40] f88b6eaf3fce4ad99c02d3772001a388	 500 0ms GET /db
+[38;5;160mERROR[0m [03:10:40] handler error (correlation=8032a967280b42d19d7717e5743a6478): error.InvalidType
+[38;5;6m INFO[0m [03:10:40] 8032a967280b42d19d7717e5743a6478	 500 0ms GET /db
+[38;5;160mERROR[0m [03:10:40] handler error (correlation=a8eab3abd48e42ce8c681cdf223dd66e): error.InvalidType
+[38;5;6m INFO[0m [03:10:40] a8eab3abd48e42ce8c681cdf223dd66e	 500 0ms GET /db
+[38;5;160mERROR[0m [03:10:40] handler error (correlation=85f5f977362246b392478d5f0399e594): error.InvalidType
+[38;5;160mERROR[0m [03:10:40] handler error (correlation=086b4761ac924db0ba4f1333eb05f7bf): error.InvalidType
+[38;5;6m INFO[0m [03:10:40] 85f5f977362246b392478d5f0399e594	 500 0ms GET /db
+[38;5;6m INFO[0m [03:10:40] 086b4761ac924db0ba4f1333eb05f7bf	 500 1ms GET /db
+[38;5;160mERROR[0m [03:10:40] handler error (correlation=714361d88b1a456d9b6a0dece30958ed): error.InvalidType
+[38;5;6m INFO[0m [03:10:40] 714361d88b1a456d9b6a0dece30958ed	 500 0ms GET /db
+[38;5;160mERROR[0m [03:10:40] handler error (correlation=5310f50d20ef42eaa37b71c170445521): error.InvalidType
+[38;5;6m INFO[0m [03:10:40] 5310f50d20ef42eaa37b71c170445521	 500 0ms GET /db
+[38;5;160mERROR[0m [03:10:40] handler error (correlation=604b68f6fa954c06914bac40ab41b326): error.InvalidType
+[38;5;6m INFO[0m [03:10:40] 604b68f6fa954c06914bac40ab41b326	 500 1ms GET /db
+[38;5;160mERROR[0m [03:10:40] handler error (correlation=af945d7719104fd795da94fedecac8ed): error.InvalidType
+[38;5;6m INFO[0m [03:10:40] af945d7719104fd795da94fedecac8ed	 500 1ms GET /db
+[38;5;6m INFO[0m [03:10:43] debug message
+[38;5;6m INFO[0m [03:10:43] 975bd9f30e5e40f89b9372983159e252	 200 0ms GET /
+[38;5;6m INFO[0m [03:10:46] 5ac22d4fd88e403fb5e01507f7b774ff	 200 0ms GET /.well-known/health
+[38;5;6m INFO[0m [03:10:47] 686091d792ef4100a27cfc33daf4d413	 200 0ms GET /.well-known/health
+[38;5;6m INFO[0m [03:10:47] debug message
+[38;5;6m INFO[0m [03:10:47] 5520784895b1456e8b18afd8703393f4	 200 0ms GET /
 chaos: app recovered connectivity to postgres
