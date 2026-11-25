@@ -1,17 +1,76 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>zero-soak reports</title><style>
-body{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;margin:0;background:#0f1115;color:#e6e6e6;color-scheme:light dark;}
-a{color:#7ab8ff;text-decoration:none;}a:hover{text-decoration:underline;}
-h1{font-size:22px;padding:24px 24px 12px;}
-table{border-collapse:collapse;width:calc(100% - 48px);margin:0 24px 24px;font-size:14px;}
-th,td{text-align:left;padding:10px 14px;border-bottom:1px solid #222;}
-th{color:#9aa;font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.03em;}
-tbody tr:nth-child(even){background:#141821;}tbody tr:hover{background:#1c2230;}
-.badge{display:inline-block;padding:3px 10px;border-radius:999px;background:#16351f;color:#5fdc8a;font-weight:700;font-size:12px;}
-@media (prefers-color-scheme:light){body{background:#fff;color:#1a1a1a;}th{color:#666;}th,td{border-color:#ddd;}tbody tr:nth-child(even){background:#f5f5f5;}tbody tr:hover{background:#eee;}a{color:#1a66cc;}}
-</style></head><body>
-<h1>zero-soak reports</h1>
-<table><thead><tr><th>Framework ref</th><th>Report</th><th>Status</th></tr></thead><tbody>
-<tr><td>main</td><td><a href="main/reports.html">reports.html</a></td><td><span class="badge">published</span></td></tr>
-</tbody></table></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>zero-soak reports</title>
+<style>
+:root { color-scheme: light dark; }
+:root {
+  --bg:#0f1115; --fg:#e6e6e6; --muted:#9aa; --border:#222; --link:#7ab8ff;
+  --pass-bg:#16351f; --pass-fg:#5fdc8a;
+  --miss-bg:#3a2f12; --miss-fg:#ffd28a;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg:#ffffff; --fg:#1a1a1a; --muted:#666; --border:#ddd; --link:#1a66cc;
+    --pass-bg:#e3f5e8; --pass-fg:#137333;
+    --miss-bg:#fef3e0; --miss-fg:#b06000;
+  }
+}
+* { box-sizing:border-box; }
+body { font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  margin:0; background:var(--bg); color:var(--fg); }
+.wrap { max-width:860px; margin:0 auto; padding:24px 24px 40px; }
+h1 { font-size:22px; margin:0 0 4px; }
+.sub { color:var(--muted); font-size:14px; margin:0 0 24px; }
+h2 { font-size:13px; text-transform:uppercase; letter-spacing:.03em; color:var(--muted);
+  margin:0 0 10px; }
+.reports { list-style:none; margin:0; padding:0; display:grid; gap:12px; }
+.report { border:1px solid var(--border); border-radius:10px; padding:16px 18px; }
+.report:hover { border-color:var(--link); }
+.report-title { display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+.report-title a { font-size:17px; font-weight:700; }
+.desc { color:var(--muted); font-size:14px; line-height:1.5; margin:8px 0 10px; }
+.badge { display:inline-block; padding:3px 10px; border-radius:999px;
+  font-size:12px; font-weight:700; white-space:nowrap; }
+.badge.pass { background:var(--pass-bg); color:var(--pass-fg); }
+.badge.miss { background:var(--miss-bg); color:var(--miss-fg); }
+a { color:var(--link); text-decoration:none; }
+a:hover { text-decoration:underline; }
+.links { font-size:13px; }
+footer { color:var(--muted); font-size:12px; margin-top:28px;
+  border-top:1px solid var(--border); padding-top:12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>zero-soak reports</h1>
+  <p class="sub">Pick a report below. Each one opens in your browser; a Markdown copy is available too.</p>
+
+  <h2>Reports</h2>
+  <ul class="reports">
+    <li class="report">
+      <div class="report-title">
+        <a href="main/reports.html">Soak report — main</a>
+        <span class="badge pass">PASS</span>
+      </div>
+      <p class="desc">Latest soak of every example on the <code>main</code> ref: per-service RSS, backend chaos, and debug-leak checks.</p>
+      <div class="links">13 services · 13 pass · 0 fail · build 32 · 2026-11-25 ·
+        <a href="main/report.md">Markdown</a></div>
+    </li>
+    <li class="report">
+      <div class="report-title">
+        <a href="compare/report/index.html">Head-to-head comparison</a>
+        <span class="badge miss">GATE SMOKE</span>
+      </div>
+      <p class="desc">zero vs GoFr vs FastAPI vs axum on a SQLite CRUD contract — throughput, tail latency, footprint, and dependency count.</p>
+      <div class="links">Threshold checks, not publishable benchmark numbers · 2026-11-25 ·
+        <a href="compare/report/report.md">Markdown</a></div>
+    </li>
+  </ul>
+
+  <footer>Reports are published from the <code>reports</code> branch. See <a href="README.md">README.md</a> for how they are generated.</footer>
+</div>
+</body>
+</html>
